@@ -1,0 +1,376 @@
+ENG_colonize_USA_category = {
+
+	settle_jamestown = {
+
+	icon = generic_form_nation
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_the_americas
+	}
+	days_remove = 35
+	complete_effect = {
+		random_owned_controlled_state = {
+			limit = { industrial_complex > 1 }
+			add_building_construction = {
+				type = industrial_complex
+				level = -2
+				instant_build = yes
+			}
+		}
+	}
+	remove_effect = {
+	transfer_state = 362
+		random_owned_controlled_state = {
+			limit = { free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						} }
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+
+	}
+	settle_caribbean = {
+
+	icon = generic_form_nation
+	cost = 25
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_the_americas
+	}
+	days_remove = 35
+	complete_effect = {
+		random_owned_controlled_state = {
+			limit = { industrial_complex > 1 }
+			add_building_construction = {
+				type = industrial_complex
+				level = -1
+				instant_build = yes
+			}
+		}
+	}
+	remove_effect = {
+	transfer_state = 474
+		random_owned_controlled_state = {
+			limit = { free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						} }
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	spread_colonies = {
+
+	icon = generic_form_nation
+	cost = 100
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_the_americas
+		owns_state = 2
+	}
+	days_remove = 105
+	complete_effect = {
+		random_owned_controlled_state = {
+			limit = { industrial_complex > 1 }
+			add_building_construction = {
+				type = industrial_complex
+				level = -2
+				instant_build = yes
+			}
+		}
+	}
+	remove_effect = {
+	transfer_state = 363
+	transfer_state = 364
+	transfer_state = 365
+	transfer_state = 815
+	transfer_state = 359
+	transfer_state = 360
+	transfer_state = 834
+	transfer_state = 814
+	transfer_state = 813
+	transfer_state = 357
+		random_owned_controlled_state = {
+			limit = { free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						} }
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+
+	}
+
+	claim_greenland = {
+
+	icon = generic_form_nation
+	cost = 30
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_the_americas
+	}
+	days_remove = 35
+	remove_effect = {
+	add_state_claim = 101
+	DEN = {
+		remove_state_core = 101
+	}
+	}
+
+
+	}
+
+	quell_american_resistance = {
+
+	icon = generic_civil_support
+	cost = 25
+
+	available = {
+		controls_state = {
+			is_on_continent = north_america
+		}
+	}
+	days_remove = 21
+	remove_effect = {
+	random_owned_controlled_state = {
+		limit = { is_on_continent = north_america }
+		add_resistance = -5
+		add_compliance = 5
+	}
+	}
+	
+	}
+
+
+
+
+}
+
+ENG_colonize_AFR_category = {
+
+	settle_cape = {
+
+	icon = generic_form_nation
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_africa
+	}
+	days_remove = 35
+	complete_effect = {
+		random_owned_controlled_state = {
+			limit = { industrial_complex > 1 }
+			add_building_construction = {
+				type = industrial_complex
+				level = -2
+				instant_build = yes
+			}
+		}
+	}
+	remove_effect = {
+	transfer_state = 681
+		random_owned_controlled_state = {
+			limit = { free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						} }
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+
+	}
+
+	spread_south_africa = {
+
+	icon = generic_form_nation
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_turn_to_africa
+	}
+	days_remove = 35
+	complete_effect = {
+		random_owned_controlled_state = {
+			limit = { industrial_complex > 1 }
+			add_building_construction = {
+				type = industrial_complex
+				level = -2
+				instant_build = yes
+			}
+		}
+	}
+	remove_effect = {
+	transfer_state = 719
+	transfer_state = 541
+		random_owned_controlled_state = {
+			limit = { free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						} }
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+
+	}
+
+	quell_african_resistance = {
+
+	icon = generic_civil_support
+	cost = 25
+
+	available = {
+		controls_state = {
+			is_on_continent = africa
+		}
+	}
+	days_remove = 21
+	remove_effect = {
+	random_owned_controlled_state = {
+		limit = { is_on_continent = africa }
+		add_resistance = -5
+		add_compliance = 5
+	}
+	}
+
+
+	}
+
+
+
+}
+
+ENG_invest_category = {
+
+	invest_russia = {
+
+	icon = generic_prospect_for_resources
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_ponder_foreign_investments
+	}
+	days_remove = 105
+	remove_effect = {
+		add_opinion_modifier = { target = RUS modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		RUS = {
+		add_opinion_modifier = { target = ENG modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	}
+
+	invest_austria = {
+
+	icon = generic_prospect_for_resources
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_ponder_foreign_investments
+	}
+	days_remove = 105
+	remove_effect = {
+		add_opinion_modifier = { target = AUS modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		AUS = {
+		add_opinion_modifier = { target = ENG modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	}
+	
+	invest_denmark = {
+
+	icon = generic_prospect_for_resources
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_ponder_foreign_investments
+	}
+	days_remove = 105
+	remove_effect = {
+		add_opinion_modifier = { target = DEN modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		DEN = {
+		add_opinion_modifier = { target = ENG modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	}
+	
+	invest_spain = {
+
+	icon = generic_prospect_for_resources
+	cost = 50
+	fire_only_once = yes
+
+	available = {
+		has_completed_focus = ENG_ponder_foreign_investments
+	}
+	days_remove = 105
+	remove_effect = {
+		add_opinion_modifier = { target = SPR modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		SPR = {
+		add_opinion_modifier = { target = ENG modifier = offered_support }
+		add_offsite_building= { type = industrial_complex level = 1 }
+		add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	}
+
+
+
+}

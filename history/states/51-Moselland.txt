@@ -1,0 +1,40 @@
+
+state={
+	id=51
+	name="STATE_51"
+	manpower = 75000
+	resources={
+		steel=30 # was: 54
+	}
+
+
+	state_category = metropolis
+	
+	history={
+		owner = KLE
+		victory_points = {
+			6469 10 
+		}
+		
+		#victory_points = {
+		#	3444 5
+		#}
+		#victory_points = {
+		#	3547 1
+		#}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 0
+
+		}
+		add_core_of = KLE
+
+	}
+
+	provinces={
+		3547 6469 9482 9522 
+	}
+	
+}

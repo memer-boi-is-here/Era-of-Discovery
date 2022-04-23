@@ -1,0 +1,21 @@
+
+state={
+	id=1142
+	name="Kilwa"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 2
+			
+		}
+		add_core_of = XXX
+	}
+
+	provinces={
+		2196 8182 12944
+	}
+}

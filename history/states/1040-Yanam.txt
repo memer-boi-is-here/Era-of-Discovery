@@ -1,0 +1,19 @@
+state={
+	id=1040
+	name="Yanam"
+	history={
+		owner = GLK
+		add_core_of = GLK
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+	provinces={
+		4237 10001 10255 11978 12462 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

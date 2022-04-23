@@ -1,0 +1,22 @@
+state={
+	id=1100
+	name="Perak"
+	provinces={
+		4310 1364 12215 1376 4384 10297 4412 
+	}
+		history={
+			owner = PEK
+		add_core_of = PEK
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

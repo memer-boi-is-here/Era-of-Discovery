@@ -1,0 +1,215 @@
+#Prolox
+
+add_namespace = ottoman
+add_namespace = ottoman_ports
+add_namespace = ott_joh_war
+
+###########################
+# OTTOMAN-FRENCH ALLIANCE #
+###########################
+country_event = { 
+	id = ottoman.1
+	title = ottoman.1.t
+	desc = ottoman.1.d
+	picture = GFX_ottoman_french_alliance
+	fire_only_once = no
+	
+	is_triggered_only = yes
+
+	option = { #FRA accepts
+		name = ottoman.1.a
+		ai_chance = { factor = 60 }
+		
+		hidden_effect = {
+			news_event = {
+				id = TUR_FRA_alliance.0 
+				days = 0
+				random = 2
+			}
+			set_global_flag = FRA_TUR_alliance
+		}
+	}
+	option = { #FRA refuses
+		name = ottoman.1.b
+		ai_chance = { factor = 40 }
+		hidden_effect = {
+			TUR = {
+				news_event = {
+					id = TUR_FRA_alliance.1
+					days = 0
+					random = 2
+				}
+			}
+		}
+	}
+}
+
+###################################
+# OTTOMAN ULTIMATUM TO MONTENEGRO #
+###################################
+country_event = {
+	id = ottoman.2
+	title = ottoman.2.t
+	desc = ottoman.2.d
+	picture = GFX_ottoman_ultimatum_montenegro
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #MNT accepts
+		name = ottoman.2.a
+		ai_chance = { factor = 20 }
+		
+		hidden_effect = {
+			news_event = {
+				id = TUR_ultimatum_MNT.0 
+				random_hours = 2
+			}
+		}
+	}
+	option = { #MNT refuses
+		name = ottoman.2.b
+		ai_chance = { factor = 80 }
+		hidden_effect = {
+			TUR = {
+				news_event = {
+					id = TUR_ultimatum_MNT.1
+					random_hours = 2
+				}
+			}
+		}
+	}
+}
+
+#######################
+# PEACE WITH SAFAVIDS #
+#######################
+country_event = {
+	id = ottoman.3
+	title = ottoman.3.t
+	desc = ottoman.3.d
+	picture = GFX_TUR_peace_with_safavids
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #PER accepts
+		name = ottoman.3.a
+		ai_chance = { factor = 77 }
+		
+		hidden_effect = {
+			TUR = {
+				news_event = {
+					id = TUR_peace_PER.0
+					random_hours = 2
+				}
+			}
+		}
+	}
+	option = { #PER refuses
+		name = ottoman.3.b
+		ai_chance = { factor = 23 }
+		hidden_effect = {
+			news_event = {
+				id = TUR_peace_PER.1
+				random_hours = 2
+			}
+		}
+	}
+}
+
+############################
+# TUR SELLING INDIAN PORTS #
+############################
+# 963 #
+#######
+country_event = {
+	id = ottoman_ports.963
+	title = ottoman_ports.963.t
+	desc = ottoman_ports.963.d
+	picture = GFX_TUR_peace_with_safavids
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #TUR accepts
+		name = ottoman_ports.963.a
+		ai_chance = { factor = 40 }
+		
+		add_to_variable = { money = 250 }
+		subtract_from_variable = { FROM.money = 250 }
+		custom_effect_tooltip = 963_sold
+		FROM = {
+			set_state_owner  = 963
+			set_state_controller  = 963
+		}
+		news_event = { id = state_sold.963 hours = 0 }
+	}
+	option = { #tur refuses
+		name = ottoman_ports.963.b
+		ai_chance = { factor = 60 }
+	}
+}
+#######
+# 964 #
+#######
+country_event = {
+	id = ottoman_ports.964
+	title = ottoman_ports.964.t
+	desc = ottoman_ports.964.d
+	picture = GFX_TUR_peace_with_safavids
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #TUR accepts
+		name = ottoman_ports.964.a
+		ai_chance = { factor = 40 }
+		
+		add_to_variable = { money = 250 }
+		subtract_from_variable = { FROM.money = 250 }
+		custom_effect_tooltip = 964_sold
+		FROM = {
+			set_state_owner = 964
+			set_state_controller = 964
+		}
+		news_event = { id = state_sold.964 hours = 0 }
+	}
+	option = { #tur refuses
+		name = ottoman_ports.964.b
+		ai_chance = { factor = 60 }
+	}
+}
+#go on
+
+
+
+
+#######################################
+# Spain intervent for defending Malta #
+#######################################
+country_event = {
+	id = ottoman.4 
+	title = ottoman.4.t
+	desc = ottoman.4.d
+	picture = GFX_ottoman
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #SPR accepts
+		name = ottoman.4.a
+		ai_chance = { factor = 65 }
+		SPR = {
+			add_to_war = { 
+				targeted_alliance = MLT 
+				enemy = TUR 
+			}
+		}
+		news_event = { id = SPR_vs_TUR.1 days = 0 }
+	}
+	option = { #SPR refuses
+		name = ottoman.4.b
+		ai_chance = { factor = 35 }
+	}
+}

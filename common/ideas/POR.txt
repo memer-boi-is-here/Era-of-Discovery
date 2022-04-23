@@ -1,0 +1,455 @@
+ideas = {
+
+    country = {
+	
+	    first_circumnavigation = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = first_circumnavigation
+			
+			modifier = {
+                naval_speed_factor = 0.3
+				spotting_chance = 0.4
+				naval_retreat_speed = 0.3
+			}
+		}
+		
+	    the_portuguese_inquisition = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = the_portuguese_inquisition 
+			
+			modifier = {
+                 operative_slot = 1
+				 root_out_resistance_effectiveness_factor = 0.25
+				 stability_factor = -0.1
+				 recruitable_population_factor = -0.1
+			}
+		}
+		
+		portuguese_trade_empire = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = portuguese_trade_empire
+			
+			modifier = {
+                 trade_opinion_factor = 0.5
+				 consumer_goods_factor = -0.1
+				 local_resources_factor = 0.2
+			}
+		}
+	
+	}
+	
+    political_advisor = {
+  
+		luis_of_beja = {
+
+			picture = luis_of_beja
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { chief_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		henry_aviz = {
+
+			picture = henry_aviz
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { archbishop_of_evora }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		teodosio_i = {
+
+			picture = teodosio_i
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { finance_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			on_add = {
+				add_to_variable = {
+				  money_factor = 0.5
+				}
+			  }
+			on_remove = {
+				add_to_variable = {
+				  money_factor = -0.5
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+			
+		}
+
+		duarte_da_costa = {
+
+			picture = duarte_da_costa
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { foreign_diplomat }  
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		bras_cubas = {
+
+			picture = bras_cubas
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { explorer }
+			on_add = {
+				add_to_variable = {
+					max_colonies = 1
+				}
+			}
+			on_remove = {
+				add_to_variable = {
+					max_colonies = -1
+				}
+			}
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+	 
+		}
+		
+		martim_de_sousa = {
+
+			picture = martim_de_sousa
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { high_admiral }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		henry_aviz_a = {
+
+			picture = henry_aviz
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { grand_inquisitor }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		luis_de_ataide = {
+
+			picture = luis_de_ataide
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { construction_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		francisco_de_mascarenhas = {
+
+			picture = francisco_de_mascarenhas
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { war_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	
+	army_chief = {
+		
+	    teodosio_i_a = {
+		
+		    picture = teodosio_i
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    luis_of_beja_a = {
+		
+		    picture = luis_of_beja
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	navy_chief = {
+	
+	    martim_de_sousa_a = {
+		
+	        picture = martim_de_sousa
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+		    }
+		}
+		
+		mem_de_sa = {
+		
+		    picture = mem_de_sa
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		antonio_of_crato = {
+		
+		    picture = antonio_of_crato
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+	}
+	
+	high_command = {
+		
+        antonio_de_noronha = {
+			ledger = army
+			
+			picture = antonio_de_noronha
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		duarte_of_guimaraes = {
+		
+			ledger = army
+			
+			picture = duarte_of_guimaraes
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_cavalry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    aires_de_saldanha = {
+		
+			ledger = army
+			
+			picture = aires_de_saldanha
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mem_de_sa_a = {
+			ledger = navy
+			
+			picture = mem_de_sa
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,35 @@
+characters = {
+	TUR_piri_reis = {
+		name = TUR_piri_reis
+		portraits = {
+			navy = {
+				large = "GFX_portrait_piri_reis"
+				small = "GFX__piri_reis"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = piri_reis
+			allowed = {
+				always = no
+			}
+			traits = {
+
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { 
+			
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+}

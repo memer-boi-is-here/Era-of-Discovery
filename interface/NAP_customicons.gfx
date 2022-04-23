@@ -1,0 +1,1105 @@
+spriteTypes = { 
+	##Icon For: Meet the pope
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_pope-99965"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+	}
+
+	##Icon Shine For: Meet the pope
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_pope-99965_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pedro Álvarez de Toledo
+	SpriteType = { 
+		name = "GFX_NAP_pedro_lvarez_de_toledo-102671"
+		texturefile = "gfx/interface/goals/GFX_NAP_pedro_lvarez_de_toledo-102671.dds"
+	}
+
+	##Icon Shine For: Pedro Álvarez de Toledo
+	SpriteType = { 
+		name = "GFX_NAP_pedro_lvarez_de_toledo-102671_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_pedro_lvarez_de_toledo-102671.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pedro_lvarez_de_toledo-102671.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pedro_lvarez_de_toledo-102671.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pedro Pacheco
+	SpriteType = { 
+		name = "GFX_NAP_pedro_pacheco-102669"
+		texturefile = "gfx/interface/goals/GFX_NAP_pedro_pacheco-102669.dds"
+	}
+
+	##Icon Shine For: Pedro Pacheco
+	SpriteType = { 
+		name = "GFX_NAP_pedro_pacheco-102669_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_pedro_pacheco-102669.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pedro_pacheco-102669.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pedro_pacheco-102669.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Support savoy
+	SpriteType = { 
+		name = "GFX_NAP_support_savoy-102659"
+		texturefile = "gfx/interface/goals/GFX_NAP_support_savoy-102659.dds"
+	}
+
+	##Icon Shine For: Support savoy
+	SpriteType = { 
+		name = "GFX_NAP_support_savoy-102659_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_support_savoy-102659.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_support_savoy-102659.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_support_savoy-102659.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Churchs in every quarters
+	SpriteType = { 
+		name = "GFX_NAP_churchs_in_every_quarters-102675"
+		texturefile = "gfx/interface/goals/GFX_NAP_churchs_in_every_quarters-102675.dds"
+	}
+
+	##Icon Shine For: Churchs in every quarters
+	SpriteType = { 
+		name = "GFX_NAP_churchs_in_every_quarters-102675_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_churchs_in_every_quarters-102675.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_churchs_in_every_quarters-102675.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_churchs_in_every_quarters-102675.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Proclaim the Italian Kingdom
+	SpriteType = { 
+		name = "GFX_NAP_proclaim_the_italian_kingdom-102783"
+		texturefile = "gfx/interface/goals/GFX_NAP_proclaim_the_italian_kingdom-102783.dds"
+	}
+
+	##Icon Shine For: Proclaim the Italian Kingdom
+	SpriteType = { 
+		name = "GFX_NAP_proclaim_the_italian_kingdom-102783_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_proclaim_the_italian_kingdom-102783.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_proclaim_the_italian_kingdom-102783.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_proclaim_the_italian_kingdom-102783.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A great capital
+	SpriteType = { 
+		name = "GFX_NAP_a_great_capital-102032"
+		texturefile = "gfx/interface/goals/GFX_NAP_a_great_capital-102032.dds"
+	}
+
+	##Icon Shine For: A great capital
+	SpriteType = { 
+		name = "GFX_NAP_a_great_capital-102032_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_a_great_capital-102032.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_a_great_capital-102032.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_a_great_capital-102032.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Don Carlos
+	SpriteType = { 
+		name = "GFX_NAP_don_carlos-102684"
+		texturefile = "gfx/interface/goals/GFX_NAP_don_carlos-102684.dds"
+	}
+
+	##Icon Shine For: Don Carlos
+	SpriteType = { 
+		name = "GFX_NAP_don_carlos-102684_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_don_carlos-102684.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_don_carlos-102684.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_don_carlos-102684.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: We must continue the feudalism?
+	SpriteType = { 
+		name = "GFX_NAP_we_must_continue_the_feudalism-102657"
+		texturefile = "gfx/interface/goals/GFX_NAP_we_must_continue_the_feudalism-102657.dds"
+	}
+
+	##Icon Shine For: We must continue the feudalism?
+	SpriteType = { 
+		name = "GFX_NAP_we_must_continue_the_feudalism-102657_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_we_must_continue_the_feudalism-102657.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_we_must_continue_the_feudalism-102657.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_we_must_continue_the_feudalism-102657.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Internal policy
+	SpriteType = { 
+		name = "GFX_NAP_internal_policy-102689"
+		texturefile = "gfx/interface/goals/GFX_NAP_internal_policy-102689.dds"
+	}
+
+	##Icon Shine For: Internal policy
+	SpriteType = { 
+		name = "GFX_NAP_internal_policy-102689_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_internal_policy-102689.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_internal_policy-102689.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_internal_policy-102689.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Expand Bank of Naples
+	SpriteType = { 
+		name = "GFX_NAP_expand_bank_of_naples-102032"
+		texturefile = "gfx/interface/goals/GFX_NAP_expand_bank_of_naples-102032.dds"
+	}
+
+	##Icon Shine For: Expand Bank of Naples
+	SpriteType = { 
+		name = "GFX_NAP_expand_bank_of_naples-102032_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_expand_bank_of_naples-102032.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_expand_bank_of_naples-102032.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_expand_bank_of_naples-102032.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A french king
+	SpriteType = { 
+		name = "GFX_NAP_a_french_king-102656"
+		texturefile = "gfx/interface/goals/GFX_NAP_a_french_king-102656.dds"
+	}
+
+	##Icon Shine For: A french king
+	SpriteType = { 
+		name = "GFX_NAP_a_french_king-102656_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_a_french_king-102656.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_a_french_king-102656.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_a_french_king-102656.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Victory
+	SpriteType = { 
+		name = "GFX_NAP_victory-102656"
+		texturefile = "gfx/interface/goals/GFX_NAP_victory-102656.dds"
+	}
+
+	##Icon Shine For: Victory
+	SpriteType = { 
+		name = "GFX_NAP_victory-102656_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_victory-102656.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_victory-102656.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_victory-102656.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Noble Republic
+	SpriteType = { 
+		name = "GFX_NAP_noble_republic-102782"
+		texturefile = "gfx/interface/goals/GFX_NAP_noble_republic-102782.dds"
+	}
+
+	##Icon Shine For: Noble Republic
+	SpriteType = { 
+		name = "GFX_NAP_noble_republic-102782_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_noble_republic-102782.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_noble_republic-102782.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_noble_republic-102782.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Noble opposition
+	SpriteType = { 
+		name = "GFX_NAP_noble_opposition-101359"
+		texturefile = "gfx/interface/goals/GFX_NAP_noble_opposition-101359.dds"
+	}
+
+	##Icon Shine For: Noble opposition
+	SpriteType = { 
+		name = "GFX_NAP_noble_opposition-101359_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_noble_opposition-101359.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_noble_opposition-101359.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_noble_opposition-101359.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pope as king
+	SpriteType = { 
+		name = "GFX_NAP_pope_as_king-99965"
+		texturefile = "gfx/interface/goals/GFX_NAP_pope_as_king-99965.dds"
+	}
+
+	##Icon Shine For: Pope as king
+	SpriteType = { 
+		name = "GFX_NAP_pope_as_king-99965_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_pope_as_king-99965.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pope_as_king-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pope_as_king-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Emperor as king
+	SpriteType = { 
+		name = "GFX_NAP_the_emperor_as_king-102667"
+		texturefile = "gfx/interface/goals/GFX_NAP_the_emperor_as_king-102667.dds"
+	}
+
+	##Icon Shine For: The Emperor as king
+	SpriteType = { 
+		name = "GFX_NAP_the_emperor_as_king-102667_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_the_emperor_as_king-102667.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_the_emperor_as_king-102667.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_the_emperor_as_king-102667.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Meet the pope
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_pope-99965"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+	}
+
+	##Icon Shine For: Meet the pope
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_pope-99965_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_pope-99965.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Meet Venice
+	SpriteType = { 
+		name = "GFX_NAP_meet_venice-102666"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_venice-102666.dds"
+	}
+
+	##Icon Shine For: Meet Venice
+	SpriteType = { 
+		name = "GFX_NAP_meet_venice-102666_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_venice-102666.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_venice-102666.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_venice-102666.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: meet the emperor
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_emperor-102661"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_emperor-102661.dds"
+	}
+
+	##Icon Shine For: meet the emperor
+	SpriteType = { 
+		name = "GFX_NAP_meet_the_emperor-102661_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_meet_the_emperor-102661.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_emperor-102661.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_meet_the_emperor-102661.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Alliance with florence?
+	SpriteType = { 
+		name = "GFX_NAP_alliance_with_florence-102660"
+		texturefile = "gfx/interface/goals/GFX_NAP_alliance_with_florence-102660.dds"
+	}
+
+	##Icon Shine For: Alliance with florence?
+	SpriteType = { 
+		name = "GFX_NAP_alliance_with_florence-102660_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_alliance_with_florence-102660.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_alliance_with_florence-102660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_alliance_with_florence-102660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Diocesi power
+	SpriteType = { 
+		name = "GFX_NAP_diocesi_power-102668"
+		texturefile = "gfx/interface/goals/GFX_NAP_diocesi_power-102668.dds"
+	}
+
+	##Icon Shine For: Diocesi power
+	SpriteType = { 
+		name = "GFX_NAP_diocesi_power-102668_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_diocesi_power-102668.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_diocesi_power-102668.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_diocesi_power-102668.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Ask the crown of italy
+	SpriteType = { 
+		name = "GFX_NAP_ask_the_crown_of_italy-102690"
+		texturefile = "gfx/interface/goals/GFX_NAP_ask_the_crown_of_italy-102690.dds"
+	}
+
+	##Icon Shine For: Ask the crown of italy
+	SpriteType = { 
+		name = "GFX_NAP_ask_the_crown_of_italy-102690_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_ask_the_crown_of_italy-102690.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_ask_the_crown_of_italy-102690.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_ask_the_crown_of_italy-102690.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Interior instability
+	SpriteType = { 
+		name = "GFX_NAP_interior_instability-101359"
+		texturefile = "gfx/interface/goals/GFX_NAP_interior_instability-101359.dds"
+	}
+
+	##Icon Shine For: Interior instability
+	SpriteType = { 
+		name = "GFX_NAP_interior_instability-101359_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_interior_instability-101359.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_interior_instability-101359.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_interior_instability-101359.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Allies intervention
+	SpriteType = { 
+		name = "GFX_NAP_allies_intervention-102666"
+		texturefile = "gfx/interface/goals/GFX_NAP_allies_intervention-102666.dds"
+	}
+
+	##Icon Shine For: Allies intervention
+	SpriteType = { 
+		name = "GFX_NAP_allies_intervention-102666_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_allies_intervention-102666.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_allies_intervention-102666.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_allies_intervention-102666.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pietro Afan di Ribera
+	SpriteType = { 
+		name = "GFX_NAP_pietro_afan_di_ribera-102784"
+		texturefile = "gfx/interface/goals/GFX_NAP_pietro_afan_di_ribera-102784.dds"
+	}
+
+	##Icon Shine For: Pietro Afan di Ribera
+	SpriteType = { 
+		name = "GFX_NAP_pietro_afan_di_ribera-102784_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_pietro_afan_di_ribera-102784.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pietro_afan_di_ribera-102784.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_pietro_afan_di_ribera-102784.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Develope The capital
+	SpriteType = { 
+		name = "GFX_NAP_develope_the_capital-102675"
+		texturefile = "gfx/interface/goals/GFX_NAP_develope_the_capital-102675.dds"
+	}
+
+	##Icon Shine For: Develope The capital
+	SpriteType = { 
+		name = "GFX_NAP_develope_the_capital-102675_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_develope_the_capital-102675.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_develope_the_capital-102675.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_develope_the_capital-102675.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Feed the poor
+	SpriteType = { 
+		name = "GFX_NAP_feed_the_poor-102029"
+		texturefile = "gfx/interface/goals/GFX_NAP_feed_the_poor-102029.dds"
+	}
+
+	##Icon Shine For: Feed the poor
+	SpriteType = { 
+		name = "GFX_NAP_feed_the_poor-102029_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_feed_the_poor-102029.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_feed_the_poor-102029.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_feed_the_poor-102029.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Agrarian question
+	SpriteType = { 
+		name = "GFX_NAP_agrarian_question-102028"
+		texturefile = "gfx/interface/goals/GFX_NAP_agrarian_question-102028.dds"
+	}
+
+	##Icon Shine For: Agrarian question
+	SpriteType = { 
+		name = "GFX_NAP_agrarian_question-102028_shine"
+		texturefile = "gfx/interface/goals/GFX_NAP_agrarian_question-102028.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_agrarian_question-102028.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_NAP_agrarian_question-102028.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

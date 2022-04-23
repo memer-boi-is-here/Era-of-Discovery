@@ -1,0 +1,199 @@
+ideas = {
+	
+	country = {
+	
+		hanseatic_league = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = hanseatic_league
+			
+			modifier = {
+				 trade_opinion_factor = 0.2
+				 production_speed_buildings_factor = 0.3
+				 min_export = 0.1
+			}
+
+		}
+    }
+
+
+	political_advisor = {
+	
+    	john_albert_i = {
+			
+			picture = john_albert_i
+			
+			allowed = {
+				original_tag = MEK
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ulrich_iii = {
+			
+			picture = ulrich_iii
+			
+			allowed = {
+				original_tag = MEK
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		charles_i = {
+			
+			picture = charles_i
+			
+			allowed = {
+				original_tag = MEK
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		philip_of_mecklenburg = {
+
+			picture = philip_of_mecklenburg
+			
+			allowed = {
+				original_tag = MEK
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		john_albert_i_a = {
+
+			picture = john_albert_i
+			
+			allowed = {
+				original_tag = MEK
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+
+	    john_albert_i_b = {
+			ledger = army
+
+			picture = john_albert_i
+			
+			allowed = {
+				original_tag = MEK
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		philip_of_mecklenburg_a = {
+			ledger = army
+			
+			picture = philip_of_mecklenburg
+			
+			allowed = {
+				original_tag = MEK
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    ulrich_iii_a = {
+		    ledger = army
+			
+			picture = ulrich_iii
+			
+			allowed = {
+				original_tag = MEK
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

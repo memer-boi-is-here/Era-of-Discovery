@@ -1,0 +1,19 @@
+state={
+	id=998
+	name="Amakia"
+	
+	history={
+		owner = OIR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = OIR
+	}
+	
+	provinces={
+		4806 7708 10202 12616
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

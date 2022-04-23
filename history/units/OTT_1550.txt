@@ -1,0 +1,595 @@
+division_template = {
+	name = "Pike Infantry"
+ 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = OTT_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		OTTineer = { x = 0 y = 1 }   # OTT Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = OTT_CAV_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = OTT_INF_02
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		OTTineer = { x = 0 y = 0 }   # OTT Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = OTT_CAV_02
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = OTT_CAV_03
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11586
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11586
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 6611
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 716
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 716
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6619
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11747
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11747
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11594
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12039
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12039
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6685
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11954
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1071
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 6703
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 2097
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2097
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9690
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4583
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6935
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 864
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1463
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 5014
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6826
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 10793
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 12855
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 78
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 12726
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2089
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4512
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4512
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4512
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 3686
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3686
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 3686
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9833
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9833
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9833
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9833
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9833
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "Imperial Ottoman Navy"			
+		naval_base = 9833
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 9833
+			### Carrack Division 1 ###									
+			ship = { name = "La Sultana" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TUR version_name = "Carrack Class" } } }
+			ship = { name = "Constantinople" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TUR version_name = "Carrack Class" } } }	
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 9833									
+			# Cruiser Division 6 #		
+			ship = { name = "Osman" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "Galleon Class" } } }
+			ship = { name = "Celebi" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "Galleon Class" } } }
+			ship = { name = "Mustafa Pasha" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TUR version_name = "Galleon Class" } } }
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 9833
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "Anatolia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Suleiman" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Beneghem" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Rodos" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Tre Naranceri" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Corona Ottomana" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Cedid Bomba" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Masudiya" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Fivrie" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Nachis" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Göke" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Murad" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+        }			 
+		task_force = {					
+			name = "Galley, Fleet"				
+			location = 8085
+			### Galley Squadron 2 ###				
+			# 2nd Galley Division #				
+			ship = { name = "Mansuriye" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Fethiye" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Barbarossa" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Şadiye" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Danzik" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Fayoum" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Aké" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Sham" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Beylan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Rose of Tunis" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Surya" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Troy" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+        }
+		task_force = {					
+			name = "Galley, Fleet"				
+			location = 4076
+			### Galley Squadron 2 ###				
+			# 2nd Galley Division #				
+			ship = { name = "Tevfikullah" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Berk-i Bahri" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Şihab-ı Sakıb" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Ainduie" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Faouish" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Nizâmiye" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Raousierie" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Bedr-i zafar" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Metelin" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Fahti Bahri" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+			ship = { name = "Selimiye" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Galley Class" } } }
+        }
+    }
+	
+}
+

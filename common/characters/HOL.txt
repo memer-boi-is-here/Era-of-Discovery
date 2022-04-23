@@ -1,0 +1,394 @@
+characters = {
+	HOL_mary_of_austria = {
+		name = "Mary of Austria"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/portrait_mary_of_austria.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	HOL_lamoral_count_of_egmont = {
+		name = "Lamoral, Count of Egmont"
+		advisor = {
+			slot = political_advisor
+			idea_token = lamoral_of_egmont
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					chief_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = lamoral_of_egmont_a
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = lamoral_of_egmont_b
+			ledger  = army 
+				allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_lamoral_of_egmont"
+			}
+			army = {
+				large = "gfx/leaders/HOL/portrait_lamoral.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	HOL_emmanuel_philibert_of_savoy = {
+		name = "Emmanuel Philibert of Savoy"
+		advisor = {
+			slot = political_advisor
+			idea_token = emmanuel_philibert
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					foreign_diplomat 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_emmanuel_philibert"
+			}
+			army = {
+				large = "gfx/leaders/HOL/portrait_emmanuel_philibert.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	HOL_william_the_silent_prince_of_orange = {
+		name = "William the Silent, Prince of Orange"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/HOL/portrait_william_the_silent.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	HOL_john_vi_a = {
+		name = "John VI of Nassau-Dillenburg"
+		advisor = {
+			slot = high_command
+			idea_token = john_vi_a
+			ledger  = army 
+				allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = john_vi
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					fortification_engineer 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_vi"
+			}
+			army = {
+				large = "gfx/leaders/HOL/portrait_john_vi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	HOL_sancho_davila = {
+		name = "Sancho d'Avila"
+		advisor = {
+			slot = high_command
+			idea_token = sancho_avila_a
+			ledger  = navy 
+				allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = sancho_avila
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_sancho_avila"
+			}
+			army = {
+				large = "gfx/leaders/HOL/portrait_sancho_avila.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	HOL_petrus_janssen = {
+		name = "Petrus Janssen"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1560.1.1.12"
+			id = -1
+		}
+	}
+	HOL_mathias_t_mannetje = {
+		name = "Mathias 't Mannetje"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1570.1.1.12"
+			id = -1
+		}
+	}
+	HOL_mathias_hilberdink = {
+		name = "Mathias Hilberdink"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1564.1.1.12"
+			id = -1
+		}
+	}
+	HOL_william_the_silent = {
+		advisor = {
+			slot = political_advisor
+			idea_token = william_the_silent
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					finance_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				on_add  = {
+					add_to_variable  = {
+						money_factor = 0.500
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				modifier  = {
+					custom_modifier_tooltip  = weekly_income_tt
+				}
+		}
+		name = "william_the_silent"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_the_silent"
+			}
+		}
+	}
+	HOL_louis_of_nassau_a = {
+		advisor = {
+			slot = high_command
+			idea_token = louis_of_nassau_a
+			ledger  = army 
+				allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					army_logistics_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "louis_of_nassau_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_louis_of_nassau"
+			}
+		}
+	}
+	HOL_william_the_silent_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = william_the_silent_a
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "william_the_silent_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_the_silent"
+			}
+		}
+	}
+	HOL_louis_of_nassau = {
+		advisor = {
+			slot = political_advisor
+			idea_token = louis_of_nassau
+			allowed  = {
+					original_tag  = HOL
+				}
+				traits  = {
+					explorer 
+				}
+				on_add  = {
+					add_to_variable  = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "louis_of_nassau"
+		portraits = {
+			army = {
+				small = "GFX_idea_louis_of_nassau"
+			}
+		}
+	}
+}

@@ -1,0 +1,300 @@
+technologies = {
+	university = {
+
+		# small boost to research speed
+		research_speed_factor = 0.03
+		
+		
+
+		path = {
+			leads_to_tech = decryption_1 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = encryption_1 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = university_2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1550
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1551.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	decryption_1 = {
+
+		# small boost to research speed
+		decryption_factor = 0.03
+		
+		research_cost = 1
+		start_year = 1552
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		path = {
+			leads_to_tech = decryption_2 
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1553.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	decryption_2 = {
+
+		# small boost to research speed
+		decryption_factor = 0.04
+		
+		path = {
+			leads_to_tech = decryption_3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1554
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1555.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	decryption_3 = {
+
+		# small boost to research speed
+		decryption_factor = 0.05
+
+		research_cost = 1
+		start_year = 1556
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1557.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	encryption_1 = {
+
+		# small boost to research speed
+		encryption_factor = 0.03
+		
+		research_cost = 1
+		start_year = 1552
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		path = {
+			leads_to_tech = encryption_2 
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1553.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}	
+	}
+
+
+	encryption_2 = {
+
+		# small boost to research speed
+		encryption_factor = 0.04
+		
+		path = {
+			leads_to_tech = encryption_3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1554
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1555.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	encryption_3 = {
+
+		# small boost to research speed
+		encryption_factor = 0.05
+
+		research_cost = 1
+		start_year = 1556
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1557.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+
+	university_2 = {
+
+		# small boost to research speed
+		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = university_3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1553
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1554.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	university_3 = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+	
+
+		research_cost = 1
+		start_year = 1556
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1557.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+}

@@ -1,0 +1,357 @@
+ideas = {
+
+    country = {
+
+	    religious_toleration = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = religious_toleration
+			
+			modifier = {
+			    weekly_manpower = 3000
+				local_non_core_manpower = 0.4
+				stability_factor = 0.1
+			}
+		}
+		
+		polish_golden_age = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = polish_golden_age
+			
+			modifier = {
+			    war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				political_power_gain = 0.3
+			}
+		}
+		
+		polish_expansionism = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = polish_expansionism
+			
+			modifier = {
+			    justify_war_goal_time = -0.3
+				army_attack_factor = 0.05
+				army_speed_factor = 0.15
+				army_defence_factor = -0.05
+			}
+		}
+
+    }
+
+
+    political_advisor = {
+
+	    jan_tarnowski = {
+
+			picture = jan_tarnowski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { chief_minister }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mikolaj_dzierzgowski = {
+
+			picture = mikolaj_dzierzgowski
+
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { primate_of_poland }
+			
+		    ai_will_do = {
+				factor = 1
+			}
+		}
+
+	    jan_zamoyski = {
+			
+			picture = jan_zamoyski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		jerzy_jazlowiecki = {
+			
+			picture = jerzy_jazlowiecki
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrzej_zborowski = {
+			
+			picture = andrzej_zborowski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sebastian_lubomirski = {
+			
+			picture = sebastian_lubomirski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+    }
+
+	army_chief = {
+				
+		
+		jan_tarnowski_a = {
+			
+			picture = jan_tarnowski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jan_zamoyski_a = {
+			
+			picture = jan_zamoyski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+		
+		sebastian_lubomirski_a = {
+			
+			picture = sebastian_lubomirski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jan_opalinski = {
+			
+			picture = jan_opalinski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+	
+		jerzy_jazlowiecki_a = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = jerzy_jazlowiecki
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrzej_zborowski_a = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = andrzej_zborowski
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		jan_krzysztof_tarnowski = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = jan_krzysztof_tarnowski
+			
+			traits = { army_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jan_firlej = {
+			ledger = army
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = jan_firlej
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,446 @@
+division_template = {
+	name = "Pike Infantry"
+ 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = PER_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # PERnish Arty Rgt/Bge had 2 Bn 105mm arty
+		PERineer = { x = 0 y = 1 }   # PER Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = PER_CAV_01
+	# Note: PERnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = PER_INF_02
+	# Note: PERnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		PERineer = { x = 0 y = 0 }   # PER Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = PER_CAV_02
+	# Note: PERnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = PER_CAV_03
+	# Note: PERnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10837
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10837
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "Imperial Persian Navy"			
+		naval_base = 5005
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 5005
+			### Carrack Division 1 ###									
+			ship = { name = "Tabriz" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = PER version_name = "Carrack Class" } } }
+			ship = { name = "Safavid" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = PER version_name = "Carrack Class" } } }	
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 5005								
+			# Cruiser Division 6 #		
+			ship = { name = "Tahmasp" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PER version_name = "Galleon Class" } } }
+			ship = { name = "Shah Abbas" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PER version_name = "Galleon Class" } } }
+			ship = { name = "Ormuz" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PER version_name = "Galleon Class" } } }
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 5005
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "Persepolis" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Babylon" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Khan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Nasser" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Xerxes" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Tehran" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Caspian" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Baku" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+			ship = { name = "Hindu Kush" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = PER version_name = "Galley Class" } } }
+        }			 
+    }	
+}
+

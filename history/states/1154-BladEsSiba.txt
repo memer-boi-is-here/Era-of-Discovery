@@ -1,0 +1,22 @@
+
+state={
+	id=1154
+	name="Blad es-Siba"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = BLD
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = BLD
+	}
+
+	provinces={
+		1989 4022 4154 4933 7908 7958 8046
+	}
+}

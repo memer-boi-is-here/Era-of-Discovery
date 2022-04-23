@@ -1,0 +1,22 @@
+state={
+	id=1134
+	name="Outer Nepal"
+	manpower = 1000
+
+	state_category=rural
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = NEP
+
+	}
+
+	provinces={
+		1129 1898 2076 3989 5002 5157 7106 10021 12708
+	}
+}

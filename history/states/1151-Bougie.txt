@@ -1,0 +1,26 @@
+
+state={
+	id=1151
+	name="Bougie"
+	manpower = 21331
+	
+	state_category = town
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+			
+			4046 = {
+				naval_base = 1
+
+			}
+			
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		4046
+	}
+}

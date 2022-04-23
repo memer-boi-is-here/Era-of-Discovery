@@ -1,0 +1,575 @@
+RUS_colinize_the_east = {
+
+	settle_northern_urals = {
+	    icon = generic_form_nation
+	    cost = 50
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_colinize_the_east
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+	        transfer_state = 581
+		    random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }    
+	    }   
+	}
+	
+	settle_salekhard = {
+	    icon = generic_form_nation
+	    cost = 50
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_colinize_the_east
+			controls_state = 581
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+	        transfer_state = 579
+		    random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }    
+	    }   
+	}
+	
+	settle_tobolsk = {
+	    icon = generic_form_nation
+	    cost = 50
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_colinize_the_east
+			controls_state = 581
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+	        transfer_state = 580
+		    random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }    
+	    }   
+	}
+}
+
+RUS_reclaim_kiev_cores = {
+
+     core_khante_of_kazan = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 251
+			controls_state = 250
+			controls_state = 249
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 251
+		     add_state_core = 250
+		     add_state_core = 249
+			 transfer_state = 251
+		     transfer_state = 250
+		     transfer_state = 249
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+    
+	core_north_astrakhan_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 257
+			controls_state = 255
+			controls_state = 239
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 257
+		     add_state_core = 255
+		     add_state_core = 239
+			 transfer_state = 257
+		     transfer_state = 255
+		     transfer_state = 239
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_east_astrakhan_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 652
+			controls_state = 651
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 652
+		     add_state_core = 651
+			 transfer_state = 652
+		     transfer_state = 651
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_central_astrakhan_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 407
+			controls_state = 401
+			controls_state = 217
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 407
+		     add_state_core = 401
+		     add_state_core = 217
+			 transfer_state = 407
+		     transfer_state = 401
+		     transfer_state = 217
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_south_astrakhan_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 839
+			controls_state = 237
+			controls_state = 236
+			controls_state = 235
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 839
+		     add_state_core = 237
+		     add_state_core = 236
+		     add_state_core = 235
+			 transfer_state = 839
+		     transfer_state = 237
+		     transfer_state = 236
+		     transfer_state = 235
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_north_crimean_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 260
+			controls_state = 240
+			controls_state = 220
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 260
+		     add_state_core = 240
+		     add_state_core = 220
+			 transfer_state = 260
+		     transfer_state = 240
+		     transfer_state = 220
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_east_crimean_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 265
+			controls_state = 245
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 265
+		     add_state_core = 245
+		     transfer_state = 265
+		     transfer_state = 245
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_central_crimean_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 228
+			controls_state = 227
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 228
+		     add_state_core = 227
+			 transfer_state = 228
+		     transfer_state = 227
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_south_crimean_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 238
+			controls_state = 234
+			controls_state = 218
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 238
+		     add_state_core = 234
+		     add_state_core = 218
+			 transfer_state = 238
+		     transfer_state = 234
+		     transfer_state = 218
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	}
+	
+	core_west_crimean_khanate = {
+	    icon = generic_form_nation
+	    cost = 25
+	    fire_only_once = yes
+
+	    available = {
+		    has_completed_focus = RUS_reclaim_kiev_cores
+			controls_state = 200
+			controls_state = 196
+			controls_state = 137
+	    }
+	    days_remove = 35
+	    complete_effect = {
+		    random_owned_controlled_state = { 
+			    limit = { industrial_complex > 2 }
+			    add_building_construction = {
+				    type = industrial_complex
+				    level = -1
+				    instant_build = yes
+			   }
+		   }
+	    }
+	    remove_effect = {
+		     add_state_core = 200
+		     add_state_core = 196
+		     add_state_core = 137
+			 transfer_state = 200
+		     transfer_state = 196
+		     transfer_state = 137
+			 random_owned_controlled_state = {
+			      limit = { 
+				      free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+					  } 
+				  }
+			      add_building_construction = {
+				      type = industrial_complex
+				      level = 1
+				      instant_build = yes
+			     }
+		    }
+		}
+	
+}

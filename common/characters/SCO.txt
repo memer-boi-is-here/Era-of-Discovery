@@ -1,0 +1,647 @@
+characters = {
+	SCO_mary_stuart = {
+		name = "Mary Stuart"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SCO/portrait_mary_stuart.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { inexperienced_monarch }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	SCO_james_hamilton_duke_of_chatellerault = {
+		name = "James Hamilton, Duke of Chatellerault"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SCO/portrait_james_hamilton.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist politically_connected war_hero unyielding_defender }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SCO_henry_stewart_1st_lord_methvan = {
+		name = "Henry Stewart, 1st Lord Methvan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SCO/portrait_henry_stewart.dds"
+			}
+		}
+		field_marshal = {
+			traits = { trickster hill_fighter aggressive_assaulter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SCO_james_stewart = {
+		name = "James Stewart, 1st Earl of Moray"
+		advisor = {
+			slot = army_chief
+			idea_token = james_stewart
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_james_stewart"
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_james_stewart.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless winter_specialist trait_mountaineer ambusher }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SCO_matthew_stewart_lennox = {
+		name = "Matthew Stewart, 4th Earl of Lennox"
+		advisor = {
+			slot = high_command
+			idea_token = matthew_stewart_lennox
+			ledger  = army 
+				allowed = {
+					original_tag = SCO
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_matthew_stewart_lennox"
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_matthew_stewart.dds"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist hill_fighter fortress_buster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_archibald_douglas_angus = {
+		name = "Archibald Douglas, 6th Earl of Angus"
+		advisor = {
+			slot = high_command
+			idea_token = archibald_douglas_angus
+			ledger  = army 
+				allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_archibald_douglas_angus"
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_archibald_douglas.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless trickster scavenger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_james_douglas_4th_earl_of_morton = {
+		name = "James Douglas, 4th Earl of Morton"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_james_douglas.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_engineer guerilla_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_sébastien_de_luxembourg_duke_of_penthièvre = {
+		name = "Sébastien de Luxembourg, Duke of Penthièvre"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_sebastien.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected invader_ii }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_william_kirkcaldy_of_grange = {
+		name = "William Kirkcaldy of Grange"
+		advisor = {
+			slot = navy_chief
+			idea_token = william_kirkcaldy_of_grange
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_william_kirkcaldy_of_grange"
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_william_kirkcaldy.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly blue_water_expert cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_william_murray_of_tullibardine_ = {
+		name = "William Murray of Tullibardine "
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_william_murray.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_james_hepburn_4th_earl_of_bothwell = {
+		name = "James Hepburn, 4th Earl of Bothwell"
+		advisor = {
+			slot = political_advisor
+			idea_token = james_hepburn_earl_of_bothwell
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					explorer 
+				}
+				on_add  = {
+					add_to_variable  = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = ""
+			}
+			navy = {
+				small = "GFX_idea_james_hepburn_earl_of_bothwell"
+			}
+			army = {
+				large = "gfx/leaders/SCO/portrait_james_hepburn.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SCO_angus_limond = {
+		name = "Angus Limond"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	SCO_douglas_williams = {
+		name = "Douglas Williams"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	SCO_douglas_mccoy = {
+		name = "Douglas McCoy"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1555.1.1.12"
+			id = -1
+		}
+	}
+	SCO_george_seton = {
+		advisor = {
+			slot = political_advisor
+			idea_token = george_seton
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					foreign_diplomat 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "george_seton"
+		portraits = {
+			army = {
+				small = "GFX_idea_george_seton"
+			}
+		}
+	}
+	SCO_mary_of_guise = {
+		advisor = {
+			slot = political_advisor
+			idea_token = mary_of_guise
+			allowed  = {
+					original_tag  = SCO
+				}
+				available  = {
+					has_completed_focus  = sco_legitimate_mary_of_guise 
+				}
+				traits  = {
+					regent 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "mary_of_guise"
+		portraits = {
+			army = {
+				small = "GFX_idea_mary_of_guise"
+			}
+		}
+	}
+	SCO_archibald_campbell_earl_of_argyll_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = archibald_campbell_earl_of_argyll_a
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "archibald_campbell_earl_of_argyll_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_archibald_campbell_earl_of_argyll"
+			}
+		}
+	}
+	SCO_archibald_campbell_earl_of_argyll = {
+		advisor = {
+			slot = political_advisor
+			idea_token = archibald_campbell_earl_of_argyll
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					lord_high_treasurer 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				on_add  = {
+					add_to_variable  = {
+						money_factor = 0.500
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				modifier  = {
+					custom_modifier_tooltip  = weekly_income_tt
+				}
+		}
+		name = "archibald_campbell_earl_of_argyll"
+		portraits = {
+			army = {
+				small = "GFX_idea_archibald_campbell_earl_of_argyll"
+			}
+		}
+	}
+	SCO_gilbert_kennedy = {
+		advisor = {
+			slot = high_command
+			idea_token = gilbert_kennedy
+			ledger  = army 
+				allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "gilbert_kennedy"
+		portraits = {
+			army = {
+				small = "GFX_idea_gilbert_kennedy"
+			}
+		}
+	}
+	SCO_john_erskine = {
+		advisor = {
+			slot = political_advisor
+			idea_token = john_erskine
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					fortification_engineer 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "john_erskine"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_erskine"
+			}
+		}
+	}
+	SCO_james_beaton_archbishop_of_glasgow = {
+		advisor = {
+			slot = political_advisor
+			idea_token = james_beaton_archbishop_of_glasgow
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					archbishop_of_glasgow 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "james_beaton_archbishop_of_glasgow"
+		portraits = {
+			army = {
+				small = "GFX_idea_james_beaton_archbishop_of_glasgow"
+			}
+		}
+	}
+	SCO_hugh_montgomerie = {
+		advisor = {
+			slot = high_command
+			idea_token = hugh_montgomerie
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "hugh_montgomerie"
+		portraits = {
+			army = {
+				small = "GFX_idea_hugh_montgomerie"
+			}
+		}
+	}
+	SCO_william_maitland = {
+		advisor = {
+			slot = political_advisor
+			idea_token = william_maitland
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					construction_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "william_maitland"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_maitland"
+			}
+		}
+	}
+	SCO_john_knox = {
+		advisor = {
+			slot = political_advisor
+			idea_token = john_knox
+			allowed  = {
+					original_tag  = SCO
+				}
+				available  = {
+					has_completed_focus  = sco_john_is_the_new_religious_head 
+				}
+				traits  = {
+					the_reverend 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "john_knox"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_knox"
+			}
+		}
+	}
+	SCO_william_murray_of_tullibardine = {
+		advisor = {
+			slot = navy_chief
+			idea_token = william_murray_of_tullibardine
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "william_murray_of_tullibardine"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_murray_of_tullibardine"
+			}
+		}
+	}
+	SCO_james_hamilton_duke_of_chatellerault = {
+		advisor = {
+			slot = political_advisor
+			idea_token = james_hamilton_duke_of_chatellerault
+			allowed  = {
+					original_tag  = SCO
+				}
+				traits  = {
+					chief_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "james_hamilton_duke_of_chatellerault"
+		portraits = {
+			army = {
+				small = "GFX_idea_james_hamilton_duke_of_chatellerault"
+			}
+		}
+	}
+}

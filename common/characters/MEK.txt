@@ -1,0 +1,293 @@
+characters = {
+	MEK_henry_v = {
+		name = "Henry V"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEK/Henry-V.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	MEK_philip_duke_of_mecklenburg = {
+		name = "Philip, Duke of Mecklenburg"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/MEK/portrait_philip_of_mecklenburg.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	MEK_john_albert_i = {
+		name = "John Albert I"
+		advisor = {
+			slot = high_command
+			idea_token = john_albert_i_b
+			ledger = army 
+				allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = john_albert_i
+			allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_albert_i"
+			}
+			army = {
+				large = "gfx/leaders/MEK/portrait_john_albert_i.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	MEK_ulrich_iii = {
+		name = "Ulrich III"
+		advisor = {
+			slot = high_command
+			idea_token = ulrich_iii_a
+			ledger = army 
+				allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					army_logistics_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ulrich_iii
+			allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_ulrich_iii"
+			}
+			army = {
+				large = "gfx/leaders/MEK/portrait_ulrich_iii.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	MEK_charles_i = {
+		name = "Charles I"
+		advisor = {
+			slot = political_advisor
+			idea_token = charles_i
+			allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_charles_i"
+			}
+			army = {
+				large = "gfx/leaders/MEK/portrait_charles_i.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	MEK_adolf_lang = {
+		name = "Adolf Lang"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	MEK_hans_rall = {
+		name = "Hans Rall"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1569.1.1.12"
+			id = -1
+		}
+	}
+	MEK_fritz_wagner = {
+		name = "Fritz Wagner"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	MEK_john_albert_i_a = {
+		advisor = {
+			slot = navy_chief
+			idea_token = john_albert_i_a
+			allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_albert_i_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_albert_i"
+			}
+		}
+	}
+	MEK_philip_of_mecklenburg_a = {
+		advisor = {
+			slot = high_command
+			idea_token = philip_of_mecklenburg_a
+			ledger = army 
+				allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "philip_of_mecklenburg_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_philip_of_mecklenburg"
+			}
+		}
+	}
+	MEK_philip_of_mecklenburg = {
+		advisor = {
+			slot = army_chief
+			idea_token = philip_of_mecklenburg
+			allowed = {
+					original_tag = MEK
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "philip_of_mecklenburg"
+		portraits = {
+			army = {
+				small = "GFX_idea_philip_of_mecklenburg"
+			}
+		}
+	}
+}

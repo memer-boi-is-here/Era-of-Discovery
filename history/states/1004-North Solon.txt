@@ -1,0 +1,19 @@
+state={
+	id=1004
+	name="North Solon"
+	
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOL
+	}
+	
+	provinces={
+		1730 1845 4832 4847 7851 10678 12543 12591 12660
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

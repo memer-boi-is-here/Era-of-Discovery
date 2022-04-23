@@ -1,0 +1,23 @@
+
+state={
+	id=1175
+	name="Ragusa"
+	manpower=55000
+	
+	state_category = large_town
+
+	history={
+		owner = RAG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 2
+		}
+		add_core_of = RAG
+	}
+
+	provinces={
+		6889 3868 
+	}
+}

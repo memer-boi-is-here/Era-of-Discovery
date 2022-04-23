@@ -1,0 +1,18 @@
+state={
+	id=1028
+	name="Kozhikode"
+	history={
+		owner = KOZ
+		add_core_of = KOZ
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		7447 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

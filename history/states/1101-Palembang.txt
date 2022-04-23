@@ -1,0 +1,18 @@
+state={
+	id=1101
+	name="Palembang"
+	history={
+		owner = PLA
+		add_core_of = PLA
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7384 7396 1401 12268 12296 10322 4364 4381 1274 10150
+	}
+	manpower=530218
+	buildings_max_level_factor=3.000
+	state_category=rural
+}

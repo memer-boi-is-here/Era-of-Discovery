@@ -1,0 +1,22 @@
+state={
+	id=761
+	name="STATE_761"
+	resources={
+		oil=3
+	}
+	provinces={
+		1672 1776 4677 4719 4745 4852 7697 7725 7743 7786 10541 10559 10612 10638 10683 12537 12622 12690 13150 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = MON
+		add_core_of = MON
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+}

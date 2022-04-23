@@ -1,0 +1,25 @@
+state={
+	id=983
+	name="STATE_983"
+	resources={
+		oil=6
+	}
+
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1630 2028 4888 5057 12327 12732 12776
+	}
+	manpower=289640
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

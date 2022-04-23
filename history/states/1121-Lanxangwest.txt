@@ -1,0 +1,23 @@
+
+state={
+	id=1121
+	name="West Lan Xang"
+
+	history={
+		owner = XNL
+		add_core_of = XNL
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1357 1535 1548 4511 4582 7516 10384 12360 12373 12417 
+	}
+	manpower=2002242
+	buildings_max_level_factor=4.000
+	state_category=rural
+	local_supplies=0.000
+}

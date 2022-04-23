@@ -1,0 +1,326 @@
+﻿capital = 152
+
+recruit_character = AUS_ferdinand_i
+recruit_character = AUS_maximilian_archduke_of_austria
+recruit_character = AUS_ferdinand_ii_archduke_of_further_austria
+recruit_character = AUS_giovanni_battista_castaldo
+recruit_character = AUS_guglielmo_gonzaga_duke_of_mantua
+recruit_character = AUS_stephen_báthory
+recruit_character = AUS_peter_ernst_i_von_mansfeldvorderort
+recruit_character = AUS_ruprecht_von_eggenberg
+recruit_character = AUS_richard_strein
+recruit_character = AUS_george_khevenhuller
+recruit_character = AUS_istvan_dobo
+recruit_character = AUS_alvaro_de_bazan_1st_marquess_of_santa_cruz
+recruit_character = AUS_miguel_lopez_de_legazpi
+recruit_character = AUS_juan_martinez_de_recalde
+recruit_character = AUS_pedro_menendez_de_aviles
+recruit_character = AUS_adolf_meyer
+recruit_character = AUS_staffan_muller
+recruit_character = AUS_hans_behrmann
+recruit_character = AUS_johan_jakob_fugger
+recruit_character = AUS_miguel_lopez
+recruit_character = AUS_richard_strein
+recruit_character = AUS_alvaro_de_bazan
+recruit_character = AUS_simon_renard
+recruit_character = AUS_bartholomeus_welser
+recruit_character = AUS_hugo_blotius
+recruit_character = AUS_cristoforo_madruzzo
+recruit_character = AUS_antonin_brus_mohenlnice
+recruit_character = AUS_jan_cornelisz_vermeyen
+recruit_character = AUS_ferdinand_ii
+	
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+oob = "AUS_1550"
+
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+}
+
+set_convoys = 40
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+add_ideas = {
+    religious_division_within_the_empire
+	anti_ottoman_policy
+	civil_unrest_in_bohemia
+	king_of_the_romans
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	picture = "portrait_ferdinand_i.dds"
+	ideology = despotism
+	traits = {
+		peacemaker
+	}
+}
+
+create_field_marshal = {
+	name = "Ferdinand I"
+	picture = "portrait_ferdinand_i.dds"
+	traits = { expert_delegator organizer brilliant_strategist trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Maximilian, Archduke of Austria"
+	picture = "portrait_maximilian_ii.dds"
+	traits = { bearer_of_artillery trait_engineer inflexible_strategist infantry_leader  }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Ferdinand II, Archduke of Further Austria"
+	picture = "portrait_ferdinand_ii.dds"
+	traits = { aggressive_assaulter trickster trait_reckless }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Giovanni Battista Castaldo"
+	picture = "portrait_giovanni_battista_castaldo.dds"
+	traits = { adaptable infantry_leader old_guard war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Guglielmo Gonzaga, Duke of Mantua"
+	picture = "portrait_guglielmo_gonzaga.dds"
+	traits = { fortress_buster trait_engineer harsh_leader politically_connected }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Stephen Báthory"
+	picture = "portrait_stephen_bathory.dds"
+	traits = { ambusher winter_specialist cavalry_leader cavalry_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Peter Ernst I von Mansfeld-Vorderort"
+	picture = "portrait_peter_ernst_von_mansfeld.dds"
+	traits = { infantry_expert hill_fighter career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ruprecht von Eggenberg"
+	picture = "portrait_ruprecht_von_eggenberg.dds"
+	traits = { scavenger trait_mountaineer organizer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Richard Strein"
+	picture = "portrait_richard_strein.dds"
+	traits = { guerilla_fighter urban_assault_specialist infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "George Khevenhuller"
+	picture = "portrait_george_khevenhuller.dds"
+	traits = { naval_invader ranger }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Istvan Dobo"
+	picture = "portrait_istvan_dobo.dds"
+	traits = { bearer_of_artillery inflexible_strategist  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Alvaro de Bazan, 1st Marquess of Santa Cruz"
+	picture = "portrait_alvaro_de_bazan.dds"
+	traits = { big_guns_expert ironside battleship_adherent old_guard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Miguel Lopez de Legazpi"
+	picture = "portrait_miguel_lopez.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Juan Martinez de Recalde"
+	picture = "portrait_juan_martinez.dds"
+	traits = { destroyer_leader fleet_protector chief_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Pedro Menendez de Aviles"
+	picture = "portrait_pedro_menendez.dds"
+	traits = { spotter gentlemanly }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+set_autonomy = {
+	target = SLA
+	autonomous_state = autonomy_integrated_puppet
+}
+
+add_ideas = Catholic
+
+add_ideas = austrian_traditions
+
+give_guarantee = BAY
+give_guarantee = SAL
+give_guarantee = SLA
+give_guarantee = BRN
+give_guarantee = SAX
+give_guarantee = POM
+give_guarantee = RAV
+give_guarantee = WUR
+give_guarantee = ULM
+give_guarantee = ALS
+give_guarantee = BAD
+give_guarantee = LOR
+give_guarantee = ANS
+give_guarantee = PLT
+give_guarantee = WRZ
+give_guarantee = THU
+give_guarantee = MAI
+give_guarantee = FRK
+give_guarantee = TRR
+give_guarantee = HES
+give_guarantee = GOL
+give_guarantee = BRU
+give_guarantee = MEK
+give_guarantee = LUN
+give_guarantee = LUB
+give_guarantee = HAM
+give_guarantee = HLS
+give_guarantee = DIE
+give_guarantee = VER
+give_guarantee = BRE
+give_guarantee = EFR
+give_guarantee = OLD
+give_guarantee = CLG
+give_guarantee = MUN
+give_guarantee = KLE
+give_guarantee = DOR
+give_guarantee = AAC
+give_guarantee = LIE
+give_guarantee = HOL
+give_guarantee = LOR
+
+add_opinion_modifier = { target = FRA modifier = large_decrease }
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+add_opinion_modifier = { target = SPR modifier = huge_increase }
+add_opinion_modifier = { target = SAX modifier = medium_decrease }
+add_opinion_modifier = { target = MEK modifier = medium_decrease }
+add_opinion_modifier = { target = BRN modifier = medium_decrease }

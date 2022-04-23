@@ -1,0 +1,160 @@
+﻿capital = 6
+
+recruit_character = HOL_mary_of_austria
+recruit_character = HOL_lamoral_count_of_egmont
+recruit_character = HOL_emmanuel_philibert_of_savoy
+recruit_character = HOL_william_the_silent_prince_of_orange
+recruit_character = HOL_john_vi_a
+recruit_character = HOL_sancho_davila
+recruit_character = HOL_petrus_janssen
+recruit_character = HOL_mathias_t_mannetje
+recruit_character = HOL_mathias_hilberdink
+recruit_character = HOL_william_the_silent
+recruit_character = HOL_louis_of_nassau_a
+recruit_character = HOL_william_the_silent_a
+recruit_character = HOL_louis_of_nassau
+
+add_ideas = {
+     habsburg_religious_oppression
+	 successor_of_burgundy
+}
+
+oob = "HOL_1550"
+
+add_ideas = Catholic
+
+add_opinion_modifier = { target = FRA modifier = medium_decrease }
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+add_opinion_modifier = { target = SVY modifier = medium_decrease }
+
+give_military_access = AUS
+set_research_slots = 2
+
+set_research_slots = 2
+set_stability = 0.75
+set_war_support = 0
+
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+
+}
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 15
+set_stability = 0.75
+
+1550.1.1 = {
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1550.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 93
+		fascism = 4
+		communism = 3
+	}
+
+	create_country_leader = {
+		name = "Mary of Austria"
+		picture = "portrait_mary_of_austria.dds"
+		ideology = despotism
+		traits = {
+			
+		}
+	}
+	
+	create_field_marshal = {
+	    name = "Lamoral, Count of Egmont"
+    	picture = "portrait_lamoral.dds"
+	    traits = { logistics_wizard infantry_leader war_hero }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Emmanuel Philibert of Savoy"
+    	picture = "portrait_emmanuel_philibert.dds"
+	    traits = { scavenger trait_reckless media_personality }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "William the Silent, Prince of Orange"
+    	picture = "portrait_william_the_silent.dds"
+	    traits = { cavalry_expert cavalry_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "John VI of Nassau-Dillenburg"
+    	picture = "portrait_john_vi.dds"
+	    traits = { urban_assault_specialist infantry_officer }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 0
+	    logistics_skill = 0
+    }
+	
+	create_navy_leader = {
+	    name = "Sancho d'Avila"
+    	picture = "portrait_sancho_avila.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+}

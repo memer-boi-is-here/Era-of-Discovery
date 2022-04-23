@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+    SpriteType = {
+        name = "GFX_decision_habsburg_spain_flag"
+        texturefile = "gfx/interface/decisions/habsburg_spain_flag.dds"
+    }
+	
+    SpriteType = {
+        name = "GFX_decision_valois_france_flag"
+        texturefile = "gfx/interface/decisions/valois_france_flag.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_decision_papal_court_influence"
+        texturefile = "gfx/interface/decisions/decision_papal_court_influence.dds"
+    }
+	
+}

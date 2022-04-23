@@ -1,0 +1,20 @@
+state={
+	id=891
+	name="STATE_891"
+	history={
+		owner = TUR
+		add_core_of = TUR
+add_core_of = CRI
+add_core_of = UKR
+        buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		3686 6704 9677 9680 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

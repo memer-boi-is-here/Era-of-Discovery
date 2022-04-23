@@ -1,0 +1,20 @@
+state={
+	id=993
+	name="South KaraDel"
+	
+	history={
+		owner = CHG
+		buildings = {
+			infrastructure = 3
+		
+		}
+		add_core_of = CHG
+	}
+	
+	provinces={
+		1838 4704 4843 7732
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

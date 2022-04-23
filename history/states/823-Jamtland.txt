@@ -1,0 +1,20 @@
+state={
+	id=823
+	name="STATE_823"
+	history={
+		owner = DEN
+		add_core_of = DEN
+		add_core_of = SWE
+add_core_of = NOR
+        buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		113 168 202 3111 3162 3191 6010 6123 6129 6185 6207 9066 9068 9148 9229 11049 11052 11116 
+	}
+	manpower= 54000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

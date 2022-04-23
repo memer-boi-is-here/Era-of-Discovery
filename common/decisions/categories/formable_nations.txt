@@ -1,0 +1,12 @@
+form_japanese_shogunate_category = {
+
+    priority = 20
+	icon = generic_formable_nations
+
+  	allowed = {
+}
+scripted_gui = formable_nat_JAP_gui
+}
+form_nation = {
+	
+}

@@ -1,0 +1,24 @@
+state={
+	id=732
+	name="STATE_732"
+
+	history={
+		add_core_of = SIK
+		owner = SIK
+		victory_points = {
+			12583 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1483 1675 1825 2058 4224 4316 4391 4768 5062 7706 12370 12511 12583 12640 13147 10408 10530 4923 12581  
+	}
+	manpower=230000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

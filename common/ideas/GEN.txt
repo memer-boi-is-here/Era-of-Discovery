@@ -1,0 +1,217 @@
+ideas = {
+	
+	country = {
+	
+		the_dominant_of_the_seas = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = the_dominant_of_the_seas
+			
+			modifier = {
+				 navy_capital_ship_attack_factor = 0.4
+				 naval_speed_factor = 0.3
+				 naval_morale_factor = 0.3
+			}
+
+		}
+    }
+
+
+	political_advisor = {
+	
+    	nicolo_doria_p = {
+			
+			picture = nicolo_doria
+			
+			allowed = {
+				original_tag = GEN
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		simone_spinola_p = {
+			
+			picture = simone_spinola
+			
+			allowed = {
+				original_tag = GEN
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		giovanni_andrea_doria_p = {
+			
+			picture = giovanni_andrea_doria
+			
+			allowed = {
+				original_tag = GEN
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		nicolo_doria_a = {
+
+			picture = nicolo_doria
+			
+			allowed = {
+				original_tag = GEN
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		andrea_doria = {
+
+			picture = andrea_doria
+			
+			allowed = {
+				original_tag = GEN
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    giovanni_andrea_doria = {
+		
+		    picture = giovanni_andrea_doria
+			
+			allowed = {
+				original_tag = GEN
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+    }
+	
+	high_command = {
+
+	    nicolo_doria = {
+			ledger = army
+
+			picture = nicolo_doria
+			
+			allowed = {
+				original_tag = GEN
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		simone_spinola = {
+			ledger = army
+			
+			picture = simone_spinola
+			
+			allowed = {
+				original_tag = GEN
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		giovanni_andrea_doria_a = {
+			ledger = navy
+			
+			picture = giovanni_andrea_doria
+			
+			allowed = {
+				original_tag = GEN
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

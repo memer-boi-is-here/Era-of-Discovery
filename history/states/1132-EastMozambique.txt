@@ -1,0 +1,22 @@
+state={
+	id=1132
+	name="Portuguese Mozambique"
+	manpower = 10000
+
+	state_category=rural
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 4
+			industrial_complex =1
+
+		}
+		add_core_of = POR
+
+	}
+
+	provinces={
+		5212 12935 12971 
+	}
+}

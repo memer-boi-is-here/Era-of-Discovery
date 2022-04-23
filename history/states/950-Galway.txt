@@ -1,0 +1,23 @@
+state={
+	id=950
+	name="Galway"
+
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 3
+			
+		}
+		victory_points = {
+			3396 1 
+		}
+	}
+
+	provinces={
+		 3396
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,645 @@
+ideas = {
+
+	
+	
+	government_rank = {
+		law = yes
+		use_list_view = yes
+		government_rank_1 = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.125
+			}
+			
+			default = yes
+			level = 1
+			cancel_if_invalid = no
+		}
+		government_rank_2 = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+			}
+			available = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = has_500_money		
+						check_variable = {money > 500}
+					}
+					
+					OR = {
+						num_of_controlled_states > 20
+						num_of_factories > 40
+					}
+				}
+			}
+			on_add = {
+				add_to_variable = {
+					money = -500
+				}
+			}
+			default = no
+			level = 2
+			cancel_if_invalid = no
+		}
+		government_rank_3 = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.5
+			}
+			on_add = {
+				add_to_variable = {
+					money = -1000
+				}
+			}
+			available = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = has_1000_money		
+						check_variable = {money > 1000}
+					}
+					OR = {
+						num_of_controlled_states > 40
+						num_of_factories > 75
+					}
+				}
+				has_idea = government_rank_2 
+			}
+			default = no
+			level = 3
+			cancel_if_invalid = no
+		}
+	}
+	religion = {
+		law = yes
+		use_list_view = yes
+		catholic = {
+			picture = catholic
+		
+			cost = 150
+			removal_cost = -1
+			available = {
+				OR = {
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = protestant
+					has_idea = reformed
+					has_idea = anglican
+				}
+			}
+			modifier = {
+				political_power_factor = 0.25
+			}
+			
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		protestant = {
+			
+			picture = protestant 
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+			}
+			available = {
+				OR = {
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = protestant
+					has_idea = reformed
+					has_idea = anglican
+				}
+			}
+			
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		reformed = {
+			
+			picture = reformed
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.125
+				consumer_goods_factor = -0.025
+				production_factory_efficiency_gain_factor = 0.125
+				production_factory_max_efficiency_factor = 0.125
+			}
+			available = {
+				OR = {
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = protestant
+					has_idea = reformed
+					has_idea = anglican
+				}
+			}
+			
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		orthodox = {
+			
+			picture = orthodox
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+			}
+			
+			available = {
+				OR = {
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = protestant
+					has_idea = reformed
+					has_idea = anglican
+				}
+			}
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		anglican = {
+			
+			picture = anglican
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.5
+			}
+			
+			available = {
+				OR = {
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = protestant
+					has_idea = reformed
+					has_idea = anglican
+				}
+				OR = {
+					original_tag = ENG
+					is_subject_of = ENG
+				}
+			}
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		sunni = {
+			
+			picture = sunni
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.33
+			}
+			
+			available = {
+				has_idea = shia
+			}
+			default = no
+		
+			cancel_if_invalid = no
+		}
+		shia = {
+			
+			picture = shia
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.33
+			}
+			
+			available = {
+				has_idea = sunni
+			}
+			default = no
+		
+			cancel_if_invalid = no
+		}
+	}
+
+
+	traditions = {
+		law = yes
+		use_list_view = yes
+		prussian_traditions = {
+			
+			picture = prussian_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor	= 0.25
+				conscription = 0.03
+				army_org_factor	 = 0.2
+			}
+			ai_will_do =  {
+				factor = 50
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = PRE
+					original_tag = PRE
+					has_country_flag = formed_prussia
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		german_traditions = {
+			
+			picture = german_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_attack_factor	= 0.15
+				army_core_defence_factor	= 0.15
+				justify_war_goal_time = -0.5
+
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = GER
+					original_tag = GER
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		french_traditions = {
+			
+			picture = french_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target = 0.1
+				research_speed_factor = 0.15
+				army_org_factor	= 0.15
+				army_attack_factor = 0.15
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = FRA
+					original_tag = FRA
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		english_traditions = {
+			
+			picture = english_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				production_speed_dockyard_factor = 0.5
+				industrial_capacity_dockyard = 0.2
+				army_infantry_attack_factor = 0.15
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = ENG
+					original_tag = ENG
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		spanish_traditions = {
+			
+			picture = spanish_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				non_core_manpower = -0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = SPR
+					original_tag = SPR
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		austrian_traditions = {
+			
+			picture = austrian_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				attack_bonus_against_cores = 0.15
+				army_core_defence_factor = 0.15
+				justify_war_goal_time = -0.5
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = AUS
+					original_tag = AUS
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		polish_traditions = {
+			
+			picture = polish_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.25
+				cavalry_defence_factor = 0.25
+				conscription_factor = 0.25
+				training_time_army_factor = -0.15
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = POL
+					original_tag = POL
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		russian_traditions = {
+			
+			picture = russian_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.15
+				stability_factor = -0.1
+				communism_drift = 0.01
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = RUS
+					original_tag = RUS
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		danish_traditions = {
+			
+			picture = danish_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+				non_core_manpower = 0.1
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = DEN
+					original_tag = DEN
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		lithuanian_traditions = {
+			
+			picture = lithuanian_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.25
+				cavalry_defence_factor = 0.25
+				conscription_factor = 0.25
+				training_time_army_factor = -0.15
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = LIT
+					original_tag = LIT
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		ottoman_traditions = {
+			
+			picture = ottoman_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				conscription = 0.02
+				research_speed_factor = 0.1
+				army_attack_factor = 0.1
+
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = TUR
+					original_tag = TUR
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		swedish_traditions = {
+			
+			picture = swedish_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.1
+				army_artillery_attack_factor = 0.10
+				army_artillery_defence_factor = 0.10
+				army_morale_factor = 0.15
+
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = SWE
+					original_tag = SWE
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		scottish_traditions = {
+			
+			picture = scottish_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = SCO
+					original_tag = SCO
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		safavid_traditions = {
+			
+			picture = safavid_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.1
+				army_core_defence_factor = -0.1
+				resistance_growth_on_our_occupied_states = 0.1
+				research_speed_factor = 0.05
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = PER
+					original_tag = PER
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+		portugese_traditions = {
+			
+			picture = portugese_traditions
+			cost = 50
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.1
+				navy_max_range_factor = 0.2
+				trade_opinion_factor = 0.3
+				trade_cost_for_target_factor = -0.1
+			}
+			ai_will_do =  {
+				factor = 100
+			}
+			available = {
+				OR = {
+					has_cosmetic_tag = POR
+					original_tag = POR
+				}
+			}
+			default = no
+
+			cancel_if_invalid = no
+		}
+		
+	}
+}

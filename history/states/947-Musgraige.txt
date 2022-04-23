@@ -1,0 +1,20 @@
+state={
+	id=947
+	name="Musgraige"
+
+	history={
+		owner = MSG
+		add_core_of = MSG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+
+	provinces={
+		 13240
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

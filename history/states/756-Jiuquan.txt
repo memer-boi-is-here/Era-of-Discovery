@@ -1,0 +1,17 @@
+state={
+	id=756
+	name="STATE_756"
+	provinces={
+		4783 7727 8102
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+		owner = OIR
+		add_core_of = OIR
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

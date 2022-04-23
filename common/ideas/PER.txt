@@ -1,0 +1,365 @@
+ideas = {
+	
+	country = {
+	
+		anti_ottoman_sentiment = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = anti_ottoman_sentiment
+			
+			targeted_modifier = { tag = TUR attack_bonus_against = 0.1 }
+            targeted_modifier = { tag = TUR defense_bonus_against = 0.1 }
+			
+			modifier = {
+				 war_support_factor = 0.3
+				 justify_war_goal_time = -0.2
+				 custom_modifier_tooltip = anti_ottoman_sentiment_tt
+			}
+
+		}
+		
+		defender_of_shia_islam = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = defender_of_shia_islam
+			
+			modifier = {
+				 compliance_gain = 0.2
+				 political_power_gain  = 0.3
+				 foreign_subversive_activites = -0.2
+			}
+			
+		}
+		
+		scorched_earth_policy = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = scorched_earth_policy
+			
+			modifier = {
+				 stability_factor = -0.25
+				 surrender_limit = 0.1
+				 local_resources = -0.2
+			}
+			
+		}
+	
+    }
+
+
+	political_advisor = {
+	
+    	qarachaqay_khan = {
+			
+			picture =  qarachaqay_khan
+			
+			allowed = {
+				original_tag = PER
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = fascism
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		ahmad_ibn_muhammad_ardabili = {
+			
+			picture = ahmad_ibn_muhammad_ardabili
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+		    traits = { grand_ayatollah_of_persia }
+
+			do_effect = {
+				IF = {
+					has_government = fascism
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ismail_mirza = {
+			
+			picture = ismail_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = fascism
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		mohammad_khodabanda = {
+			
+			picture = mohammad_khodabanda
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ahmad_mirza = {
+			
+			picture = ahmad_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		simon_i = {
+			
+			picture = simon_i
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+    army_chief = {
+
+		qarachaqay_khan_a = {
+
+			picture = qarachaqay_khan
+			
+			allowed = {
+				original_tag = PER
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ismail_mirza_a = {
+
+			picture = ismail_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+	
+		ahmad_mirza_a = {
+
+			picture = ahmad_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		simon_i_a = {
+
+			picture = simon_i
+			
+			allowed = {
+				original_tag = PER
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		qarachaqay_khan_b = {
+			ledger = army
+			
+			picture = qarachaqay_khan
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mohammad_khodabanda_a = {
+			ledger = army
+
+			picture = mohammad_khodabanda
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+      	ahmad_mirza_b = {
+			ledger = navy
+			
+			picture = ahmad_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		ismail_mirza_b = {
+			ledger = army
+			
+			picture = ismail_mirza
+			
+			allowed = {
+				original_tag = PER
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+}

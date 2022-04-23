@@ -1,0 +1,1583 @@
+form_nation = {
+	form_germany = {
+
+		
+
+		available = {
+			NOT = {
+				GER = {
+					exists = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = owns_states_in_germany		
+				count_triggers = {
+					amount = 30
+					controls_state = 52
+					controls_state = 53
+					controls_state = 851
+					controls_state = 920
+					controls_state = 153
+					controls_state = 39
+					controls_state = 152
+					controls_state = 4
+					controls_state = 69
+					controls_state = 75
+					controls_state = 9
+					controls_state = 74
+					controls_state = 72
+					controls_state = 762
+					controls_state = 67
+					controls_state = 66
+					controls_state = 68
+					controls_state = 64
+					controls_state = 806
+					controls_state = 65
+					controls_state = 60
+					controls_state = 1016
+					controls_state = 54
+					controls_state = 55
+					controls_state = 845
+					controls_state = 850
+					controls_state = 842
+					controls_state = 808
+					controls_state = 805
+					controls_state = 843
+					controls_state = 28
+					controls_state = 50
+					controls_state = 849
+					controls_state = 3
+					controls_state = 151
+					controls_state = 17#
+					controls_state = 831
+					controls_state = 8
+					controls_state = 847
+					controls_state = 34
+					controls_state = 6
+					controls_state = 799
+					controls_state = 29
+					controls_state = 35
+					controls_state = 7
+					controls_state = 36
+					controls_state = 804
+					controls_state = 1006
+					controls_state = 1007
+					controls_state = 51
+					controls_state = 852
+					controls_state = 854
+					controls_state = 853
+					controls_state = 57
+					controls_state = 855
+					controls_state = 59
+					controls_state = 801
+					controls_state = 42
+					controls_state = 860
+					controls_state = 56
+					controls_state = 863
+					controls_state = 859
+					controls_state = 856
+					controls_state = 1011
+					controls_state = 798
+					controls_state = 58
+					controls_state = 858
+					controls_state = 61
+					controls_state = 857
+					controls_state = 62
+					controls_state = 1008
+					controls_state = 63
+					controls_state = 5
+					controls_state = 763
+					controls_state = 188
+					controls_state = 86
+					controls_state = 85
+					controls_state = 841
+					controls_state = 861
+					controls_state = 818
+					controls_state = 160
+					controls_state = 807
+					controls_state = 163
+					controls_state = 102
+					controls_state = 736
+					controls_state = 840
+				}
+			}
+			
+		}
+
+		visible = {
+			NOT = {
+				any_country = {
+					has_cosmetic_tag = GER
+					tag = GER
+				}
+			}
+			count_triggers = {
+				amount = 1
+				controls_state = 52
+				controls_state = 53
+				controls_state = 851
+				controls_state = 920
+				controls_state = 153
+				controls_state = 39
+				controls_state = 152
+				controls_state = 4
+				controls_state = 69
+				controls_state = 75
+				controls_state = 9
+				controls_state = 74
+				controls_state = 72
+				controls_state = 762
+				controls_state = 67
+				controls_state = 66
+				controls_state = 68
+				controls_state = 64
+				controls_state = 806
+				controls_state = 65
+				controls_state = 60
+				controls_state = 1016
+				controls_state = 54
+				controls_state = 55
+				controls_state = 845
+				controls_state = 850
+				controls_state = 842
+				controls_state = 808
+				controls_state = 805
+				controls_state = 843
+				controls_state = 28
+				controls_state = 50
+				controls_state = 849
+				controls_state = 3
+				controls_state = 151
+				controls_state = 17#
+				controls_state = 831
+				controls_state = 8
+				controls_state = 847
+				controls_state = 34
+				controls_state = 6
+				controls_state = 799
+				controls_state = 29
+				controls_state = 35
+				controls_state = 7
+				controls_state = 36
+				controls_state = 804
+				controls_state = 1006
+				controls_state = 1007
+				controls_state = 51
+				controls_state = 852
+				controls_state = 854
+				controls_state = 853
+				controls_state = 57
+				controls_state = 855
+				controls_state = 59
+				controls_state = 801
+				controls_state = 42
+				controls_state = 860
+				controls_state = 56
+				controls_state = 863
+				controls_state = 859
+				controls_state = 856
+				controls_state = 1011
+				controls_state = 798
+				controls_state = 58
+				controls_state = 858
+				controls_state = 61
+				controls_state = 857
+				controls_state = 62
+				controls_state = 1008
+				controls_state = 63
+				controls_state = 5
+				controls_state = 763
+				controls_state = 188
+				controls_state = 86
+				controls_state = 85
+				controls_state = 841
+				controls_state = 861
+				controls_state = 818
+				controls_state = 160
+				controls_state = 807
+				controls_state = 163
+				controls_state = 102
+				controls_state = 736
+				controls_state = 840
+			}
+		
+		}
+		
+	    highlight_states = {
+            highlight_state_targets = {
+                state = 52
+			    state = 53
+			    state = 851
+			    state = 920
+			    state = 153
+			    state = 39
+			    state = 152
+			    state = 152
+			    state = 4
+		    	state = 69
+			    state = 75
+			    state = 9
+			    state = 74
+			    state = 72
+		    	state = 762
+		    	state = 67
+		    	state = 66
+			    state = 68
+		    	state = 64
+		    	state = 806
+		     	state = 65
+			    state = 60
+			    state = 1016
+		     	state = 54
+		     	state = 55
+		     	state = 845
+		     	state = 850
+		     	state = 842
+		     	state = 808
+		     	state = 805
+		      	state = 843
+		    	state = 28
+		     	state = 50
+		      	state = 849
+		      	state = 3
+		      	state = 151
+		      	state = 17
+		      	state = 831
+		        state = 8
+		      	state = 847
+			    state = 34
+			    state = 6
+			    state = 799
+			    state = 29
+		       	state = 35
+		       	state = 7
+		      	state = 36
+		    	state = 804
+		      	state = 1006
+		    	state = 1007
+		     	state = 51
+		    	state = 852
+                state = 854
+		      	state = 853
+		      	state = 57
+		      	state = 855
+		      	state = 59
+		      	state = 801
+		     	state = 42
+		     	state = 860
+		       	state = 56
+		      	state = 863
+		     	state = 859
+		    	state = 856
+		       	state = 1011
+		     	state = 798
+		     	state = 58
+		     	state = 858
+		     	state = 61
+		     	state = 857
+		     	state = 62
+		      	state = 1008
+		     	state = 63
+		      	state = 5
+		     	state = 763
+		     	state = 188
+		     	state = 86
+		      	state = 85
+		      	state = 841
+		     	state = 861
+		     	state = 818
+		     	state = 160
+		     	state = 807
+		     	state = 163
+		    	state = 102
+		     	state = 736
+		     	state = 840
+            }
+        }
+		
+		fire_only_once = yes
+
+		complete_effect = {	
+			set_cosmetic_tag = GER
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = AUS
+						is_core_of = BRN
+						is_core_of = PRE
+						area = 7
+						area = 5
+						area = 8
+						area = 6
+						area = 21
+						is_core_of = ALS
+						is_core_of = LOR
+						state = 831
+						is_core_of = HOL
+						state = 29
+					}
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					OR = {
+						area = 23
+						area = 19
+						state = 86
+						state = 98
+						state = 87
+					}
+				}
+				add_claim_by = ROOT
+			}
+			IF = {
+				limit = {
+					has_idea = government_rank_1
+				}	
+				add_ideas = government_rank_2
+				hidden_effect = {
+					add_to_variable = {
+						money = 500
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = government_rank_2
+					}	
+					add_ideas = government_rank_3
+					hidden_effect = {
+						add_to_variable = {
+							money = 1000
+						}
+					}
+				}
+			}
+			
+			add_ideas = german_traditions
+			
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_prussia = {
+
+		
+
+		available = {
+			NOT = {
+				PRE = {
+					exists = yes
+				}
+			}		
+			controls_state = 763
+			OR = {
+				controls_state = 85
+				controls_state = 5
+			}
+			OR = {
+				has_idea = protestant
+				has_idea = reformed
+			}
+		}
+
+		visible = {
+			count_triggers = {
+				amount = 1
+				controls_state = 52
+				controls_state = 53
+				controls_state = 851
+				controls_state = 920
+				controls_state = 153
+				controls_state = 39
+				controls_state = 152
+				controls_state = 4
+				controls_state = 69
+				controls_state = 75
+				controls_state = 9
+				controls_state = 74
+				controls_state = 72
+				controls_state = 762
+				controls_state = 67
+				controls_state = 66
+				controls_state = 68
+				controls_state = 64
+				controls_state = 806
+				controls_state = 65
+				controls_state = 60
+				controls_state = 1016
+				controls_state = 54
+				controls_state = 55
+				controls_state = 845
+				controls_state = 850
+				controls_state = 842
+				controls_state = 808
+				controls_state = 805
+				controls_state = 843
+				controls_state = 28
+				controls_state = 50
+				controls_state = 849
+				controls_state = 3
+				controls_state = 151
+				controls_state = 17#
+				controls_state = 831
+				controls_state = 8
+				controls_state = 847
+				controls_state = 34
+				controls_state = 6
+				controls_state = 799
+				controls_state = 29
+				controls_state = 35
+				controls_state = 7
+				controls_state = 36
+				controls_state = 804
+				controls_state = 1006
+				controls_state = 1007
+				controls_state = 51
+				controls_state = 852
+				controls_state = 854
+				controls_state = 853
+				controls_state = 57
+				controls_state = 855
+				controls_state = 59
+				controls_state = 801
+				controls_state = 42
+				controls_state = 860
+				controls_state = 56
+				controls_state = 863
+				controls_state = 859
+				controls_state = 856
+				controls_state = 1011
+				controls_state = 798
+				controls_state = 58
+				controls_state = 858
+				controls_state = 61
+				controls_state = 857
+				controls_state = 62
+				controls_state = 1008
+				controls_state = 63
+				controls_state = 5
+				controls_state = 763
+				controls_state = 188
+				controls_state = 86
+				controls_state = 85
+				controls_state = 841
+				controls_state = 861
+				controls_state = 818
+				controls_state = 160
+				controls_state = 807
+				controls_state = 163
+				controls_state = 102
+				controls_state = 736
+				controls_state = 840
+			}
+		
+		}
+
+	    highlight_states = {
+            highlight_state_targets = {
+                state = 763
+			    state = 5
+			    state = 841
+		        state = 85
+			    state = 188
+			    state = 63
+		    	state = 1008
+		     	state = 62
+		    	state = 64
+		     	state = 806
+		     	state = 66
+		    	state = 67
+		      	state = 762
+		      	state = 68
+		     	state = 86
+		     	state = 98
+		      	state = 189
+		     	state = 98
+		     	state = 828
+		    	state = 87  
+            }
+        }
+
+		fire_only_once = yes
+
+		complete_effect = {	
+			763 = {
+				add_core_of = ROOT
+			}
+			5 = {
+				add_core_of = ROOT
+			}
+			841 = {
+				add_core_of = ROOT
+			}
+			85 = {
+				add_core_of = ROOT
+			}
+			188 = {
+				add_core_of = ROOT
+			}
+			189 = {
+				add_claim_by = ROOT
+			}
+			86 = {
+				add_claim_by = ROOT
+			}
+			98 = {
+				add_claim_by = ROOT
+			}
+			823 = {
+				add_claim_by = ROOT
+			}
+			97 = {
+				add_claim_by = ROOT
+			}
+			68 = {
+				add_claim_by = ROOT
+			}
+			63 = {
+				add_claim_by = ROOT
+			}
+			1008 = {
+				add_claim_by = ROOT
+			}
+			66 = {
+				add_claim_by = ROOT
+			}
+			67 = {
+				add_claim_by = ROOT
+			}
+			762 = {
+				add_claim_by = ROOT
+			}
+			64 = {
+				add_claim_by = ROOT
+			}
+			806 = {
+				add_claim_by = ROOT
+			}
+			62 = {
+				add_claim_by = ROOT
+			}
+			87 = {
+				add_claim_by = ROOT
+			}
+			IF = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = GER
+						has_cosmetic_tag = FRANK
+						has_cosmetic_tag = HRE
+					}
+				}
+				set_cosmetic_tag = PRE
+			}
+			
+			IF = {
+				limit = {
+					has_idea = government_rank_1
+				}	
+				add_ideas = government_rank_2
+				hidden_effect = {
+					add_to_variable = {
+						money = 500
+					}
+				}
+			}
+			set_country_flag = formed_prussia
+			add_ideas = prussian_traditions
+			
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	reform_frankish_empire = {
+
+		
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = owns_states_in_germany_and_france		
+				count_triggers = {
+					amount = 75
+					controls_state = 52
+					controls_state = 53
+					controls_state = 851
+					controls_state = 920
+					controls_state = 153
+					controls_state = 39
+					controls_state = 152
+					controls_state = 4
+					controls_state = 69
+					controls_state = 75
+					controls_state = 9
+					controls_state = 74
+					controls_state = 72
+				#	controls_state = 762
+				#	controls_state = 67
+				#	controls_state = 66
+				#	controls_state = 68
+					controls_state = 64
+					controls_state = 806
+					controls_state = 65
+					controls_state = 60
+					controls_state = 1016
+					controls_state = 54
+					controls_state = 55
+					controls_state = 845
+					controls_state = 850
+					controls_state = 842
+					controls_state = 808
+					controls_state = 805
+					controls_state = 843
+					controls_state = 28
+					controls_state = 50
+					controls_state = 849
+					controls_state = 3
+					controls_state = 151
+					controls_state = 17#
+					controls_state = 831
+					controls_state = 8
+					controls_state = 847
+					controls_state = 34
+					controls_state = 6
+					controls_state = 799
+					controls_state = 29
+					controls_state = 35
+					controls_state = 7
+					controls_state = 36
+					controls_state = 804
+					controls_state = 1006
+					controls_state = 1007
+					controls_state = 51
+					controls_state = 852
+					controls_state = 854
+					controls_state = 853
+					controls_state = 57
+					controls_state = 855
+					controls_state = 59
+					controls_state = 801
+					controls_state = 42
+					controls_state = 860
+					controls_state = 56
+					controls_state = 863
+					controls_state = 859
+					controls_state = 856
+					controls_state = 1011
+					controls_state = 798
+					controls_state = 58
+					controls_state = 858
+					controls_state = 61
+					controls_state = 857
+					controls_state = 62
+				#	controls_state = 1008
+				#	controls_state = 63
+				#	controls_state = 5
+				#	controls_state = 763
+				#	controls_state = 188
+				#	controls_state = 86
+				#	controls_state = 85
+				#	controls_state = 841
+					controls_state = 861
+					controls_state = 818
+					controls_state = 160
+					controls_state = 807
+				#	controls_state = 163
+					controls_state = 102
+					controls_state = 736
+				#	controls_state = 840
+
+					controls_state = 18
+					controls_state = 16
+					controls_state = 785
+					controls_state = 27
+					controls_state = 24
+					controls_state = 33
+					controls_state = 25
+					controls_state = 23
+					controls_state = 30
+					controls_state = 15
+					controls_state = 14
+					controls_state = 23
+					controls_state = 22
+					controls_state = 31
+					controls_state = 19
+					controls_state = 20
+					controls_state = 32
+					controls_state = 21
+					controls_state = 1
+					controls_state = 735
+					controls_state = 862
+					controls_state = 866
+					controls_state = 865
+					controls_state = 165
+					controls_state = 114
+					controls_state = 29
+					controls_state = 26
+					controls_state = 158
+					controls_state = 873
+					controls_state = 874
+					controls_state = 159
+					controls_state = 875
+					controls_state = 867
+					controls_state = 161
+					controls_state = 876
+
+					controls_state = 871
+					controls_state = 872
+					controls_state = 881
+					controls_state = 869
+					controls_state = 878
+					controls_state = 162
+					controls_state = 821
+					controls_state = 870
+					controls_state = 879
+					controls_state = 868
+					controls_state = 2
+				}
+			}
+			
+		}
+
+		visible = {
+			count_triggers = {
+				amount = 1
+				controls_state = 52
+				controls_state = 53
+				controls_state = 851
+				controls_state = 920
+				controls_state = 153
+				controls_state = 39
+				controls_state = 152
+				controls_state = 4
+				controls_state = 69
+				controls_state = 75
+				controls_state = 9
+				controls_state = 74
+				controls_state = 72
+			#	controls_state = 762
+			#	controls_state = 67
+			#	controls_state = 66
+				#controls_state = 68
+				controls_state = 64
+				controls_state = 806
+				controls_state = 65
+				controls_state = 60
+				controls_state = 1016
+				controls_state = 54
+				controls_state = 55
+				controls_state = 845
+				controls_state = 850
+				controls_state = 842
+				controls_state = 808
+				controls_state = 805
+				controls_state = 843
+				controls_state = 28
+				controls_state = 50
+				controls_state = 849
+				controls_state = 3
+				controls_state = 151
+				controls_state = 17#
+				controls_state = 831
+				controls_state = 8
+				controls_state = 847
+				controls_state = 34
+				controls_state = 6
+				controls_state = 799
+				controls_state = 29
+				controls_state = 35
+				controls_state = 7
+				controls_state = 36
+				controls_state = 804
+				controls_state = 1006
+				controls_state = 1007
+				controls_state = 51
+				controls_state = 852
+				controls_state = 854
+				controls_state = 853
+				controls_state = 57
+				controls_state = 855
+				controls_state = 59
+				controls_state = 801
+				controls_state = 42
+				controls_state = 860
+				controls_state = 56
+				controls_state = 863
+				controls_state = 859
+				controls_state = 856
+				controls_state = 1011
+				controls_state = 798
+				controls_state = 58
+				controls_state = 858
+				controls_state = 61
+				controls_state = 857
+				controls_state = 62
+			#	controls_state = 1008
+			#	controls_state = 63
+				#controls_state = 5
+			#	controls_state = 763
+				#controls_state = 188
+			#	controls_state = 86
+			#	controls_state = 85
+			#	controls_state = 841
+				controls_state = 861
+				controls_state = 818
+				controls_state = 160
+				controls_state = 807
+			#	controls_state = 163
+				controls_state = 102
+				controls_state = 736
+			#	controls_state = 840
+
+				controls_state = 18
+					controls_state = 16
+					controls_state = 785
+					controls_state = 27
+					controls_state = 24
+					controls_state = 33
+					controls_state = 25
+					controls_state = 23
+					controls_state = 30
+					controls_state = 15
+					controls_state = 14
+					controls_state = 23
+					controls_state = 22
+					controls_state = 31
+					controls_state = 19
+					controls_state = 20
+					controls_state = 32
+					controls_state = 21
+					controls_state = 1
+					controls_state = 735
+					controls_state = 862
+					controls_state = 866
+					controls_state = 865
+					controls_state = 165
+					controls_state = 114
+					controls_state = 29
+					controls_state = 26
+					controls_state = 158
+					controls_state = 873
+					controls_state = 874
+					controls_state = 159
+					controls_state = 875
+					controls_state = 867
+					controls_state = 161
+					controls_state = 876
+					
+					controls_state = 871
+					controls_state = 872
+					controls_state = 881
+					controls_state = 869
+					controls_state = 878
+					controls_state = 162
+					controls_state = 821
+					controls_state = 870
+					controls_state = 879
+					controls_state = 868
+					controls_state = 2
+			}
+		
+		}
+
+
+		fire_only_once = yes
+ 
+        highlight_states = {
+            highlight_state_targets = {
+                state = 52
+                state = 52
+		    	state = 53
+		     	state = 851
+		    	state = 920
+		     	state = 153
+		     	state = 39
+		     	state = 152
+		      	state = 4
+		     	state = 69
+		    	state = 75
+		     	state = 9
+		    	state = 74
+		     	state = 72
+		     	#state = 762
+		     	#state = 67
+		    	#state = 66
+		      	#state = 68
+		    	state = 64
+		     	state = 806
+		    	state = 65
+		     	state = 60
+		     	state = 1016
+		     	state = 54
+		    	state = 55
+		    	state = 845
+		    	state = 850
+		     	state = 842
+		     	state = 808
+			    state = 805
+		      	state = 843
+		      	state = 28
+		     	state = 50
+		    	state = 849
+		     	state = 3
+		     	state = 151
+		    	state = 17
+		     	state = 831
+		     	state = 8
+		     	state = 847
+		     	state = 34
+		     	state = 6
+		     	state = 799
+		    	state = 29
+		     	state = 35
+		     	state = 7
+		     	state = 804
+		    	state = 1006
+		     	state = 1007
+		     	state = 51
+		    	state = 852
+		      	state = 854
+		    	state = 853
+		    	state = 57
+		     	state = 855
+		    	state = 59
+		    	state = 801
+		    	state = 42
+		     	state = 860
+		    	state = 56
+		    	state = 863
+		    	state = 859
+		     	state = 856
+		     	state = 1011
+		    	state = 798
+		     	state = 58
+		    	state = 858
+		     	state = 61
+		     	state = 857
+		     	state = 62
+		    #	state = 1008
+		    #	state = 63
+		    #	state = 5
+		    #	state = 763
+		    #	state = 188
+		    #	state = 86
+		    #	state = 85
+		    #	state = 841
+		     	state = 861
+		     	state = 818
+		    	state = 160
+		    	state = 807
+		     	#state = 163
+		     	state = 102
+		     	state = 736
+		    #	state = 840
+		    	state = 18
+		     	state = 16
+		     	state = 785
+		     	state = 27
+		     	state = 24
+		     	state = 33
+		    	state = 25
+		      	state = 23
+		    	state = 30
+		     	state = 15
+		     	state = 14
+		    	state = 23
+		    	state = 22
+		    	state = 31
+		    	state = 19
+		    	state = 20
+		    	state = 32
+		    	state = 21
+		     	state = 1
+		     	state = 735
+		    	state = 862
+		     	state = 866
+		     	state = 865
+		     	state = 165
+		     	state = 114
+		    	state = 29
+		     	state = 26
+		     	state = 158
+		     	state = 873
+		    	state = 874
+		     	state = 159
+		     	state = 875
+		      	state = 867
+		    	state = 161
+		    	state = 876
+		     	state = 871
+		     	state = 872
+		     	state = 881
+		     	state = 869
+			    state = 878
+		    	state = 162
+		     	state = 821
+		      	state = 870
+		    	state = 879
+		    	state = 868
+		     	state = 2
+            }
+        }
+
+		complete_effect = {	
+			IF = {
+				limit = {
+					tag = FRA
+				}
+				set_cosmetic_tag = FRANK1
+				else = {
+					set_cosmetic_tag = FRANK2s
+				}
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = FRA
+						is_core_of = HOL
+						is_core_of = LIE
+						is_core_of = LOR
+						is_core_of = ALS
+						is_core_of = WUR
+						is_core_of = RAV
+						is_core_of = BAY
+						is_core_of = ANS
+						is_core_of = MAI
+						is_core_of = PLT
+						is_core_of = BAD
+						is_core_of = TRR
+						is_core_of = KLE
+						is_core_of = AAC
+						is_core_of = CLG
+						is_core_of = MUN
+						is_core_of = EFR
+						is_core_of = OLD
+						is_core_of = BRU
+						is_core_of = BRE
+						is_core_of = VER
+						is_core_of = LUN
+						is_core_of = HAM
+						is_core_of = DIE
+						is_core_of = WRZ
+						is_core_of = HES
+						is_core_of = FRK
+						is_core_of = DOR
+						is_core_of = GOL
+						is_core_of = THU
+						state = 831
+						state = 34
+						state = 8
+						state = 801
+						is_core_of = OCC
+						is_core_of = SVY
+						is_core_of = GEN
+						is_core_of = MIL
+						is_core_of = PRM
+						is_core_of = VNI
+						is_core_of = MNU
+						is_core_of = FER
+						is_core_of = PAP
+						is_core_of = MOD
+						is_core_of = LUC
+						is_core_of = TUS
+						is_core_of = SNA
+						is_core_of = URB
+						is_core_of = SAL
+						state = 152
+						state = 153
+						state = 39
+						state = 29
+					}
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 14
+						state = 165
+						state = 794
+						state = 166
+						state = 176
+						state = 172
+						state = 792
+						state = 114
+						state = 64
+						state = 65
+						state = 61
+						state = 806
+						state = 62
+						state = 58
+						state = 861
+						state = 818
+						area = 23
+						is_core_of = AUS
+					}
+				}
+				add_claim_by = ROOT
+			}
+			add_ideas = government_rank_3
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_the_angevin_empire = {
+
+		
+		visible = {
+			tag = ENG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = owns_states_in_england_and_western_france	
+				all_state = {
+					OR = {
+						NOT = {
+							area = 1
+							area = 2
+						}
+						is_owned_by = ROOT
+					}
+				}
+				all_state = {
+					OR = {
+						NOT = {
+							state = 14
+							state = 30
+							state = 15
+							state = 23
+							state = 19
+							state = 31
+							state = 25
+							state = 26
+							state = 33
+						}
+						is_owned_by = ENG
+					}
+				}
+				
+			}
+			
+		}
+		
+	    highlight_states = {
+            highlight_state_targets = {
+                area = 1 
+				area = 2
+				state = 14
+				state = 30
+				state = 15
+				state = 23
+				state = 19
+				state = 31
+				state = 25
+				state = 26
+				state = 33
+            }
+        }
+		
+
+		fire_only_once = yes
+		
+		cost = 00
+
+		complete_effect = {	
+			set_cosmetic_tag = AGV
+			
+			every_state = {
+				limit = {
+					OR = {
+						area = 1 
+						area = 2
+						state = 14
+						state = 30
+						state = 15
+						state = 23
+						state = 19
+						state = 31
+						state = 25
+						state = 26
+						state = 33
+					}
+				}
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				add_claim_by = ROOT
+			}
+			add_ideas = government_rank_3
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_byzantium = {
+
+		
+		visible = {
+			ROOT = {
+				OR = {
+					has_idea = protestant
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = reformed
+				}
+				
+			}
+			OR = {
+				ROOT = {
+					controls_state = 1126
+					
+				}
+				1126 = {
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		available = {
+			controls_state = 1126
+		}
+		fire_only_once = yes
+		
+		highlight_states = {
+            highlight_state_targets = {
+                state = 1126
+            }
+        }
+		cost = 00
+
+		complete_effect = {	
+			GRE = {
+				transfer_state = 1126
+				
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+				ROOT = {
+					puppet = PREV
+				}
+				add_ideas = government_rank_3
+				set_cosmetic_tag = BYZ_UNIFIED
+			}
+			every_state = {
+				limit = {
+					is_core_of = TUR
+					NOT = {
+						OR = {
+							is_claimed_by = ROOT
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_claim_by = GRE
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	form_jerusalem = {
+
+		
+		visible = {
+			ROOT = {
+				OR = {
+					has_idea = protestant
+					has_idea = catholic
+					has_idea = orthodox
+					has_idea = reformed
+				}
+				
+			}
+			OR = {
+				ROOT = {
+					controls_state = 454
+					
+				}
+				454 = {
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		available = {
+			controls_state = 454
+		}
+		fire_only_once = yes
+		
+		highlight_states = {
+            highlight_state_targets = {
+                state = 454
+            }
+        }
+
+		complete_effect = {	
+			ISR = {
+				transfer_state = 454
+				
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+				ROOT = {
+					puppet = PREV
+				}
+				add_ideas = government_rank_2
+				set_cosmetic_tag = JER
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_golden_horde = {
+
+		
+		visible = {
+			has_government = communism
+		}
+		available = {
+			controls_state = 732
+			controls_state = 586
+			controls_state = 584
+			controls_state = 236
+			controls_state = 249
+			OR = {
+				controls_state = 137
+				controls_state = 219
+			}
+			controls_state = 403
+		}
+		
+	    highlight_states = {
+            highlight_state_targets = {
+                state = 732
+				state = 586
+				state = 584
+				state = 236
+				state = 249
+				state = 403
+				state = 137
+				state = 219
+            }
+        }
+		
+		
+
+		fire_only_once = yes
+		
+		cost = 00
+
+		complete_effect = {	
+			set_cosmetic_tag = GOL_HOR
+			
+			every_state = {
+				limit = {
+					OR = {
+						area = 404
+						area = 407
+						area = 237
+						area = 230
+						area = 255
+						area = 399
+						area = 582
+						area = 214
+						area = 263
+						area = 241
+						area = 193
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_ideas = government_rank_3
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_yugoslavia = {
+
+		
+		visible = {
+			tag = MNT
+		}
+		available = {
+			controls_state = 107
+			controls_state = 104
+			controls_state = 103
+			controls_state = 840
+			controls_state = 108
+		}
+		
+		highlight_states = {
+            highlight_state_targets = {
+   				state = 107
+				state = 104
+				state = 103
+				state = 840
+				state = 108
+				state = 105
+            }
+        }
+		
+		
+
+		fire_only_once = yes
+		
+		cost = 00
+
+		complete_effect = {	
+			set_cosmetic_tag = YUGO
+			
+			every_state = {
+				limit = {
+					OR = {
+						area = 107
+						area = 104
+						area = 103
+						area = 840
+						area = 108
+						area = 102
+						area = 163
+						area = 1175
+						area = 987
+						area = 106
+						area = 48
+						area = 1130
+						area = 212
+						area = 211
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_ideas = government_rank_3
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	form_yuan = {
+
+		
+		visible = {
+			tag = MON
+		}
+		available = {
+			controls_state = 608
+			controls_state = 283
+			controls_state = 744
+			controls_state = 983
+			controls_state = 620
+			controls_state = 749
+			controls_state = 596
+			controls_state = 613
+			controls_state = 606
+			controls_state = 598
+			controls_state = 607
+			controls_state = 615
+			controls_state = 597
+			controls_state = 743
+			controls_state = 622
+			controls_state = 614
+			controls_state = 611
+			controls_state = 609
+			controls_state = 932
+		}
+		
+	    highlight_states = {
+            highlight_state_targets = {
+               	state = 608
+			    state = 283
+		    	state = 744
+		    	state = 983
+		    	state = 620
+		    	state = 749
+		    	state = 596
+		     	state = 613
+		    	state = 606
+		     	state = 598
+		     	state = 607
+		     	state = 615
+		     	state = 597
+		    	state = 743
+		    	state = 622
+		    	state = 614
+		     	state = 611
+		    	state = 609
+		     	state = 932
+            }
+        }
+		
+		
+
+		fire_only_once = yes
+		
+		cost = 00
+
+		complete_effect = {	
+			set_cosmetic_tag = YUAN
+			
+			every_state = {
+				limit = {
+					OR = {
+						area = 608
+						area = 283
+						area = 744
+						area = 983
+						area = 620
+						area = 749
+						area = 596
+						area = 613
+						area = 606
+						area = 598
+						area = 607
+						area = 615
+						area = 597
+						area = 743
+						area = 622
+						area = 614
+						area = 611
+						area = 609
+						area = 932
+						area = 747
+						area = 325
+						area = 991
+						area = 603
+						area = 751
+						area = 591
+						area = 728
+						area = 729
+						area = 326
+						area = 593
+						area = 592
+						area = 599
+						area = 600
+						area = 595
+						area = 602
+						area = 750
+						area = 1057
+						area = 605
+						area = 748
+					}
+				}
+				add_core_of = ROOT
+			}
+			add_ideas = government_rank_3
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+}

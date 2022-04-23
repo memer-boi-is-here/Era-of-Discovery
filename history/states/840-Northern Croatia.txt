@@ -1,0 +1,36 @@
+
+state={
+	id=840
+	name="STATE_840" # Dalmatia
+	manpower = 95238
+
+	state_category = large_town
+
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+add_core_of = CRO
+add_core_of = HUN
+		victory_points = {
+			3924 3
+		}
+		victory_points = {
+			11564 1 
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 3
+			industrial_complex = 3
+			
+			591 = {
+			    naval_base = 7
+			}
+		}
+		
+	}
+
+	provinces={
+		11564 3601 591 3592 3596 11581 624 9611
+	}
+}

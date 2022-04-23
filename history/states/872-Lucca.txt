@@ -1,0 +1,21 @@
+state={
+	id=872
+	name="STATE_872"
+	history = {
+		owner = LUC
+		add_core_of = LUC
+		victory_points = {
+			6973 5 
+		}
+		buildings = {
+			infrastructure = 3
+			
+		}
+		}
+	provinces={
+		6973 
+	}
+	manpower=7354
+	buildings_max_level_factor=1.000
+	state_category=town
+}

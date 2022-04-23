@@ -1,0 +1,39 @@
+
+state={
+	id=117
+	name="STATE_117"
+	resources={
+		aluminium=10.000
+		steel=15.000
+	}
+
+	history={
+		owner = NAP
+		victory_points = {
+			819 20 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 0
+			819 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = NAP
+		add_core_of = FRA
+		
+
+	}
+
+	provinces={
+		819 851 955 3958 3968 6972 9826 9856 
+	}
+	manpower= 150000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,135 @@
+﻿capital = 65
+
+recruit_character = SAX_maurice
+recruit_character = SAX_maurice_elector_of_saxony
+recruit_character = SAX_augustus_of_saxony
+recruit_character = SAX_john_frederick_i_duke_of_saxony
+recruit_character = SAX_john_frederick_ii_of_saxony
+recruit_character = SAX_johann_wilhelm_of_saxony
+recruit_character = SAX_wilhelm_wilbs
+recruit_character = SAX_wilhelm_meyer
+recruit_character = SAX_hans_kirschner
+recruit_character = SAX_john_frederick_i_a
+recruit_character = SAX_john_frederick_ii_a
+
+add_ideas = {
+     founder_of_schmalkaldic_league
+	 birthplace_of_protestantism
+}
+
+add_ideas = Protestant
+
+oob = "SAX_1550"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	
+}
+
+
+
+
+set_research_slots = 2
+set_convoys = 50
+set_stability = 0.75
+
+set_war_support = 0.1
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	democratic = 30
+	fascism = 10
+	neutrality = 60
+}
+
+add_ideas = {
+}
+
+
+
+create_country_leader = {
+	name = "Maurice"
+	desc = ""
+	picture = "Maurice.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+	create_field_marshal = {
+	    name = "Maurice, Elector of Saxony"
+    	picture = "Maurice.dds"
+	    traits = { logistics_wizard infantry_leader war_hero }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Augustus of Saxony"
+    	picture = "portrait_augustus_of_saxony.dds"
+	    traits = { scavenger trait_reckless media_personality }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "John Frederick I, Duke of Saxony"
+    	picture = "portrait_john_frederick_i.dds"
+	    traits = { cavalry_expert cavalry_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "John Frederick II of Saxony"
+    	picture = "portrait_john_frederick_ii.dds"
+	    traits = { urban_assault_specialist infantry_officer }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 0
+	    logistics_skill = 0
+    }
+	
+	create_navy_leader = {
+	    name = "Johann Wilhelm of Saxony"
+    	picture = "portrait_johann_wilhelm.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	add_opinion_modifier = { target = AUS modifier = medium_decrease }
+	add_opinion_modifier = { target = BRN modifier = medium_increase }
+	add_opinion_modifier = { target = MEK modifier = medium_increase }
+
+country_event = { id = anewera.146 days = "507" }
+country_event = { id = anewera.147 days = "791" }

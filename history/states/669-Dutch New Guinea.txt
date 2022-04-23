@@ -1,0 +1,23 @@
+state={
+	id=669
+	name="STATE_669"
+	manpower = 314300
+
+	state_category = pastoral
+
+	history= {
+		owner = TID
+		victory_points = {
+			12371 1 
+		}
+		buildings = {
+			infrastructure = 3
+			12371 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		4468 4524 4593 7269 7487 7512 7542 7585 12315 12386 
+	}
+}

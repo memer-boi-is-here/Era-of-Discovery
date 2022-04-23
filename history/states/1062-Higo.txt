@@ -1,0 +1,22 @@
+state={
+	id=1062
+	name="Higo"
+	provinces={
+		4164 11925 12006
+	}
+	history={
+			owner = KIK
+		add_core_of = KIK
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

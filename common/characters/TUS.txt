@@ -1,0 +1,359 @@
+characters = {
+	TUS_cosimo_i_de_medici = {
+		name = "Cosimo I de' Medici"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUS/cosimo_de_medici.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	TUS_gian_giacomo_medici = {
+		name = "Gian Giacomo Medici"
+		advisor = {
+			slot = army_chief
+			idea_token = gian_giacomo_medici_a
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = gian_giacomo_medici_p
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = gian_giacomo_medici
+			ledger = army 
+				allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_gian_giacomo_medici"
+			}
+			army = {
+				large = "gfx/leaders/TUS/portrait_gian_giacomo_medici.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	TUS_giulio_de_medici = {
+		name = "Giulio de' Medici"
+		advisor = {
+			slot = army_chief
+			idea_token = giulio_de_medici
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_giulio_de_medici"
+			}
+			army = {
+				large = "gfx/leaders/TUS/portrait_giulio_de_medici.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	TUS_alessandro_vitelli = {
+		name = "Alessandro Vitelli"
+		advisor = {
+			slot = political_advisor
+			idea_token = alessandro_vitelli_p
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = alessandro_vitelli
+			ledger = army 
+				allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_alessandro_vitelli"
+			}
+			army = {
+				large = "gfx/leaders/TUS/portrait_alessandro_vitelli.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	TUS_chiappino_vitelli = {
+		name = "Chiappino Vitelli"
+		advisor = {
+			slot = navy_chief
+			idea_token = chiappino_vitelli
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_chiappino_vitelli"
+			}
+			army = {
+				large = "gfx/leaders/TUS/portrait_chiappino_vitelli.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	TUS_alex_williams = {
+		name = "Alex Williams"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1559.1.1.12"
+			id = -1
+		}
+	}
+	TUS_bob_wilson = {
+		name = "Bob Wilson"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1564.1.1.12"
+			id = -1
+		}
+	}
+	TUS_marcus_wilson = {
+		name = "Marcus Wilson"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1570.1.1.12"
+			id = -1
+		}
+	}
+	TUS_benvenuto_cellini_p = {
+		advisor = {
+			slot = political_advisor
+			idea_token = benvenuto_cellini_p
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "benvenuto_cellini_p"
+		portraits = {
+			army = {
+				small = "GFX_idea_benvenuto_cellini"
+			}
+		}
+	}
+	TUS_benvenuto_cellini = {
+		advisor = {
+			slot = high_command
+			idea_token = benvenuto_cellini
+			ledger = army 
+				allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "benvenuto_cellini"
+		portraits = {
+			army = {
+				small = "GFX_idea_benvenuto_cellini"
+			}
+		}
+	}
+	TUS_agostino_ramelli = {
+		advisor = {
+			slot = political_advisor
+			idea_token = agostino_ramelli
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "agostino_ramelli"
+		portraits = {
+			army = {
+				small = "GFX_idea_agostino_ramelli"
+			}
+		}
+	}
+	TUS_benedetto_varchi = {
+		advisor = {
+			slot = political_advisor
+			idea_token = benedetto_varchi
+			allowed = {
+					original_tag = TUS
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "benedetto_varchi"
+		portraits = {
+			army = {
+				small = "GFX_idea_benedetto_varchi"
+			}
+		}
+	}
+}

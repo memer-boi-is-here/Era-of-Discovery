@@ -1,0 +1,19 @@
+state={
+	id=1042
+	name="Patna"
+	history={
+		owner = PAT
+		add_core_of = PAT
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+	provinces={
+		1579 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,262 @@
+ideas = {
+
+	country = {
+		sustain_expedition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = sustain_expedition
+			
+			modifier = {
+			   consumer_goods_factor = 0.05
+			}
+		}
+		
+		annull_expedition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = sustain_expedition
+			
+			modifier = {
+			   consumer_goods_factor = -0.05
+			}
+		
+		}
+		race_to_rearmament = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = race_to_rearmament
+			
+			modifier = {
+			   consumer_goods_factor = 0.1
+			   industrial_capacity_factory = 0.2
+			   production_factory_efficiency_gain_factor  = 0.1
+			}
+		
+		}
+		fury_on_austria = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			
+			targeted_modifier = { tag = AUS attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = AUS breakthrough_bonus_against  = 0.15 }
+			
+		
+		}
+		reformed_high_command = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			
+			modifier = {
+				experience_loss_factor = -0.1
+			}
+			
+		
+		}
+		trade_inspired = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			
+		
+		}
+		trade_escort = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				convoy_escort_efficiency = 0.2
+			}
+			
+		
+		}
+		grain_exportation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				country_resource_oil = -5
+			}
+			
+		
+		}
+		agricultural_advancement = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+			
+		
+		}
+		logistical_plan = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				industrial_capacity_factory  = 0.15
+			}		
+		}
+		FRA_taxes_raised = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				consumer_goods_factor  = -0.1
+			}		
+		}
+		FRA_fiscal_actions = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				consumer_goods_factor  = -0.07
+			}		
+		}
+		FRA_taxes_lowered = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				consumer_goods_factor  = 0.05
+			}		
+		}
+		FRA_blacksmiths = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_escort
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}		
+		}
+		
+	}
+	
+}

@@ -1,0 +1,39 @@
+capital = 805
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+
+}
+
+add_ideas = Protestant
+
+give_military_access = AUS
+
+
+1550.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1550.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		neutrality = 100
+	}
+
+	create_country_leader = {
+		name = "Ulrich"
+		picture = "gfx/leaders/WUR/ulrich.dds"
+		ideology = despotism
+		traits = { }
+	}
+
+}

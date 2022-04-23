@@ -1,0 +1,2893 @@
+focus_tree = {
+	id = RUS_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	
+	focus = {
+		id = RUS_standoff_at_ugra
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		x = 3
+		y = 0
+		cost = 10
+		
+	##	relative_position_id = 
+	##	prerequisite = { focus =  }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+           date > 1552.1.1
+		}
+		
+		bypass = {
+		       ATK = { exists = no }
+		       KZN = { exists = no }
+		}
+		
+		completion_reward = {
+		     declare_war_on = { type = annex_everything target = ATK }
+		     declare_war_on = { type = annex_everything target = KZN } 
+		}
+	}
+	
+	focus = {
+		id = RUS_reclaim_kiev_cores
+		icon = GFX_focus_generic_home_defense
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_standoff_at_ugra
+		prerequisite = { focus = RUS_standoff_at_ugra }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##   available = {
+           
+	##	}
+		
+		completion_reward = {
+		     
+		}
+	}
+	
+	focus = {
+		id = RUS_finnsh_of_khante_of_kazan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_reclaim_kiev_cores
+		prerequisite = { focus = RUS_reclaim_kiev_cores }
+		mutually_exclusive = { focus = RUS_puppet_astrkhan_khanate }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+             country_exists = ATK
+			 ATK = { has_war = no }
+		}
+		
+		bypass = {
+		      has_completed_focus = RUS_demand_east_astrkhan_khanate
+		}
+		
+		completion_reward = {
+		     create_wargoal = { type = annex_everything target = ATK }
+		}
+	}
+	
+	focus = {
+		id = RUS_learn_from_the_war
+		icon = GFX_goal_rhineland
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_finnsh_of_khante_of_kazan
+		prerequisite = { focus = RUS_finnsh_of_khante_of_kazan }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##   available = {
+
+	##	}
+		
+		completion_reward = {
+		   army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = RUS_puppet_astrkhan_khanate
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_reclaim_kiev_cores
+		prerequisite = { focus = RUS_reclaim_kiev_cores }
+		mutually_exclusive = { focus = RUS_finnsh_of_khante_of_kazan }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+             country_exists = ATK
+			 ATK = { has_war = no }
+		}
+		
+		bypass = {
+		      has_completed_focus = RUS_demand_east_astrkhan_khanate
+		}
+		
+		completion_reward = {
+		    transfer_state = 257
+		    transfer_state = 255
+		    transfer_state = 239
+		    puppet = ATK
+		}
+	}  
+	
+	focus = {
+		id = RUS_demand_east_astrkhan_khanate
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_puppet_astrkhan_khanate
+		prerequisite = { focus = RUS_puppet_astrkhan_khanate }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+             country_exists = ATK
+			 ATK = { has_war = no }
+		}
+		
+		bypass = {
+		      has_completed_focus = RUS_demand_east_astrkhan_khanate
+		}
+		
+		completion_reward = {
+		    transfer_state = 652
+		    transfer_state = 651
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_khante_of_kazan
+		icon = GFX_goal_generic_attack_allies
+		x = 2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_reclaim_kiev_cores
+		prerequisite = { focus = RUS_reclaim_kiev_cores }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+			KZN = { has_war = no }
+		}
+		
+		completion_reward = {
+		     puppet = KZN
+		}
+	}
+	
+	focus = {
+		id = RUS_take_back_crimean
+		icon = GFX_goal_generic_forceful_treaty
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_demand_east_astrkhan_khanate
+		prerequisite = { focus = RUS_demand_east_astrkhan_khanate focus = RUS_learn_from_the_war }
+		prerequisite = { focus = RUS_the_sacking_of_moscow }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##    available = {
+             
+	##	}
+		
+		completion_reward = {
+		     add_state_claim = 260
+		     add_state_claim = 240
+		     add_state_claim = 220
+		}
+	}
+	
+	focus = {
+		id = RUS_colinize_the_east
+		icon = GFX_focus_GRE_an_orthodox_state
+		x = 10
+		y = 0
+		cost = 5
+		
+	##	relative_position_id = 
+	##	prerequisite = { focus =  }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##   available = {
+           
+	##	}
+		
+		completion_reward = {
+		     
+		}
+	}
+		
+	focus = {
+		id = RUS_core_the_east
+		icon = GFX_focus_por_luso_tropicalism
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_colinize_the_east
+		prerequisite = { focus = RUS_colinize_the_east }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+             controls_state = 581
+             controls_state = 580
+             controls_state = 579
+		}
+		
+		completion_reward = {
+		     add_state_core = 581
+		     add_state_core = 580
+		     add_state_core = 579
+		}
+	}
+		
+	focus = {
+		id = RUS_demand_sibira
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_learn_from_the_war
+		prerequisite = { focus = RUS_demand_east_astrkhan_khanate focus = RUS_learn_from_the_war }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	    available = {
+             controls_state = 581
+             controls_state = 580
+             controls_state = 579
+		}
+		
+		completion_reward = {
+		     create_wargoal = { type = annex_everything target = SIB }
+		}
+	}	
+		
+	focus = {
+		id = RUS_increase_production
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_rebuild_industry
+		prerequisite = { focus = RUS_rebuild_industry focus = RUS_core_yeniseisk focus = RUS_core_kirensk }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+		    
+    ##	}
+		
+		completion_reward = {
+		     random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+		     random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		    }
+	    }
+	}
+
+	focus = {
+		id = RUS_hardern_training
+		icon = GFX_focus_chi_army_reform
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_the_east
+		prerequisite = { focus = RUS_core_the_east }
+		mutually_exclusive = { focus = RUS_army_line_training }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           army_experience = 35
+		}
+	}
+	
+	focus = {
+		id = RUS_rebuild_industry
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_siberia
+		prerequisite = { focus = RUS_core_siberia }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_tech_bonus = { bonus = 1 uses = 2 category = Industry }
+		}
+	}	
+	
+	focus = {
+		id = RUS_army_line_training
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_the_east
+		prerequisite = { focus = RUS_core_the_east }
+		mutually_exclusive = { focus = RUS_hardern_training }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_tech_bonus = { bonus = 0.75 uses = 3 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = RUS_expand_the_infrastructure
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_rebuild_industry
+		prerequisite = { focus = RUS_rebuild_industry focus = RUS_core_yeniseisk focus = RUS_core_kirensk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		}
+	}
+	
+	focus = {
+		id = RUS_build_more_infrastructure
+		icon = GFX_focus_generic_tungsten
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_krasnoyarsk
+		prerequisite = { focus = RUS_core_bodaybo focus = RUS_core_bratsk focus = RUS_core_krasnoyarsk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		}
+	}
+	
+	focus = {
+		id = RUS_build_a_civilian_industry
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_bodaybo
+		prerequisite = { focus = RUS_core_bodaybo focus = RUS_core_bratsk focus = RUS_core_krasnoyarsk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		 
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = industrial_complex
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = industrial_complex
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		}
+	}
+	
+	focus = {
+		id = RUS_russian_army_factories
+		icon = GFX_focus_generic_industry_3
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_hardern_training
+		prerequisite = { focus = RUS_hardern_training }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  add_tech_bonus = { bonus = 1 uses = 1 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = RUS_militarized_state
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_army_line_training
+		prerequisite = { focus = RUS_army_line_training }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  add_tech_bonus = { bonus = 1 uses = 3 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = RUS_expand_civilian_industry
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_core_bratsk
+		prerequisite = { focus = RUS_core_bodaybo focus = RUS_core_bratsk focus = RUS_core_krasnoyarsk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           random_owned_state = {
+		       add_building_construction = {
+				      type = industrial_complex
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = industrial_complex
+		              level = 1
+					  instant_build = yes
+				      }
+		  }
+		}
+	}
+	
+	focus = {
+		id = RUS_plans_for_kiev
+		icon = GFX_goal_generic_position_armies
+		x = 17
+		y = 0
+		cost = 10
+		
+	##	relative_position_id = 
+	##	prerequisite = { focus =  }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_political_power = 100
+		}
+	}
+	 
+	focus = {
+		id = RUS_form_the_tsar
+		icon = GFX_focus_BUL_the_return_of_ferdinand
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_plans_for_kiev
+		prerequisite = { focus = RUS_plans_for_kiev }
+		mutually_exclusive = { focus = RUS_create_a_parliament }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = RUS_create_a_parliament
+		icon = GFX_focus_generic_self_management
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_plans_for_kiev
+		prerequisite = { focus = RUS_plans_for_kiev }
+		mutually_exclusive = { focus = RUS_form_the_tsar }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = RUS_start_the_demands
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_form_the_tsar
+		prerequisite = { focus = RUS_create_a_parliament focus = RUS_form_the_tsar }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+           add_stability = -0.05
+		   add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_the_khante_of_kazan 
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_start_the_demands
+		prerequisite = { focus = RUS_start_the_demands }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 50
+		}
+		
+		bypass = {
+		      has_completed_focus = RUS_demand_khante_of_kazan
+		}
+		
+		completion_reward = {
+		    add_political_power = -50
+            add_state_claim = 251 
+            add_state_claim = 250 
+            add_state_claim = 249 
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_the_khante_of_crimia
+		icon = GFX_focus_generic_monarchy_1
+		x = -2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_start_the_demands
+		prerequisite = { focus = RUS_start_the_demands }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 100
+			 has_completed_focus = RUS_form_the_tsar
+		}
+		
+		completion_reward = {
+		    add_political_power = -100
+            add_state_claim = 891
+            add_state_claim = 265
+            add_state_claim = 260
+            add_state_claim = 245 
+            add_state_claim = 240 
+            add_state_claim = 238 
+            add_state_claim = 234 
+            add_state_claim = 228 
+            add_state_claim = 227 
+            add_state_claim = 220 
+            add_state_claim = 218 
+            add_state_claim = 200 
+            add_state_claim = 196 
+            add_state_claim = 137 
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_the_khante_of_astrakhan
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_start_the_demands
+		prerequisite = { focus = RUS_start_the_demands }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 100
+		}
+		
+		completion_reward = {
+		    add_political_power = -100
+            add_state_claim = 839 
+            add_state_claim = 652 
+            add_state_claim = 651 
+            add_state_claim = 407 
+            add_state_claim = 401 
+            add_state_claim = 257 
+            add_state_claim = 255 
+            add_state_claim = 239 
+            add_state_claim = 237 
+            add_state_claim = 236 
+            add_state_claim = 235 
+            add_state_claim = 217 
+		}
+	}
+	
+	focus = {
+		id = RUS_crmian_freedom
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_demand_the_khante_of_crimia
+		prerequisite = { focus = RUS_demand_the_khante_of_crimia }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		    add_political_power = -25
+		    TUR = { 
+			    set_autonomy = {
+	                 target = CRI
+	                 autonomy_state = autonomy_free
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_plans_for_buffer_zone
+		icon = GFX_focus_invite_finland
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_demand_the_khante_of_astrakhan
+		prerequisite = { focus = RUS_demand_the_khante_of_astrakhan }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+
+	##	}
+		
+		completion_reward = {
+		    add_opinion_modifier = { target = SWE modifier = medium_increase }
+			SWE = { add_opinion_modifier = { target = RUS modifier = medium_increase } }
+		}
+	}
+	
+	focus = {
+		id = RUS_finnish_buffer_zone
+		icon = GFX_focus_spa_caudillo_of_spain
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_plans_for_buffer_zone
+		prerequisite = { focus = RUS_plans_for_buffer_zone }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+			 
+		}
+		
+		completion_reward = {
+		    add_political_power = -25
+		    SWE = { add_political_power = -25 }
+			FIN = {
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 111
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_march_into_finland
+		icon = GFX_focus_prc_infiltration
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_finnish_buffer_zone
+		prerequisite = { focus = RUS_finnish_buffer_zone }
+		prerequisite = { focus = RUS_french_alliance }
+		mutually_exclusive = { focus = RUS_form_greater_finland }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+			 date > 1552.1.1
+		}
+		
+		completion_reward = {
+            puppet = FIN
+			SWE = {
+			   declare_war_on = { target = RUS type = puppet_wargoal_focus }
+			   declare_war_on = { target = FIN type = puppet_wargoal_focus }
+			   hidden_effect = {
+			        add_state_claim = 150
+			        add_state_claim = 149
+			        add_state_claim = 148
+			        add_state_claim = 111
+			   }
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_circassian_freedom
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_crmian_freedom
+		prerequisite = { focus = RUS_crmian_freedom }
+		prerequisite = { focus = RUS_demand_the_khante_of_kazan }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		    add_political_power = -25
+		    TUR = { 
+			    set_autonomy = {
+	                 target = CIR
+	                 autonomy_state = autonomy_free
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_form_greater_finland
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_finnish_buffer_zone
+		prerequisite = { focus = RUS_finnish_buffer_zone }
+		mutually_exclusive = { focus = RUS_march_into_finland }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 100
+			FIN = {
+			   add_political_power = -100
+			   transfer_state = 216
+			   transfer_state = 215
+			   transfer_state = 213
+			   transfer_state = 195
+			   transfer_state = 146
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_finnsh_land
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_march_into_finland
+		prerequisite = { focus = RUS_form_greater_finland focus = RUS_march_into_finland }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		    add_political_power = -25
+			FIN = {
+			transfer_state = 824
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_finish_kiev_plans
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = -2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_demand_finnsh_land
+		prerequisite = { focus = RUS_demand_finnsh_land focus = RUS_circassian_freedom }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 150
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_exspand_south
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_circassian_freedom
+		prerequisite = { focus = RUS_circassian_freedom }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 100
+		    add_state_claim = 838
+		    add_state_claim = 832
+		    add_state_claim = 233
+		    add_state_claim = 232
+		}
+	}
+	
+	focus = {
+		id = RUS_exspand_east
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_circassian_freedom
+		prerequisite = { focus = RUS_circassian_freedom }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 100
+		    add_state_claim = 582
+		    add_state_claim = 578
+		    add_state_claim = 577
+		    add_state_claim = 573
+		    add_state_claim = 572
+		    add_state_claim = 571
+		    add_state_claim = 570
+		    add_state_claim = 403
+		}
+	}
+	
+	focus = {
+		id = RUS_mirage_east
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_exspand_east
+		prerequisite = { focus = RUS_exspand_south }
+		prerequisite = { focus = RUS_exspand_east }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+			 has_completed_focus = RUS_core_the_east
+			 NOT = {
+			   SIB = { any_state = { is_controlled_by = SIB } }
+			 }
+			 controls_state = 576
+		     controls_state = 568
+		     controls_state = 567
+		     controls_state = 566
+		     controls_state = 564
+		     controls_state = 516
+		}
+		
+		completion_reward = {
+		    add_political_power = 300
+		}
+	}
+	
+	focus = {
+		id = RUS_absolutely_control
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 26
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = no
+		
+	##	relative_position_id = 
+	##	prerequisite = { focus =  }
+		mutually_exclusive = { focus = RUS_execute_ivan }
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+			
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = RUS_raid_novgorod
+		icon = GFX_goal_generic_military_sphere
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_absolutely_control
+		prerequisite = { focus = RUS_absolutely_control }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 50
+			add_stability = -0.05
+			263 = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -2
+					  instant_build = yes
+			   }
+		  }
+		}
+	}
+	
+	focus = {
+		id = RUS_take_land_from_monasteries
+		icon = GFX_goal_generic_political_pressure
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_absolutely_control
+		prerequisite = { focus = RUS_absolutely_control }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		  add_political_power = 50
+		  add_stability = -0.1
+	      random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+		  random_owned_state = {
+		       add_building_construction = {
+				      type = infrastructure
+		              level = -1
+					  instant_build = yes
+				      }
+		  }
+	   }
+	}
+	
+	focus = {
+		id = RUS_militarized_land
+		icon = GFX_goal_demand_sudetenland
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_take_land_from_monasteries
+		prerequisite = { focus = RUS_take_land_from_monasteries }
+		prerequisite = { focus = RUS_raid_novgorod }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_stability = -0.05
+		    random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+			 random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+			 random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+			 random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+			 random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+			 random_owned_state = {
+		       add_building_construction = {
+				      type = arms_factory
+		              level = 1
+					  instant_build = yes
+				      }
+		     }
+		}
+	}
+	
+	focus = {
+		id = RUS_subjugate_tribes
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_militarized_land
+		prerequisite = { focus = RUS_militarized_land }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    add_political_power = 50
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = RUS_future_thinking
+		icon = GFX_focus_generic_black_sea_focus
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_militarized_land
+		prerequisite = { focus = RUS_militarized_land }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		    remove_ideas = backward_mindset
+		}
+	}
+	
+	focus = {
+		id = RUS_floating_fortress
+		icon = GFX_focus_generic_coastal_fort
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_subjugate_tribes
+		prerequisite = { focus = RUS_subjugate_tribes }
+		prerequisite = { focus = RUS_future_thinking }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+             add_ideas = simeon_bekbulatovich
+		}
+	}
+	
+	focus = {
+		id = RUS_far_east_migration
+		icon = GFX_focus_por_luso_tropicalism
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_mirage_east
+		prerequisite = { focus = RUS_mirage_east }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             controls_state = 1058
+		     controls_state = 675
+		     controls_state = 674
+             controls_state = 644
+             controls_state = 637
+             controls_state = 633
+             controls_state = 565
+             controls_state = 562
+		}
+		
+		completion_reward = {
+		     add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = RUS_the_polish_lithuania_plan
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_absolutely_control
+		prerequisite = { focus = RUS_absolutely_control }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		     add_war_support = 0.05
+			 add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = RUS_vasslship_of_livonian
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_the_polish_lithuania_plan
+		prerequisite = { focus = RUS_the_polish_lithuania_plan }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             date > 1553.1.1
+		}
+		
+		completion_reward = {
+		     declare_war_on = { target = LIV type = puppet_wargoal_focus }
+			 add_state_claim = 827
+			 add_state_claim = 826
+			 add_state_claim = 191
+			 add_state_claim = 83
+			 add_state_claim = 12
+			 hidden_effect = {
+			      LIT = { 
+				       transfer_state = 190
+				  }
+			 }
+		}
+	}
+	
+	focus = {
+		id = RUS_focus_on_bigger_threats
+		icon = GFX_focus_generic_aegean_sea_focus
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_the_polish_lithuania_plan
+		prerequisite = { focus = RUS_the_polish_lithuania_plan }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 1 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		     add_stability = 0.05
+			 add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = RUS_retake_constantinople
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_take_back_crimean
+		prerequisite = { focus = RUS_take_back_crimean }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_completed_focus = RUS_The_orthodox_faith
+			 CRI = { exists = no }
+		}
+		
+		completion_reward = {
+		      add_state_claim = 1126
+			  create_wargoal = { type = annex_everything target = TUR }
+		}
+	}
+	
+	focus = {
+		id = RUS_the_orthodox_faith
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_floating_fortress
+		prerequisite = { focus = RUS_floating_fortress }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		      add_stability = 0.05
+			  add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = RUS_joint_war_agaist_the_ottomans
+		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_focus_on_bigger_threats
+		prerequisite = { focus = RUS_focus_on_bigger_threats }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		      add_stability = -0.1
+			  add_war_support = -0.05
+			  declare_war_on = { type = annex_everything target = TUR }
+			  AUS = { declare_war_on = { type = annex_everything target = TUR } }
+			  LIT = { declare_war_on = { type = annex_everything target = TUR } }
+			  LIT = { declare_war_on = { type = annex_everything target = CRI } }
+			  add_state_claim = 265
+			  add_state_claim = 260
+			  add_state_claim = 245
+			  add_state_claim = 240
+			  add_state_claim = 238
+			  add_state_claim = 234
+			  add_state_claim = 228
+			  add_state_claim = 220
+			  add_state_claim = 218
+			  hidden_effect = {
+			       LIT = {
+				        add_state_claim = 891
+				        add_state_claim = 227
+				        add_state_claim = 200
+				        add_state_claim = 197
+				        add_state_claim = 196
+				        add_state_claim = 192
+				        add_state_claim = 137
+				   }
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_claim_the_mother_land
+		icon = GFX_focus_generic_black_sea_focus
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_vasslship_of_livonian
+		prerequisite = { focus = RUS_vasslship_of_livonian }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		      declare_war_on = { type = annex_everything target = TUR }
+			  declare_war_on = { type = annex_everything target = CRI }
+			  add_state_claim = 265
+			  add_state_claim = 260
+			  add_state_claim = 245
+			  add_state_claim = 240
+			  add_state_claim = 238
+			  add_state_claim = 234
+			  add_state_claim = 228
+			  add_state_claim = 220
+			  add_state_claim = 218
+			  add_state_claim = 891
+			  add_state_claim = 227
+			  add_state_claim = 200
+			  add_state_claim = 197
+			  add_state_claim = 196
+		      add_state_claim = 192
+			  add_state_claim = 137  
+		}
+	}
+	
+	focus = {
+		id = RUS_ottoman_reforms
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_claim_the_mother_land
+		prerequisite = { focus = RUS_claim_the_mother_land focus = RUS_joint_war_agaist_the_ottomans }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		      add_political_power = 100
+              TUR = {
+                   add_stability = -0.2
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_lithuaian_crimean_confrence
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = -2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_ottoman_reforms
+		prerequisite = { focus = RUS_ottoman_reforms  }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		bypass = {
+		      has_completed_focus = RUS_joint_war_agaist_the_ottomans
+		}
+		
+		completion_reward = {
+		      add_political_power = -25
+              LIT = {
+			        transfer_state = 197
+			        transfer_state = 192
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_1st_bolitic_confrence
+		icon = GFX_focus_hol_continue_the_war_in_batavia
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_ottoman_reforms
+		prerequisite = { focus = RUS_ottoman_reforms  }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		      add_political_power = -25
+              MOL = {
+			        transfer_state = 766
+			        add_state_core = 766
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_2nd_bolitic_confrence
+		icon = GFX_focus_BUL_cooperate_with_the_zveno
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_1st_bolitic_confrence
+		prerequisite = { focus = RUS_1st_bolitic_confrence  }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		      add_political_power = -25
+              ROM = {
+			        transfer_state = 77
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_3nd_bolitic_confrence
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_2nd_bolitic_confrence
+		prerequisite = { focus = RUS_2nd_bolitic_confrence }
+		prerequisite = { focus = RUS_2nd_austrian_confrence }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		      add_political_power = -25
+              TUR = {
+			        puppet = SER
+					transfer_state = 1131
+					transfer_state = 108
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_1st_austrian_confrence
+		icon = GFX_focus_BUL_found_the_brannik
+		x = 2
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_ottoman_reforms
+		prerequisite = { focus = RUS_ottoman_reforms }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 25
+		}
+		
+		completion_reward = {
+		      add_political_power = -150
+			  hidden_effect = {
+			       TUR = {
+			             release = HUN
+			       }
+			  }
+			  AUS = {
+			        puppet = HUN
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_2nd_austrian_confrence
+		icon = GFX_focus_YUG_autonomous_transylvania
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_1st_austrian_confrence
+		prerequisite = { focus = RUS_1st_austrian_confrence }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 100
+		}
+		
+		completion_reward = {
+		      add_political_power = -100
+			  hidden_effect = {
+			       TUR = {
+			             set_autonomy = {
+	                          target = TRA
+	                          autonomy_state = autonomy_free
+                         }
+			       }
+			  }
+			  AUS = {
+			        puppet = TRA
+			  }
+		}
+	}
+	
+	focus = {
+		id = RUS_the_sacking_of_moscow
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_demand_khante_of_kazan
+		prerequisite = { focus = RUS_demand_khante_of_kazan }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+		
+		completion_reward = {
+		      add_stability = -0.2
+			  219 = {
+		          add_building_construction = {
+				      type = infrastructure
+		              level = -3
+					  instant_build = yes
+				  }
+		      }
+		}
+	}
+	
+	focus = {
+		id = RUS_13_years_war
+		icon = GFX_focus_generic_monarchy_2
+		x = -3
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_the_orthodox_faith
+		prerequisite = { focus = RUS_the_orthodox_faith focus = RUS_french_alliance }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+             has_political_power > 50
+		}
+		
+		completion_reward = {
+		      add_political_power = -50
+			  add_stability = -0.1
+			  add_war_support = -0.1
+			  declare_war_on = { type = annex_everything target = LIT }
+			  add_state_claim = 259
+			  add_state_claim = 243
+			  add_state_claim = 242
+			  add_state_claim = 241
+			  add_state_claim = 225
+			  add_state_claim = 224
+			  add_state_claim = 221
+			  add_state_claim = 193
+		}
+	}
+	
+	focus = {
+		id = RUS_beard_tax
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_the_orthodox_faith
+		prerequisite = { focus = RUS_the_orthodox_faith }
+	##	mutually_exclusive = {  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+             
+	##	}
+	
+		completion_reward = {
+		     custom_effect_tooltip = "Gain 150 Duncats"
+		     add_to_variable = { money = 150 }
+	    }
+	}
+	
+	focus = {
+		id = RUS_colinize_grant
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 1
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_hardern_training
+		prerequisite = { focus = RUS_hardern_training focus = RUS_army_line_training }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##    available = {
+             
+	##	}
+		
+		completion_reward = {
+		     add_political_power = 300
+			 add_stability = -0.4
+			 add_war_support = -0.2
+		}
+	}
+	
+	focus = {
+		id = RUS_core_siberia
+		icon = GFX_focus_spr_class_war
+		x = 0
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_colinize_grant
+		prerequisite = { focus = RUS_colinize_grant }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 516
+		}
+		
+		completion_reward = {
+			add_state_core = 516
+		}
+	}
+	
+	focus = {
+		id = RUS_core_yeniseisk
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = -2
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_core_siberia
+		prerequisite = { focus = RUS_core_siberia }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 576
+		}
+		
+		completion_reward = {
+			add_state_core = 576
+		}
+	}
+	
+	focus = {
+		id = RUS_core_kirensk
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 2
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_core_siberia
+		prerequisite = { focus = RUS_core_siberia }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 575
+		}
+		
+		completion_reward = {
+			add_state_core = 575
+		}
+	}
+	
+	focus = {
+		id = RUS_core_krasnoyarsk
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 0
+		y = 2
+		cost = 5
+		
+		relative_position_id = RUS_core_yeniseisk
+		prerequisite = { focus = RUS_core_kirensk focus = RUS_core_yeniseisk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 568
+		}
+		
+		completion_reward = {
+			add_state_core = 568
+		}
+	}
+	
+	focus = {
+		id = RUS_core_bratsk
+		icon = GFX_focus_spr_unify_the_london_bureau
+		x = 2
+		y = 2
+		cost = 5
+		
+		relative_position_id = RUS_core_yeniseisk
+		prerequisite = { focus = RUS_core_kirensk focus = RUS_core_yeniseisk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 567
+		}
+		
+		completion_reward = {
+			add_state_core = 567
+		}
+	}
+	
+	focus = {
+		id = RUS_core_bodaybo
+		icon = GFX_focus_spa_caudillo_of_spain
+		x = 0
+		y = 2
+		cost = 5
+		
+		relative_position_id = RUS_core_kirensk
+		prerequisite = { focus = RUS_core_kirensk focus = RUS_core_yeniseisk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 565
+		}
+		
+		completion_reward = {
+			add_state_core = 565
+		}
+	}
+	
+	focus = {
+		id = RUS_core_irkutsk
+		icon = GFX_focus_mex_support_general_cedillo
+		x = -1
+		y = 2
+		cost = 5
+		
+		relative_position_id = RUS_core_bratsk
+		prerequisite = { focus = RUS_core_bratsk focus = RUS_core_krasnoyarsk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 566
+		}
+		
+		completion_reward = {
+			add_state_core = 566
+		}
+	}
+	
+	focus = {
+		id = RUS_core_ulan_ude
+		icon = GFX_focus_GRE_metaxism
+		x = 1
+		y = 2
+		cost = 5
+		
+		relative_position_id = RUS_core_bratsk
+		prerequisite = { focus = RUS_core_bodaybo focus = RUS_core_bratsk }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 564
+		}
+		
+		completion_reward = {
+			add_state_core = 564
+		}
+	}
+	
+	focus = {
+		id = RUS_core_chita
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_core_irkutsk
+		prerequisite = { focus = RUS_core_irkutsk focus = RUS_core_ulan_ude }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            controls_state = 563
+		}
+		
+		completion_reward = {
+			add_state_core = 563
+		}
+	}
+	
+	focus = {
+		id = RUS_pay_off_debt
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		cost = 5
+		
+		relative_position_id = RUS_core_chita
+		prerequisite = { focus = RUS_core_chita }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+            has_political_power > 350
+		}
+		
+		completion_reward = {
+			add_political_power = -350
+			add_stability = 0.3
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = RUS_the_tallin_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 2
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_militarized_state
+		prerequisite = { focus = RUS_militarized_state focus = RUS_crmian_freedom }
+		
+		available = {
+			controls_state = 191
+		}
+		
+		completion_reward = {
+			191 = {
+				add_building_construction= { 
+					type = dockyard
+					province = 3152
+					level = 2 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_navy_improvements
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_militarized_state
+		prerequisite = { focus = RUS_militarized_state }
+
+		completion_reward = {
+			navy_experience = 15
+			add_manpower = 10000
+		}
+	}
+
+	
+	focus = {
+		id = RUS_economic_expansion
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_russian_army_factories
+		prerequisite = { focus = RUS_russian_army_factories }
+
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.25
+		}
+	}
+	
+	focus = {
+		id = RUS_execute_ivan
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 22
+		y = 0
+		cost = 10
+		
+		mutually_exclusive = { focus = RUS_absolutely_control }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_country_leader = { name = "Ivan IV" }
+			NOT = {
+				is_ai = yes
+			}
+		}
+		
+		completion_reward = {
+			retire_country_leader = yes
+		}
+	}
+
+	focus = {
+		id = RUS_deivanization
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_execute_ivan
+		prerequisite = { focus = RUS_execute_ivan }
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = RUS_improve_relations_with_france
+		icon = GFX_focus_chi_reach_out_to_france
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_deivanization
+		prerequisite = { focus = RUS_deivanization }
+
+		completion_reward = {
+			add_opinion_modifier = { target = FRA modifier = medium_increase }
+			FRA = { add_opinion_modifier = { target = RUS modifier = medium_increase } }
+		}
+	}
+	
+	focus = {
+		id = RUS_forward_thinking
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_deivanization
+		prerequisite = { focus = RUS_deivanization }
+
+		completion_reward = {
+			remove_ideas = backward_mindset
+		}
+	}
+	
+	focus = {
+		id = RUS_invite_from_the_church
+		icon = GFX_focus_generic_home_defense
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_improve_relations_with_france
+		prerequisite = { focus = RUS_improve_relations_with_france focus = RUS_forward_thinking }
+
+		completion_reward = {
+			add_ideas = macarius_of_moscow
+		}
+	}
+	
+	focus = {
+		id = RUS_russian_orthodox_church
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_invite_from_the_church
+		prerequisite = { focus = RUS_invite_from_the_church }
+
+		available = {
+			neutrality > 0.4
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_french_alliance
+		icon = GFX_focus_fra_milice
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_russian_orthodox_church
+		prerequisite = { focus = RUS_russian_orthodox_church }
+
+	##	available = {
+			
+	##	}
+
+		completion_reward = {
+			FRA = { add_to_faction = RUS }
+		}
+	}
+	
+	focus = {
+		id = RUS_1st_orthodox_wars
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_march_into_finland
+		prerequisite = { focus = RUS_march_into_finland }
+		prerequisite = { focus = RUS_french_alliance }
+
+	##	available = {
+			
+	##	}
+
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = SWE }
+		}
+	}
+	
+	focus = {
+		id = RUS_build_up_sweeden
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = RUS_1st_orthodox_wars
+		prerequisite = { focus = RUS_1st_orthodox_wars	 }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+		available = {
+			SWE = { is_subject_of = RUS }
+		}
+		
+		completion_reward = {
+			SWE = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+	focus = {
+		id = RUS_build_swedish_churchs
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_build_up_sweeden
+		prerequisite = { focus = RUS_build_up_sweeden }
+		
+	##	available = {
+			
+	##	}
+
+		completion_reward = {
+			SWE = {
+				swap_ideas = {
+					remove_idea = protestant
+					add_idea = orthodox
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_sweeden_civilian_development
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_build_up_sweeden
+		prerequisite = { focus = RUS_build_up_sweeden }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SWE = {	
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+	focus = {
+		id = RUS_sweeden_military_development
+		icon = GFX_goal_generic_construct_mil_factory 
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_build_up_sweeden
+		prerequisite = { focus = RUS_build_up_sweeden }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SWE = {
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 1 
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes 
+					}
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+	focus = {
+		id = RUS_sweeden_industrial_expansion_i
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_sweeden_civilian_development
+		prerequisite = { focus = RUS_sweeden_civilian_development }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SWE = {
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 4
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+	focus = {
+		id = RUS_sweeden_industrial_expansion_ii
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_sweeden_military_development
+		prerequisite = { focus = RUS_sweeden_military_development }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SWE = {
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 4
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+	focus = {
+		id = RUS_2nd_orthodox_wars
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_build_swedish_churchs
+		prerequisite = { focus = RUS_build_swedish_churchs }
+
+	##	available = {
+			
+	##	}
+
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = DEN }
+		}
+	}
+	
+	focus = {
+		id = RUS_denmark_industrial_expansion_i
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_2nd_orthodox_wars
+		prerequisite = { focus = RUS_2nd_orthodox_wars }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			DEN = { is_subject_of = RUS }
+		}
+		
+		completion_reward = {
+			DEN = {
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_denmark_industrial_expansion_ii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = RUS_denmark_industrial_expansion_i
+		prerequisite = { focus = RUS_denmark_industrial_expansion_i }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			DEN = {	
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory 
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory 
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory 
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			SWE = { add_autonomy_ratio = { value = 0.1 } }
+		}
+	}
+	
+ }

@@ -1,0 +1,358 @@
+add_namespace = TUR_FRA_alliance
+add_namespace = TUR_ultimatum_MNT
+add_namespace = TUR_peace_PER
+add_namespace = state_sold
+add_namespace = SPR_vs_TUR
+add_namespace = calais_taken
+add_namespace = peace_refused
+
+#####################################
+# FRANCE ACCEPTS ALLY WITH OTTOMANS #
+#####################################
+
+news_event = {
+	id = TUR_FRA_alliance.0 
+	title = TUR_FRA_alliance.0.t
+	desc = TUR_FRA_alliance.0.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_FRA_alliance.0.a
+		FRA = { give_guarantee = TUR }
+		TUR = { give_guarantee = FRA }
+		FRA = {
+			add_opinion_modifier = {
+				target = TUR
+				modifier = FRA_accepts_TUR_ally
+			}
+		}
+		TUR = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = FRA_accepts_TUR_ally
+			}
+		}
+################should catholic have a opinion malus with france then###################àà
+	}
+
+}
+
+#####################################
+# FRANCE REFUSES ALLY WITH OTTOMANS #
+#####################################
+news_event = {
+	id = TUR_FRA_alliance.1 
+	title = TUR_FRA_alliance.1.t
+	desc = TUR_FRA_alliance.1.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_FRA_alliance.1.a
+		
+	}
+
+}
+##############################
+# TUR enters war to help FRA #
+##############################
+news_event = { 
+	id = TUR_FRA_alliance.2 
+	title = TUR_FRA_alliance.2.t
+	desc = TUR_FRA_alliance.2.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_FRA_alliance.2.a
+		if = { limit = { FRA = { has_war_with = AUS } }
+			TUR = {
+				add_to_war = { 
+					targeted_alliance = FRA 
+					enemy = AUS
+				}
+			}
+		}
+		if = { limit = { FRA = { has_war_with = SPR } }
+			TUR = {
+				add_to_war = { 
+					targeted_alliance = FRA 
+					enemy = SPR
+				}
+			}
+		}
+		if = { limit = { FRA = { has_war_with = LOR } }
+			TUR = {
+				add_to_war = { 
+					targeted_alliance = FRA 
+					enemy = LOR
+				}
+			}
+		}
+	}
+}
+###########################
+# TUR refuses to help FRA #
+###########################
+news_event = { 
+	id = TUR_FRA_alliance.3
+	title = TUR_FRA_alliance.3.t
+	desc = TUR_FRA_alliance.3.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_FRA_alliance.3.a
+	}
+}
+
+##########################################
+# MONTENEGRO ACCEPTS OTTOMAN'S ULTIMATUM #
+##########################################
+news_event = { 
+	id = TUR_ultimatum_MNT.0 
+	title = TUR_ultimatum_MNT.0.t
+	desc = TUR_ultimatum_MNT.0.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_ultimatum_MNT.0.a
+		TUR = { 
+			annex_country = {
+				target = MNT
+				transfer_troops = yes
+			}
+		}
+		##ae increases?
+		##tension increases?
+	}
+}
+
+##########################################
+# MONTENEGRO REFUSES OTTOMAN'S ULTIMATUM #
+##########################################
+news_event = { 
+	id = TUR_ultimatum_MNT.1 
+	title = TUR_ultimatum_MNT.1.t
+	desc = TUR_ultimatum_MNT.1.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_ultimatum_MNT.1.a
+		declare_war_on = {
+			target = MNT
+			type = annex_everything
+		}
+	}
+}
+
+######################################
+# PERSIA ACCEPTS PEACE WITH OTTOMANS #
+######################################
+news_event = { 
+	id = TUR_peace_PER.0 
+	title = TUR_peace_PER.0.t
+	desc = TUR_peace_PER.0.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_peace_PER.0.a
+		TUR = { add_political_power = 100 }
+	}
+}
+######################################
+# PERSIA REFUSES PEACE WITH OTTOMANS #
+######################################
+news_event = { 
+	id = TUR_peace_PER.1 
+	title = TUR_peace_PER.1.t
+	desc = TUR_peace_PER.1.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = TUR_peace_PER.1.a
+		TUR  ={
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+}
+
+########################################
+# SPAIN SUPPORTS MALTA AGAINS OTTOMANS #
+########################################
+news_event = { 
+	id = SPR_vs_TUR.1 
+	title = SPR_vs_TUR.1.t
+	desc = SPR_vs_TUR.1.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = SPR_vs_TUR.1.a
+	}
+}
+##############################
+# ENGLAND RENOUNCES TO CALAIS #
+##############################
+news_event = { 
+	id = calais_taken.0 
+	title = calais_taken.0.t
+	desc = calais_taken.0.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = calais_taken.0.a
+		29 = {
+			set_state_owner_to = FRA
+			set_state_controller_to = FRA
+		}
+		FRA = { white_peace = ENG }
+	}
+}
+######################################
+# ENGLAND DOESN'T RENOUNCE TO CALAIS #
+######################################
+news_event = { 
+	id = peace_refused.0 
+	title = peace_refused.0.t
+	desc = peace_refused.0.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = yes 
+	
+	option = { 
+		name = peace_refused.0.a
+	}
+}
+
+
+
+############################
+# TUR SELLING INDIAN PORTS #
+############################
+# 963 #
+#######
+news_event = { 
+	id = state_sold.963 
+	title = state_sold.963.t
+	desc = state_sold.963.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = no 
+	
+	option = { 
+		name = state_sold.1.a
+	}
+}
+#######
+# 964 #
+#######
+news_event = {
+	id = state_sold.964 
+	title = state_sold.964.t
+	desc = state_sold.964.d
+	picture = GFX_TUR_FRA_alliance
+
+	major = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	fire_only_once = no 
+	
+	option = { 
+		name = state_sold.1.a
+	}
+}

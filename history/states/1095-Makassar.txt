@@ -1,0 +1,18 @@
+state={
+	id=1095
+	name="Makassar"
+	history={
+		owner = MAK
+		add_core_of = MAK
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 1589 4349 10263
+	}
+	manpower=1529323
+	buildings_max_level_factor=3.000
+	state_category=rural
+}

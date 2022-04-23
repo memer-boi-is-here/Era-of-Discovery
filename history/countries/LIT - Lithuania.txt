@@ -1,0 +1,180 @@
+﻿capital = 784
+
+recruit_character = LIT_sigismund_ii_augustus
+recruit_character = LIT_mikołaj_the_red_radziwiłł
+recruit_character = LIT_mikołaj_the_black_radziwiłł
+recruit_character = LIT_krzysztof_mikołaj_the_thunderbolt_radziwiłł
+recruit_character = LIT_konstanty_wasyl_ostrogski
+recruit_character = LIT_andrzej_sapieha
+recruit_character = LIT_mikołaj_vii_radziwiłł
+recruit_character = LIT_jan_kostka
+recruit_character = LIT_hrehory_chodkiewicz
+recruit_character = LIT_valdemaras_birutis
+recruit_character = LIT_vytautas_bradziunas
+recruit_character = LIT_kazys_landsbergis
+recruit_character = LIT_pawel_holszanski
+recruit_character = LIT_krzysztof_mikolaj_radziwill
+recruit_character = LIT_andrzej_sapieha_a
+recruit_character = LIT_krzysztof_mikolaj_radziwill_a
+recruit_character = LIT_konstanty_wasyl_ostrogski_a
+
+oob = "LIT_1550"
+
+set_research_slots = 2
+
+add_ideas = {
+     religious_toleration
+	 lithuanian_golden_age
+	 lithuanian_expansionism
+}
+
+set_stability = 0.6
+set_war_support = 0.1
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Sigismund II Augustus"
+	picture = "gfx/leaders/POL/portrait_sigismund_ii.dds"
+	ideology = despotism
+	traits = { father_of_the_commonwealth }
+}
+
+    create_field_marshal = {
+	    name = "Mikołaj the Red Radziwiłł"
+    	picture = "portrait_mikolaj_radziwill.dds"
+	    traits = { inspirational_leader expert_delegator brilliant_strategist offensive_doctrine }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 5
+	    planning_skill = 4
+	    logistics_skill = 4
+    }
+	
+	create_field_marshal = {
+	    name = "Mikołaj the Black Radziwiłł"
+    	picture = "portrait_mikolaj_k_radziwill.dds"
+	    traits = { logistics_wizard infantry_leader war_hero }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Krzysztof Mikołaj the Thunderbolt Radziwiłł"
+    	picture = "portrait_krzysztof_mikolaj_radziwill.dds"
+	    traits = { adaptable trickster politically_connected bearer_of_artillery }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Konstanty Wasyl Ostrogski"
+    	picture = "portrait_konstanty_wasyl_ostrogski.dds"
+	    traits = { scavenger trait_reckless media_personality }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Andrzej Sapieha"
+    	picture = "portrait_andrzej_sapieha.dds"
+	    traits = { cavalry_expert cavalry_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Mikołaj VII Radziwiłł"
+    	picture = "portrait_mikołaj_vii_radziwiłł.dds"
+	    traits = { winter_specialist infantry_officer }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 0
+	    logistics_skill = 0
+    }
+	
+	create_navy_leader = {
+	    name = "Jan Kostka"
+    	picture = "portrait_jan_kostka.dds"
+	    traits = { destroyer_leader fleet_protector chief_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+    create_navy_leader = {
+	    name = "Hrehory Chodkiewicz"
+    	picture = "portrait_hrehory_chodkiewicz.dds"
+	    traits = { spotter gentlemanly }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 1
+    }
+
+add_ideas = Catholic
+add_opinion_modifier = { target = RUS modifier = medium_decrease }
+add_ideas = lithuanian_traditions

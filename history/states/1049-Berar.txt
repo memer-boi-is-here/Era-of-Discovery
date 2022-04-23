@@ -1,0 +1,22 @@
+
+state={
+	id=1049
+	name="Berar"
+
+	history={
+		owner = BAR
+		add_core_of = BAR
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+
+	provinces={
+		5063 10311 10324 12226 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

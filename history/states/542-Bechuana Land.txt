@@ -1,0 +1,27 @@
+
+state={
+	id=542
+	name="STATE_542"
+	manpower = 234000
+	
+	state_category = wasteland
+	
+	resources={
+		chromium=90 # was: 168
+	}
+
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			8214 1
+		}
+
+	}
+
+	provinces={
+		1580 8214 12940 13217
+	}
+}

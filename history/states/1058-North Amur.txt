@@ -1,0 +1,18 @@
+state={
+	id=1058
+	name="North Amur"
+	history={
+		owner = XXX
+		add_core_of = XXX
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		7691 7785
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,45 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "religion_conversion"
+		position = {x=300 y=225}
+		size = { width=400 height=280 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+
+		instantTextboxType = {
+			name = "percentage"
+			position = {x=20 y=5}
+			font = "hoi_18mbs"
+			text = "[?conversion_progress]%"
+			maxWidth = 100
+			maxHeight = 23
+			format = center
+		}
+		
+		buttonType = {
+			name = "non_violent_conversion" 
+			position = {x=15 y=35}	
+			spriteType = "GFX_religious_conversion_non_violent"
+			pdx_tooltip = "non_violent_conversion_tt"
+			scale = 1
+		}
+		buttonType = { 
+			name = "semi_violent_conversion" 
+			position = {x=50 y=35}	
+			spriteType = "GFX_religious_conversion_semi_violent"
+			pdx_tooltip = "semi_violent_conversion_tt"
+			scale = 1
+		}
+		buttonType = {
+			name = "violent_conversion" 
+			position = {x=85 y=35}	
+			spriteType = "GFX_religious_conversion_violent"
+			pdx_tooltip = "violent_conversion_tt"
+			scale = 1
+		}
+	}
+}
+	

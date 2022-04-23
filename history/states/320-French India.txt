@@ -1,0 +1,23 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 286410
+
+	state_category = rural
+
+	history={
+		owner = VIJ
+		add_core_of = VIJ
+		buildings = {
+			infrastructure = 4
+			10149 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={ 
+		1268 1344 4420 7436 10149 10278 12164 
+	}
+}

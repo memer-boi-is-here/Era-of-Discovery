@@ -1,0 +1,21 @@
+
+state={
+	id=1148
+	name="Bornu"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = BNU
+		buildings = {
+			infrastructure = 2
+			
+		}
+		add_core_of = BNU
+	}
+
+	provinces={
+		2081 3123 4997 7963 9152 10780 13138 
+	}
+}

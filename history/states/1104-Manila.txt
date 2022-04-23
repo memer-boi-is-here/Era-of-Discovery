@@ -1,0 +1,18 @@
+state={
+	id=1104
+	name="Manila"
+	history={
+		owner = MNL
+		add_core_of = MNL
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 10265 1221
+	}
+	manpower=628435
+	buildings_max_level_factor=4.000
+	state_category=rural
+}

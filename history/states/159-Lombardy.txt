@@ -1,0 +1,27 @@
+
+state={
+	id=159
+	name="STATE_159"
+
+	history={
+		owner = MIL
+		victory_points = {
+			3780 15 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 5
+
+		}
+		add_core_of = MIL
+		add_core_of = FRA
+	}
+
+	provinces={
+		607 773 969 3780 9584 
+	}
+	manpower=53209
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

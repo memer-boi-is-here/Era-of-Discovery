@@ -1,0 +1,18 @@
+state={
+	id=1112
+	name="North of Philipinnes"
+	history={
+		owner = PGN
+		add_core_of = PGN
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 12253 4423 1415 10280 7275 10165
+	}
+	manpower=468213
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

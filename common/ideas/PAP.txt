@@ -1,0 +1,336 @@
+ideas = {
+	
+	country = {
+	
+		indulgence_corruption = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = indulgence_corruption
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = -0.1
+				
+			}
+
+		}
+		
+		bane_of_catholicism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = bane_of_catholicism
+			
+			modifier = {
+				opinion_gain_monthly_factor = 0.3
+				political_power_gain = 0.1
+				foreign_subversive_activites = -0.3
+			}
+			
+		}
+		
+		pro_habsburg_sentiment = {
+			picture = pro_habsburg_sentiment
+			allowed = {
+				original_tag = PAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = { tag = FRA defense_bonus_against = 0.1 }
+            targeted_modifier = { tag = TUR defense_bonus_against = 0.1 }
+			
+			targeted_modifier = { tag = FRA opinion_gain_monthly_factor = -0.2 }
+            targeted_modifier = { tag = TUR opinion_gain_monthly_factor = -0.2 }
+			
+			targeted_modifier = { tag = SPR opinion_gain_monthly_factor = 0.2 }
+			targeted_modifier = { tag = AUS opinion_gain_monthly_factor = 0.2 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+				custom_modifier_tooltip = pro_habsburg_sentiment_tt
+			}
+		}
+		
+	    pro_valois_sentiment = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = pro_valois_sentiment
+			
+			targeted_modifier = { tag = SPR defense_bonus_against = 0.1 }
+            targeted_modifier = { tag = AUS defense_bonus_against = 0.1 }
+			
+			targeted_modifier = { tag = SPR opinion_gain_monthly_factor = -0.2 }
+            targeted_modifier = { tag = AUS opinion_gain_monthly_factor = -0.2 }
+			
+			targeted_modifier = { tag = FRA opinion_gain_monthly_factor = 0.2 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+				custom_modifier_tooltip = pro_valois_sentiment_tt
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	girolamo_dandini = {
+			
+			picture = girolamo_dandini
+			
+			allowed = {
+				original_tag = PAP
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		giovanni_morone = {
+			
+			picture = giovanni_morone
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		alessandro_farnese = {
+			
+			picture = alessandro_farnese
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		guidobaldo_della_rovere = {
+			
+			picture = guidobaldo_della_rovere
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		girolamo_verallo = {
+			
+			picture = girolamo_verallo
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		guidobaldo_della_rovere_a = {
+
+			picture = guidobaldo_della_rovere
+			
+			allowed = {
+				original_tag = PAP
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ludwig_pfyffer = {
+
+			picture = ludwig_pfyffer
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		marcantonio_colonna = {
+
+			picture = marcantonio_colonna
+			
+			allowed = {
+				original_tag = PAP
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	high_command = {
+
+	    guidobaldo_della_rovere_b = {
+			ledger = army
+
+			picture = guidobaldo_della_rovere
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		giovanni_carafa = {
+			ledger = army
+			
+			picture = giovanni_carafa
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ludwig_pfyffer_a = {
+			ledger = army
+			
+			picture = ludwig_pfyffer
+			
+			allowed = {
+				original_tag = PAP
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

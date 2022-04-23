@@ -1,0 +1,481 @@
+characters = {
+	POL_sigismund_ii_augustus = {
+		name = "Sigismund II Augustus"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/portrait_sigismund_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist offensive_doctrine inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { father_of_the_commonwealth }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	POL_jan_tarnowski = {
+		name = "Jan Tarnowski"
+		advisor = {
+			slot = political_advisor
+			idea_token = jan_tarnowski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					chief_minister 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = jan_tarnowski_a
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_tarnowski"
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_jan_tarnowski.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POL_jan_zamoyski = {
+		name = "Jan Zamoyski"
+		advisor = {
+			slot = political_advisor
+			idea_token = jan_zamoyski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = jan_zamoyski_a
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_zamoyski"
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_jan_zamoyski.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POL_count_jan_krzysztof_tarnowski = {
+		name = "Count Jan Krzysztof Tarnowski"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_jan_krzysztof_tarnowski.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	POL_andrzej_zborowski = {
+		name = "Andrzej Zborowski"
+		advisor = {
+			slot = political_advisor
+			idea_token = andrzej_zborowski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = andrzej_zborowski_a
+			ledger = army 
+				allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_artillery_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_andrzej_zborowski"
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_andrzej_zborowski.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POL_jan_firlej = {
+		name = "Jan Firlej"
+		advisor = {
+			slot = high_command
+			idea_token = jan_firlej
+			ledger = army 
+				allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_firlej"
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_jan_firlej.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	POL_count_sebastian_lubomirski = {
+		name = "Count Sebastian Lubomirski"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_sebastian_lubomirski.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	POL_jan_opaliński = {
+		name = "Jan Opaliński"
+		advisor = {
+			slot = navy_chief
+			idea_token = jan_opalinski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_opalinski"
+			}
+			army = {
+				large = "gfx/leaders/POL/portrait_jan_opaliński.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	POL_grzegorz_dąbrowski = {
+		name = "Grzegorz Dąbrowski"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	POL_szymon_kowalski = {
+		name = "Szymon Kowalski"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1567.1.1.12"
+			id = -1
+		}
+	}
+	POL_leszek_piotrowski = {
+		name = "Leszek Piotrowski"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1567.1.1.12"
+			id = -1
+		}
+	}
+	POL_jan_krzysztof_tarnowski = {
+		advisor = {
+			slot = high_command
+			idea_token = jan_krzysztof_tarnowski
+			ledger = army 
+				allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_drill_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "jan_krzysztof_tarnowski"
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_krzysztof_tarnowski"
+			}
+		}
+	}
+	POL_mikolaj_dzierzgowski = {
+		advisor = {
+			slot = political_advisor
+			idea_token = mikolaj_dzierzgowski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					primate_of_poland 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "mikolaj_dzierzgowski"
+		portraits = {
+			army = {
+				small = "GFX_idea_mikolaj_dzierzgowski"
+			}
+		}
+	}
+	POL_sebastian_lubomirski = {
+		advisor = {
+			slot = political_advisor
+			idea_token = sebastian_lubomirski
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "sebastian_lubomirski"
+		portraits = {
+			army = {
+				small = "GFX_idea_sebastian_lubomirski"
+			}
+		}
+	}
+	POL_sebastian_lubomirski_a = {
+		advisor = {
+			slot = navy_chief
+			idea_token = sebastian_lubomirski_a
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "sebastian_lubomirski_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_sebastian_lubomirski"
+			}
+		}
+	}
+	POL_jerzy_jazlowiecki_a = {
+		advisor = {
+			slot = high_command
+			idea_token = jerzy_jazlowiecki_a
+			ledger = army 
+				allowed = {
+					original_tag = POL
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "jerzy_jazlowiecki_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_jerzy_jazlowiecki"
+			}
+		}
+	}
+	POL_jerzy_jazlowiecki = {
+		advisor = {
+			slot = political_advisor
+			idea_token = jerzy_jazlowiecki
+			allowed = {
+					original_tag = POL
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "jerzy_jazlowiecki"
+		portraits = {
+			army = {
+				small = "GFX_idea_jerzy_jazlowiecki"
+			}
+		}
+	}
+}

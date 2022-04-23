@@ -1,0 +1,329 @@
+﻿l_english: 
+TUR_naval_expansion:0 "Naval Expansion"
+TUR_naval_expansion_desc:0 ""
+TUR_bigger_ships:0 "Bigger Ships"
+TUR_bigger_ships_desc:0 ""
+TUR_focus_on_anatolian_industries:0 "Focus on Anatolian Industries"
+TUR_focus_on_anatolian_industries_desc:0 "Anatolia is our homeland, and even still it has no development of it's own.We must develop and change our homes for the better."
+TUR_upgrading_the_caravanserai:0 "Upgrading the Caravanserai"
+TUR_upgrading_the_caravanserai_desc:0 "The Caravanserai is defined as a stop station for travellers, merchants and all classes of society. If we upgrade our current Caravanserai, we can gain better revenue and infrastructure for our inner lands."
+TUR_inflexible_doctrine_2:0 "Inflexible Doctrine 2"
+TUR_inflexible_doctrine_2_desc:0 ""
+TUR_flexible_doctrine_1:0 "Flexible Doctrine 1"
+TUR_flexible_doctrine_1_desc:0 ""
+TUR_flexiable_doctrine:0 "Flexiable Doctrine"
+TUR_flexiable_doctrine_desc:0 ""
+TUR_inflexible_doctrine:0 "Inflexible Doctrine"
+TUR_inflexible_doctrine_desc:0 ""
+TUR_a_new_weapon:0 "A new Weapon"
+TUR_a_new_weapon_desc:0 ""
+TUR_undefined:0 "undefined"
+TUR_undefined_desc:0 "undefined"
+TUR_undefined:0 "undefined"
+TUR_undefined_desc:0 "undefined"
+TUR_ottoman_standardisation:0 "Ottoman Standardisation"
+TUR_ottoman_standardisation_desc:0 ""
+TUR_undefined:0 "undefined"
+TUR_undefined_desc:0 "undefined"
+TUR_mandatory_conscription:0 "Mandatory Conscription"
+TUR_mandatory_conscription_desc:0 "With the expansion of the Military, we must also expand the amount of men we can field. Let's bring in Mandatory Conscription so all men are prepared to attack and defend the homeland at all times!"
+TUR_internal_politics:0 "Internal Politics"
+TUR_internal_politics_desc:0 "The Internal Problems of the Empire has been few and far between, however, over time our great rule has been corrupting itself from within.It's time to change."
+TUR_external_problems:0 "External Problems"
+TUR_external_problems_desc:0 "The Empire has yet to expand in quite some time, our problems are begging to mount.These issues we face come from our External enemies, we must strike first and conqueror more land for the Empire!"
+TUR_era_of_transformation:0 "Era of Transformation"
+TUR_era_of_transformation_desc:0 "A new era is here.Our great nation is heading down a dangerous path, we must adapt to survive.Inflation runs rampant, the Habsburgs to our west and the Safavids to our east.We must stabilise our country before anything else!"
+TUR_encourage_religious_discrimination:0 "Encourage Religious discrimination"
+TUR_encourage_religious_discrimination_desc:0 ""
+TUR_destroy_the_religious_groups:0 "Destroy the Religious Groups"
+TUR_destroy_the_religious_groups_desc:0 ""
+TUR_destroy_heretical_holy_sites:0 "Destroy Heretical Holy Sites"
+TUR_destroy_heretical_holy_sites_desc:0 ""
+TUR_the_devsirme_system:0 "The Devsirme System"
+TUR_the_devsirme_system_desc:0 ""
+TUR_adopt_the_christians:0 "Adopt the Christians"
+TUR_adopt_the_christians_desc:0 ""
+TUR_enable_the_cizye:0 "Enable the Cizye"
+TUR_enable_the_cizye_desc:0 ""
+TUR_decrease_religious_taxes:0 "Decrease Religious Taxes"
+TUR_decrease_religious_taxes_desc:0 ""
+TUR_the_millet_system:0 "The Millet System"
+TUR_the_millet_system_desc:0 ""
+TUR_destroy_religious_discrimination:0 "Destroy Religious Discrimination"
+TUR_destroy_religious_discrimination_desc:0 ""
+TUR_freedom_of_religion:0 "Freedom of Religion"
+TUR_freedom_of_religion_desc:0 ""
+TUR_suppression_of_religion:0 "Suppression of Religion""
+TUR_suppression_of_religion_desc:0 ""
+TUR_construct_balkan_industry:0 "Construct Balkan Industry"
+TUR_construct_balkan_industry_desc:0 ""
+TUR_expanding_the_jannisaries:0 "Expanding the Jannisaries"
+TUR_expanding_the_jannisaries_desc:0 ""
+TUR_quantity_focus:0 "Quantity Focus"
+TUR_quantity_focus_desc:0 ""
+TUR_economic_development:0 "Economic Development"
+TUR_economic_development_desc:0 "The Ottoman Empire has always had issues with it's Industrialisation, let us now change this.""
+TUR_quality_focus:0 "Quality Focus"
+TUR_quality_focus_desc:0 ""
+TUR_expanding_the_bombardiers:0 "Expanding the Bombardiers"
+TUR_expanding_the_bombardiers_desc:0 ""
+TUR_balkan_iron_works:0 "Balkan Iron Works"
+TUR_balkan_iron_works_desc:0 ""
+TUR_develop_balkan_trade_routs:0 "Develop Balkan Trade Routs"
+TUR_develop_balkan_trade_routs_desc:0 ""
+TUR_all_is_well_in_the_balkans:0 "All is well in the Balkans"
+TUR_all_is_well_in_the_balkans_desc:0 ""
+TUR_all_is_well_in_anatolia:0 "All is well in Anatolia"
+TUR_all_is_well_in_anatolia_desc:0 ""
+TUR_conscript_balkan_minorities:0 "Conscript Balkan Minorities"
+TUR_conscript_balkan_minorities_desc:0 ""
+TUR_balkan_exploitation:0 "Balkan Exploitation"
+TUR_balkan_exploitation_desc:0 ""
+TUR_all_is_well_in_egypt:0 "All is well in Egypt"
+TUR_all_is_well_in_egypt_desc:0 ""
+TUR_egyptian_decline:0 "Egyptian Decline"
+TUR_egyptian_decline_desc:0 ""
+TUR_upgrade_the_egyptian_systems:0 "Upgrade the Egyptian Systems"
+TUR_upgrade_the_egyptian_systems_desc:0 ""
+TUR_construct_coffeehouses:0 "Construct Coffeehouses""
+TUR_construct_coffeehouses_desc:0 "Inflation is rampant, a new way to gain revenue for the Empire would be to set up Coffeehouses all over.Setting them over the Silk Road will bring in more then enough Coin."
+TUR_military_manufacturing_ii:0 "Military Manufacturing II"
+TUR_military_manufacturing_ii_desc:0 ""
+TUR_civilian_manufacturing_i:0 "Civilian Manufacturing I"
+TUR_civilian_manufacturing_i_desc:0 ""
+TUR_civilian_manufacturing_ii:0 "Civilian Manufacturing II"
+TUR_civilian_manufacturing_ii_desc:0 ""
+TUR_anatolian_steal_works:0 "Anatolian Steal Works"
+TUR_anatolian_steal_works_desc:0 ""
+TUR_update_the_arms_industry:0 "Update the Arms Industry"
+TUR_update_the_arms_industry_desc:0 ""
+TUR_introduce_military_manufacturing:0 "Introduce Military Manufacturing"
+TUR_introduce_military_manufacturing_desc:0 ""
+TUR_undefined:0 "undefined"
+TUR_undefined_desc:0 "undefined"
+TUR_introduce_civilian_manufacturing:0 "Introduce Civilian Manufacturing"
+TUR_introduce_civilian_manufacturing_desc:0 ""
+TUR_increase_agricultural_profit:0 "Increase Agricultural Profit"
+TUR_increase_agricultural_profit_desc:0 "Inflation is rampant,we must increase the production and efficiency of our Agricultural Provinces within the empire to gain better revenue.This will help us in the long term too."
+TUR_develop_the_silk_road:0 "Develop the Silk Road"
+TUR_develop_the_silk_road_desc:0 "The Silk Road is a special place within the Empire, without it, the connection between Asia and Europe would be none. We sit in between that connection.If we develop the Road between Asia and Europe, trade will likely flow more often through Constantinople."
+TUR_emergence_of_the_guilds:0 "Emergence of the Guilds"
+TUR_emergence_of_the_guilds_desc:0 "The Guilds have been formed, and now our lands can be developed at double the rate.All we must do now is keep them happy."
+TUR_combat_national_inflation:0 "Combat National Inflation"
+TUR_combat_national_inflation_desc:0 "We have taken the necessary steps to combat our National Inflation. However, it is not over.This is only a stepping stone on our way to recovery, we must find a way to fix it completely.Three cheers for the Sultan!"
+TUR_develop_egyptian_agriculture:0 "Develop Egyptian Agriculture"
+TUR_develop_egyptian_agriculture_desc:0 ""
+TUR_intergrate_the_ahi_brotherhood:0 "Intergrate the Ahi Brotherhood"
+TUR_intergrate_the_ahi_brotherhood_desc:0 "The Ahi Brotherhood has been a thorn, however, we can integrate them into a newly formed Guilds, this will allow us to keep many talented men within our ranks. Unfortuntly, it will take time."
+TUR_crush_the_ahi_brotherhood:0 "Crush the Ahi Brotherhood"
+TUR_crush_the_ahi_brotherhood_desc:0 "The Ahi Brotherhood has been a thorn in our side for to long, we must crush this pathetic group and bring in our own Guilds.Bring in the Military!"
+TUR_update_the_textile_industry:0 "Update the Textile Industry"
+TUR_update_the_textile_industry_desc:0 ""
+TUR_military_manufacturing_i:0 "Military Manufacturing I"
+TUR_military_manufacturing_i_desc:0 ""
+TUR_lower_national_budget:0 "Lower National Budget"
+TUR_lower_national_budget_desc:0 "Inflation is rampant,the Spanish Coin has crashed, we must lower our national budget before ours follows suit. Time to fix the Economy!""
+TUR_increase_religious_taxes:0 "Increase Religious Taxes"
+TUR_increase_religious_taxes_desc:0 ""
+TUR_one_true_religion:0 "One True Religion"
+TUR_one_true_religion_desc:0 ""
+TUR_conversion_of_shiite:0 "Conversion of Shi'ite"
+TUR_conversion_of_shiite_desc:0 ""
+TUR_start_the_conversion_of_the_balkans:0 "Start the Conversion of The Balkans"
+TUR_start_the_conversion_of_the_balkans_desc:0 ""
+TUR_conversion_of_non_muslims:0 "Conversion of Non Muslims"
+TUR_conversion_of_non_muslims_desc:0 ""
+TUR_start_the_conversion_of_romania:0 "Start the conversion of Romania"
+TUR_start_the_conversion_of_romania_desc:0 ""
+TUR_annexation_of_libya:0 "Annexation of Libya"
+TUR_annexation_of_libya_desc:0 "In 1551 we took Libya extending the growth of our ever expanding empire."
+TUR_focus_on_russians:0 "Focus on Russians"
+TUR_focus_on_russians_desc:0 "As the Russians grow in size they become scary upon scary we should try to stop it before they expand further and threaten our Sovereignty."
+TUR_focus_on_the_austrians:0 "Focus on the Austrians"
+TUR_focus_on_the_austrians_desc:0 "Habsburg are a threat to europe. They reproduce with everyone they see. We should stop them before they interact with our Balkan Lands"
+TUR_keep_an_eye_on_russia:0 "Keep an eye on Russia"
+TUR_keep_an_eye_on_russia_desc:0 ""
+TUR_force_convert_the_shiites:0 "Force convert The Shi'ite's"
+TUR_force_convert_the_shiites_desc:0 ""
+TUR_destroy_the_habsburgs:0 "Destroy the Habsburgs"
+TUR_destroy_the_habsburgs_desc:0 ""
+l_english: 
+
+##Focus Then Desc 
+
+TUR_era_of_transformation:0 "Era of Transformation"
+
+TUR_execution_of_kara_ahmed_pasha:0 "Execution of Kara Ahmed Pasha"
+
+TUR_internal_politics:0 "İnternal Politics"
+
+TUR_external_problems:0 "External Problems"
+
+TUR_suleiman_is_at_the_head_of_the_army:0 "Suleiman is at the Head of the Army"
+
+TUR_shia_enemies:0 "Shia Enemies"
+
+TUR_attack_plan:0 "Attack Plan"
+
+TUR_safavid_couse_trouble:0 "Safavid Couse Trouble"
+
+TUR_one_sultan_one_country:0 "One Sultan One Country"
+
+TUR_strong_together:0 "Strong Together"
+
+TUR_over_anazzah_with_bruteforce:0 "Over Anazzah with Bruteforce"
+
+TUR_force_annazzah_to_puppet:0 "Force Annazzah to Puppet"
+
+TUR_over_shammar_with_bruteforce:0 "Over Shammar with Bruteforce"
+
+TUR_force_Shammar_to_puppet:0 "Force Shammar to Puppet"
+
+TUR_take_over_dawasir_with_bruteforce:0 "Take Over Dawasir with Bruteforce"
+
+TUR_force_dawasir_to_puppet:0 "Force Dawasir to Puppet"
+
+TUR_take_over_nejd_with_bruteforce:0 "Take Over Nejd with Bruteforce"
+
+TUR_force_nejd_to_puppet:0 "Force Nejd to Puppet"
+
+TUR_christian_enemies:0 "Chiristian Enemies"
+
+TUR_last_templar:0 "Last Templar"
+
+TUR_malta_siege:0 "Malta Siege"
+
+TUR_conquerer_trablus:0 "Conquerer Trablus"
+
+TUR_last_warning_to_austria:0 "Last Warning to Austria"
+
+TUR_austria_continues_its_war_violations:0 "Austria Continues its War Violations"
+
+TUR_a_talanted_vizier_rises:0 "A Talanted Vizier Rises"
+
+TUR_defending_rumeli_aganist_invasion:0 "Defending Rumeli Aganist İnvasion"
+
+TUR_new_lands:0 "New Lands"
+
+TUR_target_portugal:0 "Target Portugal"
+
+TUR_new_market_india:0 "New Market İndia"
+
+TUR_indian_ally:0 "İndian Ally"
+
+TUR_protect_gujarat:0 "Protect Gujarat"
+
+TUR_rewuest_for_help_from_distant_deserts: "Rewuest for Help from Distant Deserts"
+
+TUR_help_wattasid:0 "Help Wattasid"
+
+TUR_death_of_hurrem_sultan:0 "Death of Hurrem Sultan"
+
+TUR_execution_of_prince_mustafa:0 "Execution of Prince Mustafa"
+
+TUR_execution_of_prince_bayezid:0 "Execution of Prince Bayezid"
+
+TUR_heir_selim:0 "Heir Selim"
+
+TUR_brightest_head_vizier_mehmed_pasha:0 "Brightest Head Vizier Mehmed Pasha"
+
+TUR_guaranteed_wattasid_bey:0 "Guaranteed Wattasid Bey"
+
+TUR_enemy_in_the_seas:0 "Enemy in the Seas"
+
+TUR_last_island_in_eastern_mediterranean:0 "Last İslands in Eastern Mediterranean"
+
+TUR_danger_in_our_bottom:0 "Danger in our Bottom"
+
+TUR_destination_adriatic:0 "Destiantion Adriatic"
+
+TUR_protecting_adriatic_coasts:0 "Protecting Adriatic Coasts"
+
+TUR_protect_our_seas:0 "Protect Our Seas"
+
+TUR_army_of_the_sultan:0 "Army of the Sultan"
+
+TUR_experienced_army:0 "Experienced Army"
+
+TUR_guns_beyond_their_time:0 "Guns Beyond Their Time"
+
+TUR_artillery_beyond_their_time:0 "Artillery Beyond Their time"
+
+TUR_turan_tactics:0 "Turan Tactics"
+
+TUR_rising_industry:0 "Rising İndustry"
+
+TUR_the_strongest_army:0 "the Strongest Army"
+
+TUR_falcon_balls:0 "Falcon Balls"
+
+TUR_rising_industry_II:0 "Rising İndustry II"
+
+TUR_rising_industry_III:0 "Rising İndustry III"
+
+TUR_developing_technology:0 "Developing Technology"
+
+TUR_military_factory:0 "Military Factory"
+
+TUR_civilian_factory:0 "Civilian Factory"
+
+TUR_road_networks:0 "Road Networks"
+
+TUR_military_factory_II:0 "Military Factory II"
+
+TUR_road_networks_II:0 "Road Networks II"
+
+TUR_military_factory_III:0 "Military Factory III"
+
+TUR_road_networks_III:0 "Road Networks III"
+
+TUR_military_factory_IV:0 "Military Factory IV"
+
+TUR_road_networks_IV:0 "Road Networks IV"
+
+TUR_military_factory_V:0 "Military Factory V"
+
+TUR_road_networks_V:0 "Road Networks V"
+
+TUR_autarky:0 "Autarky"
+
+TUR_civilian_factory_II:0 "Civilian Factory II"
+
+TUR_autarky_II:0 "Autarky II"
+
+TUR_civilian_factory_III:0 "Civilian Factory III"
+
+TUR_autarky_III:0 "Autarky III"
+
+TUR_civilian_factory_IV:0 "Civilian Factory IV"
+
+TUR_autarky_IV:0 "Autarky IV"
+
+TUR_civilian_factory_V:0 "Civilian Factory V"
+
+TUR_autarky_V:0 "Autarky V"
+
+TUR_diplomatic_support:0 "Diplomatic Support"
+
+TUR_quiet_times:0 "Quiet Times"
+
+TUR_take_over_hejaz_with_bruteforce:0 "Take Over Hejaz with Bruteforce"
+
+TUR_force_hejaz_to_puppet:0 "Force Hejaz to Puppet"
+
+TUR_sultans_household_navy:0 "Sutan's Household Navy"
+
+TUR_experienced_navy:0 "Experienced Navy"
+
+TUR_strongest_navy:0 "Strongest Navy"
+
+TUR_navy_beyond_their_time:0 "Navy Beyond Their Time"
+
+TUR_turkish_ships:0 "Turkish Ships"
+
+TUR_ships_beyond_their_time:0 "Ships Beyond Their Time"
+
+TUR_modern_cruisers:0 "Modern Cruisers"
+
+TUR_modern_battleships:0 "Modern Battleships"
+ 

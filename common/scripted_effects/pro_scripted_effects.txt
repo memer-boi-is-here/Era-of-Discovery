@@ -1,0 +1,92 @@
+revolt_member_hre = {
+		every_country = {
+			limit = {
+				exists = yes
+				is_puppet_of = AUS
+				has_country_flag = member_HRE
+				has_opinion = { target = AUS value < 0 }
+			}
+			set_variable = { countdown = 3 }
+			set_variable = { level = 3 }
+		}
+		every_country = {
+			limit = {
+				exists = yes
+				is_puppet_of = AUS
+				has_country_flag = member_HRE
+				AND = {
+					has_opinion = { target = AUS value < 20 }
+					has_opinion = { target = AUS value > -1 }
+				}
+			}
+			set_variable = { countdown = 4 }
+			set_variable = { level = 2 }
+		}
+		every_country = {
+			limit = {
+				exists = yes
+				is_puppet_of = AUS
+				has_country_flag = member_HRE
+				has_opinion = { target = AUS value > 20 }
+			}
+			set_variable = { countdown = 5 }
+			set_variable = { level = 1 }
+		}
+		every_country = {
+			if = { limit = { AND = { check_variable = { countdown  = 5 } has_country_flag = countdown_ended } } }
+			if = { limit = { AND = { check_variable = { countdown = 5 } NOT = { has_country_flag = countdown_ended } } }
+				set_country_flag = countdown_ended
+				if = {
+					limit = { NOT = { has_global_flag = revolt_hre } }
+					create_faction = hre_members_coalition
+					declare_war_on = {
+						target = AUS
+						type = independence
+					}
+				}
+				if = {
+					limit = { has_global_flag = revolt_hre }
+					faction_leader = {
+						add_to_faction = hre_members_coalition
+						add_to_war = {
+							targeted_alliance = PREV 
+							enemy = AUS
+						}
+					}
+				}
+			}
+			if = { limit = { check_variable = { level  = 1 } }
+				random_list = {
+					40 = { add_to_variable = { countdown = -1 } }
+					60 = { add_to_variable = { countdown = 0 } }
+				}
+			}
+			if = { limit = { check_variable = { level  = 2 } }
+				random_list = {
+					40 = { add_to_variable = { countdown = -2 } }
+					30 = { add_to_variable = { countdown = -1 } }
+					30 = { add_to_variable = { countdown = 0 } }
+				}
+			}
+			if = { limit = { check_variable = { level  = 3 } }
+				random_list = {
+					50 = { add_to_variable = { countdown = -2 } }
+					35 = { add_to_variable = { countdown = -1 } }
+					15 = { add_to_variable = { countdown = 0 } }
+				}
+			}
+		}
+		if = { 
+			limit = {
+				has_global_flag = revolt_hre
+				all_country = {
+					has_country_flag = member_HRE
+					NOT = { has_war_with = AUS }
+				}
+			}
+			clr_global_flag = revolt_hre
+			clear_variable = level
+			clear_variable = countdown
+			#country_event event to end this calculation
+		}
+}

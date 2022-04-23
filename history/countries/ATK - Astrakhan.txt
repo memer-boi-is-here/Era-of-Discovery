@@ -1,0 +1,46 @@
+﻿capital = 236
+
+oob = "ATK_1550"
+
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+
+}
+
+set_convoys = 20
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Abdal-Karim"
+	picture = "portrait_abdal_karim.dds"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Yamghurchi"
+	picture = "portrait_yamghurchi.dds"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+add_opinion_modifier = { target = RUS modifier = medium_decrease }
+
+add_ideas = Sunni

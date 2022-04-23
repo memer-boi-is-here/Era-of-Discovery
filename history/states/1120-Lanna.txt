@@ -1,0 +1,23 @@
+
+state={
+	id=1120
+	name="Lanna"
+
+	history={
+		owner = LNA
+		add_core_of = LNA
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1253 1488 1990 4496 7492 7531 7675 8045 10371 
+	}
+	manpower=1002242
+	buildings_max_level_factor=4.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,18 @@
+state={
+	id=1111
+	name="Zamboanga"
+	history={
+		owner = MAG
+		add_core_of = MAG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7417 7360 7389 4399 1421 10184
+	}
+	manpower=528213
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

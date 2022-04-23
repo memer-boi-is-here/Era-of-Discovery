@@ -1,0 +1,626 @@
+focus_tree = {
+	id = savoytree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SVY
+		}
+	}
+	#Focus for Savoyard Cavalry"
+	focus = {
+		id = SVY_savoyard_cavalry
+		icon = GFX_
+		x = 26
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_army }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Develop Turin"
+	focus = {
+		id = SVY_develop_turin
+		icon = GFX_
+		x = 15
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_develop_chambery }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Distance from France"
+	focus = {
+		id = SVY_distance_from_france
+		icon = GFX_
+		x = 6
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_political_situation }
+		mutually_exclusive = { focus = SVY_loyalty_to_france }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Death of the Duke"
+	focus = {
+		id = SVY_death_of_the_duke
+		icon = GFX_
+		x = 5
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_the_war_begins }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Fortify Turin"
+	focus = {
+		id = SVY_fortify_turin
+		icon = GFX_
+		x = 16
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_mines }
+		
+		available = {
+			has_completed_focus = SVY_the_war_begins
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Undermine French Influence"
+	focus = {
+		id = SVY_undermine_french_influence
+		icon = GFX_
+		x = 6
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_consolidation_of_power }
+		mutually_exclusive = { focus = SVY_contact_neapolitan_rebels }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Research Naval Doctrines"
+	focus = {
+		id = SVY_research_naval_doctrines
+		icon = GFX_
+		x = 31
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Offer to the Hapsburg"
+	focus = {
+		id = SVY_offer_to_the_hapsburg
+		icon = GFX_
+		x = 7
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_distance_from_france }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = SVY_undefined
+		icon = GFX_
+		x = 33
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Loyalty to France"
+	focus = {
+		id = SVY_loyalty_to_france
+		icon = GFX_
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_political_situation }
+		mutually_exclusive = { focus = SVY_distance_from_france }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Prepare For War"
+	focus = {
+		id = SVY_prepare_for_war
+		icon = GFX_
+		x = 29
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Hire Mercenaries"
+	focus = {
+		id = SVY_hire_mercenaries
+		icon = GFX_
+		x = 33
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_prepare_for_war }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Savoyard Equipment"
+	focus = {
+		id = SVY_savoyard_equipment
+		icon = GFX_
+		x = 26
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_cavalry }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Wartime Production"
+	focus = {
+		id = SVY_wartime_production
+		icon = GFX_
+		x = 15
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = SVY_undefined
+		icon = GFX_
+		x = 34
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_navy }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for The War Begins"
+	focus = {
+		id = SVY_the_war_begins
+		icon = GFX_
+		x = 5
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_distance_from_france }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = SVY_undefined
+		icon = GFX_
+		x = 24
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_army }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Contact Neapolitan rebels"
+	focus = {
+		id = SVY_contact_neapolitan_rebels
+		icon = GFX_
+		x = 4
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_consolidation_of_power }
+		mutually_exclusive = { focus = SVY_undermine_french_influence }
+		
+		available = {
+			has_completed_focus= Loyalty_to_France
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Consolidation of Power"
+	focus = {
+		id = SVY_consolidation_of_power
+		icon = GFX_
+		x = 5
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_death_of_the_duke }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Savoyard Navy"
+	focus = {
+		id = SVY_savoyard_navy
+		icon = GFX_
+		x = 33
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Naval Dockyards in Nizza"
+	focus = {
+		id = SVY_naval_dockyards_in_nizza
+		icon = GFX_
+		x = 32
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_navy }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Develop Montferrat"
+	focus = {
+		id = SVY_develop_montferrat
+		icon = GFX_
+		x = 13
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_develop_chambery }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Savoyard Army"
+	focus = {
+		id = SVY_savoyard_army
+		icon = GFX_
+		x = 25
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Develop Chambery"
+	focus = {
+		id = SVY_develop_chambery
+		icon = GFX_
+		x = 15
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = {  FOCUS_FILTER_INDUSTRY } 
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Savoyard Political Situation"
+	focus = {
+		id = SVY_savoyard_political_situation
+		icon = GFX_
+		x = 5
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = SVY_undefined
+		icon = GFX_
+		x = 24
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Research Military Doctrines"
+	focus = {
+		id = SVY_research_military_doctrines
+		icon = GFX_
+		x = 27
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for French Tactics"
+	focus = {
+		id = SVY_french_tactics
+		icon = GFX_
+		x = 3
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_loyalty_to_france }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for End the Occupation!"
+	focus = {
+		id = SVY_end_the_occupation
+		icon = GFX_
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SVY_prepare_for_war }
+	}
+
+	#Focus for On the Defensive"
+	focus = {
+		id = SVY_on_the_defensive
+		icon = GFX_
+		x = 25
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_prepare_for_war }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = SVY_undefined
+		icon = GFX_
+		x = 5
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_undermine_french_influence }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Develop Aosta"
+	focus = {
+		id = SVY_develop_aosta
+		icon = GFX_
+		x = 17
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_develop_chambery }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Savoyard Mines"
+	focus = {
+		id = SVY_savoyard_mines
+		icon = GFX_
+		x = 15
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Fortify Chambery"
+	focus = {
+		id = SVY_fortify_chambery
+		icon = GFX_
+		x = 14
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = SVY_savoyard_mines }
+		
+		available = {
+			has_completed_focus= SVY_the_war_begins
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for DEBUG FOCUS"
+	focus = {
+		id = SVY_debug_focus
+		icon = GFX_
+		x = 50
+		y = 25
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Domestic Policy"
+	focus = {
+		id = SVY_domestic_policy
+		icon = GFX_
+		x = 0
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Foreign Policy"
+	focus = {
+		id = SVY_foreign_policy
+		icon = GFX_
+		x = 10
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+#End of focuses 
+ }

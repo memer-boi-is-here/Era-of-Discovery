@@ -1,0 +1,382 @@
+characters = {
+	PAP_college_of_cardinals = {
+		name = "College of Cardinals"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAP/College_of_Cardinals.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	PAP_guidobaldo_ii_della_rovere_duke_of_urbino = {
+		name = "Guidobaldo II della Rovere, Duke of Urbino"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/PAP/Guidobaldo-II-della-Rovere.dds"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer trickster offensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	PAP_ludwig_pfyffer = {
+		name = "Ludwig Pfyffer"
+		advisor = {
+			slot = army_chief
+			idea_token = ludwig_pfyffer
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ludwig_pfyffer_a
+			ledger = army 
+				allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_ludwig_pfyffer"
+			}
+			army = {
+				large = "gfx/leaders/PAP/portrait_ludwig_pfyffer.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer trait_mountaineer scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	PAP_giovanni_carafa_duke_of_paliano = {
+		name = "Giovanni Carafa, Duke of Paliano"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/PAP/portrait_giovanni_carafa.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer hill_fighter guerilla_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	PAP_marcantonio_colonna = {
+		name = "Marcantonio Colonna"
+		advisor = {
+			slot = navy_chief
+			idea_token = marcantonio_colonna
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_marcantonio_colonna"
+			}
+			army = {
+				large = "gfx/leaders/PAP/portrait_marcantonio_colonna.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	PAP_johannes_evans = {
+		name = "Johannes Evans"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	PAP_marcus_evans = {
+		name = "Marcus Evans"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	PAP_bob_jones = {
+		name = "Bob Jones"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	PAP_girolamo_verallo = {
+		advisor = {
+			slot = political_advisor
+			idea_token = girolamo_verallo
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "girolamo_verallo"
+		portraits = {
+			army = {
+				small = "GFX_idea_girolamo_verallo"
+			}
+		}
+	}
+	PAP_guidobaldo_della_rovere = {
+		advisor = {
+			slot = political_advisor
+			idea_token = guidobaldo_della_rovere
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "guidobaldo_della_rovere"
+		portraits = {
+			army = {
+				small = "GFX_idea_guidobaldo_della_rovere"
+			}
+		}
+	}
+	PAP_girolamo_dandini = {
+		advisor = {
+			slot = political_advisor
+			idea_token = girolamo_dandini
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "girolamo_dandini"
+		portraits = {
+			army = {
+				small = "GFX_idea_girolamo_dandini"
+			}
+		}
+	}
+	PAP_giovanni_carafa = {
+		advisor = {
+			slot = high_command
+			idea_token = giovanni_carafa
+			ledger = army 
+				allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "giovanni_carafa"
+		portraits = {
+			army = {
+				small = "GFX_idea_giovanni_carafa"
+			}
+		}
+	}
+	PAP_guidobaldo_della_rovere_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = guidobaldo_della_rovere_a
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "guidobaldo_della_rovere_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_guidobaldo_della_rovere"
+			}
+		}
+	}
+	PAP_giovanni_morone = {
+		advisor = {
+			slot = political_advisor
+			idea_token = giovanni_morone
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "giovanni_morone"
+		portraits = {
+			army = {
+				small = "GFX_idea_giovanni_morone"
+			}
+		}
+	}
+	PAP_guidobaldo_della_rovere_b = {
+		advisor = {
+			slot = high_command
+			idea_token = guidobaldo_della_rovere_b
+			ledger = army 
+				allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "guidobaldo_della_rovere_b"
+		portraits = {
+			army = {
+				small = "GFX_idea_guidobaldo_della_rovere"
+			}
+		}
+	}
+	PAP_alessandro_farnese = {
+		advisor = {
+			slot = political_advisor
+			idea_token = alessandro_farnese
+			allowed = {
+					original_tag = PAP
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "alessandro_farnese"
+		portraits = {
+			army = {
+				small = "GFX_idea_alessandro_farnese"
+			}
+		}
+	}
+}

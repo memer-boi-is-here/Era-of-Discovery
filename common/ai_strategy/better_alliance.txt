@@ -1,0 +1,405 @@
+befriend_turk_alliance = {
+    allowed = {
+        original_tag = FRA
+    }
+    enable = {
+        has_completed_focus = FRA_alliance_with_the_ottomans
+        country_exists = TUR
+    }
+    abort = {
+        NOT = {
+            country_exists = TUR
+        }
+    }
+    
+    ai_strategy = {
+        type = befriend
+        id = "TUR"            
+        value = 200 
+    }        
+}
+
+befriend_french_alliance = {
+    allowed = {
+        original_tag = TUR
+    }
+    enable = {
+        FRA = { has_completed_focus = FRA_alliance_with_the_ottomans }
+        country_exists = FRA
+    }
+    abort = {
+        NOT = {
+            country_exists = FRA
+        }
+    }
+    
+    ai_strategy = {
+        type = befriend
+        id = "FRA"            
+        value = 200 
+    }        
+}
+
+befriend_SNA_alliance = {
+    allowed = {
+        original_tag = FRA
+    }
+    enable = {
+        has_completed_focus = FRA_alliance_with_the_republic_of_siena
+        country_exists = SNA
+    }
+    abort = {
+        NOT = {
+            country_exists = SNA
+        }
+    }
+    
+    ai_strategy = {
+        type = befriend
+        id = "SNA"            
+        value = 200 
+    }        
+}
+
+befriend_french_alliance = {
+    allowed = {
+        original_tag = SNA
+    }
+    enable = {
+        FRA = { has_completed_focus = FRA_alliance_with_the_republic_of_siena }
+        country_exists = FRA
+    }
+    abort = {
+        NOT = {
+            country_exists = FRA
+        }
+    }
+    
+    ai_strategy = {
+        type = befriend
+        id = "FRA"            
+        value = 200 
+    }        
+}
+
+POR_neutrality = {
+    enable = {
+        original_tag = POR
+    }
+    abort = {
+        OR = {
+            has_war_with = SPR
+            has_war_with = CHI
+        }
+    }
+    ai_strategy = {
+        type = alliance
+        id = SPR
+        value = -200
+    }
+    ai_strategy = {
+        type = alliance
+        id = FRA
+        value = -200
+    }
+}
+
+france_dont_join_TUR_wars = {
+    enable = {
+      original_tag = FRA
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_france = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = FRA
+        value = -1000
+    }
+}
+
+PRM_dont_join_TUR_wars = {
+    enable = {
+      original_tag = PRM
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_parma = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = PRM
+        value = -1000
+    }
+}
+
+SNA_dont_join_TUR_wars = {
+    enable = {
+      original_tag = SNA
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_SNA = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = SNA
+        value = -1000
+    }
+}
+
+FER_dont_join_TUR_wars = {
+    enable = {
+      original_tag = FER
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_FER = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = FER
+        value = -1000
+    }
+}
+
+MOD_dont_join_TUR_wars = {
+    enable = {
+      original_tag = MOD
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_MOD = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = MOD
+        value = -1000
+    }
+}
+
+PAP_dont_join_TUR_wars = {
+    enable = {
+      original_tag = PAP
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -1000
+    }
+}
+
+TUR_dont_call_PAP = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = PAP
+        value = -1000
+    }
+}
+
+PER_neutrality = {
+    enable = {
+        original_tag = PER
+    }
+    abort = {
+        OR = {
+            has_war_with = SPR
+            has_war_with = CHI
+        }
+    }
+    ai_strategy = {
+        type = alliance
+        id = SPR
+        value = -5000
+    }
+    ai_strategy = {
+        type = alliance
+        id = FRA
+        value = -5000
+    }
+}
+
+france_dont_join_PER_wars = {
+    enable = {
+      original_tag = FRA
+    }
+    abort = {
+      always = no
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -200
+    }
+}
+
+TUR_dont_call_france_2 = {
+    enable = {
+      original_tag = TUR
+    }
+    abort = {
+      always = no 
+    }
+    ai_strategy = {
+        type = diplo_action_acceptance
+        target = join_allies
+        id = FRA
+        value = -5000
+    }
+}
+
+RUS_neutrality = {
+    enable = {
+        original_tag = RUS
+    }
+    abort = {
+        OR = {
+            has_war_with = SPR
+            has_war_with = FRA
+            threat > 0.6
+        }
+    }
+    ai_strategy = {
+        type = alliance
+        id = SPR
+        value = -5000
+    }
+    ai_strategy = {
+        type = alliance
+        id = FRA
+        value = -5000
+    }
+}
+
+MDR_neutrality = {
+    enable = {
+        original_tag = MDR
+    }
+    abort = {
+        OR = {
+            has_war_with = SPR
+            has_war_with = FRA
+        }
+    }
+    ai_strategy = {
+        type = alliance
+        id = SPR
+        value = -5000
+    }
+    ai_strategy = {
+        type = alliance
+        id = FRA
+        value = -5000
+    }
+}
+
+ETH_neutrality = {
+    enable = {
+        original_tag = ETH
+    }
+    abort = {
+        OR = {
+            has_war_with = SPR
+            has_war_with = FRA
+        }
+    }
+    ai_strategy = {
+        type = alliance
+        id = SPR
+        value = -5000
+    }
+    ai_strategy = {
+        type = alliance
+        id = FRA
+        value = -5000
+    }
+}
+

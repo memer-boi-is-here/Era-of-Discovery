@@ -1,0 +1,162 @@
+division_template = {
+	name = "Pike Infantry"
+	division_names_group = SCO_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+##	support = {
+	
+##	}
+}
+
+division_template = {
+	name = "Cuirassiers" 	
+	division_names_group = SCO_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+##	support = {
+	
+##	}
+}
+
+division_template = {
+	name = "Halberdier" 		
+	division_names_group = SCO_INF_02
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+##	support = {
+	
+##	}
+}
+
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11218
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11218
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9314
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9314
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11378
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 11378
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11378
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "Royal Scots Navy"			
+		naval_base = 6300
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 6300
+			### Carrack Division 1 ###				
+			ship = { name = "James" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SCO version_name = "Carrack Class" } } }		
+            ship = { name = "Robert" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SCO version_name = "Carrack Class" } } }			
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 6300
+			# Galleon Division 2 #				
+			ship = { name = "Janet" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SCO version_name = "Galleon Class" } } }				
+			# Cruiser Division 6 #		
+			ship = { name = "Margaret" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SCO version_name = "Galleon Class" } } }				
+			ship = { name = "Lion" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SCO version_name = "Galleon Class" } } }		
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 6300			
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "Primrose" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = SCO version_name = "Galley Class" } } }
+			ship = { name = "Unicorn" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = SCO version_name = "Galley Class" } } }
+			ship = { name = "Michael" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = SCO version_name = "Galley Class" } } }
+			ship = { name = "Eagle" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = SCO version_name = "Galley Class" } } }
+			ship = { name = "Treasurer" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = SCO version_name = "Galley Class" } } }
+        }			
+    }
+}
+

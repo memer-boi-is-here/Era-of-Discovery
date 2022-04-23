@@ -1,0 +1,23 @@
+FRA_peace_calais = {
+	ask_peace = { #29 Calais
+		
+		icon = generic_form_nation
+		cost = 30
+		fire_only_once = no
+		
+		available = {
+			has_completed_focus = FRA_siege_calais
+			has_war_with = ENG
+			29 = { NOT = { is_owned_by = FRA } }
+		}
+		visible = {
+			has_completed_focus = FRA_siege_calais
+			has_war_with = ENG
+			29 = { NOT = { is_owned_by = FRA } }
+		}
+		
+		complete_effect = {
+			ENG = { country_event = { id = french.2 days = 1 } } 
+		}
+	}
+}

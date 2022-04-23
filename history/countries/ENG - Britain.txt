@@ -1,0 +1,331 @@
+﻿capital = 126
+
+recruit_character = ENG_john_dudley,_1st_duke_of_northumberland
+recruit_character = ENG_william_howard,_1st_baron_howard_of_effingham
+recruit_character = ENG_francis_talbot,_5th_earl_of_shrewsbury
+recruit_character = ENG_william_herbert,_1st_earl_of_pembroke
+recruit_character = ENG_henry_carey,_1st_baron_hunsdon
+recruit_character = ENG_george_talbot,_6th_earl_of_shrewsbury
+recruit_character = ENG_thomas_wentworth,_2nd_baron_wentworth
+recruit_character = ENG_edward_hastings,_1st_baron_hastings_of_loughborough
+recruit_character = ENG_sir_francis_knollys
+recruit_character = ENG_ambrose_dudley,_3rd_earl_of_warwick
+recruit_character = ENG_thomas_percy,_7th_earl_of_northumberland
+recruit_character = ENG_henry_manners,_2nd_earl_of_rutland
+recruit_character = ENG_edward_clinton_a
+recruit_character = ENG_john_hawkins
+recruit_character = ENG_thomas_wyndham
+recruit_character = ENG_martin_frobisher
+recruit_character = ENG_stanley_hamilton
+recruit_character = ENG_winston_hamilton
+recruit_character = ENG_william_hardinge
+recruit_character = ENG_john_dudley_duke_of_northumberland
+recruit_character = ENG_thomas_cranmer
+recruit_character = ENG_reginald_pole
+recruit_character = ENG_john_dudley_duke_of_northumberland_a
+recruit_character = ENG_william_sharington
+recruit_character = ENG_john_russell
+recruit_character = ENG_thomas_radclyffe
+recruit_character = ENG_thomas_darcy
+recruit_character = ENG_william_paulet
+
+oob = "ENG_1550"
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+add_opinion_modifier = { target = FRA modifier = large_decrease }
+add_opinion_modifier = { target = SCO modifier = large_decrease }
+
+# Starting tech
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1	
+	fleet_in_being = 1
+
+}
+
+set_convoys = 50
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+if = {
+	limit = {
+		has_start_date < 1550.03.05
+	}
+
+	declare_war_on = {
+		target = SCO
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+
+1550.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1550.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		neutrality = 100
+	}
+
+	create_country_leader = {
+		name = "Edward VI"
+		picture = "portrait_edward_vii.dds"
+		ideology = despotism
+		traits = { 
+             inexperienced_monarch
+		}
+	}
+	
+	#create_country_leader = {
+	#	name = "Mary I"
+	#	picture = "portrait_mary_i.dds"
+	#	ideology = despotism
+	#	traits = {
+	#		bloody
+	#	}
+	#}
+	
+	create_field_marshal = {
+	    name = "John Dudley, 1st Duke of Northumberland"
+    	picture = "portrait_john_dudley.dds"
+	    traits = { offensive_doctrine infantry_leader politically_connected career_officer }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 3
+	    logistics_skill = 2
+    }
+	
+	create_field_marshal = {
+	    name = "William Howard, 1st Baron Howard of Effingham"
+    	picture = "portrait_william_howard.dds"
+	    traits = { aggressive_assaulter organizer war_hero bearer_of_artillery }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 3
+    }
+	
+	create_field_marshal = {
+	    name = "Francis Talbot, 5th Earl of Shrewsbury"
+    	picture = "portrait_francis_talbot.dds"
+	    traits = { unyielding_defender trait_cautious trait_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_field_marshal = {
+	    name = "William Herbert, 1st Earl of Pembroke"
+    	picture = "portrait_william_herbert.dds"
+	    traits = { old_guard thorough_planner war_hero }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Henry Carey, 1st Baron Hunsdon"
+    	picture = "portrait_henry_carey.dds"
+	    traits = { infantry_expert infantry_leader infantry_officer skilled_staffer }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 3
+    }
+	
+	create_corps_commander = {
+	    name = "George Talbot, 6th Earl of Shrewsbury"
+    	picture = "portrait_george_talbot.dds"
+	    traits = { fortress_buster trickster bearer_of_artillery inflexible_strategist  }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Thomas Wentworth, 2nd Baron Wentworth"
+    	picture = "portrait_thomas_wentworth.dds"
+	    traits = { ambusher urban_assault_specialist harsh_leader }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+
+    create_corps_commander = {
+	    name = "Edward Hastings, 1st Baron Hastings of Loughborough"
+    	picture = "portrait_edward_hastings.dds"
+	    traits = { scavenger hill_fighter career_officer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+
+    create_corps_commander = {
+	    name = "Sir Francis Knollys"
+    	picture = "portrait_francis_knollys.dds"
+	    traits = { old_guard adaptable infantry_leader }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+
+    create_corps_commander = {
+	    name = "Ambrose Dudley, 3rd Earl of Warwick"
+    	picture = "portrait_ambrose_dudley.dds"
+	    traits = { infantry_expert trait_reckless trait_mountaineer }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+    create_corps_commander = {
+	    name = "Thomas Percy, 7th Earl of Northumberland"
+    	picture = "portrait_thomas_percy.dds"
+	    traits = { invader_ii infantry_officer }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+
+    create_corps_commander = {
+	    name = "Henry Manners, 2nd Earl of Rutland"
+    	picture = "portrait_henry_manners.dds"
+	    traits = { cavalry_expert cavalry_leader cavalry_officer }
+	    skill = 2
+	    attack_skill = 1
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_navy_leader = {
+	    name = "Edward Clinton, 1st Earl of Lincoln"
+    	picture = "portrait_edward_clinton.dds"
+	    traits = {  big_guns_expert ironside battleship_adherent old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Sir John Hawkins"
+    	picture = "portrait_john_hawkins.dds"
+	    traits = { cruiser_captain blue_water_expert gentlemanly }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Sir Thomas Wyndham"
+    	picture = "portrait_thomas_wyndham.dds"
+	    traits = { destroyer_leader bold chief_engineer }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+        maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Sir Martin Frobisher"
+    	picture = "portrait_martin_frobisher.dds"
+	    traits = { ground_pounder caustic_personality }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 1
+    }
+
+}
+
+add_ideas = Anglican
+add_ideas = book_of_common_prayer
+add_ideas = ENG_aspiring_masters_of_the_sea
+add_ideas = ENG_french_hatred
+add_ideas = ENG_proud_protestantism
+
+add_ideas = government_rank_2
+
+add_ideas = english_traditions
+
+country_event = { id = anewera.1 days = "1282" }
+country_event = { id = anewera.60 days = "1503" }
+country_event = { id = anewera.61 days = "3242" }
+country_event = { id = anewera.139 days = "1486" }
+country_event = { id = anewera.140 days = "1486" }
+
+if = {
+    limit = {
+      has_idea = ENG_french_hatred
+    }
+
+    add_opinion_modifier = {
+      target = FRA
+      modifier = large_decrease
+    }
+}

@@ -1,0 +1,22 @@
+state={
+	id=821
+	name="STATE_821"
+
+	history={
+		owner = URB
+		add_core_of = URB
+        buildings = {
+			infrastructure = 3
+			arms_factory = 5
+			industrial_complex = 6
+			
+		}
+	}
+
+	provinces={
+		3885 11861 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

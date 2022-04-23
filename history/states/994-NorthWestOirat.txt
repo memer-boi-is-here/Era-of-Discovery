@@ -1,0 +1,19 @@
+state={
+	id=994
+	name="North West Oirat"
+	
+	history={
+		owner = OIR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = OIR
+	}
+	
+	provinces={
+		1685 1816 4690 4711 4793 7886 10580 10639 10649 10712 12563 12628 12631
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,639 @@
+characters = {
+	POR_john_iii = {
+		name = "John III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/portrait_john_iii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist trait_cautious organizer expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { the_pious }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	POR_luís_of_portugal_duke_of_beja = {
+		name = "Luís of Portugal, Duke of Beja"
+		advisor = {
+			slot = political_advisor
+			idea_token = luis_of_beja
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = luis_of_beja_a
+			allowed = {
+					original_tag = POR
+				}
+				cost = 150.000
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_luis_of_beja"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_luis_of_beja.dds"
+			}
+		}
+		field_marshal = {
+			traits = { bearer_of_artillery inflexible_strategist infantry_leader trait_engineer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_teodósio_i_duke_of_braganza = {
+		name = "Teodósio I, Duke of Braganza"
+		advisor = {
+			slot = political_advisor
+			idea_token = teodosio_i
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = teodosio_i_a
+			allowed = {
+					original_tag = POR
+				}
+				cost = 150.000
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_teodosio_i"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_teodosio_i.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero trickster aggressive_assaulter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POR_duarte_duke_of_guimarães = {
+		name = "Duarte, Duke of Guimarães"
+		advisor = {
+			slot = high_command
+			idea_token = duarte_of_guimaraes
+			ledger = army 
+				allowed = {
+					original_tag = POR
+				}
+				traits = {
+					army_cavalry_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_duarte_of_guimaraes"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_duarte_of_guimaraes.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless infantry_leader jungle_rat adaptable }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POR_antónio_de_noronha_1st_count_of_linhares = {
+		name = "António de Noronha, 1st Count of Linhares"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_antonio_de_noronha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected trait_engineer fortress_buster invader_ii }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	POR_luís_de_ataíde_3rd_count_of_atouguia = {
+		name = "Luís de Ataíde, 3rd Count of Atouguia"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_luís de ataíde.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer cavalry_leader winter_specialist ambusher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	POR_francisco_de_mascarenhas_1st_count_of_vila_da_horta = {
+		name = "Francisco de Mascarenhas, 1st Count of Vila da Horta"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_francisco_de_mascarenhas.dds"
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader ranger }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_aires_de_albuquerque_e_saldanha = {
+		name = "Aires de Albuquerque e Saldanha"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_aires_de_saldanha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_martim_afonso_de_sousa = {
+		name = "Martim Afonso de Sousa"
+		advisor = {
+			slot = navy_chief
+			idea_token = martim_de_sousa_a
+			allowed = {
+					original_tag = POR
+				}
+				cost = 150.000
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = martim_de_sousa
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					high_admiral 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_martim_de_sousa"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_martim_de_sousa.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_mem_de_sá = {
+		name = "Mem de Sá"
+		advisor = {
+			slot = navy_chief
+			idea_token = mem_de_sa
+			allowed = {
+					original_tag = POR
+				}
+				cost = 150.000
+				traits = {
+					navy_chief_maneuver_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mem_de_sa_a
+			ledger = navy 
+				allowed = {
+					original_tag = POR
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mem_de_sa"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_mem_de_sa.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_antónio_prior_of_crato = {
+		name = "António, Prior of Crato"
+		advisor = {
+			slot = navy_chief
+			idea_token = antonio_of_crato
+			allowed = {
+					original_tag = POR
+				}
+				cost = 150.000
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_antonio_of_crato"
+			}
+			army = {
+				large = "gfx/leaders/POR/portrait_antonio_of_crato.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	POR_andré_de_mesquita = {
+		name = "André de Mesquita"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	POR_caetano_dias = {
+		name = "Caetano Dias"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	POR_vicente_machado = {
+		name = "Vicente Machado"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	POR_luis_de_ataide = {
+		advisor = {
+			slot = political_advisor
+			idea_token = luis_de_ataide
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "luis_de_ataide"
+		portraits = {
+			army = {
+				small = "GFX_idea_luis_de_ataide"
+			}
+		}
+	}
+	POR_bras_cubas = {
+		advisor = {
+			slot = political_advisor
+			idea_token = bras_cubas
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "bras_cubas"
+		portraits = {
+			army = {
+				small = "GFX_idea_bras_cubas"
+			}
+		}
+	}
+	POR_henry_aviz_a = {
+		advisor = {
+			slot = political_advisor
+			idea_token = henry_aviz_a
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					grand_inquisitor 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "henry_aviz_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_henry_aviz"
+			}
+		}
+	}
+	POR_aires_de_saldanha = {
+		advisor = {
+			slot = high_command
+			idea_token = aires_de_saldanha
+			ledger = army 
+				allowed = {
+					original_tag = POR
+				}
+				traits = {
+					army_logistics_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "aires_de_saldanha"
+		portraits = {
+			army = {
+				small = "GFX_idea_aires_de_saldanha"
+			}
+		}
+	}
+	POR_henry_aviz = {
+		advisor = {
+			slot = political_advisor
+			idea_token = henry_aviz
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					archbishop_of_evora 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "henry_aviz"
+		portraits = {
+			army = {
+				small = "GFX_idea_henry_aviz"
+			}
+		}
+	}
+	POR_francisco_de_mascarenhas = {
+		advisor = {
+			slot = political_advisor
+			idea_token = francisco_de_mascarenhas
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					war_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "francisco_de_mascarenhas"
+		portraits = {
+			army = {
+				small = "GFX_idea_francisco_de_mascarenhas"
+			}
+		}
+	}
+	POR_antonio_de_noronha = {
+		advisor = {
+			slot = high_command
+			idea_token = antonio_de_noronha
+			ledger = army 
+				allowed = {
+					original_tag = POR
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "antonio_de_noronha"
+		portraits = {
+			army = {
+				small = "GFX_idea_antonio_de_noronha"
+			}
+		}
+	}
+	POR_duarte_da_costa = {
+		advisor = {
+			slot = political_advisor
+			idea_token = duarte_da_costa
+			allowed = {
+					original_tag = POR
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "duarte_da_costa"
+		portraits = {
+			army = {
+				small = "GFX_idea_duarte_da_costa"
+			}
+		}
+	}
+}

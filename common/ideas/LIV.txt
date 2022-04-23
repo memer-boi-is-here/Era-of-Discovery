@@ -1,0 +1,199 @@
+ideas = {
+	
+	country = {
+	
+		terra_mariana = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = terra_mariana
+			
+			modifier = {
+				 war_support_factor = 0.1
+				 defense_bonus_against = 0.1
+				 attrition = -0.2
+			}
+
+		}
+    }
+
+
+	political_advisor = {
+	
+    	philipp_schall_von_bell_p = {
+			
+			picture = philipp_schall_von_bell
+			
+			allowed = {
+				original_tag = LIV
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		wilhelm_von_brandenburg_p = {
+			
+			picture = wilhelm_von_brandenburg
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		gotthard_kettler_p = {
+			
+			picture = gotthard_kettler
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		philipp_schall_von_bell_a = {
+
+			picture = philipp_schall_von_bell
+			
+			allowed = {
+				original_tag = LIV
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		gotthard_kettler = {
+
+			picture = gotthard_kettler
+			
+			allowed = {
+				original_tag = LIV
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+
+	    philipp_schall_von_bell = {
+			ledger = army
+
+			picture = philipp_schall_von_bell
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		wilhelm_von_brandenburg = {
+			ledger = army
+			
+			picture = wilhelm_von_brandenburg
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    gotthard_kettler_a = {
+		    ledger = army
+			
+			picture = gotthard_kettler
+			
+			allowed = {
+				original_tag = LIV
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

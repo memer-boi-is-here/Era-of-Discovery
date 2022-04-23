@@ -1,0 +1,34 @@
+state={
+	id=870
+	name="STATE_870"
+
+	history={
+	    victory_points = {
+			11833 1
+		}
+		victory_points = {
+			9750 5 
+		}
+		owner = SNA
+		add_core_of = SNA
+        buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 2
+			
+			11833 = {
+				naval_base = 2
+
+			}
+			
+		}
+	}
+
+	provinces={
+		9750 11833 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

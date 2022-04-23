@@ -1,0 +1,22 @@
+
+state={
+	id=424
+	name="STATE_424" # Madras
+	manpower = 15791700
+	state_category = rural
+	
+
+	history={
+		owner = GLK
+		add_core_of = GLK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		1228 1430 4321 4365 7297 7310 7340 10152 10296 12180 12779 
+	}
+}

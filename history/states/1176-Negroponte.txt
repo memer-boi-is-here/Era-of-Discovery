@@ -1,0 +1,22 @@
+
+state={
+	id=1176
+	name="Negroponte"
+	manpower=200000
+	
+	state_category = large_town
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		976 1109 3988 4109 7127  
+	}
+}

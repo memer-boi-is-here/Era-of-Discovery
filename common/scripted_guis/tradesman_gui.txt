@@ -1,0 +1,11 @@
+ scripted_gui = {
+	
+	tradesman_TUR_gui = {
+		context_type = decision_category
+		window_name = "tradesman_TUR_ui_window"
+	} 
+	AUS_germania_gui = {
+		context_type = decision_category
+		window_name = "AUS_germania_ui_window"
+	} 
+}

@@ -1,0 +1,779 @@
+characters = {
+	FRA_henry_ii = {
+		name = "Henry II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/portrait_henry_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine aggressive_assaulter inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { devout_catholic }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	FRA_francis_duke_of_guise = {
+		name = "Francis, Duke of Guise"
+		advisor = {
+			slot = army_chief
+			idea_token = francis_duke_of_guise
+			allowed = {
+					original_tag = FRA
+				}
+				cost = 150.000
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_francis_duke_of_guise"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_francis_duke_of_guise.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist harsh_leader war_hero fast_planner }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	FRA_anne_de_montmorency_duke_of_montmorency = {
+		name = "Anne de Montmorency, Duke of Montmorency"
+		advisor = {
+			slot = army_chief
+			idea_token = anne_de_montmorency_duke_of_montmorency_a
+			allowed = {
+					original_tag = FRA
+				}
+				cost = 150.000
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = anne_de_montmorency_duke_of_montmorency
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_anne_de_montmorency_duke_of_montmorency"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_anne_de_montmorency.dds"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer organizer unyielding_defender adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	FRA_jacques_dalbon_seigneur_de_saint_andre = {
+		name = "Jacques d'Albon, Seigneur de Saint Andre"
+		advisor = {
+			slot = army_chief
+			idea_token = jacques_d_albon_seigneur_de_saint_andre
+			allowed = {
+					original_tag = FRA
+				}
+				cost = 150.000
+				traits = {
+					army_chief_maneuver_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jacques_d_albon_seigneur_de_saint_andre"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_jacques_d_albon.dds"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer trickster offensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	FRA_paul_de_thermes = {
+		name = "Paul de Thermes"
+		advisor = {
+			slot = high_command
+			idea_token = paul_de_thermes
+			ledger = army 
+				allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_paul_de_thermes"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_paul_de_thermes.dds"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard thorough_planner }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_louis_prince_of_conde = {
+		name = "Louis, Prince of Conde"
+		advisor = {
+			slot = high_command
+			idea_token = louis_prince_of_conde
+			ledger = army 
+				allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_louis_prince_of_conde"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_louis_prince_of_conde.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer skilled_staffer infantry_expert adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	FRA_francis_de_scepeaux = {
+		name = "Francis de Scepeaux"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_francis_de_scepeaux.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless winter_specialist trait_mountaineer ambusher }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	FRA_gaspard_de_saulx = {
+		name = "Gaspard de Saulx"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_gaspard_de_saulx.dds"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist hill_fighter fortress_buster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_jean_count_of_soissons_and_enghien = {
+		name = "Jean, Count of Soissons and Enghien"
+		advisor = {
+			slot = high_command
+			idea_token = jean_count_of_soissons_and_enghien
+			ledger = army 
+				allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					army_drill_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jean_count_of_soissons_and_enghien"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_jean_count_of_soissons_and_enghien.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless trickster scavenger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_albert_de_gondi = {
+		name = "Albert de Gondi"
+		advisor = {
+			slot = high_command
+			idea_token = albert_de_gondi
+			ledger = army 
+				allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					army_logistics_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_albert_de_gondi"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_albert_de_gondi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery trait_engineer guerilla_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_armand_de_gontraut_baron_de_biron = {
+		name = "Armand de Gontraut, Baron de Biron"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_armand_de_gontraut_baron_de_biron.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer urban_assault_specialist cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_francis_iii_de_la_rochefoucauld = {
+		name = "Francis III de la Rochefoucauld"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_francis_de_la_rochefoucauld.dds"
+			}
+		}
+		corps_commander = {
+			traits = { ranger cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_gabriel_de_lorges_1st_earl_of_montgomery = {
+		name = "Gabriel de Lorges, 1st Earl of Montgomery"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_gabriel_de_lorges.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected invader_ii }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_gaspard_ii_de_coligny = {
+		name = "Gaspard II de Coligny"
+		advisor = {
+			slot = navy_chief
+			idea_token = gaspard_de_coligny
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_gaspard_de_coligny"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_gaspard_de_coligny.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_claude_dannebault = {
+		name = "Claude d'Annebault"
+		advisor = {
+			slot = navy_chief
+			idea_token = claude_d_annebault_a
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = claude_d_annebault
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_claude_d_annebault"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_claude_d_annebault.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly blue_water_expert cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_francis_de_coligny_dandelot = {
+		name = "Francis de Coligny d'Andelot"
+		advisor = {
+			slot = navy_chief
+			idea_token = francis_de_coligny_d_andelot
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					navy_chief_commerce_raiding_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_francis_de_coligny_d_andelot"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_francis_de_coligny_d_andelot.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold destroyer_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_jean_ribault = {
+		name = "Jean Ribault"
+		advisor = {
+			slot = political_advisor
+			idea_token = jean_ribault
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = ""
+			}
+			navy = {
+				small = "GFX_idea_jean_ribault"
+			}
+			army = {
+				large = "gfx/leaders/FRA/portrait_jean_ribault.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold destroyer_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	FRA_aimable_harispe = {
+		name = "Aimable Harispe"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1570.1.1.12"
+			id = -1
+		}
+	}
+	FRA_hugo_vaillant = {
+		name = "Hugo Vaillant"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1570.1.1.12"
+			id = -1
+		}
+	}
+	FRA_lazare_dubois = {
+		name = "Lazare Dubois"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1555.1.1.12"
+			id = -1
+		}
+	}
+	FRA_catherine_de_medici = {
+		advisor = {
+			slot = political_advisor
+			idea_token = catherine_de_medici
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					regent 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "catherine_de_medici"
+		portraits = {
+			army = {
+				small = "GFX_idea_catherine_de_medici"
+			}
+		}
+	}
+	FRA_jean_bullant = {
+		advisor = {
+			slot = political_advisor
+			idea_token = jean_bullant
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "jean_bullant"
+		portraits = {
+			army = {
+				small = "GFX_idea_jean_bullant"
+			}
+		}
+	}
+	FRA_francis_de_montmorency = {
+		advisor = {
+			slot = political_advisor
+			idea_token = francis_de_montmorency
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "francis_de_montmorency"
+		portraits = {
+			army = {
+				small = "GFX_idea_francis_de_montmorency"
+			}
+		}
+	}
+	FRA_gabriel_de_luetz = {
+		advisor = {
+			slot = political_advisor
+			idea_token = gabriel_de_luetz
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "gabriel_de_luetz"
+		portraits = {
+			army = {
+				small = "GFX_idea_gabriel_de_luetz"
+			}
+		}
+	}
+	FRA_francis_de_la_rochefoucauld = {
+		advisor = {
+			slot = high_command
+			idea_token = francis_de_la_rochefoucauld
+			ledger = army 
+				allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					army_cavalry_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "francis_de_la_rochefoucauld"
+		portraits = {
+			army = {
+				small = "GFX_idea_francis_de_la_rochefoucauld"
+			}
+		}
+	}
+	FRA_charles_cardinal_of_lorraine = {
+		advisor = {
+			slot = political_advisor
+			idea_token = charles_cardinal_of_lorraine
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					archbishop_of_reims 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "charles_cardinal_of_lorraine"
+		portraits = {
+			army = {
+				small = "GFX_idea_charles_cardinal_of_lorraine"
+			}
+		}
+	}
+	FRA_charles_de_cosse_count_of_brissac = {
+		advisor = {
+			slot = political_advisor
+			idea_token = charles_de_cosse_count_of_brissac
+			allowed = {
+					original_tag = FRA
+				}
+				traits = {
+					war_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "charles_de_cosse_count_of_brissac"
+		portraits = {
+			army = {
+				small = "GFX_idea_charles_de_cosse_count_of_brissac"
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ottoman_tradesmans"
+		texturefile = "gfx/interface/ottoman_tradesmans.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_formable_japan"
+		texturefile = "gfx/interface/formable_japan.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_hre_eagle"
+		texturefile = "gfx/interface/hre_eagle.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

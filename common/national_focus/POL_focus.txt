@@ -1,0 +1,994 @@
+focus_tree = {
+	id = poland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	#Focus for Grant Rights to the University of Königsberg"
+	focus = {
+		id = POL_grant_rights_to_the_university_of_knigsberg
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_prussia }
+	}
+
+	#Focus for On Prussia"
+	focus = {
+		id = POL_on_prussia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_diplomacy_in_the_west }
+	}
+
+	#Focus for Constest for the Baltic"
+	focus = {
+		id = POL_constest_for_the_baltic
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_rival_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		available = {
+			
+			LIT = { exists = no }
+		
+		}
+	}
+
+	#Focus for Rival Russia"
+	focus = {
+		id = POL_rival_russia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_russia }
+		mutually_exclusive = { focus = POL_befriend_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_opinion -50 RUS
+		
+		}
+	}
+
+	#Focus for First Regular Navy Of The Commonwealth"
+	focus = {
+		id = POL_first_regular_navy_of_the_commonwealth
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_found_the_komisja_morska }
+	}
+
+	#Focus for Polish Hussars"
+	focus = {
+		id = POL_polish_hussars
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_cossack_irregulars }
+	}
+
+	#Focus for Prosperity Of The King"
+	focus = {
+		id = POL_prosperity_of_the_king
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_urban_reformation }
+	}
+
+	#Focus for Defense the Coastal Area"
+	focus = {
+		id = POL_defense_the_coastal_area
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_sweden }
+	}
+
+	#Focus for The Polish Economy"
+	focus = {
+		id = POL_the_polish_economy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+		completion_reward = {
+			
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = arms_factory
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = POL
+ }
+		
+		}
+	}
+
+	#Focus for Superiority Over The Baltic Sea"
+	focus = {
+		id = POL_superiority_over_the_baltic_sea
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Frigate"
+	focus = {
+		id = POL_frigate
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_galley }
+	}
+
+	#Focus for Carrack"
+	focus = {
+		id = POL_carrack
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_galley }
+	}
+
+	#Focus for Corvette"
+	focus = {
+		id = POL_corvette
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_galley }
+	}
+
+	#Focus for Expansion of a Navy"
+	focus = {
+		id = POL_expansion_of_a_navy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_first_regular_navy_of_the_commonwealth }
+	}
+
+	#Focus for Strong"
+	focus = {
+		id = POL_strong
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_expansion_of_a_navy }
+		mutually_exclusive = { focus = POL_galley }
+	}
+
+	#Focus for Battleship Tactics"
+	focus = {
+		id = POL_battleship_tactics
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_strong }
+	}
+
+	#Focus for Heavy Cuiser Ship"
+	focus = {
+		id = POL_heavy_cuiser_ship
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_strong }
+	}
+
+	#Focus for Raiding Fleet of The Baltic"
+	focus = {
+		id = POL_raiding_fleet_of_the_baltic
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Proclaim the Commonwealth!"
+	focus = {
+		id = POL_proclaim_the_commonwealth
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_lithuanian_question }
+		mutually_exclusive = { focus = POL_full_annexation }
+		complete_tooltip = {
+			1
+		}
+		completion_reward = {
+			
+			add_war_support
+= -0.5
+add_stability
+= 0.5
+add_state_core
+= 11
+add_state_core
+= 93
+add_state_core
+= 94
+add_state_core
+= 95
+add_state_core
+= 96
+set_global_flag = POL_commonwealth
+		
+		}
+	}
+
+	#Focus for Diplomacy in the West"
+	focus = {
+		id = POL_diplomacy_in_the_west
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+	}
+
+	#Focus for The Polish Army"
+	focus = {
+		id = POL_the_polish_army
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+		search_filters = {  FOCUS_FILTER_WAR_SUPPORT  } 
+		completion_reward = {
+			
+			add_war_support= 0.04 army_experience= 10
+		
+		}
+	}
+
+	#Focus for Reign of Sigismund II Augustus"
+	focus = {
+		id = POL_reign_of_sigismund_ii_augustus
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_political_power = 100
+		
+		}
+	}
+
+	#Focus for The Holy Roman Empire and Us"
+	focus = {
+		id = POL_the_holy_roman_empire_and_us
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_austria }
+		mutually_exclusive = { focus = POL_TIihxFbs }
+	}
+
+	#Focus for The Lithuanian Question"
+	focus = {
+		id = POL_the_lithuanian_question
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_political_power= 50
+		
+		}
+	}
+
+	#Focus for Full Annexation!"
+	focus = {
+		id = POL_full_annexation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_lithuanian_question }
+		mutually_exclusive = { focus = POL_proclaim_the_commonwealth }
+		complete_tooltip = {
+			1
+		}
+		completion_reward = {
+			
+			declare_war_on= { 
+target = LIT 
+type = annex_everything 
+}
+set_global_flag= POL_annexation
+		
+		}
+	}
+
+	#Focus for Diplomacy in the East"
+	focus = {
+		id = POL_diplomacy_in_the_east
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+	}
+
+	#Focus for The Lithuanian Economy"
+	focus = {
+		id = POL_the_lithuanian_economy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_full_annexation }
+		completion_reward = {
+			
+			11={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = POL
+ }
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = POL_undefined
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_polish_army }
+		mutually_exclusive = { focus = POL_GdpMPtNy }
+		completion_reward = {
+			
+			add_ideas=
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = POL_undefined
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_polish_army }
+	}
+
+	#Focus for Betray our Vassal"
+	focus = {
+		id = POL_betray_our_vassal
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_prussia }
+		completion_reward = {
+			
+			add_stability= -0.2
+release_puppet= PRU
+create_wargoal= { type = annex_everything 
+target = PRU
+}
+		
+		}
+	}
+
+	#Focus for Cossack Irregulars"
+	focus = {
+		id = POL_cossack_irregulars
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_polish_army }
+		available = {
+			
+			add_ideas= POL_cossack_irregulars
+		
+		}
+	}
+
+	#Focus for Peasant Conscripts"
+	focus = {
+		id = POL_peasant_conscripts
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_MANPOWER  } 
+		completion_reward = {
+			
+			add_war_support= =0.25
+		
+		}
+	}
+
+	#Focus for Crush the Opposition"
+	focus = {
+		id = POL_crush_the_opposition
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_prussia }
+		bypass = {
+			
+			PRU = { has_completed_focus= PRU_Independence_1}
+		
+		}
+		available = {
+			
+			has_completed_focus= PRU_Independence_1
+		
+		}
+		completion_reward = {
+			
+			set_global_flag= POL_PRU_independence
+release_puppet= PRU
+create_wargoal= { 
+type = annex_everything 
+target = PRU
+}
+		
+		}
+	}
+
+	#Focus for On Austria"
+	focus = {
+		id = POL_on_austria
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_diplomacy_in_the_west }
+	}
+
+	#Focus for undefined
+	focus = {
+		id = POL_undefined
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_austria }
+		mutually_exclusive = { focus = POL_the_holy_roman_empire_and_us }
+		completion_reward = {
+			
+			add_war_support= 5
+		
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = POL_undefined
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+	}
+
+	#Focus for Assimilate Livonia"
+	focus = {
+		id = POL_assimilate_livonia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_take_livonia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Go for Mosow"
+	focus = {
+		id = POL_go_for_mosow
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			create_wargoal= { 
+type = annex_everything 
+target = RUS
+}
+		
+		}
+	}
+
+	#Focus for An Alliance With Russia"
+	focus = {
+		id = POL_an_alliance_with_russia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_befriend_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		available = {
+			
+			LIT = { exists = yes }
+		
+		}
+	}
+
+	#Focus for Invade Crimea"
+	focus = {
+		id = POL_invade_crimea
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_contest_for_the_ukraine }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			create_wargoal= { 
+type = annex_everything 
+target = CRI
+}
+		
+		}
+	}
+
+	#Focus for Take Livonia"
+	focus = {
+		id = POL_take_livonia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_constest_for_the_baltic }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			create_wargoal= { 
+type = annex_everything 
+target = LIV
+}
+		
+		}
+	}
+
+	#Focus for Assimilate the Cossacks"
+	focus = {
+		id = POL_assimilate_the_cossacks
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_invade_crimea }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Assimilation"
+	focus = {
+		id = POL_assimilation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_demand_moldova }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Contest for the Ukraine"
+	focus = {
+		id = POL_contest_for_the_ukraine
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_rival_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		available = {
+			
+			LIT = { exists = no }
+		
+		}
+	}
+
+	#Focus for On Russia"
+	focus = {
+		id = POL_on_russia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_diplomacy_in_the_east }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_political_power= 30
+		
+		}
+	}
+
+	#Focus for Befriend Russia"
+	focus = {
+		id = POL_befriend_russia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_russia }
+		mutually_exclusive = { focus = POL_rival_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_opinion 50 RUS
+		
+		}
+	}
+
+	#Focus for Split Crimea"
+	focus = {
+		id = POL_split_crimea
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_split_livonia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			create_wargoal= { 
+type = annex_everything 
+target = CRI
+}
+		
+		}
+	}
+
+	#Focus for Demand Moldova"
+	focus = {
+		id = POL_demand_moldova
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_split_crimea }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for African Settlement"
+	focus = {
+		id = POL_african_settlement
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		available = {
+			
+			LIT = { exists = no }
+		
+		}
+	}
+
+	#Focus for Split Livonia"
+	focus = {
+		id = POL_split_livonia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_an_alliance_with_russia }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Settle in the Carribean"
+	focus = {
+		id = POL_settle_in_the_carribean
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Danubian principalities"
+	focus = {
+		id = POL_danubian_principalities
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 16
+		y = 6
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_hungarian_crown }
+	}
+
+	#Focus for The Hungarian crown"
+	focus = {
+		id = POL_the_hungarian_crown
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 5
+		cost = 15
+		available_if_capitulated = yes
+	}
+
+	#Focus for Exert control over the Gambia"
+	focus = {
+		id = POL_exert_control_over_the_gambia
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 7
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_african_settlement }
+	}
+
+	#Focus for Found the Komisja Morska"
+	focus = {
+		id = POL_found_the_komisja_morska
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_iAVgsylK }
+	}
+
+	#Focus for Strengthen Poland"
+	focus = {
+		id = POL_strengthen_poland
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_iAVgsylK }
+	}
+
+	#Focus for On Sweden"
+	focus = {
+		id = POL_on_sweden
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_diplomacy_in_the_north }
+	}
+
+	#Focus for Urban Reformation"
+	focus = {
+		id = POL_urban_reformation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_polish_economy }
+	}
+
+	#Focus for undefined
+	focus = {
+		id = POL_undefined
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_the_polish_economy }
+	}
+
+	#Focus for University And School"
+	focus = {
+		id = POL_university_and_school
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_strengthen_poland }
+	}
+
+	#Focus for Galley"
+	focus = {
+		id = POL_galley
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 6
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_expansion_of_a_navy }
+		mutually_exclusive = { focus = POL_strong }
+	}
+
+	#Focus for Wealthy of The Kingdom"
+	focus = {
+		id = POL_wealthy_of_the_kingdom
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 0
+		y = 7
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_university_and_school }
+	}
+
+	#Focus for Integration"
+	focus = {
+		id = POL_integration
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_exert_control_over_the_gambia }
+	}
+
+	#Focus for Diplomacy in the North"
+	focus = {
+		id = POL_diplomacy_in_the_north
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 30
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_reign_of_sigismund_ii_augustus }
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+	}
+
+	#Focus for Befriend Sweden"
+	focus = {
+		id = POL_befriend_sweden
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_on_sweden }
+		mutually_exclusive = { focus = POL_defense_the_coastal_area }
+	}
+
+	#Focus for Hostile Toward Sweden"
+	focus = {
+		id = POL_hostile_toward_sweden
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_defense_the_coastal_area }
+	}
+
+	#Focus for Rule The Baltic Together"
+	focus = {
+		id = POL_rule_the_baltic_together
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_befriend_sweden }
+	}
+
+	#Focus for Join Danish Norwegian War"
+	focus = {
+		id = POL_join_danish_norwegian_war
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POL_hostile_toward_sweden }
+	}
+
+#End of focuses 
+ }

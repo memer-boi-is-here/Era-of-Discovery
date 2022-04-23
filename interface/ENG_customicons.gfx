@@ -1,0 +1,435 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_Anglo-Scottish_Rivalry"
+		texturefile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_Anglo-Scottish_Rivalry_shine"
+		texturefile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+			animationtexturefile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+			animationtexturefile = "gfx/interface/goals/Anglo-Scottish_Rivalry.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_Diversified_Industry"
+		texturefile = "gfx/interface/goals/Diversified_Industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Diversified_Industry_shine"
+		texturefile = "gfx/interface/goals/Diversified_Industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationtexturefile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationtexturefile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+    SpriteType = {
+		name = "GFX_Found_The_Muscovy_Company"
+		texturefile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Found_The_Muscovy_Company_shine"
+		texturefile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+			animationtexturefile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+			animationtexturefile = "gfx/interface/goals/Found_The_Muscovy_Company.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+    SpriteType = {
+		name = "GFX_Increase_Agricultural_Output"
+		texturefile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_Increase_Agricultural_Output_shine"
+		texturefile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+			animationtexturefile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+			animationtexturefile = "gfx/interface/goals/Increase_Agricultural_Output.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Ponder_Foreign_Investments"
+		texturefile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+	}  
+	
+	SpriteType = { 
+		name = "GFX_Ponder_Foreign_Investments_shine"
+		texturefile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+			animationtexturefile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+			animationtexturefile = "gfx/interface/goals/Ponder_Foreign_Investments.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Secure_Irelands_Friends"
+		texturefile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+	}  
+	
+	SpriteType = { 
+		name = "GFX_Secure_Irelands_Friends_shine"
+		texturefile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+			animationtexturefile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+			animationtexturefile = "gfx/interface/goals/Secure_Irelands_Friends.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_The_English_Isles"
+		texturefile = "gfx/interface/goals/The_English_Isles.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_The_English_Isles_shine"
+		texturefile = "gfx/interface/goals/The_English_Isles.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_English_Isles.dds"
+			animationtexturefile = "gfx/interface/goals/The_English_Isles.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_English_Isles.dds"
+			animationtexturefile = "gfx/interface/goals/The_English_Isles.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_The_Famines_Lesson"
+		texturefile = "gfx/interface/goals/The_Famines_Lesson.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_The_Famines_Lesson_shine"
+		texturefile = "gfx/interface/goals/The_Famines_Lesson.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_Famines_Lesson.dds"
+			animationtexturefile = "gfx/interface/goals/The_Famines_Lesson.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_Famines_Lesson.dds"
+			animationtexturefile = "gfx/interface/goals/The_Famines_Lesson.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Reign_of_King_Edward_vi"
+		texturefile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_Reign_of_King_Edward_vi_shine"
+		texturefile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+			animationtexturefile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+			animationtexturefile = "gfx/interface/goals/reign_of_king_edward_vi.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Diversified_Industry"
+		texturefile = "gfx/interface/goals/Diversified_Industry.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Diversified_Industry_shine"
+		texturefile = "gfx/interface/goals/Diversified_Industry.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationtexturefile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationtexturefile = "gfx/interface/goals/Diversified_Industry.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_treaty_of_boulognee"
+		texturefile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_treaty_of_boulognee_shine"
+		texturefile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+			animationtexturefile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+			animationtexturefile = "gfx/interface/goals/goal_treaty_of_boulogne.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_england_henry_vii_legacy"
+		texturefile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_england_henry_vii_legacy_shine"
+		texturefile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+			animationtexturefile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+			animationtexturefile = "gfx/interface/goals/goal_england_henry_vii_legacy.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+}

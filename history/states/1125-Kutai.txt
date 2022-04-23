@@ -1,0 +1,27 @@
+state={
+	id=1125
+	name="Kutai"
+	history={
+		owner = KUT
+		add_core_of = KUT
+		victory_points = {
+			10237 1 
+		}
+		buildings = {
+			infrastructure = 3
+			10237 = {
+				naval_base = 1
+			}
+			10325 = {
+				naval_base = 1
+			}
+			
+		}
+	}
+	provinces={
+		5226 2047 12243 7415 1404 10325 7231 1252 10181 12196 10237 12225 7355 4323 7299 4236
+	}
+	manpower=716319
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

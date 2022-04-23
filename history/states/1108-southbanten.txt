@@ -1,0 +1,18 @@
+state={
+	id=1108
+	name="South Banten"
+	history={
+		owner = BNT
+		add_core_of = BNT
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7381 10279 1398 10307 4406
+	}
+	manpower=2717435
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

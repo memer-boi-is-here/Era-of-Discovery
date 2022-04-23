@@ -1,0 +1,374 @@
+ideas = {
+	country = {
+	
+	    anti_danish_policy = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = anti_danish_policy
+			
+			targeted_modifier = { tag = DEN attack_bonus_against = 0.1 }
+            targeted_modifier = { tag = DEN defense_bonus_against = 0.1 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+				custom_modifier_tooltip = anti_danish_policy_tt
+			}
+		}
+		
+		gustav_vasa_bible = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = gustav_vasa_bible
+			
+			modifier = {
+			    stability_factor = 0.15
+				weekly_manpower = 2000
+				research_speed_factor = 0.1
+			}
+		}
+		
+		confiscation_of_catholic_church_property = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = confiscation_of_catholic_church_property
+			
+			modifier = {
+			    stability_factor = -0.3
+				production_speed_buildings_factor = -0.3
+				political_power_gain = 0.25
+			}
+		}
+	
+	}
+
+	political_advisor = {
+
+        per_brahe_the_elder = {
+
+			picture = per_brahe_the_elder
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { lord_high_steward }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		laurentius_petri = {
+
+			picture = laurentius_petri
+
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { primate_of_sweden }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	    lars_siggesson_sparre = {
+			
+			picture = lars_siggesson_sparre
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { lord_high_treasurer }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		joran_persson = {
+			
+			picture = joran_persson
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		clas_akesson_tott = {
+			
+			picture = clas_akesson_tott
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jakob_tordsson_bagge = {
+		 
+		     picture = jakob_tordsson_bagge
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { lord_high_admiral }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		svante_stensson_sture = {
+			
+			picture = svante_stensson_sture
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	# MILITARY
+	army_chief = {
+
+		per_brahe_the_elder_a = {
+			
+			picture = per_brahe_the_elder
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		abraham_eriksson_leijonhufvud = {
+			
+			picture = abraham_eriksson_leijonhufvud
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		jakob_tordsson_bagge_a = {
+			
+			picture = jakob_tordsson_bagge
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		klas_horn = {
+			
+			picture = klas_horn
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	high_command = {
+
+		lars_siggesson_sparre_a = {
+		
+			ledger = army
+			
+			picture = lars_siggesson_sparre
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		nils_gyllenstierna = {
+		
+			ledger = army
+			
+			picture = nils_gyllenstierna
+
+			allowed = {
+				original_tag = SWE
+			}
+	
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		eric_xiv = {
+		
+			ledger = army
+			
+			picture = eric_xiv
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jakob_tordsson_bagge_b = {
+		
+			ledger = navy
+			
+			picture = jakob_tordsson_bagge
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=1047
+	name="Krishna"
+	history={
+		owner = VIJ
+		add_core_of = VIJ
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+	provinces={
+		4414 10897 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

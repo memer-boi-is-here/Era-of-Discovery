@@ -1,0 +1,7 @@
+ scripted_gui = {
+	
+	formable_nat_JAP_gui = {
+		context_type = decision_category
+		window_name = "formable_JAP_ui_window"
+	}
+}

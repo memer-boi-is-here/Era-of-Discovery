@@ -1,0 +1,6 @@
+colonization_decisions = {
+	
+}
+develop_colonies = {
+	
+}

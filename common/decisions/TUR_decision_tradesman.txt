@@ -1,0 +1,820 @@
+
+TUR_tradesman_support = {
+
+
+	TUR_tradesman_support_1 = {
+
+		icon = {
+			key = GFX_decision_category_eng_appeal_to_imperial_loyalists
+		}
+
+		available = {
+		ROOT = { controls_state = 341 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 341 }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15	
+			} 
+		}
+
+
+	TUR_tradesman_support_2 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 348 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 348 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_3 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 49 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 49 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_4 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 340 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 340 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_5 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 353 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 353 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+
+	TUR_tradesman_support_6 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 339 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 339 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_7 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 354 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 354 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_8 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 184 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 184 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_9 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 344 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 344 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_10 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 554 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 554 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_11 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 342 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 342 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_12 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 291 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 291 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_13 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 349 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 349 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_14 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 345 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 345 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+	TUR_tradesman_support_15 = {
+
+		icon = {
+			key = GFX_decision_generic_political_discourse
+		}
+
+		available = {
+		ROOT = { controls_state = 346 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.15
+            consumer_goods_factor = -0.02
+				min_export = 0.01
+				industrial_capacity_factory = 0.02
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 346 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.01
+		add_political_power = -15
+			
+		} 
+		}
+
+
+
+
+
+	TUR_tradesman_support_16 = {
+
+		icon = {
+			key = GFX_decision_hol_exchange_intelligence_data
+		}
+
+		available = {
+		ROOT = { controls_state = 446 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+            consumer_goods_factor = -0.05
+			production_factory_max_efficiency_factor = 0.10
+			production_factory_efficiency_gain_factor = 0.10
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 446 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 150
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.05
+		add_political_power = -15
+			
+		} 
+		}
+
+
+
+	TUR_tradesman_support_17 = {
+
+		icon = {
+			key = GFX_decision_generic_political_rally
+		}
+
+		available = {
+		HEJ = { controls_state = 679 }
+		has_political_power > 100
+		}
+
+		cancel_trigger = {
+		}
+
+		visible = {
+		}
+
+		modifier = {
+			political_power_gain = -0.2
+            consumer_goods_factor = -0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05 
+		}
+
+		on_map_mode = map_only
+
+		highlight_states = { state = 679 }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		days_re_enable = 700
+		days_remove = 365
+		
+		
+		
+		remove_effect = {
+        add_stability = 0.05
+		add_political_power = -15	
+			} 
+		}
+
+	TUR_tradesman_support_program = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+		}
+
+		available = {
+		}
+
+		cancel_trigger = {
+		}
+
+		modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				min_export = 0.1
+				political_power_cost = 0.3
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 100
+		
+		days_re_enable = 1000
+		days_remove = 140
+ 
+		remove_effect = {
+        add_stability = 0.05	
+		} 
+		}

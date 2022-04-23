@@ -1,0 +1,22 @@
+
+state={
+	id=1171
+	name="Nevers"
+	manpower=50000
+	
+	state_category = large_town
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		3506 9644 3681 667 
+	}
+}

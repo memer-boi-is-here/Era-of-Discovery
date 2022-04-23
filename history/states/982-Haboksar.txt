@@ -1,0 +1,23 @@
+state={
+	id=982
+	name="STATE_982"
+	resources={
+		aluminium=25
+	}
+	
+	history={
+		owner = OIR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = OIR
+	}
+	
+	provinces={
+		1689 1774 4751 4777 7773 7799 7808 7843 7870 10539 10563 10669 10695 12520 12544 12695 
+	}
+	manpower=506870
+	state_category=town
+	buildings_max_level_factor=1.000
+}

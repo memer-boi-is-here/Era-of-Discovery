@@ -1,0 +1,20 @@
+state={
+	id=937
+	name="Buncrana"
+
+	history={
+		owner = SCO
+		add_core_of = SCO
+        buildings = {
+			infrastructure = 3
+			
+		}
+	}
+
+	provinces={
+		13236
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

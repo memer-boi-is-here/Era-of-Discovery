@@ -1,0 +1,32 @@
+
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		oil=70.000
+	}
+
+	history={
+		owner = PER
+		victory_points = {
+			7661 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 3
+
+
+		}
+		add_core_of = PER
+add_core_of = AZR
+
+	}
+
+	provinces={
+		1536 4458 4463 4473 4477 4545 4614 7495 7624 7661 11704 12434 
+	}
+	manpower= 333000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

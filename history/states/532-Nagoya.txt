@@ -1,0 +1,32 @@
+
+state={
+	id=532
+	name="Owari" # Tokai
+	manpower = 6174000
+	state_category = large_city
+
+	history={
+		owner = ODA
+		add_core_of = ODA
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			dockyard = 1
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			7087 3 
+		}
+		
+		victory_points = {
+			10125 25
+		}
+		
+
+	}
+
+	provinces={
+		10125
+	}
+}

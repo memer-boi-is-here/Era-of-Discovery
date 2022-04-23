@@ -1,0 +1,19 @@
+state={
+	id=1003
+	name="Solon"
+	
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOL
+	}
+	
+	provinces={
+		4809 7848 7873 10675
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,365 @@
+division_template = {
+	name = "Pike Infanterie" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = FRA_INF_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		anti_air_brigade = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Spanish Arty Rgt/Bge had 2 Bn 105mm arty
+		engineer = { x = 0 y = 1 }   # Eng Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = FRA_CAV_01
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = FRA_INF_02
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		anti_air_brigade = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		anti_air_brigade = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Eng Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = FRA_CAV_02
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 0 y = 2 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 1 y = 2 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+		heavy_cavalry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = FRA_CAV_03
+	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 0 y = 2 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 1 y = 2 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+		light_cavalry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 743
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9500
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11506
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 6531
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 743
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3652
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 9500
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 817
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 9500
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 3946
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 3652
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 6915
+		division_template = "Pike Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9500
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9505
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 817
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 3946
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 680
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9505
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 3946
+		division_template = "Halberdier"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 680
+		division_template = "Demi-Lancer"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "La Marine Royale"			
+		naval_base = 9434
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 9434
+			### Carrack Division 1 ###			
+			ship = { name = "Carraquon" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }				
+			ship = { name = "La Maistresse" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }				
+			ship = { name = "Grande Française" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }		
+            ship = { name = "le Saint-Esprit" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }
+			ship = { name = "La Dauphine" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }				
+			ship = { name = "Henri" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Carrack Class" } } }
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 9434
+			# Galleon Division 1 #			
+			ship = { name = "Fendant" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }				
+			ship = { name = "Précieux" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }				
+			ship = { name = "Diamant" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }	
+			ship = { name = "Arrogant" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }	
+			# Galleon Division 2 #		
+			ship = { name = "Grande Hermine" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }					
+            ship = { name = "Vermandois" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }
+            ship = { name = "Saint Michel" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }				
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 911		
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "La Réale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Ardent" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Faucon" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Entreprenant" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Emporté" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Apollon" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			# 2nd Galley Division #				
+			ship = { name = "Neptune" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Monarque" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Saint-Louis" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Merveilleux" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Soleil Royal" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+			ship = { name = "Sainte Philippe" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Galley Class" } } }
+        }			
+    }
+}
+

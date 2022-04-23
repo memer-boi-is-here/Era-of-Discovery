@@ -1,0 +1,36 @@
+state=
+{
+	id=182
+	name="STATE_182"
+	manpower = 93890
+	
+	state_category = rural
+	history=
+	{
+		owner = VNI
+		victory_points = {
+			9940 5
+		}
+		victory_points = {
+			12058 3
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 0
+			12058 = {
+				naval_base = 1
+			}
+			9940 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = VNI
+add_core_of = GRE
+	}
+	provinces=
+	{
+1164 4170 9940 12058 	}
+}

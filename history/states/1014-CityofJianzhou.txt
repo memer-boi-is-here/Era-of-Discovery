@@ -1,0 +1,23 @@
+
+state={
+	id=1014
+	name="CityofJianzhou"
+	
+	history={
+		owner = JNZ
+		victory_points = {
+			9803 3
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JNZ
+	}
+	
+	provinces={
+		800 861 3888 3932 3949 6905 9759 9803 9866 11781
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

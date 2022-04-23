@@ -1,0 +1,697 @@
+technologies = {
+	
+	@1532 = 0
+	@1550 = 2
+	@1552 = 4
+	@1553 = 6
+	@1554 = 8
+	@1555 = 10
+	@1556 = 12
+	@1557 = 14
+	@1558 = 16
+	@1559 = 18
+	@1560 = 20
+
+   ##MUSKETS####
+	arquebus = {
+
+		enable_equipments = {
+			arquebus_musket
+		}
+		
+		enable_subunits = {
+			infantry
+		}
+		
+		path = {
+			leads_to_tech = matchlock_upgrades
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = -1.5 y = 0.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	matchlock_upgrades = {
+
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+
+		path = {
+			leads_to_tech = wheelock_musket
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = matchlock_pistol
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1520
+		folder = {
+			name = infantry_folder
+			position = { x = -1.5 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+
+	wheelock_musket = {
+
+		enable_equipments = {
+			wheelock_musket
+		}
+		
+		enable_subunits = {
+			infantry
+		}
+		
+		path = {
+			leads_to_tech = snaplock_upgrades
+			research_cost_coeff = 1
+		}
+	
+
+		research_cost = 1.5
+		start_year = 1540
+		folder = {
+			name = infantry_folder
+			position = { x = -1.5 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	snaplock_upgrades = {
+
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+				
+		path = {
+			leads_to_tech = snaphance_musket
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1555
+		folder = {
+			name = infantry_folder
+			position = { x = -1.5 y = 11 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 10
+				date > "1550.1.3"
+			}
+		}
+	}	
+	
+	snaphance_musket = {
+
+		enable_equipments = {
+			snaphance_musket
+		}
+
+		research_cost = 1.5
+		start_year = 1565
+		folder = {
+			name = infantry_folder
+			position = { x = -1.5 y = 13.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+						
+			modifier = {
+				factor = 10
+				date > "1553.1.1"
+			}
+			
+		}
+	}
+
+	##PISTOLS##
+
+	matchlock_pistol = {
+
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = wheelock_pistol
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			matchlock_upgrades = 1
+		}
+	
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	wheelock_pistol = {
+		
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+
+		path = {
+			leads_to_tech = pistol_upgrades
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			wheelock_musket = 1
+		}
+	
+
+		research_cost = 1.5
+		start_year = 1540
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 7.3 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pistol_upgrades = {
+
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+
+		path = {
+			leads_to_tech = snaphance_pistol
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1555
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 11 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+
+	snaphance_pistol = {
+
+		anti_air_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+	
+		research_cost = 1.5
+		start_year = 1565
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 13.8 }
+		}
+
+		dependencies = {
+			snaphance_musket = 1
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###PIKES###
+	
+	pike = {
+
+		enable_equipments = {
+			medieval_pike
+		}
+	
+		path = {
+			leads_to_tech = pike_damage_upgrade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = 1.5 y = 0.6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pike_damage_upgrade = {
+
+
+		path = {
+			leads_to_tech = early_renaissance_pike
+			research_cost_coeff = 1
+		}
+
+		infantry = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+	
+		research_cost = 1.5
+		start_year = 1520
+		folder = {
+			name = infantry_folder
+			position = { x = 1.5 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	early_renaissance_pike = {
+
+		enable_equipments = {
+			early_renaissance_pike
+		}
+
+		path = {
+			leads_to_tech = pike_weight_upgrade
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.5
+		start_year = 1450
+		folder = {
+			name = infantry_folder
+			position = { x = 1.5 y = 8.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pike_weight_upgrade = {
+
+
+		path = {
+			leads_to_tech = late_renaissance_pike
+			research_cost_coeff = 1
+		}
+
+		infantry = {
+			maximum_speed = 0.1
+		}
+	
+		research_cost = 1.5
+		start_year = 1555
+		folder = {
+			name = infantry_folder
+			position = { x = 1.5 y = 11 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	late_renaissance_pike = {
+
+		enable_equipments = {
+			late_renaissance_pike
+		}
+	
+		research_cost = 1.5
+		start_year = 1565
+		folder = {
+			name = infantry_folder
+			position = { x = 1.5 y = 13.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###HALBERDS###
+
+	halberd = {
+
+		enable_equipments = {
+			medieval_halberd
+		}
+
+		path = {
+			leads_to_tech = halberd_damage_upgrade
+			research_cost_coeff = 1
+		}
+
+	
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 0.6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	halberd_damage_upgrade = {
+
+
+		path = {
+			leads_to_tech = early_renaissance_halberd
+			research_cost_coeff = 1
+		}
+
+		light_infantry = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+	
+		research_cost = 1.5
+		start_year = 1520
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	early_renaissance_halberd = {
+
+		enable_equipments = {
+			early_renaissance_halberd
+		}
+
+		path = {
+			leads_to_tech = halberd_weight_upgrade
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.5
+		start_year = 1540
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 8.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	halberd_weight_upgrade = {
+
+
+		path = {
+			leads_to_tech = late_renaissance_halberd
+			research_cost_coeff = 1
+		}
+
+		light_infantry = {
+			maximum_speed = 0.1
+		}
+	
+		research_cost = 1.5
+		start_year = 1555
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 11 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	late_renaissance_halberd = {
+
+		enable_equipments = {
+			late_renaissance_halberd
+		}
+	
+		research_cost = 1.5
+		start_year = 1565
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 13.5 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	support_wagon = {
+
+		enable_equipments = {
+			supply_wagon_1
+		}
+
+		path = {
+			leads_to_tech = support_wagon_2
+			research_cost_coeff = 1
+		}
+
+	
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 0.6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	support_wagon_2 = {
+
+
+		path = {
+			leads_to_tech = support_wagon_3
+			research_cost_coeff = 1
+		}
+
+		infantry = {
+			maximum_speed = 0.1
+		}
+		
+		supply_consumption_factor = -0.1
+	
+		research_cost = 1.5
+		start_year = 1540
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	support_wagon_3 = {
+
+	
+		research_cost = 1.5
+		start_year = 1555
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 11 }
+		}
+		
+		infantry = {
+			armor_value = 0.1
+			manpower = 20
+		}
+
+		supply_wagon = {
+			supply_consumption_factor = -0.1
+		}
+		
+		supply_consumption_factor = -0.1
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###MOTORISED###
+	
+	motorised_infantry = {
+
+		enable_subunits = {
+			motorized
+		}
+
+		enable_equipments = {
+			motorized_equipment_1
+		}
+		
+		research_cost = 2
+		start_year = 1550
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 11 }
+		}
+
+		
+		sub_technologies = {
+			motorized_rocket_unit
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+	}
+}

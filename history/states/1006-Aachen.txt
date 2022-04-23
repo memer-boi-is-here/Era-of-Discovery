@@ -1,0 +1,21 @@
+state={
+	id=1006
+	name="Aachen"
+	
+	history={
+		owner = AAC
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AAC
+add_core_of = BEL
+add_core_of = HOL
+	}
+	
+	provinces={
+		12475
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

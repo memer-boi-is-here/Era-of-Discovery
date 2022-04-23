@@ -1,0 +1,195 @@
+﻿capital = 88
+
+recruit_character = POL_sigismund_ii_augustus
+recruit_character = POL_jan_tarnowski
+recruit_character = POL_jan_zamoyski
+recruit_character = POL_count_jan_krzysztof_tarnowski
+recruit_character = POL_andrzej_zborowski
+recruit_character = POL_jan_firlej
+recruit_character = POL_count_sebastian_lubomirski
+recruit_character = POL_jan_opaliński
+recruit_character = POL_grzegorz_dąbrowski
+recruit_character = POL_szymon_kowalski
+recruit_character = POL_leszek_piotrowski
+recruit_character = POL_jan_krzysztof_tarnowski
+recruit_character = POL_mikolaj_dzierzgowski
+recruit_character = POL_sebastian_lubomirski
+recruit_character = POL_sebastian_lubomirski_a
+recruit_character = POL_jerzy_jazlowiecki_a
+recruit_character = POL_jerzy_jazlowiecki
+
+oob = "POL_1550"
+
+add_ideas = government_rank_2
+
+add_ideas = {
+	religious_toleration
+	polish_golden_age
+	polish_expansionism
+}
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+
+	trench_warfare = 1
+}
+
+set_convoys = 30
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Sigismund II Augustus"
+	picture = "portrait_sigismund_ii.dds"
+	ideology = despotism
+	traits = { father_of_the_commonwealth }
+}
+
+create_field_marshal = {
+	name = "Sigismund II Augustus"
+	picture = "portrait_sigismund_ii.dds"
+	traits = { inspirational_leader expert_delegator brilliant_strategist offensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+	
+create_field_marshal = {
+	name = "Jan Tarnowski"
+	picture = "portrait_jan_tarnowski.dds"
+	traits = { logistics_wizard infantry_leader war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Jan Zamoyski"
+	picture = "portrait_jan_zamoyski.dds"
+	traits = { adaptable trickster politically_connected bearer_of_artillery }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Count Jan Krzysztof Tarnowski"
+	picture = "portrait_jan_krzysztof_tarnowski.dds"
+	traits = { scavenger trait_reckless media_personality }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Andrzej Zborowski"
+	picture = "portrait_andrzej_zborowski.dds"
+	traits = { cavalry_expert cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Jan Firlej"
+	picture = "portrait_jan_firlej.dds"
+	traits = { winter_specialist infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 0
+}
+	
+create_navy_leader = {
+	name = "Count Sebastian Lubomirski"
+	picture = "portrait_sebastian_lubomirski.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+	
+create_navy_leader = {
+	name = "Jan Opaliński"
+	picture = "portrait_jan_opaliński.dds"
+	traits = { destroyer_leader fleet_protector chief_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+set_autonomy = {
+	target = PRE
+	autonomous_state = autonomy_puppet
+}
+
+add_ideas = Catholic
+
+add_ideas = polish_traditions
+
+create_faction = "Personal Union of Polish-Lithuania"
+add_to_faction = LIT

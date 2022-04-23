@@ -1,0 +1,22 @@
+state={
+	id=1133
+	name="Sikkim"
+	manpower = 1000
+
+	state_category=rural
+
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 4
+			industrial_complex =1
+
+		}
+		add_core_of = NEP
+
+	}
+
+	provinces={
+		4435
+	}
+}

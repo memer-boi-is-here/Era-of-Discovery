@@ -1,0 +1,228 @@
+division_template = {
+	name = "Pike Infantry"
+ 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POR_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # PORnish Arty Rgt/Bge had 2 Bn 105mm arty
+		PORineer = { x = 0 y = 1 }   # POR Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POR_CAV_01
+	# Note: PORnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POR_INF_02
+	# Note: PORnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		PORineer = { x = 0 y = 0 }   # POR Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POR_CAV_02
+	# Note: PORnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POR_CAV_03
+	# Note: PORnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5074
+		division_template = "Pike Infantry"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11805
+		division_template = "Cuirassiers"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 5074
+		division_template = "Pike Infantry"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5074
+		division_template = "Pike Infantry"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11805
+		division_template = "Pike Infantry"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 11805
+		division_template = "Pike Infantry"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10760
+		division_template = "Halberdier"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 7960
+		division_template = "Halberdier"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11805
+		division_template = "Demi-Lancer"
+		start_exPORience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "Royal Portuguese Navy"			
+		naval_base = 11805
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 11805
+			### Carrack Division 1 ###			
+			ship = { name = "Santa Catarina do Monte Sinai" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = POR version_name = "Carrack Class" } } }				
+			ship = { name = "São Bento" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = POR version_name = "Carrack Class" } } }				
+			ship = { name = "São João Baptista" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = POR version_name = "Carrack Class" } } }		
+            ship = { name = "Águia" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = POR version_name = "Carrack Class" } } }			
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 11805
+			# Galleon Division 2 #			
+			ship = { name = "São Paulo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }				
+			ship = { name = "São Cristóvão" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }				
+			ship = { name = "São Filipe" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }	
+			ship = { name = "Santiago" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }	
+			# Cruiser Division 6 #		
+			ship = { name = "Garça " definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }				
+			ship = { name = "São Martinho" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }	
+            ship = { name = "São Cristóvão" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POR version_name = "Galleon Class" } } }		
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 5074		
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "São Bernardo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Relíquias" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "São Tomé" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Santo António" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Santo Amaro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Santa Isabel" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Santo Alberto" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			# 2nd Galley Division #				
+			ship = { name = "Madre de Deus" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Santa Teresa de Jesus" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "São Carlos" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "São José" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Padre Eterno" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "São Sebastião" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+			ship = { name = "Sacramento" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POR version_name = "Galley Class" } } }
+        }			
+    }
+}
+

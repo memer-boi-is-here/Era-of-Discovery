@@ -1,0 +1,57 @@
+﻿capital = 84
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+}
+
+set_technology = {
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+}
+
+set_technology = {
+	early_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_battery = 1
+	basic_torpedo = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "John II"
+	desc = "POLITICS_IULIU_MANIU_DESC"
+	picture = "gfx/leaders/TRA/portrait_john_II.dds"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+set_popularities = {
+	democratic = 15
+	neutrality = 70
+	communism = 15
+}
+
+add_ideas = government_rank_2
+
+add_ideas = catholic

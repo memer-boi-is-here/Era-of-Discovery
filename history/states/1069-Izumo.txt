@@ -1,0 +1,23 @@
+
+state={
+	id=1069
+	name="Izumo"
+	provinces={
+		1167 7145 
+	}
+		history={
+			owner = AMA
+		add_core_of = AMA
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

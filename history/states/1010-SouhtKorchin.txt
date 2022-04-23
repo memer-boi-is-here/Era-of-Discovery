@@ -1,0 +1,19 @@
+state={
+	id=1010
+	name="SouhtKorchin"
+	
+	history={
+		owner = KRC
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KRC
+	}
+	
+	provinces={
+		814 3881 3814 6898 6937 9768 9873 10331 11801
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

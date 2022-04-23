@@ -1,0 +1,1630 @@
+focus_tree = {
+	id = lithuaniantree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIT
+		}
+	}
+	
+	continuous_focus_position = { x = 100 y = 1800 }
+	
+	#Focus for Sigismund II Augustus Reign"
+	focus = {
+		id = LIT_sigismund_ii_augustus_reign
+		icon = GFX_
+		x = 21
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+	#Focus for Question of Religions"
+	focus = {
+		id = LIT_question_of_religions
+		icon = GFX_
+		x = 32
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_sigismund_ii_augustus_reign }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Freedom of Religions"
+	focus = {
+		id = LIT_freedom_of_religions
+		icon = GFX_
+		x = 34
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_question_of_religions }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Orthodox"
+	focus = {
+		id = LIT_orthodox
+		icon = GFX_
+		x = 30
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_question_of_religions }
+		mutually_exclusive = { focus = LIT_freedom_of_religions }
+		
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = catholic
+			add_idea = orthodox
+			}
+		}
+	}
+
+	#Focus for Develop the Country"
+	focus = {
+		id = LIT_develop_the_country
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_sigismund_ii_augustus_reign }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                technology = industry 
+			}
+		}
+	}
+
+	#Focus for Develop Civilian Industry"
+	focus = {
+		id = LIT_develop_civilian_industry
+		icon = GFX_
+		x = 1
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_the_country }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Develop Heavy Industry"
+	focus = {
+		id = LIT_develop_heavy_industry
+		icon = GFX_
+		x = 3
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_the_country }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+
+	#Focus for Develop Heavy Industry II"
+	focus = {
+		id = LIT_develop_heavy_industry_ii
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_heavy_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
+		}
+	}
+
+	#Focus for Develop Heavy Industry III"
+	focus = {
+		id = LIT_develop_heavy_industry_iii
+		icon = GFX_
+		x = 3
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_heavy_industry_ii }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+	##			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+
+	#Focus for Duchy of Lithuania"
+	focus = {
+		id = LIT_duchy_of_lithuania
+		icon = GFX_
+		x = 21
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_sigismund_ii_augustus_reign }
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+			add_stability  = 0.10
+		}
+	}
+
+	#Focus for In Our Own Path"
+	focus = {
+		id = LIT_in_our_own_path
+		icon = GFX_
+		x = 20
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_duchy_of_lithuania }
+		mutually_exclusive = { focus = LIT_absolutism }
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#Focus for Absolutism"
+	focus = {
+		id = LIT_absolutism
+		icon = GFX_
+		x = 22
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_duchy_of_lithuania }
+		mutually_exclusive = { focus = LIT_in_our_own_path }
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.2 }
+		}
+	}
+
+	#Focus for Army Reform"
+	focus = {
+		id = LIT_army_reform
+		icon = GFX_
+		x = 7
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_sigismund_ii_augustus_reign }
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {
+			army_experience = 10 
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_tech }
+		}
+	}
+
+	#Focus for Develop Civilian Industry II"
+	focus = {
+		id = LIT_develop_civilian_industry_ii
+		icon = GFX_
+		x = 1
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_civilian_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Develop Civilian Industry III"
+	focus = {
+		id = LIT_develop_civilian_industry_iii
+		icon = GFX_
+		x = 1
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_develop_civilian_industry_ii }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for The Duchy Economy"
+	focus = {
+		id = LIT_the_duchy_economy
+		icon = GFX_
+		x = 2
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}	
+		}
+	}
+
+	#Focus for Research Effort"
+	focus = {
+		id = LIT_research_effort
+		icon = GFX_
+		x = 2
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_the_duchy_economy }
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Republicanism"
+	focus = {
+		id = LIT_republicanism
+		icon = GFX_
+		x = 17
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_in_our_own_path }
+		mutually_exclusive = { focus = LIT_restore_old_grand_duchy_of_lithuania }
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = democracy popularity = 0.3 }
+			start_civil_war = { ideology = democracy size = 0.7 }	
+		}
+	}
+
+	#Focus for Restore Old Grand Duchy of Lithuania"
+	focus = {
+		id = LIT_restore_old_grand_duchy_of_lithuania
+		icon = GFX_
+		x = 21
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_in_our_own_path }
+		mutually_exclusive = { focus = LIT_republicanism }
+		search_filters = { FOCUS_FILTER_STABILITY  } 
+		
+		completion_reward = {
+			add_stability  = 0.05
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = LIT_undefined
+		icon = GFX_
+		x = 25
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_absolutism }
+		mutually_exclusive = { focus = LIT_restore_old_grand_duchy_of_lithuania }
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+			add_stability  = 0.1
+			add_political_power = 120
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = LIT_undefined
+		icon = GFX_
+		x = 21
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_restore_old_grand_duchy_of_lithuania }
+		
+		completion_reward = {
+			add_equipment_to_stockpile= { type = infantry_equiqment_1 amount = 2000 producer = LIT }
+		}
+	}
+
+	#Focus for Strike the North"
+	focus = {
+		id = LIT_strike_the_north
+		icon = GFX_
+		x = 19
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_undefined }
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SWE }
+		}
+	}
+
+	#Focus for Maintain The Union"
+	focus = {
+		id = LIT_maintain_the_union
+		icon = GFX_
+		x = 25
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL  } 
+		
+		completion_reward = {
+	
+		}
+	}
+
+	#Focus for War Preparation"
+	focus = {
+		id = LIT_war_preparation
+		icon = GFX_
+		x = 27
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = armor }
+		}
+	}
+
+	#Focus for Send Help In the Livonian War"
+	focus = {
+		id = LIT_send_help_in_the_livonian_war
+		icon = GFX_
+		x = 25
+		y = 6
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1558.22.1
+		
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SOV }
+		}
+	}
+
+	#Focus for Revoke Union of Mielnik"
+	focus = {
+		id = LIT_revoke_union_of_mielnik
+		icon = GFX_
+		x = 15
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_undefined }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = POL }
+		}
+	}
+
+	#Focus for Grand Duchy Economy System"
+	focus = {
+		id = LIT_grand_duchy_economy_system
+		icon = GFX_
+		x = 19
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_restore_old_grand_duchy_of_lithuania }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#Focus for Claim the Baltic"
+	focus = {
+		id = LIT_claim_the_baltic
+		icon = GFX_
+		x = 23
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_undefined }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = LAT }
+		}
+	}
+
+	#Focus for Strike at Moscow"
+	focus = {
+		id = LIT_strike_at_moscow
+		icon = GFX_
+		x = 21
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_undefined }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		
+		completion_reward = {	
+			create_wargoal = { type = annex_everything target = SOV }
+		}
+	}
+
+	#Focus for Recovery From The Civil War"
+	focus = {
+		id = LIT_recovery_from_the_civil_war
+		icon = GFX_
+		x = 17
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_republicanism }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Equality For All People"
+	focus = {
+		id = LIT_equality_for_all_people
+		icon = GFX_
+		x = 13
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_recovery_from_the_civil_war }
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Cavalry Charge Tactic"
+	focus = {
+		id = LIT_cavalry_charge_tactic
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_army_reform }
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_mobile_warfare }		
+		}
+	}
+
+	#Focus for Combination"
+	focus = {
+		id = LIT_combination
+		icon = GFX_
+		x = 7
+		y = 4
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_cavalry_charge_tactic }
+		mutually_exclusive = { focus = LIT_flintlock_innovation_tactic }
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = armor }		
+		}
+	}
+
+	#Focus for Conscription of Peasants"
+	focus = {
+		id = LIT_conscription_of_peasants
+		icon = GFX_
+		x = 7
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_combination }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		
+		completion_reward = {
+			add_manpower = 10000		
+		}
+	}
+
+	#Focus for Lancer Armor"
+	focus = {
+		id = LIT_lancer_armor
+		icon = GFX_
+		x = 6
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {			
+			add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                technology = armor
+            }
+		}
+	}
+
+	#Focus for Flintlock Innovation Tactic"
+	focus = {
+		id = LIT_flintlock_innovation_tactic
+		icon = GFX_
+		x = 8
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_army_reform }
+		mutually_exclusive = { focus = LIT_combination }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_superior_firepower }		
+		}
+	}
+
+	#Focus for New Flintlock"
+	focus = {
+		id = LIT_new_flintlock
+		icon = GFX_
+		x = 8
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }		
+		}
+	}
+
+	#Focus for Trade Route"
+	focus = {
+		id = LIT_trade_route
+		icon = GFX_
+		x = 0
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_research_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {			
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Trade Route II"
+	focus = {
+		id = LIT_trade_route_ii
+		icon = GFX_
+		x = 7
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_research_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		available = {
+			has_completed_focus = LIT_trade_route
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
+	}
+
+	#Focus for Trade Route III"
+	focus = {
+		id = LIT_trade_route_iii
+		icon = GFX_
+		x = 2
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_research_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		available = {		
+			has_completed_focus = LIT_trade_route_ii
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+
+	#Focus for Trade Route IV"
+	focus = {
+		id = LIT_trade_route_iv
+		icon = GFX_
+		x = 6
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_research_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		available = {
+			has_completed_focus = LIT_trade_route_iii
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Trade Route V"
+	focus = {
+		id = LIT_trade_route_v
+		icon = GFX_
+		x = 4
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_research_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		available = {			
+			has_completed_focus = LIT_trade_route_iv		
+		}
+		
+		completion_reward = {			
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Treaty of Vilnius"
+	focus = {
+		id = LIT_treaty_of_vilnius
+		icon = GFX_
+		x = 25
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_send_help_in_the_livonian_war }
+		
+		completion_reward = {		
+		
+		}
+	}
+
+	#Focus for The Northern Seven Years War"
+	focus = {
+		id = LIT_the_northern_seven_years_war
+		icon = GFX_
+		x = 27
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SWE }		
+		}
+	}
+
+	#Focus for Adopt The Old Religion"
+	focus = {
+		id = LIT_adopt_the_old_religion
+		icon = GFX_
+		x = 23
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_restore_old_grand_duchy_of_lithuania }
+		
+		completion_reward = {	
+			swap_ideas = {
+				remove_idea = orthodox
+				add_ideas = catholic
+			}
+		}
+	}
+
+	#Focus for The Black Sea Coastline"
+	focus = {
+		id = LIT_the_black_sea_coastline
+		icon = GFX_
+		x = 17
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {			
+			create_wargoal = { type = annex_everything target = TUR }		
+		}
+	}
+
+	#Focus for Triumphant"
+	focus = {
+		id = LIT_triumphant
+		icon = GFX_
+		x = 18
+		y = 12
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		
+		available = {
+			has_war_support > 95
+		}
+		
+		completion_reward = {			
+			add_state_core = 210  
+			add_state_core = 209  
+			add_state_core = 196  
+			add_state_core = 197  
+			add_state_core = 192  
+			add_state_core = 91  
+			add_state_core = 89  
+			add_state_core = 200  
+			add_state_core = 97  
+			add_state_core = 190		
+		}
+	}
+
+	#Focus for Polish Co-Economic"
+	focus = {
+		id = LIT_polish_coeconomic
+		icon = GFX_
+		x = 36
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_maintain_the_union }
+		mutually_exclusive = { focus = LIT_decline_the_union_of_lublin }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Decline The Union of Lublin"
+	focus = {
+		id = LIT_decline_the_union_of_lublin
+		icon = GFX_
+		x = 30
+		y = 6
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_maintain_the_union }
+		mutually_exclusive = { focus = LIT_polish_coeconomic }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Naval Dockyard"
+	focus = {
+		id = LIT_naval_dockyard
+		icon = GFX_
+		x = 37
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_sigismund_ii_augustus_reign }
+		search_filters = { FOCUS_FILTER_INDUSTRY  } 
+		
+		completion_reward = {			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}		
+		}
+	}
+
+	#Focus for Ship Purchasing"
+	focus = {
+		id = LIT_ship_purchasing
+		icon = GFX_
+		x = 40
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_naval_dockyard }
+		
+		completion_reward = {
+	##		license_production_speed_factor = 10		
+		}
+	}
+
+	#Focus for The First Regular Navy"
+	focus = {
+		id = LIT_the_first_regular_navy
+		icon = GFX_
+		x = 37
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		mutually_exclusive = { focus = LIT_ship_purchasing }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {			
+			add_tech_bonus = { bonus = 0.5 uses = 3 category = naval_doctrine }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_equipment }		
+		}
+	}
+
+	#Focus for High Speed Ship"
+	focus = {
+		id = LIT_high_speed_ship
+		icon = GFX_
+		x = 38
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_the_first_regular_navy }
+		mutually_exclusive = { focus = LIT_strong_ship }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {			
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = dd_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 3 category = cl_tech }		
+		}
+	}
+
+	#Focus for Strong Ship"
+	focus = {
+		id = LIT_strong_ship
+		icon = GFX_
+		x = 36
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_the_first_regular_navy }
+		mutually_exclusive = { focus = LIT_high_speed_ship }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 3 category = bb_tech }		
+		}
+	}
+
+	#Focus for Denonces Sultan Claimed"
+	focus = {
+		id = LIT_denonces_sultan_claimed
+		icon = GFX_
+		x = 27
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_decline_the_union_of_lublin }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {			
+			create_wargoal = { type = annex_everything target = TUR }	
+		}
+	}
+
+	#Focus for War With Poland"
+	focus = {
+		id = LIT_war_with_poland
+		icon = GFX_
+		x = 31
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_decline_the_union_of_lublin }
+		mutually_exclusive = { focus = LIT_maintain_relationship }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for The Eastern Land"
+	focus = {
+		id = LIT_the_eastern_land
+		icon = GFX_
+		x = 29
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_decline_the_union_of_lublin }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		
+		completion_reward = {			
+			create_wargoal = { type = annex_everything target = SOV }		
+		}
+	}
+
+	#Focus for Great Eastern Power Had Return"
+	focus = {
+		id = LIT_great_eastern_power_had_return
+		icon = GFX_
+		x = 31
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		completion_reward = {			
+		##	create_faction = "Commonwealth"  
+			add_state_core = 210  
+			add_state_core = 209  
+			add_state_core = 196  
+			add_state_core = 197  
+			add_state_core = 192  
+			add_state_core = 91  
+			add_state_core = 89  
+			add_state_core = 200  
+			add_state_core = 97  
+			add_state_core = 190		
+		}
+	}
+
+	#Focus for The Senate and The People"
+	focus = {
+		id = LIT_the_senate_and_the_people
+		icon = GFX_
+		x = 13
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_equality_for_all_people }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Livonian Is Our!"
+	focus = {
+		id = LIT_livonian_is_our
+		icon = GFX_
+		x = 4
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_step_by_step }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Go After the Poland"
+	focus = {
+		id = LIT_go_after_the_poland
+		icon = GFX_
+		x = 10
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_step_by_step }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Until the Dead"
+	focus = {
+		id = LIT_until_the_dead
+		icon = GFX_
+		x = 16
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_expansion_of_a_state }
+		mutually_exclusive = { focus = LIT_step_by_step }
+		
+		completion_reward = {			
+			declare_war_on = { target = POL type = annex_everything }
+			declare_war_on = { target = TUR type = annex_everything }
+			declare_war_on = { target = LIV type = annex_everything }
+			declare_war_on = { target = SOV type = annex_everything }
+			declare_war_on = { target = SWE type = annex_everything }		
+		}
+	}
+
+	#Focus for Step by Step"
+	focus = {
+		id = LIT_step_by_step
+		icon = GFX_
+		x = 14
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_expansion_of_a_state }
+		mutually_exclusive = { focus = LIT_until_the_dead }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Peace and Prosperity"
+	focus = {
+		id = LIT_peace_and_prosperity
+		icon = GFX_
+		x = 11
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_the_senate_and_the_people }
+		mutually_exclusive = { focus = LIT_expansion_of_a_state }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		
+		completion_reward = {			
+			add_stability = 0.1  
+			add_war_support = -0.1		
+		}
+	}
+
+	#Focus for Expansion of a State"
+	focus = {
+		id = LIT_expansion_of_a_state
+		icon = GFX_
+		x = 15
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_the_senate_and_the_people }
+		mutually_exclusive = { focus = LIT_peace_and_prosperity }
+		
+		completion_reward = {			
+		##	complete_national_focus = focus_id		
+		}
+	}
+
+	#Focus for Retake The Black Sea Coastal"
+	focus = {
+		id = LIT_retake_the_black_sea_coastal
+		icon = GFX_
+		x = 12
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_step_by_step }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Expel The Swedish"
+	focus = {
+		id = LIT_expel_the_swedish
+		icon = GFX_
+		x = 8
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_step_by_step }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Eastern Lost Land"
+	focus = {
+		id = LIT_eastern_lost_land
+		icon = GFX_
+		x = 6
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_step_by_step }
+		
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for Great Insane Industry Plan"
+	focus = {
+		id = LIT_great_insane_industry_plan
+		icon = GFX_
+		x = 35
+		y = 7
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_polish_coeconomic }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		completion_reward = {			
+			state 784 = {
+			add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}		
+		}
+	}
+
+	#Focus for Rule The Baltic"
+	focus = {
+		id = LIT_rule_the_baltic
+		icon = GFX_
+		x = 37
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_strong_ship }
+		search_filters = { FOCUS_FILTER_RESEARCH  } 
+		
+		completion_reward = {			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+		##		set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_doctrine }		
+		}
+	}
+
+	#Focus for Maintain Relationship"
+	focus = {
+		id = LIT_maintain_relationship
+		icon = GFX_
+		x = 33
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_decline_the_union_of_lublin }
+		mutually_exclusive = { focus = LIT_war_with_poland }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		completion_reward = {			
+			diplomatic_relation = { country = POL relation = non_aggression_pact }		
+		}
+	}
+
+	#Focus for Intelligency Army Population"
+	focus = {
+		id = LIT_intelligency_army_population
+		icon = GFX_
+		x = 7
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_new_flintlock }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		completion_reward = {			
+			add_research_slot = 1		
+		}
+	}
+
+	#Focus for Livonian Integration"
+	focus = {
+		id = LIT_livonian_integration
+		icon = GFX_
+		x = 4
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = LIT_livonian_is_our }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		
+		completion_reward = {			
+			add_core_of = LIV		
+		}
+	}
+#End of focuses 
+ }

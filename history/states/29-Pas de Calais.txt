@@ -1,0 +1,46 @@
+
+state={
+	id=29
+	name="STATE_29"
+	resources={
+		steel=42.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			575 5 
+		}
+		victory_points = {
+			11483 10 
+		}
+		victory_points = {
+			11548 15 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			
+			11548 = {
+			   naval_base = 3
+                     
+
+		
+		}
+        
+	}
+        add_core_of = ENG
+        add_core_of = FRA
+        add_core_of = BEL
+		
+
+	}
+
+	provinces={
+		11548 
+	}
+	manpower=14987
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,18 @@
+state={
+	id=1115
+	name="Portuguese Islands"
+	history={
+		owner = POR
+		add_core_of = POR
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 1298 10175 4301 7321 12151 10219
+	}
+	manpower=382130
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

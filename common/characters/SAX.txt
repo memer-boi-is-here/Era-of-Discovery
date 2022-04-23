@@ -1,0 +1,336 @@
+characters = {
+	SAX_maurice = {
+		name = "Maurice"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAX/Maurice.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	SAX_maurice_elector_of_saxony = {
+		name = "Maurice, Elector of Saxony"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SAX/Maurice.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SAX_augustus_of_saxony = {
+		name = "Augustus of Saxony"
+		advisor = {
+			slot = army_chief
+			idea_token = augustus_of_saxony_a
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = augustus_of_saxony_b
+			ledger = army 
+				allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = augustus_of_saxony
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_augustus_of_saxony"
+			}
+			army = {
+				large = "gfx/leaders/SAX/portrait_augustus_of_saxony.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAX_john_frederick_i_duke_of_saxony = {
+		name = "John Frederick I, Duke of Saxony"
+		advisor = {
+			slot = high_command
+			idea_token = john_frederick_i_b
+			ledger = army 
+				allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = john_frederick_i
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_frederick_i"
+			}
+			army = {
+				large = "gfx/leaders/SAX/portrait_john_frederick_i.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SAX_john_frederick_ii_of_saxony = {
+		name = "John Frederick II of Saxony"
+		advisor = {
+			slot = political_advisor
+			idea_token = john_frederick_ii
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_frederick_ii"
+			}
+			army = {
+				large = "gfx/leaders/SAX/portrait_john_frederick_ii.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAX_johann_wilhelm_of_saxony = {
+		name = "Johann Wilhelm of Saxony"
+		advisor = {
+			slot = political_advisor
+			idea_token = johann_wilhelm
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = johann_wilhelm_a
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_johann_wilhelm"
+			}
+			army = {
+				large = "gfx/leaders/SAX/portrait_johann_wilhelm.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SAX_wilhelm_wilbs = {
+		name = "Wilhelm Wilbs"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1559.1.1.12"
+			id = -1
+		}
+	}
+	SAX_wilhelm_meyer = {
+		name = "Wilhelm Meyer"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1562.1.1.12"
+			id = -1
+		}
+	}
+	SAX_hans_kirschner = {
+		name = "Hans Kirschner"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	SAX_john_frederick_i_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = john_frederick_i_a
+			allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_frederick_i_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_frederick_i"
+			}
+		}
+	}
+	SAX_john_frederick_ii_a = {
+		advisor = {
+			slot = high_command
+			idea_token = john_frederick_ii_a
+			ledger = army 
+				allowed = {
+					original_tag = SAX
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_frederick_ii_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_frederick_ii"
+			}
+		}
+	}
+}

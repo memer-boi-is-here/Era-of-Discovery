@@ -1,0 +1,29 @@
+state={
+	id=1177
+	name="STATE_1177"
+	resources={
+                silver=25 # was 30.000
+	}
+	
+	state_category = city
+
+	history={
+		owner = SPP
+		buildings = {
+			infrastructure = 3
+                        silver_mine = 2
+			
+
+		}
+		victory_points = {
+			2174 2 
+		}
+
+	}
+
+	provinces={
+		2174
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+}

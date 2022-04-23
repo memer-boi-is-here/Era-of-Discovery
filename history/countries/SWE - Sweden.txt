@@ -1,0 +1,192 @@
+﻿capital = 141
+
+recruit_character = SWE_gustav_i
+recruit_character = SWE_eric_xiv
+recruit_character = SWE_per_brahe_the_elder
+recruit_character = SWE_nils_gyllenstierna
+recruit_character = SWE_svante_stensson_sture
+recruit_character = SWE_abraham_eriksson_leijonhufvud
+recruit_character = SWE_jakob_tordsson_bagge
+recruit_character = SWE_baron_klas_kristersson_horn
+recruit_character = SWE_björn_palmqvist
+recruit_character = SWE_martin_lindgren
+recruit_character = SWE_per_lerström
+recruit_character = SWE_lars_siggesson_sparre_a
+recruit_character = SWE_clas_akesson_tott
+recruit_character = SWE_per_brahe_the_elder_a
+recruit_character = SWE_lars_siggesson_sparre
+recruit_character = SWE_joran_persson
+recruit_character = SWE_laurentius_petri
+recruit_character = SWE_klas_horn
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+add_ideas = government_rank_2
+
+oob = "SWE_1550"
+
+add_ideas = {
+     anti_danish_policy
+	 gustav_vasa_bible
+	 confiscation_of_catholic_church_property
+}
+set_stability = 0.9
+set_war_support = 0.1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+
+}
+
+set_convoys = 60
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+1550.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1550.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		neutrality = 100
+	}
+
+	create_country_leader = {
+		name = "Gustav I"
+		picture = "portrait_gustav_i.dds"
+		ideology = despotism
+		traits = { the_liberator }
+	}
+	
+	create_field_marshal = {
+	    name = "Gustav I"
+    	picture = "portrait_gustav_i.dds"
+	    traits = { inspirational_leader aggressive_assaulter expert_delegator offensive_doctrine }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 4
+	    planning_skill = 5
+	    logistics_skill = 4
+    }
+	
+	create_field_marshal = {
+	    name = "Eric XIV"
+    	picture = "portrait_eric_xiv.dds"
+	    traits = { infantry_officer offensive_doctrine trickster  }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Per Brahe the Elder"
+    	picture = "portrait_per_brahe.dds"
+	    traits = { infantry_expert adaptable infantry_officer skilled_staffer }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Nils Gyllenstierna"
+    	picture = "portrait_nils_gyllenstierna.dds"
+	    traits = { scavenger trait_mountaineer organizer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 3
+    }
+	
+	create_corps_commander = {
+	    name = "Svante Stensson Sture"
+    	picture = "portrait_svante_stensson_sture.dds"
+	    traits = { guerilla_fighter trait_engineer hill_fighter }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Abraham Eriksson Leijonhufvud"
+		picture = "portrait_abraham_eriksson.dds"
+	    traits = { ranger cavalry_expert }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_navy_leader = {
+	    name = "Jakob Tordsson Bagge"
+    	picture = "portrait_jakob_bagge.dds"
+	    traits = { big_guns_expert ironside battleship_adherent old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+    create_navy_leader = {
+	    name = "Baron Klas Kristersson Horn"
+    	picture = "portrait_klas_horn.dds"
+	    traits = { cruiser_captain blue_water_expert gentlemanly }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 2
+        coordination_skill = 3
+    }
+
+}
+
+add_opinion_modifier = { target = DEN modifier = large_decrease }
+add_opinion_modifier = { target = RUS modifier = medium_decrease }
+
+add_ideas = Protestant
+
+add_ideas = swedish_traditions

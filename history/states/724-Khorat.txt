@@ -1,0 +1,27 @@
+state={
+	id=724
+	name="STATE_724"
+	manpower = 2041700
+	
+	state_category = rural
+	
+	resources={
+		rubber=40 # was: 70
+	}
+
+
+	history={
+		owner = LIG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			7236 1 
+		}
+		add_core_of = LIG
+	}
+	
+	provinces={
+		4388 4392 12122 12220
+	}
+}

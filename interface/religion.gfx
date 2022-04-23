@@ -1,0 +1,21 @@
+spriteTypes = { 
+    SpriteType = {
+		name = "GFX_different_religion"
+		texturefile = "gfx/interface/different_religion.dds" 			
+	}
+
+	SpriteType = {
+		name = "GFX_religious_conversion_non_violent"
+		texturefile = "gfx/interface/religious_conversion_non_violent.dds" 			
+	}
+
+	SpriteType = {
+		name = "GFX_religious_conversion_semi_violent"
+		texturefile = "gfx/interface/religious_conversion_semi_violent.dds" 			
+	}
+
+	SpriteType = {
+		name = "GFX_religious_conversion_violent"
+		texturefile = "gfx/interface/religious_conversion_violent.dds" 			
+	}
+}

@@ -1,0 +1,257 @@
+ideas = {
+	
+	country = {
+	
+		french_assistance = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = french_assistance
+			
+			modifier = {
+				 consumer_goods_factor = -0.2
+				 faction_trade_opinion_factor = 0.15
+				 
+			}
+
+		}
+		
+		merchant_republic = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = merchant_republic
+			
+			modifier = {
+			     production_factory_max_efficiency_factor = 0.1
+				 trade_opinion_factor = 0.3
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	piero_strozzi_p = {
+			
+			picture = piero_strozzi
+			
+			allowed = {
+				original_tag = SNA
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		leone_strozzi = {
+			
+			picture = leone_strozzi_p
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		lelio_sozzini_p = {
+			
+			picture = lelio_sozzini
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mariano_sozzini_p = {
+			
+			picture = mariano_sozzini
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		piero_strozzi_a = {
+
+			picture = piero_strozzi
+			
+			allowed = {
+				original_tag = SNA
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		leone_strozzi_a = {
+
+			picture = leone_strozzi
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		mariano_sozzini = {
+
+			picture = mariano_sozzini
+			
+			allowed = {
+				original_tag = SNA
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	high_command = {
+
+	    piero_strozzi = {
+			ledger = army
+
+			picture = piero_strozzi
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		leone_strozzi_b = {
+			ledger = army
+			
+			picture = leone_strozzi
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		lelio_sozzini = {
+			ledger = army
+			
+			picture = lelio_sozzini
+			
+			allowed = {
+				original_tag = SNA
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

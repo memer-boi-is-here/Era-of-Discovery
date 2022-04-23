@@ -1,0 +1,18 @@
+state={
+	id=1105
+	name="Madyas"
+	history={
+		owner = MYD
+		add_core_of = MYD
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7423 10302 1368 1261 12112 10186
+	}
+	manpower=328435
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

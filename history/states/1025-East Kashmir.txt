@@ -1,0 +1,20 @@
+
+state={
+	id=1025
+	name="East Kashmir"
+	
+	history={
+		owner = KSM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KSM
+	}
+	
+	provinces={
+		7316 8005 12884
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

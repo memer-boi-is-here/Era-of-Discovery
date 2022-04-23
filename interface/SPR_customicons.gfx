@@ -1,0 +1,292 @@
+spriteTypes = { 
+	##Icon For: Reinforce the Peseta
+	SpriteType = { 
+		name = "GFX_SPR_reinforce_the_peseta-74630"
+		texturefile = "gfx/interface/goals/GFX_SPR_reinforce_the_peseta-74630.dds"
+	}
+
+	##Icon Shine For: Reinforce the Peseta
+	SpriteType = { 
+		name = "GFX_SPR_reinforce_the_peseta-74630_shine"
+		texturefile = "gfx/interface/goals/GFX_SPR_reinforce_the_peseta-74630.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SPR_reinforce_the_peseta-74630.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SPR_reinforce_the_peseta-74630.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Finish of the Inca
+	SpriteType = { 
+		name = "GFX_SPR_finish_of_the_inca-78244"
+		texturefile = "gfx/interface/goals/GFX_SPR_finish_of_the_inca-78244.dds"
+	}
+
+	##Icon Shine For: Finish of the Inca
+	SpriteType = { 
+		name = "GFX_SPR_finish_of_the_inca-78244_shine"
+		texturefile = "gfx/interface/goals/GFX_SPR_finish_of_the_inca-78244.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SPR_finish_of_the_inca-78244.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SPR_finish_of_the_inca-78244.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+    	SpriteType = { 
+		name = "GFX_goal_spain_all_hail_the_habsburg"
+		texturefile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_spain_all_hail_the_habsburg_shine"
+		texturefile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+			animationtexturefile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+			animationtexturefile = "gfx/interface/goals/goal_spain_all_hail_the_habsburg.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	    	SpriteType = { 
+		name = "GFX_goal_spanish_reinforce_peseta"
+		texturefile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_spanish_reinforce_peseta_shine"
+		texturefile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+			animationtexturefile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+			animationtexturefile = "gfx/interface/goals/goal_spanish_reinforce_peseta.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+ 
+    SpriteType = { 
+		name = "GFX_goal_invest_in_south_america"
+		texturefile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_invest_in_south_america_shine"
+		texturefile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+			animationtexturefile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+			animationtexturefile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+        SpriteType = { 
+		name = "GFX_goal_expand_into_africa"
+		texturefile = "gfx/interface/goals/goal_expand_into_africa.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_expand_into_africa_shine"
+		texturefile = "gfx/interface/goals/goal_expand_into_africa.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_expand_into_africa.tga"
+			animationtexturefile = "gfx/interface/goals/goal_expand_into_africa.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_expand_into_africa.tga"
+			animationtexturefile = "gfx/interface/goals/goal_invest_in_south_america.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+     
+	 SpriteType = { 
+		name = "GFX_goal_the_sun_never_sets"
+		texturefile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_the_sun_never_sets_shine"
+		texturefile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+			animationtexturefile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+			animationtexturefile = "gfx/interface/goals/goal_the_sun_never_sets.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+     	 SpriteType = { 
+		name = "GFX_goal_the_reign_of_charles_v"
+		texturefile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_the_reign_of_charles_v_shine"
+		texturefile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+			animationtexturefile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+			animationtexturefile = "gfx/interface/goals/goal_the_reign_of_charles_v.tga"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}

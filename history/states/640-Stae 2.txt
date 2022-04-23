@@ -1,0 +1,30 @@
+
+state={
+	id=640
+	name="STATE_640" # Mandalay
+	manpower = 14600
+	
+	state_category = town
+	resources={
+		tungsten = 120 
+	}
+	history={
+		add_core_of = AVA
+		owner = AVA
+		buildings = {
+			infrastructure = 3
+		
+		}
+		victory_points = {
+			1492 1 
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+	
+	provinces={
+		1082 1197 1581 1934 4087 4425 4588 4996 7469 8063 10386 10486 10920 12335 12464 12492 
+	}
+}

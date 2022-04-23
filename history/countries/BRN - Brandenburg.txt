@@ -1,0 +1,135 @@
+﻿capital = 797
+
+recruit_character = BRN_joachim_ii_hector
+recruit_character = BRN_joachim_ii_hector_elector_of_brandenburg
+recruit_character = BRN_john_george_of_brandenburg
+recruit_character = BRN_albert_alcibiades_margrave_of_brandenburgkulmbach
+recruit_character = BRN_john,_margrave_of_brandenburgküstrin
+recruit_character = BRN_sigismund_of_brandenburg
+recruit_character = BRN_bob_jones
+recruit_character = BRN_alexander_williams
+recruit_character = BRN_lucas_jones
+recruit_character = BRN_albert_alcibiades_p
+recruit_character = BRN_albert_alcibiades_a
+recruit_character = BRN_john_marg_p
+recruit_character = BRN_albert_alcibiades
+recruit_character = BRN_john_george
+recruit_character = BRN_john_marg
+
+oob = "BRN_1550"
+
+set_research_slots = 2
+
+add_ideas = {
+     house_of_hohenzollern
+	 bastion_of_protestantism
+}
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+
+	
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+create_country_leader = {
+	name = "Joachim II Hector"
+	desc = ""
+	picture = "portrait_joachim_ii.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Joachim II Hector, Elector of Brandenburg"
+	picture = "portrait_joachim_ii.dds"
+	traits = { logistics_wizard infantry_leader war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "John George of Brandenburg"
+	picture = "portrait_john_george.dds"
+	traits = { scavenger trait_reckless media_personality }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Albert Alcibiades, Margrave of Brandenburg-Kulmbach"
+	picture = "portrait_albert_alcibiades.dds"
+	traits = { cavalry_expert cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+    name = "John V, Prince of Anhalt-Zerbst"
+	picture = "portrait_john_v.dds"
+	traits = { scavenger trait_mountaineer organizer}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "John, Margrave of Brandenburg-Küstrin"
+	picture = "portrait_john_marg.dds"
+	traits = { urban_assault_specialist infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 0
+}
+
+create_navy_leader = {
+	name = "Sigismund of Brandenburg"
+	picture = "portrait_sigismund.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+add_opinion_modifier = { target = AUS modifier = medium_decrease }
+add_opinion_modifier = { target = SAX modifier = medium_increase }
+add_opinion_modifier = { target = MEK modifier = medium_increase }
+
+add_ideas = Protestant

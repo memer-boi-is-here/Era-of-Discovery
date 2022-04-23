@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "La Marine Royale"			
+		naval_base = 9434
+		task_force = {					
+			name = "Galions, Fleet"
+			location = 9434
+			ship = { name = "Premier Galion" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }				
+			ship = { name = "Seconde Galion" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }				
+			ship = { name = "La Troisième Galion" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }	
+			ship = { name = "Quatrième Galion" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Galleon Class" } } }	
+        }
+    }
+}

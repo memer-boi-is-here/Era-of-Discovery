@@ -1,0 +1,157 @@
+﻿capital = 2
+
+recruit_character = PAP_college_of_cardinals
+recruit_character = PAP_guidobaldo_ii_della_rovere,_duke_of_urbino
+recruit_character = PAP_ludwig_pfyffer
+recruit_character = PAP_giovanni_carafa,_duke_of_paliano
+recruit_character = PAP_marcantonio_colonna
+recruit_character = PAP_johannes_evans
+recruit_character = PAP_marcus_evans
+recruit_character = PAP_bob_jones
+recruit_character = PAP_girolamo_verallo
+recruit_character = PAP_guidobaldo_della_rovere
+recruit_character = PAP_girolamo_dandini
+recruit_character = PAP_giovanni_carafa
+recruit_character = PAP_guidobaldo_della_rovere_a
+recruit_character = PAP_giovanni_morone
+recruit_character = PAP_guidobaldo_della_rovere_b
+recruit_character = PAP_alessandro_farnese
+
+add_ideas = {
+     indulgence_corruption
+     bane_of_catholicism
+}
+
+oob = "PAP_1550"
+set_research_slots = 4
+
+set_global_flag = pope_has_died
+
+set_stability = 0.8
+set_war_support = 0.2
+set_autonomy = {
+		target = URB
+		autonomous_state = autonomy_integrated_puppet
+	}
+
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	
+}
+
+set_convoys = 15
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 20
+	communism = 2
+	neutrality = 53
+}
+
+create_country_leader = {
+	name = "College of Cardinals"
+	picture = "College_of_Cardinals.dds"
+	ideology = despotism
+	traits = {
+		 
+	}
+}
+
+	create_field_marshal = {
+	    name = "Guidobaldo II della Rovere, Duke of Urbino"
+    	picture = "Guidobaldo-II-della-Rovere.dds"
+	    traits = { infantry_officer offensive_doctrine trickster  }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Ludwig Pfyffer"
+    	picture = "portrait_ludwig_pfyffer.dds"
+	    traits = { scavenger trait_mountaineer organizer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 3
+    }
+	
+	create_corps_commander = {
+	    name = "Giovanni Carafa, Duke of Paliano"
+    	picture = "portrait_giovanni_carafa.dds"
+	    traits = { guerilla_fighter trait_engineer hill_fighter }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_navy_leader = {
+	    name = "Marcantonio Colonna"
+    	picture = "portrait_marcantonio_colonna.dds"
+	    traits = { big_guns_expert ironside battleship_adherent old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+
+add_ideas = Catholic
+
+country_event = { id = anewera.87 days = "1907" }
+country_event = { id = anewera.88 days = "1946" }
+country_event = { id = anewera.89 days = "3517" }
+country_event = { id = anewera.90 days = "1925" }
+country_event = { id = anewera.91 days = "1969" }
+country_event = { id = anewera.93 days = "3646" }
+country_event = { id = anewera.134 days = "1907" }
+country_event = { id = anewera.135 days = "1925" }
+country_event = { id = anewera.136 days = "3517" }
+country_event = { id = anewera.137 days = "1969" }
+country_event = { id = anewera.138 days = "2814" }
+

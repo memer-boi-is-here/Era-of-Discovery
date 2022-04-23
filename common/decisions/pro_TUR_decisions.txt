@@ -1,0 +1,184 @@
+TUR_selling_indian_ports = {
+	TUR_sell_963 = { #Diu
+		
+		icon = generic_form_nation
+		cost = 150
+		fire_only_once = no
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = money_trigger_tooltip		
+				check_variable = { money > 250 }
+			}
+			963 = { is_owned_by = TUR }
+			TUR = { has_country_flag = can_sell_indian_ports } #TUR completed focus
+			ROOT = { has_country_flag = european_country } #ROOT is european_country
+			ROOT = { NOT = { has_country_flag = 963_asked_by_others } } #if in the last 20 days no one asked for that port
+			ROOT = { NOT = { has_country_flag = 963_ROOT_asked_this } } #if in the last 90 days ROOT asked for that port
+			ROOT = { NOT = { has_country_flag = ROOT_asked_other } } #if in the last 30 days ROOT asked for other ports
+
+		}
+		visible = {
+			TUR = { has_country_flag = can_sell_indian_ports } #TUR completed focus
+			963 = { is_owned_by = TUR }
+			OR = {
+				tag = POR
+				tag = SPR
+				tag = FRA
+				tag = ENG
+				tag = SCO
+				tag = AUS
+				tag = HOL
+				tag = VNI
+				tag = SVY
+				tag = GEN
+				tag = NAP
+				tag = DEN
+				tag = NOR
+			}
+
+		}
+		
+		complete_effect = {
+			TUR = { country_event = { id = ottoman_ports.963 days = 1 } }
+			every_country = {
+				limit = {
+					has_country_flag = european_country
+					NOT = { tag = ROOT }
+				}
+				set_country_flag = {
+					flag = 963_asked_by_others
+					days = 20
+					value = 1
+				}
+			}
+			ROOT = {
+				set_country_flag = {
+					flag = 963_ROOT_asked_this
+					days = 90
+					value = 1
+				}
+				set_country_flag = {
+					flag = ROOT_asked_other
+					days = 30
+					value = 1
+				}
+			}
+		}
+	}
+	TUR_sell_964 = { #surat
+		
+		icon = generic_form_nation
+		cost = 150
+		fire_only_once = no
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = money_trigger_tooltip		
+				check_variable = { money > 250 }
+			}
+			964 = { is_owned_by = TUR }
+			TUR = { has_country_flag = can_sell_indian_ports } #TUR completed focus
+			ROOT = { has_country_flag = european_country } #ROOT is european_country
+			ROOT = { NOT = { has_country_flag = 964_asked_by_others } } #if in the last 20 days no one asked for that port
+			ROOT = { NOT = { has_country_flag = 964_ROOT_asked_this } } #if in the last 90 days ROOT asked for that port
+			ROOT = { NOT = { has_country_flag = ROOT_asked_other } } #if in the last 30 days ROOT asked for other ports
+
+		}
+		visible = {
+			TUR = { has_country_flag = can_sell_indian_ports } #TUR completed focus
+			963 = { is_owned_by = TUR }
+			OR = {
+				tag = POR
+				tag = SPR
+				tag = FRA
+				tag = ENG
+				tag = SCO
+				tag = AUS
+				tag = HOL
+				tag = VNI
+				tag = SVY
+				tag = GEN
+				tag = NAP
+				tag = DEN
+				tag = NOR
+			} 
+		}
+		
+		complete_effect = {
+			TUR = { country_event = { id = ottoman_ports.964 days = 1 } }
+			every_country = {
+				limit = {
+					has_country_flag = european_country
+					NOT = {tag = ROOT }
+				}
+				set_country_flag = {
+					flag = 964_asked_by_others
+					days = 20
+					value = 0
+				}
+			}
+			ROOT = {
+				set_country_flag = {
+					flag = 964_ROOT_asked_this
+					days = 90
+					value = 0
+				}
+				set_country_flag = {
+					flag = ROOT_asked_other
+					days = 30
+					value = 0
+				}
+			}
+		}
+	}
+	#go on, states from 965 to 977, 321, from 1027 to 1033, 1036
+}
+
+TUR_war_for_Singapore = {
+	TUR_end_war_timing = { 
+		
+		icon = generic_form_nation		
+		
+		available = {
+			336 = { OR = { is_controlled_by = TUR controller = { is_subject_of = TUR } } }
+		}
+		activation = {                         
+			has_war_with = POR
+
+        }
+		visible = {
+			
+		}
+		fire_only_once = yes
+		#days_remove = 0
+		is_good = no
+		selectable_mission = no
+        days_mission_timeout = 180 
+		
+		timeout_effect = {
+			if = {
+				limit = { 672 = { OR = { is_owned_by = TUR AND = { ACE = { owns_state = 672 is_subject_of = TUR } } } is_controlled_by = POR } }
+				POR = { set_state_controller = 672 set_state_owner = 672 }
+			}
+			if = {
+				limit = { 1097 = { OR = { is_owned_by = TUR AND = { ACE = { owns_state = 1097 is_subject_of = TUR } } } is_controlled_by = POR } }
+				POR = { set_state_controller = 1097 set_state_owner = 1097 }
+			}
+			white_peace = POR          
+        }
+		
+		complete_effect = {
+				if = {
+					limit = { ACE = { exists = yes is_subject_of = TUR } }
+					ACE = { set_state_owner = 336 set_state_controller = 336 }
+				}
+				if = {
+					limit = { NOT = { ACE = { is_subject_of = TUR } } }
+					TUR = { set_state_owner = 336 set_state_controller = 336 }
+				}
+				white_peace = POR
+			}
+	
+	}
+}

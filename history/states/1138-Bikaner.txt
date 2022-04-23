@@ -1,0 +1,22 @@
+state={
+	id=1138
+	name="Bikaner"
+	manpower = 1000
+
+	state_category=rural
+
+	history={
+		owner = BIK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = BIK
+
+	}
+
+	provinces={
+		7998 12041 12844 12876
+	}
+}

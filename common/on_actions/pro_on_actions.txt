@@ -1,0 +1,71 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = POR
+						tag = SPR
+						tag = FRA
+						tag = ENG
+						tag = SCO
+						tag = AUS
+						tag = HOL
+						tag = VNI
+						tag = SVY
+						tag = GEN
+						tag = NAP
+						tag = DEN
+						tag = NOR
+					}
+				}
+				set_country_flag = european_country
+			}
+		}
+		effect = {
+			every_state = { #no unowned or portuguese
+				limit = {
+					OR = {
+						is_owned_by = VIJ
+						is_owned_by = AHM
+						is_owned_by = GLK
+						is_owned_by = BIJ
+						is_owned_by = MAW
+						is_owned_by = JOD
+						is_owned_by = CHD
+						is_owned_by = CUT
+						is_owned_by = GUJ
+						is_owned_by = SIN
+						is_owned_by = SRI
+						is_owned_by = JAI
+						is_owned_by = BIK
+						is_owned_by = KAL
+						is_owned_by = PAT
+						is_owned_by = BOI
+						is_owned_by = KDY
+						is_owned_by = VND
+						is_owned_by = KAY
+						is_owned_by = PUR
+						is_owned_by = KOC
+						is_owned_by = KOZ
+						is_owned_by = ARA
+						is_owned_by = AMB
+						is_owned_by = MEW
+						is_owned_by = KDS
+						is_owned_by = GML
+						is_owned_by = CDP
+						is_owned_by = BAR
+						is_owned_by = BID
+						is_owned_by = BST
+						is_owned_by = KAN
+						is_owned_by = XXX
+						is_owned_by = POR
+					}
+				}
+				set_state_flag = indian_state
+			}
+		}
+	}
+}
+
+

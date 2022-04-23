@@ -1,0 +1,22 @@
+state={
+	id=991
+	name="Lingyang"
+	resources={
+		chromium=3
+	}
+	
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CHI
+	}
+	
+	provinces={
+		1469 1625 4077 4085 4628 4656 10459 
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

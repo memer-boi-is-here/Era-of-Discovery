@@ -1,0 +1,15 @@
+spriteTypes = { 
+	##Icon For: Gustav Vasa liberates Stockholm
+	SpriteType = { 
+		name = "gustav_vasa_liberates_stockholm-49181"
+		texturefile = "gfx/interface/event_gfx/gustav_vasa_liberates_stockholm-49181.dds"
+	}
+
+	##Icon For: Gustav Vasa Announces Future Swedish Empire
+	SpriteType = { 
+		name = "gustav_vasa_announces_future_swedish_empire-49202"
+		texturefile = "gfx/interface/event_gfx/gustav_vasa_announces_future_swedish_empire-49202.dds"
+	}
+
+ 
+ }

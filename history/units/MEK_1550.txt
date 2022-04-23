@@ -1,0 +1,114 @@
+division_template = {
+	name = "Pike Infantry"
+ 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = MEK_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # CRInish Arty Rgt/Bge had 2 Bn 105mm arty
+		CRIineer = { x = 0 y = 1 }   # CRI Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = MEK_CAV_01
+	# Note: CRInish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = MEK_INF_02
+	# Note: MEKCRInish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		MEKineer = { x = 0 y = 0 }   # CRI Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = MEK_CAV_02
+	# Note: MEKnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = MEK_CAV_03
+	# Note: MEKnish divisions were 2x brigades of 2x2 rgts each, + support
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 293
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 293
+		division_template = "Cuirassiers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 293
+		division_template = "Pike Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+}
+

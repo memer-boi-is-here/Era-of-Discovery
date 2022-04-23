@@ -1,0 +1,96 @@
+﻿capital = 735
+
+add_ideas = {
+     anti_french_occupation
+}
+
+oob = "SVY_1550"
+
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+
+set_convoys = 10
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 20
+	communism = 2
+	neutrality = 53
+}
+create_country_leader = {
+	name = "Charles III"
+	picture = "portrait_charles_iii.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+	create_corps_commander = {
+	    name = "Honorat II of Savoy"
+    	picture = "portrait_honorat_ii.dds"
+	    traits = { infantry_expert adaptable infantry_officer skilled_staffer }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Honorat II of Savoy"
+    	picture = "portrait_honorat_ii.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+
+add_ideas = Catholic

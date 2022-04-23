@@ -1,0 +1,497 @@
+characters = {
+	RUS_ivan_iv = {
+		name = "Ivan IV"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/portrait_ivan_iv.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist harsh_leader inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { the_terrible }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	RUS_prince_mikhail_ivanovich_vorotynsky = {
+		name = "Prince Mikhail Ivanovich Vorotynsky"
+		advisor = {
+			slot = political_advisor
+			idea_token = prince_mikhail_ivanovich_vorotynsky
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = prince_mikhail_ivanovich_vorotynsky_a
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_prince_mikhail_ivanovich_vorotynsky"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_prince_mikhail.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	RUS_malyuta_skuratov = {
+		name = "Malyuta Skuratov"
+		advisor = {
+			slot = army_chief
+			idea_token = malyuta_skuratov_a
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = malyuta_skuratov
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_malyuta_skuratov"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_malyuta_skuratov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	RUS_prince_andrey_mikhailovich_kurbsky = {
+		name = "Prince Andrey Mikhailovich Kurbsky"
+		advisor = {
+			slot = political_advisor
+			idea_token = prince_andrey_mikhailovich_kurbsky
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = prince_andrey_mikhailovich_kurbsky_a
+			ledger = army 
+				allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_prince_andrey_mikhailovich_kurbsky"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_prince_andrey.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	RUS_simeon_bekbulatovich = {
+		name = "Simeon Bekbulatovich"
+		advisor = {
+			slot = political_advisor
+			idea_token = simeon_bekbulatovich
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = simeon_bekbulatovich_a
+			ledger = army 
+				allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_simeon_bekbulatovich"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_simeon.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	RUS_yermak_timofeyevich = {
+		name = "Yermak Timofeyevich"
+		advisor = {
+			slot = political_advisor
+			idea_token = yermak_timofeyevich
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = yermak_timofeyevich_a
+			ledger = army 
+				allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_yermak_timofeyevich"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_yermak.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	RUS_nikita_romanovich = {
+		name = "Nikita Romanovich"
+		advisor = {
+			slot = navy_chief
+			idea_token = nikita_romanovich
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_nikita_romanovich"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_nikita_romanovich.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	RUS_vladimir_andreyevich = {
+		name = "Vladimir Andreyevich"
+		advisor = {
+			slot = navy_chief
+			idea_token = vladimir_andreyevich
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_vladimir_andreyevich"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_vladimir_andreyevich.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	RUS_dmytro_ivanovych_vyshnevetsky = {
+		name = "Dmytro Ivanovych Vyshnevetsky"
+		advisor = {
+			slot = high_command
+			idea_token = dmytro_ivanovych_vyshnevetsky
+			ledger = navy 
+				allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_dmytro_ivanovych_vyshnevetsky"
+			}
+			army = {
+				large = "gfx/leaders/RUS/portrait_dmytro_ivanovych_vyshnevetsky.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	RUS_bob_williams = {
+		name = "Bob Williams"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	RUS_jonas_walker = {
+		name = "Jonas Walker"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	RUS_marcus_white = {
+		name = "Marcus White"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1562.1.1.12"
+			id = -1
+		}
+	}
+	RUS_yuri_vasilievich = {
+		advisor = {
+			slot = political_advisor
+			idea_token = yuri_vasilievich
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "yuri_vasilievich"
+		portraits = {
+			army = {
+				small = "GFX_idea_yuri_vasilievich"
+			}
+		}
+	}
+	RUS_macarius_of_moscow = {
+		advisor = {
+			slot = political_advisor
+			idea_token = macarius_of_moscow
+			allowed = {
+					original_tag = RUS
+				}
+				traits = {
+					metropolitan_of_moscow_and_all_russia 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "macarius_of_moscow"
+		portraits = {
+			army = {
+				small = "GFX_idea_macarius_of_moscow"
+			}
+		}
+	}
+}

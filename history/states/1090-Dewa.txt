@@ -1,0 +1,22 @@
+state={
+	id=1090
+	name="Dewa"
+	provinces={
+		4067 4153 13263 
+	}
+		history={
+			owner = SHB
+		add_core_of = SHB
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

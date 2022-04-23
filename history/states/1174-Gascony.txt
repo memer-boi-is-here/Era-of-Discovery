@@ -1,0 +1,22 @@
+
+state={
+	id=1174
+	name="Gascony"
+	manpower=50000
+	
+	state_category = large_town
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		6777 6762 6759 9717 11702 929 3749 6766 3915 12169 9882 11699 3740 
+	}
+}

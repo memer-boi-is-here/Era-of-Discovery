@@ -1,0 +1,73 @@
+music = {
+	name = "maintheme"
+	file = "Belle_qui_tiens_ma_vie_16th_Century_Hapsburg_Court_Music_2.ogg"
+	volume = 0.65
+}
+
+
+music = {
+	name = "La_Volta_for_Elizabeth_I"
+	file = "La_Volta_for_Elizabeth_I.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "T_Susato"
+	file = "T_Susato_Pavana_Gaillarde_Ronde_Mille_Ducas.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Tielman_Susato_Dansereye_I"
+	file = "Tielman_Susato_Dansereye_Rondes_I__VII.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "salve_regina"
+	file = "Salve Regina - Hail Holy Queen.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "pavane_de_la_guerre"
+	file = "Attaingnant - Pavane de la Guerre.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "vecchie_letrose"
+	file = "Adrian Willaert 'Vecchie letrose'.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "o_dolce_vita_mia"
+	file = "Adrian Willaert 'O dolce vita mia'.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "mahur_pesrev_giray_han"
+	file = "Ottoman Music 16th Century - Mahur Peşrev Giray Han _ 1554.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "stichera_no_1"
+	file = "Stichera No. 1. On the Passing Away of Metropolitan Pyotr of Moscow and All Russia.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "lux_aeterna"
+	file = "Carlos, Rey Emperador - BSO de TVE.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Requiem"
+	file = "Requiem.ogg"
+	volume = 0.65
+}
+

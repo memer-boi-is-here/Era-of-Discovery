@@ -1,0 +1,24 @@
+state={
+	id=742
+	name="STATE_742"
+
+	history={
+		add_core_of = CHG
+		owner = CHG
+		victory_points = {
+			1384 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		2074 4947 5736
+	}
+	manpower=144820
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

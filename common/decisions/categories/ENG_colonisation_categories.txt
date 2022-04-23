@@ -1,0 +1,18 @@
+ENG_colonize_USA_category = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		tag = ENG
+	}
+}
+ENG_colonize_AFR_category = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		tag = ENG
+	}
+}
+ENG_invest_category = {
+	icon = generic_political_actions
+	allowed = {
+		tag = ENG
+	}
+}

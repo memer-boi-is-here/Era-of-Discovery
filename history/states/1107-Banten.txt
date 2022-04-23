@@ -1,0 +1,18 @@
+state={
+	id=1107
+	name="Banten"
+	history={
+		owner = BNT
+		add_core_of = BNT
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 10294 7440 12138 7308 12209 1313 4276 1246 4320 12165 4361 1342
+	}
+	manpower=717435
+	buildings_max_level_factor=3.000
+	state_category=rural
+}

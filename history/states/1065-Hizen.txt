@@ -1,0 +1,23 @@
+state={
+	id=1065
+	name="Hizen"
+	provinces={
+		1158 9950 
+	}
+
+		history={
+			owner = SHO
+		add_core_of = SHO
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

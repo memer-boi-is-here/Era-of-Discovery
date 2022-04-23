@@ -1,0 +1,19 @@
+state={
+	id=806
+	name="STATE_806"
+	history={
+		owner = XXX
+		add_core_of = XXX
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	state_category = city
+	provinces={
+		7264 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+
+}

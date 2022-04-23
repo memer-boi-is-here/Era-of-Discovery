@@ -1,0 +1,21 @@
+
+state={
+	id=1144
+	name="Butua"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = BUT
+		buildings = {
+			infrastructure = 2
+			
+		}
+		add_core_of = BUT
+	}
+
+	provinces={
+		10525 12963
+	}
+}

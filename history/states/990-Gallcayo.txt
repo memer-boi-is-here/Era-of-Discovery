@@ -1,0 +1,24 @@
+
+state={
+	id=990
+	name="Gallcayo"
+
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			12840 1  
+		}
+
+	}
+
+	provinces={
+		1905 2020 5065 12840 1964 10818 4909 8094 10891 1966 12759 12812
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=city
+}

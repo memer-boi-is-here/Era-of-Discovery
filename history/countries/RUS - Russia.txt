@@ -1,0 +1,199 @@
+﻿capital = 219
+
+recruit_character = RUS_ivan_iv
+recruit_character = RUS_prince_mikhail_ivanovich_vorotynsky
+recruit_character = RUS_malyuta_skuratov
+recruit_character = RUS_prince_andrey_mikhailovich_kurbsky
+recruit_character = RUS_simeon_bekbulatovich
+recruit_character = RUS_yermak_timofeyevich
+recruit_character = RUS_nikita_romanovich
+recruit_character = RUS_vladimir_andreyevich
+recruit_character = RUS_dmytro_ivanovych_vyshnevetsky
+recruit_character = RUS_bob_williams
+recruit_character = RUS_jonas_walker
+recruit_character = RUS_marcus_white
+recruit_character = RUS_yuri_vasilievich
+recruit_character = RUS_macarius_of_moscow
+
+oob = "RUS_1550"
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+add_ideas = government_rank_3
+
+add_ideas = door_into_the_west
+add_ideas = uniting_the_realm
+add_ideas = backward_mindset
+
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+
+	gw_artillery = 1
+
+}
+
+add_opinion_modifier = { target = LIV modifier = large_decrease }
+add_opinion_modifier = { target = SWE modifier = medium_decrease }
+add_opinion_modifier = { target = KZN modifier = large_decrease }
+add_opinion_modifier = { target = ATK modifier = medium_decrease }
+add_opinion_modifier = { target = SIB modifier = medium_decrease }
+add_opinion_modifier = { target = CRI modifier = medium_decrease }
+add_opinion_modifier = { target = LIT modifier = medium_decrease }
+
+set_convoys = 40
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+	
+set_popularities = {
+	fascism = 100
+}
+
+create_country_leader = {
+	name = "Ivan IV"
+	picture = "portrait_ivan_iv.dds"
+	ideology = fascism_ideology
+	traits = { the_terrible }
+}
+
+create_field_marshal = {
+	name = "Ivan IV"
+	picture = "portrait_ivan_iv.dds"
+	traits = { inspirational_leader expert_delegator brilliant_strategist harsh_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+	
+create_field_marshal = {
+	name = "Prince Mikhail Ivanovich Vorotynsky"
+	picture = "portrait_prince_mikhail.dds"
+	traits = { logistics_wizard infantry_leader war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Malyuta Skuratov"
+	picture = "portrait_malyuta_skuratov.dds"
+	traits = { adaptable trickster politically_connected bearer_of_artillery }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Prince Andrey Mikhailovich Kurbsky"
+	picture = "portrait_prince_andrey.dds"
+	traits = { scavenger trait_reckless media_personality }
+	skill = 3
+	attack_skill = 3
+	    defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Simeon Bekbulatovich"
+	picture = "portrait_simeon.dds"
+	traits = { cavalry_expert cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Yermak Timofeyevich"
+	picture = "portrait_yermak.dds"
+	traits = { winter_specialist infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 0
+}
+	
+create_navy_leader = {
+	name = "Nikita Romanovich"
+	picture = "portrait_nikita_romanovich.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+	
+create_navy_leader = {
+	name = "Vladimir Andreyevich"
+    	picture = "portrait_vladimir_andreyevich.dds"
+	traits = { destroyer_leader fleet_protector chief_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+	
+create_navy_leader = {
+	name = "Dmytro Ivanovych Vyshnevetsky"
+	picture = "portrait_dmytro_ivanovych_vyshnevetsky.dds"
+	traits = { spotter gentlemanly }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+add_ideas = Orthodox
+
+add_ideas = russian_traditions

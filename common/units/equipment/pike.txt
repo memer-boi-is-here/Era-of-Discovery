@@ -1,0 +1,104 @@
+# All infantry equipment
+
+equipments = {
+
+    ###PIKE###
+
+	pike = {
+		year = 1500
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 2
+
+		#Defensive Abilities
+		defense = 2
+		breakthrough = 1
+		armor_value = 2
+		
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 1
+		ap_attack = 2
+		air_attack = 0
+		
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		resources = {
+			steel = 1
+		}
+
+		build_cost_ic = 0.50
+	}
+
+	medieval_pike = {
+		year = 1500
+	
+		archetype = pike
+		active = yes
+		priority = 10
+		visual_level = 0
+	}
+	early_renaissance_pike = {
+		year = 1540
+	
+		archetype = pike
+		parent = medieval_pike
+		priority = 10
+		visual_level = 2
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 2.5
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 2
+		armor_value = 4
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 2
+		ap_attack = 4
+		air_attack = 0
+
+		build_cost_ic = 0.50
+	}
+
+	late_renaissance_pike = {
+		year = 1600
+	
+		archetype = pike
+		parent = early_renaissance_pike
+		priority = 10
+		visual_level = 3
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 3.5
+		
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 4
+		armor_value = 6
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 2.5
+		ap_attack = 6
+		air_attack = 0
+
+		build_cost_ic = 0.50
+	}
+}

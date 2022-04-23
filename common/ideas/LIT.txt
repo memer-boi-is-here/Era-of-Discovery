@@ -1,0 +1,348 @@
+ideas = {
+
+    country = {
+
+	    religious_toleration = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = religious_toleration
+			
+			modifier = {
+			    weekly_manpower = 3000
+				local_non_core_manpower = 0.4
+				stability_factor = 0.1
+			}
+		}
+		
+		lithuanian_golden_age = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = lithuanian_golden_age
+			
+			modifier = {
+			    war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				political_power_gain = 0.3
+			}
+		}
+		
+		lithuanian_expansionism = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = lithuanian_expansionism
+			
+			modifier = {
+			    justify_war_goal_time = -0.3
+				army_attack_factor = 0.05
+				army_speed_factor = 0.15
+				army_defence_factor = -0.05
+			}
+		}
+
+    }
+
+
+	political_advisor = {
+
+        mikolaj_radziwill = {
+
+			picture = mikolaj_radziwill
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { chief_minister }
+			
+		    ai_will_do = {
+				factor = 1
+			}
+		}
+
+		pawel_holszanski = {
+
+			picture = pawel_holszanski
+
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { archbishop_of_vilnius }
+			
+		    ai_will_do = {
+				factor = 1
+			}
+		}
+
+	    mikolaj_k_radziwill = {
+			
+			picture = mikolaj_k_radziwill
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		konstanty_wasyl_ostrogski = {
+			
+			picture = konstanty_wasyl_ostrogski
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrzej_sapieha = {
+			
+			picture = andrzej_sapieha
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krzysztof_mikolaj_radziwill = {
+			
+			picture = krzysztof_mikolaj_radziwill
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+    }
+
+	army_chief = {
+		
+		mikolaj_radziwill_a = {
+			
+			picture = mikolaj_radziwill
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mikolaj_k_radziwill_a = {
+			
+			picture = mikolaj_k_radziwill
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	navy_chief = {
+		
+		jan_kostka = {
+			
+			picture = jan_kostka
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		hrehory_chodkiewicz = {
+			
+			picture = hrehory_chodkiewicz
+			
+			allowed = {
+				original_tag = LIT
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+high_command = {
+
+	konstanty_wasyl_ostrogski_a = {
+		ledger = army
+
+		picture = konstanty_wasyl_ostrogski
+		
+		allowed = {
+			original_tag = LIT
+		}
+		
+		traits = { army_artillery_1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	krzysztof_mikolaj_radziwill_a = {
+		ledger = army
+
+		picture = krzysztof_mikolaj_radziwill
+		
+		allowed = {
+			original_tag = LIT
+		}
+		
+		traits = { army_infantry_2 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	andrzej_sapieha_a = {
+		ledger = army
+
+		picture = andrzej_sapieha
+		
+		allowed = {
+			original_tag = LIT
+		}
+		
+		traits = { army_drill_1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mikolaj_vii_radziwill = {
+		ledger = army
+
+		picture = mikolaj_vii_radziwill
+		
+		allowed = {
+			original_tag = LIT
+		}
+		
+		traits = { army_regrouping_2 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+}

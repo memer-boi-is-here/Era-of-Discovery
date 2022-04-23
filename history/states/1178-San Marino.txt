@@ -1,0 +1,25 @@
+
+state={
+	id=1178
+	name="San Marino"
+	manpower = 10000
+	
+	state_category = town
+
+	history={
+		owner = SAN
+		victory_points = { 3838 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			3838 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SAN
+	}
+
+	provinces={
+		13266
+	}
+}

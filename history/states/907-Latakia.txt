@@ -1,0 +1,16 @@
+state={
+	id=907
+	name="STATE_907"
+	history={
+		owner = TUR
+		add_core_of = TUR
+add_core_of = LEB
+add_core_of = IRQ
+		}
+	provinces={
+		1088 10087 
+	}
+	manpower=270833
+	buildings_max_level_factor=1.000
+	state_category = town
+}

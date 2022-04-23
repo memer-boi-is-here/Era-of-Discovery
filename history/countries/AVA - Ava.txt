@@ -1,0 +1,27 @@
+﻿capital = 640
+
+#oob = "AVA_1550"
+
+# Starting tech
+set_technology = {
+	#infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+set_convoys = 0
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Unknown"
+	desc = ""
+	picture = "unkown"
+	expire = "196v5.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

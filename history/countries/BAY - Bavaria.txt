@@ -1,0 +1,40 @@
+﻿capital = 52
+
+add_ideas = Catholic
+
+oob = "BAY_1550"
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	democratic = 30
+	fascism = 10
+	neutrality = 60
+}
+create_country_leader = {
+	name = "William IV"
+	picture = "portrait_william_iv.dds"
+	ideology = despotism
+	traits = { }
+}
+
+add_ideas = {
+}
+
+give_military_access = AUS

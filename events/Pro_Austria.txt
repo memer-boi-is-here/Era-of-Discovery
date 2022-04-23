@@ -1,0 +1,578 @@
+#Prolox
+
+add_namespace = pro_austrian
+add_namespace = colonial_purchase
+
+#######################
+# HISTORY OF HABSBURG #
+#######################
+news_event = { 
+	id = pro_austrian.1
+	title = pro_austrian.1.t
+	desc = pro_austrian.1.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		name = pro_austrian.1.a
+	}
+}
+
+################
+# DUTCH REVOLT #
+################
+country_event = { 
+	id = pro_austrian.2
+	title = pro_austrian.2.t
+	desc = pro_austrian.2.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pro_austrian.2.a
+		set_global_flag = dutch_revolt
+		
+		
+		NED = {
+			set_state_owner = 36
+			set_state_controller = 36
+			set_state_controller = 799
+			declare_war_on = {
+				target = HOL
+				type = independence
+			}
+			load_oob = "NED_revolt"
+			
+		}
+		
+		##make a decision that if NED manage to take and hold for [...] months all the netherlands a peace is signed and netherlands will be free. 
+		##i didnt do the decision because (as with previous focuses) it doesnt show up decisions, so im missing something that idk.
+
+	}
+}
+
+###########################
+# COALITION AGAINST SPAIN #
+###########################
+country_event = { 
+	id = pro_austrian.3
+	title = pro_austrian.3.t
+	desc = pro_austrian.3.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #yes
+		name = pro_austrian.3.a
+		set_country_flag = coalition_against_spain
+		AUS = { country_event = { id = pro_austrian.4 days = 0 } }
+		FRA = { set_country_flag = france_ally_austria }
+		ai_chance = { factor = 55 }
+	}
+	option = { #no
+		name = pro_austrian.3.b
+		ai_chance = { factor = 30 }
+		AUS = { country_event = { id = pro_austrian.5 days = 0 } }
+	
+	}
+	option = { #against austria
+		name = pro_austrian.3.c
+		ai_chance = { factor = 15 }
+		set_country_flag = coalition_against_austria
+		AUS = { country_event = { id = pro_austrian.6 days = 0 } }
+	
+	}
+}
+
+##################
+# FRANCE ACCEPTS #
+##################
+news_event = { 
+	id = pro_austrian.4
+	title = pro_austrian.4.t
+	desc = pro_austrian.4.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		name = pro_austrian.4.a
+	}
+}
+##################
+# FRANCE REFUSES #
+##################
+news_event = { 
+	id = pro_austrian.5
+	title = pro_austrian.5.t
+	desc = pro_austrian.5.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		name = pro_austrian.5.a
+	}
+}
+#####################
+# FRANCE WITH SPAIN #
+#####################
+news_event = { 
+	id = pro_austrian.6
+	title = pro_austrian.6.t
+	desc = pro_austrian.6.d
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		name = pro_austrian.6.a
+	}
+}
+
+############################################
+#####################################
+##############################
+# COLONIAL PURCHASE 
+##############################
+#####################################
+############################################
+#TRIGGERING
+ 
+country_event = { 
+	id = colonial_purchase.0
+	title = colonial_purchase.0.t
+	desc = colonial_purchase.0.d
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Africa
+		name = colonial_purchase.0.a
+		ai_chance = { factor = 45 }
+		SPR = { country_event = { id = colonial_purchase.1 days = 2 } }
+	}
+	option = { #America
+		name = colonial_purchase.0.b
+		ai_chance = { factor = 55 }
+		country_event = { id = colonial_purchase.2 days = 0 }
+	}
+}
+
+##########
+# AFRICA #
+##########
+country_event = { 
+	id = colonial_purchase.1
+	title = colonial_purchase.1.t
+	desc = colonial_purchase.1.d
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Yes
+		name = colonial_purchase.1.a
+		ai_chance = { factor = 65 }
+		SPR = { set_country_flag = spr_accepts_selling }
+		SPR = { clr_country_flag = spr_refuses_selling }
+		AUS = { news_event = { id = colonial_purchase.11 days = 2 } }
+	}
+	option = { #No 
+		name = colonial_purchase.1.b
+		ai_chance = { factor = 35 }
+		SPR = { set_country_flag = spr_refuses_selling }
+		SPR = { clr_country_flag = spr_accepts_selling }
+		AUS = { news_event = { id = colonial_purchase.11 days = 2 } }
+	}
+}
+
+news_event = { 
+	id = colonial_purchase.11
+	title = { text = colonial_purchase.11.t_yes trigger = { SPR = { has_country_flag = spr_accepts_selling } } }
+	desc = { text = colonial_purchase.11.d_yes trigger = { SPR = { has_country_flag = spr_accepts_selling } } }
+	title = { text = colonial_purchase.11.t_no trigger = { SPR = { has_country_flag = spr_refuses_selling } } }
+	desc = { text = colonial_purchase.11.d_no trigger = { SPR = { has_country_flag = spr_refuses_selling } } }
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		trigger = { SPR = { has_country_flag = spr_accepts_selling } }
+		name = colonial_purchase.11.a
+		if = { limit = { 290 = { is_owned_by = SPR } } 290 = { set_state_controller_to = AUS set_state_owner_to = AUS } }
+		if = { limit = { 1151 = { is_owned_by = SPR } } 1151 = { set_state_controller_to = AUS set_state_owner_to = AUS } }
+		if = { limit = { 1152 = { is_owned_by = SPR } } 1152 = { set_state_controller_to = AUS set_state_owner_to = AUS } }
+		
+		if = { limit = { AUS = { is_ai = yes } }
+			AUS = { 
+				add_opinion_modifier = { 
+					target = SPR 
+					modifier = generous_ally 
+				} 
+			}
+		}
+	}
+	option = { 
+		trigger = { SPR = { has_country_flag = spr_refuses_selling } }
+		name = colonial_purchase.11.b
+		if = { limit = { AUS = { is_ai = yes } } 
+			AUS = { 
+				add_opinion_modifier = { 
+					target = SPR 
+					modifier = opportunist_ally 
+				} 
+			}
+		}
+	}
+}
+
+###########
+# AMERICA #
+###########
+country_event = { 
+	id = colonial_purchase.2
+	title = colonial_purchase.2.t
+	desc = colonial_purchase.2.d
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Asks Islands
+		name = colonial_purchase.2.a
+		ai_chance = { factor = 40 }
+		SPR = { country_event = { id = colonial_purchase.3 days = 2 } }
+		set_global_flag = asked_for_islands
+	}
+	option = { #Asks mainlands 
+		name = colonial_purchase.2.b
+		ai_chance = { factor = 60 }
+		SPR = { country_event = { id = colonial_purchase.3 days = 2 } }
+		set_global_flag = asked_for_mainlands
+	}
+}
+
+country_event = {
+	id = colonial_purchase.3
+	title = {
+		text = colonial_purchase.3.t_islands
+		trigger = { has_global_flag = asked_for_islands }
+	}
+	desc = {
+		text = colonial_purchase.3.d_islands
+		trigger = { has_global_flag = asked_for_islands }
+	}
+	title = {
+		text = colonial_purchase.3.t_islands
+		trigger = { has_global_flag = asked_for_mainlands }
+	}
+	desc = {
+		text = colonial_purchase.3.d_islands
+		trigger = { has_global_flag = asked_for_mainlands }
+	}
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Yes
+		name = colonial_purchase.3.a
+		ai_chance = { factor = 60 }
+		AUS = { news_event = { id = colonial_purchase.4 days = 2 } }
+		set_global_flag = SPR_said_yes
+	}
+	option = { #No
+		name = colonial_purchase.3.b
+		ai_chance = { factor = 40 }
+		AUS = { news_event = { id = colonial_purchase.4 days = 2 } }
+		clr_global_flag = asked_for_mainlands
+		clr_global_flag = asked_for_islands
+		set_global_flag = SPR_said_no
+	}
+
+}
+
+news_event = {
+	id = colonial_purchase.4
+	title = { text = colonial_purchase.4.t_yes trigger = { has_global_flag = SPR_said_yes } }
+	desc = { text = colonial_purchase.4.d_yes trigger = { has_global_flag = SPR_said_yes  } }
+	title = { text = colonial_purchase.4.t_no trigger = { has_global_flag = SPR_said_no } }
+	desc = { text = colonial_purchase.4.d_no trigger = { has_global_flag = SPR_said_no } }
+	picture = GFX_pro_austrian_french_alliance
+	fire_only_once = yes
+	
+	major = no
+
+	is_triggered_only = yes
+
+	hidden = no
+	
+	option = { 
+		trigger = { has_global_flag = asked_for_mainlands has_global_flag = SPR_said_yes }
+		name = colonial_purchase.4.a
+		307 = { set_state_controller_to = AUC set_state_owner_to = AUC }
+		if = { limit = { AUS = { is_ai = yes } }
+			AUS = { 
+				add_opinion_modifier = { 
+					target = SPR 
+					modifier = generous_ally 
+				} 
+			}
+		}
+	}
+	option = { 
+		trigger = { has_global_flag = asked_for_islands has_global_flag = SPR_said_yes }
+		name = colonial_purchase.4.b
+		318 = { set_state_controller_to = AUC set_state_owner_to = AUC }
+		319 = { set_state_controller_to = AUC set_state_owner_to = AUC }
+		if = { limit = { AUS = { is_ai = yes } }
+			AUS = { 
+				add_opinion_modifier = { 
+					target = SPR 
+					modifier = generous_ally 
+				} 
+			}
+		}
+	}
+	option = { 
+		trigger = { SPR = { has_country_flag = SPR_said_no } }
+		name = colonial_purchase.4.c
+		if = { limit = { AUS = { is_ai = yes } } 
+			AUS = { 
+				add_opinion_modifier = { 
+					target = SPR 
+					modifier = opportunist_ally 
+				} 
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = pro_austrian.7
+	title = pro_austrian.7.t
+	desc = pro_austrian.7.d
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = pro_austrian.7.a
+		AUS = { remove_ideas = ruler_excommunicated }
+	}
+
+}
+country_event = {
+	id = pro_austrian.8
+	title = pro_austrian.8.t
+	desc = pro_austrian.8.d
+	picture = GFX_colonial_purchase_french_alliance
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = { #accepts
+		name = pro_austrian.8.a
+		ai_chance = { factor = 80 }
+		if = {
+			limit = { is_puppet_of = AUS }
+			AUS = { 
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+		}
+		if = {
+			limit = { is_in_faction_with = AUS }
+			leave_faction = yes
+		}
+		declare_war_on = { target = AUS type = annex_everything }
+	}
+	option = { #refuse
+		name = pro_austrian.8.b
+		ai_chance = { factor = 20 }
+	}
+
+}
+news_event = {
+	id = pro_austrian.9
+	title = pro_austrian.9.t
+	desc = pro_austrian.9.d
+	picture = GFX_colonial_purchase_french_alliance
+	major = yes 
+	hidden = yes 
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = pro_austrian.9.a
+		every_country = {
+			limit = { has_country_flag = puppet_hre has_country_flag = member_HRE has_idea = protestant }
+			AUS = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_free
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			leave_faction = yes
+			declare_war_on = { target = AUS type = independence }
+			set_country_flag = war_with_AUS
+		}
+		every_country = {
+			limit = { has_country_flag = puppet_hre has_country_flag = member_HRE has_idea = catholic }
+			if = {
+				limit = { has_opinion = { target = AUS value < 21 } }
+				AUS = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+				leave_faction = yes
+				declare_war_on = { target = AUS type = independence }
+				set_country_flag = war_with_AUS
+			}
+		}
+		FRA = {
+			if = { limit = { OR = { has_country_flag = enemy_austria has_opinion = { target = AUS value < -9 } } } 
+				country_event = { id = pro_austrian.8 days = 5 } 
+			}
+		}
+		SPR = {
+			if = { limit = { OR = { has_country_flag = enemy_austria has_opinion = { target = AUS value < -9 } } }
+			country_event = { id = pro_austrian.8 days = 5 } }
+		}
+		NED = {
+			if = { limit = { has_country_flag = failed_revolution } 
+				set_state_controller = 6
+				set_state_controller = 7
+				set_state_controller = 34
+				set_state_controller = 35
+				set_state_controller = 36
+				set_state_controller = 799
+				set_state_owner = 6
+				set_state_owner = 7
+				set_state_owner = 34
+				set_state_owner = 35
+				set_state_owner = 36
+				set_state_owner = 799
+				declare_war_on = { target = AUS type = independence }
+				load_oob = "NED_coalition"
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = pro_austrian.10
+	title = pro_austrian.10.t
+	desc = pro_austrian.10.d
+	picture = GFX_colonial_purchase_french_alliance
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pro_austrian.10.a
+		ai_chance = { factor = 99 }
+			if = {
+				limit = { is_puppet_of = AUS }
+				AUS = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+			}
+			if = {
+				limit = { is_in_faction_with = AUS }
+				leave_faction = yes
+			}
+			declare_war_on = { target = AUS type = annex_everything }
+			set_country_flag = war_with_AUS
+		}
+	option = {
+		name = pro_austrian.10.b
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = {
+	id = pro_austrian.11
+	title = pro_austrian.11.t
+	desc = pro_austrian.11.d
+	picture = GFX_colonial_purchase_french_alliance
+	
+	fire_only_once = no
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pro_austrian.11.a
+		ai_chance = { factor = 5 }	
+		if = {
+			limit = { has_opinion = { target = AUS value > 30 } }
+			every_country = {
+				limit = { has_country_flag = war_with_AUS }
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = pro_austrian.11.b
+		ai_chance = { factor = 5 modifier = { factor = 5 has_opinion = { target = AUS value < 30 } } }	
+	}
+}
+
+
+
+

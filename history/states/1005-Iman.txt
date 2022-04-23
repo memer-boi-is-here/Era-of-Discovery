@@ -1,0 +1,19 @@
+state={
+	id=1005
+	name="Iman"
+	
+	history={
+		owner = EJZ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = EJZ
+	}
+	
+	provinces={
+		6684 6989 9762 9926 11750
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

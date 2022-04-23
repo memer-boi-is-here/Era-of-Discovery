@@ -1,0 +1,20 @@
+
+state={
+	id=1013
+	name="SolonSouth"
+	
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SOL
+	}
+	
+	provinces={
+		4731 12657
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,3 @@
+﻿l_english:
+ EFFECT_CHANGE_LAW_government_rank:0 "Changes Government Rank to '$NAME|Y$' which grants ($DESC$)"
+ EFFECT_CHANGE_LAW_traditions:0 "Changes Traditions to '$NAME|Y$' which grants ($DESC$)"

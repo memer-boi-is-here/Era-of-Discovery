@@ -1,0 +1,26 @@
+
+state={
+	id=426
+	name="STATE_426" # Orissa
+	manpower = 10000
+	
+	state_category = rural
+	
+	resources={
+		steel=25 # was: 44
+		chromium=20 # was: 36
+		aluminium=1 # was: 2
+	}
+
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		1101 1538 7090 7372 9946 10358 10428 12241 12307
+	}
+}

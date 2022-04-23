@@ -1,0 +1,93 @@
+﻿capital = 117
+
+oob = "NAP_1550"
+
+add_ideas = government_rank_2
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	tech_mountaineers = 1
+
+}
+
+
+set_convoys = 10
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 20
+	communism = 2
+	neutrality = 53
+}
+
+	create_country_leader = {
+		name = "Pedro de Toledo"
+		picture = "portrait_pedro_de_toledo.dds"
+		ideology = despotism
+		traits = { }
+	}
+	
+	create_corps_commander = {
+	    name = "Pedro de Toledo y Zúñiga, Viceroy of Naples"
+    	picture = "portrait_pedro_de_toledo.dds"
+	    traits = { infantry_expert adaptable infantry_officer skilled_staffer }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Pedro de Toledo y Zúñiga, Viceroy of Naples"
+    	picture = "portrait_pedro_de_toledo.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+
+add_ideas = Catholic

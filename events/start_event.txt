@@ -1,0 +1,60 @@
+add_namespace = anewera2
+
+on_actions = {
+	 on_startup = {
+		 effect = {
+			  every_country = {
+				 limit = {
+					 exists = yes
+					 is_ai = no
+				 }
+				 country_event = { hours = 0 id = startup_event.1 }
+			}
+		}
+    }
+}
+
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = WAT
+					}
+					FROM = {
+						tag = MOR
+					}
+				}
+				MOR = {
+					annex_country = {
+						target = BLD
+						target = MOR
+					}
+				}
+			}
+		}
+	}
+}
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = MOR
+					}
+					FROM = {
+						tag = WAT
+					}
+				}
+				WAT = {
+					annex_country = {
+						target = BLD
+						target = WAT
+					}
+				}
+			}
+		}
+	}
+}

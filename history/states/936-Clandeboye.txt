@@ -1,0 +1,20 @@
+state={
+	id=936
+	name="Clandeboye"
+
+	history={
+		owner = CLD
+		add_core_of = CLD
+        buildings = {
+			infrastructure = 3
+			
+		}
+	}
+
+	provinces={
+		3217 3329 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

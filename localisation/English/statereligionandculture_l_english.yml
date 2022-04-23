@@ -1,0 +1,8 @@
+﻿l_english: 
+different_religion:0 "Different Religion"
+religion_name:0 "[THIS.GetReligionName]"
+non_violent_conversion_tt:0 "§YNon Violent Conversion§!\nThis State will be §Yslowly converted§!. §YNo increase of unrest§! will happen."
+semi_violent_conversion_tt:0 "§YSemi Violent Conversion§!\nThis State will be §Ymediumly converted§!. A §YSlight increase of unrest§! will happen."
+violent_conversion_tt:0 "§YViolent Conversion§!\nThis State will be §Yquickly converted§!. A §YBig Increase of Unrest§! will happen."
+medium_supression:0 "Medium Religous Supression"
+high_supression:0 "High Religous Supression"

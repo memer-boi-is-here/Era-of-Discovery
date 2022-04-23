@@ -1,0 +1,23 @@
+
+state={
+	id=366
+	name="STATE_366"
+	manpower=10000
+	
+	state_category = city
+
+	history={
+		owner = SEM
+		buildings = {
+			infrastructure = 3
+		}
+		
+		
+
+	}
+
+	provinces={
+		866 1572 1584 7388 12439 
+	}
+	
+}

@@ -1,0 +1,18 @@
+state={
+	id=1124
+	name="Banjar"
+	history={
+		owner = BNR
+		add_core_of = BNR
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 2184 10266 12252 1416 10178 7296 1225 12110 10138 12280
+	}
+	manpower=571573
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

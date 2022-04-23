@@ -1,0 +1,185 @@
+bookmarks = {
+	bookmark = {
+		name = "Twilight of the Renaissance"
+		desc = "SCENARIO_1550_DESC"
+		date = 1550.1.1.12
+		picture = "GFX_select_date_1550"
+		default_country = "FRA"
+		default = yes
+
+		
+		FRA = {
+			history = FRA_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = {
+                 French_Renaissance
+				 claims_in_italy
+				 huguenot_resistance
+				 taille_tax
+				 }
+			focuses = { 
+			     FRA_legacy_of_francis_i
+			     FRA_alliance_with_the_ottomans
+			     FRA_habsburgvalois_war
+			}
+		}
+
+		ENG = {
+			history = ENG_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = {
+                 book_of_common_prayer
+			     ENG_aspiring_masters_of_the_sea
+				 ENG_french_hatred
+				 ENG_proud_protestantism
+			}
+			focuses = {
+                 ENG_reign_of_king_edward_vi
+				 ENG_henry_viiis_legacy
+                 ENG_end_the_war
+			}
+		}
+
+		SPR = {
+			history = SPR_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = { 
+				 unrest_over_the_unification
+	             the_spanish_inquisition
+	             spanish_golden_age
+	             spanish_treasure_fleet
+			}
+			focuses = {
+                 SPR_all_hail_the_habsburgs
+				 SPR_reinforce_the_peseta
+				 SPR_finish_of_the_inca
+			}
+		}
+
+		AUS = {
+			history = AUS_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = { 
+			     religious_division_within_the_empire
+			     anti_ottoman_policy
+				 civil_unrest_in_bohemia
+				 king_of_the_romans
+			}
+			focuses = { }
+		}		
+
+		RUS = {
+			history = RUS_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = {
+			     door_into_the_west
+			     uniting_the_realm
+			     backward_mindset
+			}			
+			focuses = {
+			}
+		}
+
+		SWE = {
+			history = SWE_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = {
+			     anti_danish_policy
+	             gustav_vasa_bible
+	             confiscation_of_catholic_church_property
+			}
+			focuses = {
+			}
+		}
+
+        POR = {
+			history = POR_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = {
+			     first_circumnavigation
+	             the_portuguese_inquisition
+	             portuguese_trade_empire
+			}
+			focuses = {
+			}
+		}
+
+        TUR = {
+			history = TUR_SCENARIO_1550_DESC
+			ideology = neutrality
+			ideas = { 
+			     economic_inflation
+				 anti_habsburg_policy
+				 seat_of_the_empire
+				 food_shortage
+			}
+			focuses = { }
+		}
+		
+		
+		# minors #
+
+		SCO = {
+			minor = yes
+			history = "SCO_SCENARIO_1550_DESC"
+			ideology = neutrality
+				ideas = {
+				     auld_alliance
+				     french_debt
+				     divided_government
+				}
+				focuses = {
+				    sco_celebrating_a_new_start
+					sco_john_is_the_new_religious_head
+					sco_form_greater_abla
+				}
+		}
+		
+		POL = {
+			minor = yes
+			history = "POL_SCENARIO_1550_DESC"
+			ideology = neutrality
+				ideas = {
+				     religious_toleration
+                	 polish_golden_age
+	                 polish_expansionism
+				}
+				focuses = {
+				    
+				}
+		}
+		
+	    DEN	= {
+			minor = yes
+			history = "DEN_SCENARIO_1550_DESC"
+			ideology = neutrality
+				ideas = {
+				     anti_swedish_policy
+					 religious_upheaval
+					 dissolution_of_the_kalmar_union
+				}
+				focuses = {
+				    
+				}
+		}
+		
+		PER	= {
+			minor = yes
+			history = "PER_SCENARIO_1550_DESC"
+			ideology = fascism_ideology
+				ideas = {
+				     anti_ottoman_sentiment
+                     defender_of_shia_islam
+	                 scorched_earth_policy
+				}
+				focuses = {
+				    
+				}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,3588 @@
+add_namespace = anewera
+
+##Event: Edward VI Dead!
+news_event = {
+	id = anewera.1
+	title = anewera.1.title
+	desc = anewera.1.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.1.a
+		trigger = { original_tag = ENG } 
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Jane Grey" 
+            desc = "POLITICS_JANE_GREY_DESC" 
+            picture = "portrait_jane.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		country_event = { id = anewera.59 days = 9 }
+	}
+	
+	option = {
+	    name = anewera.1.a
+		trigger = { NOT = { original_tag = ENG } }
+	}
+}
+##Event: Fate of Henry II
+news_event = {
+	id = anewera.2
+	title = anewera.2.title
+	desc = anewera.2.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = anewera.2.a
+		trigger = { original_tag = FRA }
+		ai_chance = { factor = 100}
+		create_country_leader = { 
+		    name = "Francis II" 
+			desc = "POLITICS_Francis_II_DESC" 
+			picture = "francis_ii.dds" 
+			expire = "1965.1.1" 
+			ideology = despotism 
+			traits = {inexperienced_monarch}
+	    }
+    }
+
+	option = {
+	    name = anewera.2.a
+		trigger = { NOT = { original_tag = FRA } }
+	}
+}
+##Event: Construction of Suleymaniye Mosque
+country_event = {
+	id = anewera.3
+	title = anewera.3.title
+	desc = anewera.3.desc
+	picture = GFX_report_event_military_planning
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1551.1.1
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.3.a
+		ai_chance = { factor = 50}
+		add_political_power= -25
+                add_stability = 0.05
+	}
+	
+	option = {
+		name = anewera.3.b
+		ai_chance = { factor = 50}
+		add_political_power= 25
+                add_stability = -0.05
+	}
+}
+##Event: Battle with Persia continues..
+country_event = {
+	id = anewera.4
+	title = anewera.4.title
+	desc = anewera.4.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1550.1.20
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.4.a
+		ai_chance = { factor = 100}
+		add_war_support = 0.05
+                add_stability = 0.05
+	}
+}
+##Event: People's Support To The Prince Mustafa
+country_event = {
+	id = anewera.5
+	title = anewera.5.title
+	desc = anewera.5.desc
+	picture = GFX_report_event_generic_rally2
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1551.3.22
+                original_tag = TUR
+	}
+	
+	option= {
+		name = anewera.5.a
+		ai_chance = { factor = 100}
+		add_stability= 0.05
+	}
+}
+##Event: Jannisaries Support To The Prince Mustafa
+country_event = {
+	id = anewera.6
+	title = anewera.6.title
+	desc = anewera.6.desc
+	picture = GFX_report_event_soldiers_marching
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1552.3.12
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.6.a
+		ai_chance = { factor = 100}
+		add_stability= -0.05
+	}
+}
+##Event: Is Mustafa is the next leader?
+country_event = {
+	id = anewera.7
+	title = anewera.7.title
+	desc = anewera.7.desc
+	picture = GFX_report_event_pla_in_beijing
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1953.3.12
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.7.a
+		ai_chance = { factor = 100}
+		add_political_power= 10
+	}
+}
+##Event: People's Voice Against Leadership
+country_event = {
+	id = anewera.8
+	title = anewera.8.title
+	desc = anewera.8.desc
+	picture = GFX_report_event_hungary_parliament
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1553.6.12
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.8.a
+		ai_chance = { factor = 50}
+		add_stability= -0.05
+                set_global_flag = OTT_MUSTAFA_EXECUTED
+	}
+	
+	option = {
+		name = anewera.8.b
+		ai_chance = { factor = 50}
+		add_political_power = 120
+		set_global_flag = NEW_REGIME
+        create_country_leader= {
+         name = "Mustafa"
+        desc = "POLITICS_JANE_GREY_DESC" 
+         picture = "nophoto.dds"
+        expire = "1965.1.1"
+        ideology = falangism
+        traits = {
+        }
+
+	}
+	}
+}
+##Event: Death Of The Mustafa
+country_event = {
+	id = anewera.9
+	title = anewera.9.title
+	desc = anewera.9.desc
+	picture = GFX_report_event_physics_lab_01
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1554.8.6
+                original_tag = TUR
+                has_global_flag = OTT_MUSTAFA_EXECUTED
+	}
+	
+	option = {
+		name = anewera.9.a
+		ai_chance = { factor = 100}
+		add_political_power= -25
+                add_stability = -0.05
+                add_war_support = -0.05
+	}
+}
+##Event: Treaty Of The Amasya
+country_event = {
+	id = anewera.10
+	title = anewera.10.title
+	desc = anewera.10.desc
+	picture = GFX_report_event_hitler_handshake
+	fire_only_once = yes
+	trigger = {
+	has_war_with = PER
+        original_tag = TUR
+         PER = {
+		surrender_progress > 0.35
+		has_civil_war = no
+		is_in_faction = no
+		}
+	}
+	option = {
+		name = anewera.10.a
+		ai_chance = { factor = 100}
+		white_peace = {
+                tag = PER
+}
+add_political_power = 75
+transfer_state = 835
+transfer_state = 230
+transfer_state = 836
+transfer_state = 656
+transfer_state = 231
+transfer_state = 837
+	}
+}
+##Event: Long Live Mustafa!
+country_event = {
+	id = anewera.11
+	title = anewera.11.title
+	desc = anewera.11.desc
+	picture = GFX_report_event_spr_franco_victory
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = NEW_REGIME
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.11.a
+		ai_chance = { factor = 100}
+		add_stability = 0.05
+                add_war_support = 0.05
+	}
+}
+##Event: Rebellion of minorities due to execution of the Pargalı Ibrahim Pasha
+country_event = {
+	id = anewera.12
+	title = anewera.12.title
+	desc = anewera.12.desc
+	picture = GFX_report_event_long_march
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1550.7.12
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.12.a
+		ai_chance = { factor = 100}
+		add_stability= -0.05
+	}
+}
+##Event: Everything Is Wrong!?
+country_event = {
+	id = anewera.13
+	title = anewera.13.title
+	desc = anewera.13.desc
+	picture = GFX_report_event_generic_train
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1558.8.12
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.13.a
+		ai_chance = { factor = 100}
+		add_stability= -0.05
+	}
+}
+##Event: Anti-Catholic Speech
+country_event = {
+	id = anewera.14
+	title = anewera.14.title
+	desc = anewera.14.desc
+	picture = GFX_report_event_soviet_finnish_pact
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1951.3.4
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.14.a
+		ai_chance = { factor = 100}
+		add_political_power= 75
+	}
+}
+##Event: Death Of Bayezit
+country_event = {
+	id = anewera.15
+	title = anewera.15.title
+	desc = anewera.15.desc
+	picture = GFX_report_event_physics_lab_01
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1561.7.25
+                original_tag = TUR
+                has_global_flag = OTT_MUSTAFA_EXECUTED
+	}
+	
+	option = {
+		name = anewera.15.a
+		ai_chance = { factor = 100}
+		add_stability= -0.05
+	}
+}  
+##Event: Death Of Piri Reis
+country_event = {
+	id = anewera.16
+	title = anewera.16.title
+	desc = anewera.16.desc
+	picture = GFX_report_event_japan_army_mountainside
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1553.1.17
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.16.a
+		ai_chance = { factor = 100}
+		add_stability= -0.05
+                add_war_support = -0.05
+	}
+}
+##Event: Death Of Suleiman I
+country_event = {
+	id = anewera.17
+	title = anewera.17.title
+	desc = anewera.17.desc
+	picture = GFX_report_event_journalists_speech
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1566.7.6
+                original_tag = TUR
+	}
+	
+	option = {
+		name = anewera.17.a
+		ai_chance = { factor = 100}
+		add_political_power= 25
+                add_stability = -0.15
+	}
+}
+##Event: Rise Of Selim II
+country_event = {
+	id = anewera.18
+	title = anewera.18.title
+	desc = anewera.18.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = TUR
+                date > 1566.7.6
+                NOT = {
+                has_global_flag = OTT_MUSTAFA_EXECUTED
+	 }
+	}
+	
+	option = {
+		name = anewera.18.a
+		ai_chance = { factor = 100}
+		add_stability = -0.05
+                add_war_support =-0.05
+		create_country_leader= {
+                name = "Yellow Selim II"
+                desc = "POLITICS_JANE_GREY_DESC" 
+                picture = "nophoto.dds"
+                expire = "1965.1.1" 
+                ideology = falangism
+                traits = {
+                }
+
+	}
+  }
+}
+##Event: Poland wishes to force us into a Commonwealth!##########DOESN'T WORK########
+country_event = {
+	id = anewera.19
+	title = anewera.19.title
+	desc = anewera.19.desc
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		LIT = {has_global_flag= POL_commonwealth}
+	}
+	
+	option = {
+		name = anewera.19.a
+		ai_chance = { factor = 50}
+		POL = {annex_country= {
+                target = LIT 
+}
+}
+	}
+	option = {
+		name = anewera.19.b
+		ai_chance = { factor = 50}
+	}
+}
+##Event: Poland has declared war on us!##########DOESN'T WORK########
+country_event = {
+	id = anewera.20
+	title = anewera.20.title
+	desc = anewera.20.desc
+	picture = GFX_news_event_ger_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		LIT = {has_global_flag= POL_annexation}
+	}
+	
+	option = {
+		name = anewera.20.a
+		ai_chance = { factor = 100}
+		add_war_support= 0.1
+	}
+}
+##Event: Treaty Of Constantinople
+country_event = {
+	id = anewera.21
+	title = anewera.21.title
+	desc = anewera.21.desc
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.21.a
+		ai_chance = { factor = 70}
+		set_country_flag = ACCEPTED_OTTOMAN_PROTECTION_FRA
+                TUR = { give_guarantee = FRA }
+	}
+	
+	option = {
+		name = anewera.21.b
+		ai_chance = { factor = 30}
+		country_event = anewera.22
+	}
+}
+##Event: France Rejects!
+country_event = {
+	id = anewera.22
+	title = anewera.22.title
+	desc = anewera.22.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes 
+	
+	option = {
+		name = anewera.22.a
+		ai_chance = { factor = 100}
+		add_political_power = -5
+  }
+}
+##Event: Yemen Rebellion
+country_event = {
+	id = anewera.23
+	title = anewera.23.title
+	desc = anewera.23.desc
+	picture = GFX_report_event_yugoslavia_partisans
+	fire_only_once = yes
+	trigger = {
+        date > 1567.3.2
+        original_tag = TUR
+       hidden_effect = {
+       YEM = {
+       transfer_state = ROOT
+       transfer_state = ROOT
+       load_OOB = YEM
+       }
+	   }
+	}
+	option = {
+		name = anewera.23.a
+		ai_chance = { factor = 100}
+		YEM = {
+		transfer_state = 898
+		load_OOB = YEM_1936
+		}
+		declare_war_on= { 
+                target =  YEM
+                type = annex_everything 
+}
+	}
+}
+##Event: Ottomans want to make aggrement on trade
+country_event = {
+	id = anewera.24
+	title = anewera.24.title
+	desc = anewera.24.desc
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.24.a
+		ai_chance = { factor = 50}
+		TUR = { country_event = anewera.25 }
+	}
+	
+	option = {
+		name = anewera.24.b
+		ai_chance = { factor = 50}
+		TUR = { country_event = anewera.26 }
+	}
+}
+##Event: Kanem-Bornu accepts to make aggrement
+country_event = {
+	id = anewera.25
+	title = anewera.25.title
+	desc = anewera.25.desc
+	picture = GFX_report_event_soviet_japanese_pact
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.25.a
+		ai_chance = { factor = 100}
+		#Benefit ideas for Ottoman Empire and Kanem-Bornu
+	}
+}
+##Event: Kanem-Bornu rejects to make aggrement
+country_event = {
+	id = anewera.26
+	title = anewera.26.title
+	desc = anewera.26.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.26.a
+		ai_chance = { factor = 100}
+		add_political_power = -25
+                add_stability = -0.01
+	}
+}
+##Event: Ottomans wanted to renewal treaty of the Constantinople
+country_event = {
+	id = anewera.27
+	title = anewera.27.title
+	desc = anewera.27.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.27.a
+		ai_chance = { factor = 50}
+		diplomatic_relation = { country = AUS relation = non_aggression_pact }
+	}
+	
+	option = {
+		name = anewera.27.b
+		ai_chance = { factor = 50}
+		TUR = { country_event = anewera.28 }
+	}
+}
+##Event: Austria rejects to renew treaty
+country_event = {
+	id = anewera.28
+	title = anewera.28.title
+	desc = anewera.28.desc
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.28.a
+		ai_chance = { factor = 50}
+		add_political_power = -75
+	}
+	
+	option = {
+		name = anewera.28.b
+		ai_chance = { factor = 50}
+		create_wargoal= { 
+                type = annex_everything 
+                target = AUS
+}
+	}
+}
+##Event: Holy Roman Empire's Conference Crisis
+country_event = {
+	id = anewera.31
+	title = anewera.31.title
+	desc = anewera.31.desc
+	picture = GFX_report_event_spr_solidify_the_frontlines
+	fire_only_once = yes
+	trigger = {
+        OR = {
+        tag = DIE 
+        tag = HLS 
+        tag = HAM 
+        tag = LUB 
+        tag = SAL
+        tag = TRI
+	tag = DOR
+        tag = MEK 
+        tag = POM 
+        tag = SAX 
+        tag = THU 
+        tag = LUN 
+        tag = VER 
+        tag = BRE 
+        tag = OLD 
+        tag = MUN 
+        tag = BRU 
+        tag = CLG 
+        tag = KLE 
+        tag = TER
+        tag = HES 
+        tag = FRK 
+	tag = EFR
+        tag = LOR 
+        tag = ALS 
+        tag = PLT
+        tag = BAD 
+        tag = RAV 
+        tag = WUR 
+        tag = ULM 
+	 tag = LIE
+        tag = SLA
+        tag = BAY 
+        tag = ANS 
+        tag = MAI 
+        tag = WRZ 
+        tag = AUS
+        date > 1954.1.1
+		}
+	} 
+	
+	option = {
+		name = anewera.31.a
+		ai_chance = { factor = 100}
+		add_stability= -0.25
+                custom_effect_tooltip = SOON_WILL_BE_WRITTEN
+	}
+}
+##Event: Fall Of Interim
+country_event = {
+	id = anewera.32
+	title = anewera.32.title
+	desc = anewera.32.desc
+	picture = GFX_report_event_soldiers_marching
+	fire_only_once = yes
+	trigger = {
+      OR = {
+        tag = DIE 
+        tag = HLS 
+        tag = HAM 
+        tag = LUB 
+	    tag = SAL
+	    tag = TRI
+	    tag = DOR
+        tag = MEK 
+        tag = POM 
+        tag = SAX 
+        tag = THU 
+        tag = LUN 
+        tag = VER 
+        tag = BRE 
+        tag = OLD 
+        tag = MUN 
+        tag = BRU 
+        tag = CLG 
+        tag = KLE 
+        tag = TER
+        tag = HES 
+        tag = FRK 
+	    tag = EFR
+        tag = LOR 
+        tag = ALS 
+        tag = PLT
+        tag = BAD 
+        tag = RAV 
+        tag = WUR 
+        tag = ULM 
+	    tag = LIE
+	    tag = SLA
+        tag = BAY 
+        tag = ANS 
+        tag = MAI 
+        tag = WRZ 
+		tag = AUS
+		date > 1552.1.1
+		 }
+		}
+	option = {
+		name = anewera.32.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: Passau Peace Treaty
+country_event = {
+	id = anewera.33
+	title = anewera.33.title
+	desc = anewera.33.desc
+	picture = GFX_report_event_spr_republican_old_volunteers
+	fire_only_once = yes
+	trigger = {
+      OR = {
+        tag = DIE 
+        tag = HLS 
+        tag = HAM 
+        tag = LUB 
+	    tag = SAL
+	    tag = TRI
+	    tag = DOR
+        tag = MEK 
+        tag = POM 
+        tag = SAX 
+        tag = THU 
+        tag = LUN 
+        tag = VER 
+        tag = BRE 
+        tag = OLD 
+        tag = MUN 
+        tag = BRU 
+        tag = CLG 
+        tag = KLE 
+        tag = TER
+        tag = HES 
+        tag = FRK 
+	    tag = EFR
+        tag = LOR 
+        tag = ALS 
+        tag = PLT
+        tag = BAD 
+        tag = RAV 
+        tag = WUR 
+        tag = ULM 
+	    tag = LIE
+	    tag = SLA
+        tag = BAY 
+        tag = ANS 
+        tag = MAI 
+        tag = WRZ 
+		tag = AUS
+		date > 1552.8.1
+		 }
+		}
+	option = {
+		name = anewera.33.a
+		ai_chance = { factor = 100}
+		add_political_power = -1
+add_political_power = 1
+	}
+}
+##Event: Peace Of Augsburg
+country_event = {
+	id = anewera.34
+	title = anewera.34.title
+	desc = anewera.34.desc
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	trigger = {
+      OR = {
+        tag = DIE 
+        tag = HLS 
+        tag = HAM 
+        tag = LUB 
+	    tag = SAL
+	    tag = TRI
+	    tag = DOR
+        tag = MEK 
+        tag = POM 
+        tag = SAX 
+        tag = THU 
+        tag = LUN 
+        tag = VER 
+        tag = BRE 
+        tag = OLD 
+        tag = MUN 
+        tag = BRU 
+        tag = CLG 
+        tag = KLE 
+        tag = TER
+        tag = HES 
+        tag = FRK 
+	    tag = EFR
+        tag = LOR 
+        tag = ALS 
+        tag = PLT
+        tag = BAD 
+        tag = RAV 
+        tag = WUR 
+        tag = ULM 
+	    tag = LIE
+	    tag = SLA
+        tag = BAY 
+        tag = ANS 
+        tag = MAI 
+        tag = WRZ 
+		date > 1555.9.1
+		 }
+		}
+	option = {
+		name = anewera.34.a
+		ai_chance = { factor = 50}
+		add_ideas = reformed
+	}
+	option = {
+		name = anewera.34.b
+		ai_chance = { factor = 50}
+		add_ideas = catholic
+	}
+}
+##Event: Counter-Revolt Failed!
+country_event = {
+	id = anewera.35
+	title = anewera.35.title
+	desc = anewera.35.desc
+	picture = GFX_report_event_hungary_gains_transylvania
+	fire_only_once = yes
+	trigger = {
+		date > 1555.1.1
+original_tag = SWI
+	}
+	option = {
+		name = anewera.35.a
+		ai_chance = { factor = 100}
+		add_manpower = -1000
+add_stability = -0.05
+add_war_support = -0.05
+	}
+}
+##Event: Weird Claims to Charles III
+country_event = {
+	id = anewera.36
+	title = anewera.36.title
+	desc = anewera.36.desc
+	picture = GFX_report_event_us_panay_demands
+	fire_only_once = yes
+	trigger = {
+		date > 1560.1.1
+is_in_faction_with = ITA
+original_tag = SWI
+	}
+	option = {
+		name = anewera.36.a
+		ai_chance = { factor = 100}
+		add_state_claim = 831
+	}
+}
+##Event: Are Catholic Cantons still in charge?
+country_event = {
+	id = anewera.37
+	title = anewera.37.title
+	desc = anewera.37.desc
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	trigger = {
+		date > 1551.1.1
+original_tag = SWI
+	}
+	option = {
+		name = anewera.37.a
+		ai_chance = { factor = 50}
+		add_stability = -0.05
+		add_political_power = 15
+	}
+	option = {
+		name = anewera.37.b
+		ai_chance = { factor = 50}
+		add_stability = 0.05
+		add_political_power = -15
+	}
+}
+##Event: Peace Of Augsburg's Side Of The Swiss
+country_event = {
+	id = anewera.38
+	title = anewera.38.title
+	desc = anewera.38.desc
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	trigger = {
+        	tag = SWI
+		date > 1555.9.1
+	}
+	option = {
+		name = anewera.38.a
+		ai_chance = { factor = 100}
+		add_ideas = reformed
+		add_stability = 0.05
+	}
+}
+##Event: Counter-Revolution Attempts!
+country_event = {
+	id = anewera.39
+	title = anewera.39.title
+	desc = anewera.39.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	fire_only_once = yes
+	trigger = {
+		date > 1560.1.1
+original_tag = SWI
+	}
+	option = {
+		name = anewera.39.a
+		ai_chance = { factor = 50}
+		hidden_effect = {
+
+change_tag_from = D01
+start_civil_war = {
+    ideology = fascism
+    size = 0.9
+    capital = 3
+} } }
+	option = {
+		name = anewera.39.b
+		ai_chance = { factor = 50}
+		add_political_power = -25
+add_stability = 0.01
+	}
+}
+##Event: Revolution in the Switzerland..
+country_event = {
+	id = anewera.40
+	title = anewera.40.title
+	desc = anewera.40.desc
+	picture = GFX_report_event_spr_franco_victory
+	fire_only_once = yes
+	trigger = {
+		date > 1550.1.1
+        tag = SWI
+	}
+	option = {
+		name = anewera.40.a
+		ai_chance = { factor = 0}
+		hidden_effect = {
+start_civil_war = {
+    ideology = democratic
+    size = 0.9
+    capital = 3
+} } }
+
+	
+	option = {
+		name = anewera.40.b
+		ai_chance = { factor = 10}
+		add_stability = 0.05
+	}
+} 
+##Event: The Nobility are Split!
+country_event = {
+	id = anewera.41
+	title = anewera.41.title
+	desc = anewera.41.desc
+	picture = GFX_report_event_spr_spanish_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag= POL_PRU_independence
+	}
+	option = {
+		name = anewera.41.a
+		ai_chance = { factor = 100}
+		set_global_flag= POL_executed
+set_stability= 0.4
+	}
+}
+##Event: Outdated Training
+country_event = {
+	id = anewera.42
+	title = anewera.42.title
+	desc = anewera.42.desc
+	picture = GFX_report_event_spr_italian_volunteers
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag= POL_monty_training
+	}
+	option = {
+		name = anewera.42.a
+		ai_chance = { factor = 50}
+		add_political_power = 5
+	}
+	option = {
+		name = anewera.42.b
+		ai_chance = { factor = 50}
+		add_war_support= -0.05
+	}
+}
+##Event: Chocolate Has Arrived!
+news_event = {
+	id = anewera.43
+	title = anewera.43.title
+	desc = anewera.43.desc
+	picture = GFX_news_event_chocolate
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = anewera.43.a
+		trigger = { original_tag = SPR }
+		ai_chance = { factor = 100}
+    }
+	
+	option = {
+	    name = anewera.43.a
+		trigger = { NOT = { original_tag = SPR } }
+	}
+}
+##Event: The Unthinkable Alliance
+country_event = {
+	id = anewera.44
+	title = anewera.44.title
+	desc = anewera.44.desc
+	picture = GFX_report_event_vienna_award_hungary
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		has_completed_focus= ENG_Faction_with_Scotland
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = {
+		name = anewera.44.a
+		ai_chance = { factor = 100}
+		create_faction= "ENG_SCO_PACT"
+add_to_faction= SCO
+	}
+}
+##Event: Spanish forces launched an attack in Algeria!
+country_event = {
+	id = anewera.45
+	title = anewera.45.title
+	desc = anewera.45.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	fire_only_once = yes
+	trigger = {
+		SPR = { has_war_with = FRA }
+	}
+	option = {
+		name = anewera.45.a
+		ai_chance = { factor = 100}
+		add_war_support = 0.05
+		army_experience = 5
+	}
+}
+
+##Event: Charles V Abdicates!
+news_event = {
+	id = anewera.46
+	title = anewera.46.title
+	desc = anewera.46.desc
+	picture = GFX_news_event_charles_abdication
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = anewera.46.a
+		trigger = { original_tag = SPR }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Philip II" 
+            desc = "POLITICS_PHILIP_DESC" 
+            picture = "Philip_II.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {the_prudent}
+        }
+    }
+	
+	option = {
+	    name = anewera.46.a
+		trigger = { NOT = { original_tag = SPR } }
+	}
+}
+
+##Event: Charles V Is Dead!
+news_event = {
+	id = anewera.47
+	title = anewera.47.title
+	desc = anewera.47.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+
+	option = {
+		name = anewera.47.a
+		trigger = { original_tag = SPR }
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = anewera.47.a
+		trigger = { NOT = { original_tag = SPR } }
+	}
+}
+##Event: Henri II Declares War on Charles V!
+news_event = {
+	id = anewera.48
+	title = anewera.48.title
+	desc = anewera.48.desc
+	picture = GFX_report_event_spr_army_of_africa
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = {
+		name = anewera.48.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: Founding of St. Augustine
+news_event = {
+	id = anewera.49
+	title = anewera.49.title
+	desc = anewera.49.desc
+	picture = GFX_event_test
+	major = yes
+	trigger = {
+		date > 1565.8.9
+	}
+	mean_time_to_happen = {
+		days = 48
+	}
+	option = {
+		name = anewera.49.a
+		ai_chance = { factor = 100}
+		add_war_support = 0.05
+add_stability = 0.10
+	}
+}
+##Event: Treaty Of Augsburg's Effects On Austria
+country_event = {
+	id = anewera.50
+	title = anewera.50.title
+	desc = anewera.50.desc
+	picture = GFX_report_event_spr_franco_victory
+	fire_only_once = yes
+	trigger = {
+		original_tag = AUS
+date > 1555.1.1
+	}
+	option = {
+		name = anewera.50.a
+		ai_chance = { factor = 100}
+		add_political_power = -25
+add_stability= -0.05
+	}
+}
+##Event: Naples Asks For Guarantee To Our Muslim Empire
+country_event = {
+	id = anewera.51
+	title = anewera.51.title
+	desc = anewera.51.desc
+	picture = GFX_report_event_vienna_award_negotiations
+	is_triggered_only = yes
+	option = {
+		name = anewera.51.a
+		ai_chance = { factor = 50}
+		give_guarantee = NAP
+	}
+	option = {
+		name = anewera.51.b
+		ai_chance = { factor = 50}
+		NAP = { country_event = anewera.54 }
+	}
+}
+##Event: Naples Asks For Guarantee To Our Christian Empire
+country_event = {
+	id = anewera.52
+	title = anewera.52.title
+	desc = anewera.52.desc
+	picture = GFX_report_event_vienna_award_negotiations
+	is_triggered_only = yes
+	option = {
+		name = anewera.52.a
+		ai_chance = { factor = 50}
+		give_guarantee = NAP
+	}
+	option = {
+		name = anewera.52.b
+		ai_chance = { factor = 50}
+		NAP = { country_event = anewera.55 }
+	}
+}
+##Event: Ottoman Empire doesn't lend guarantees
+country_event = {
+	id = anewera.53
+	title = anewera.53.title
+	desc = anewera.53.desc
+	picture = GFX_report_event_soviet_finnish_pact
+	is_triggered_only = yes
+	option = {
+		name = anewera.53.a
+		ai_chance = { factor = 100}
+		add_political_power = -15
+	}
+}
+##Event: France doesn't lend guarantees
+country_event = {
+	id = anewera.54
+	title = anewera.54.title
+	desc = anewera.54.desc
+	picture = GFX_report_event_soviet_finnish_pact
+	is_triggered_only = yes
+	option = {
+		name = anewera.54.a
+		ai_chance = { factor = 100}
+		add_political_power = -15
+	}
+}
+##Event: Sami People Offer Lappland
+country_event = {
+	id = anewera.55
+	title = anewera.55.title
+	desc = anewera.55.desc
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+SWE = { owns_state = 666 NOT = { has_war_with = SMI } }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = anewera.55.a
+		ai_chance = { factor = 50}
+		SWE = { give_guarantee = SMI }
+	}
+	option = {
+		name = anewera.55.b
+		ai_chance = { factor = 50}
+		SWE = { remove_state_core = 666 }
+	}
+}
+##Event: Sapmi Gives Murmansk
+country_event = {
+	id = anewera.56
+	title = anewera.56.title
+	desc = anewera.56.desc
+	picture = GFX_report_event_soviet_purge_officers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+RUS = { owns_state = 213 NOT = { has_war_with = SMI }
+     }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = anewera.56.a
+		ai_chance = { factor = 50}
+		give_guarantee = SMI
+	}
+	option = {
+		name = anewera.56.b
+		ai_chance = { factor = 50}
+		remove_state_core = 213
+	}
+}
+##Event: Livonian Confederation Requests Siauliai
+country_event = {
+	id = anewera.57
+	title = anewera.57.title
+	desc = anewera.57.desc
+	picture = GFX_report_event_spr_franco_generals
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+189 = { is_core_of = LIV }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = anewera.57.a
+		ai_chance = { factor = 50}
+		LIV = { transfer_state = 189 }
+LIT = { add_political_power = 75 }
+	}
+	option = {
+		name = anewera.57.b
+		ai_chance = { factor = 50}
+		LIV = { add_political_power = 75 }
+	}
+}
+##Event: Livonian Confederation Offers Steel for Alliance
+country_event = {
+	id = anewera.58
+	title = anewera.58.title
+	desc = anewera.58.desc
+	picture = GFX_report_event_eng_blackshirt_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+has_resources_amount = { resource = steel amount > 1 state = 206 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = anewera.58.a
+		ai_chance = { factor = 50}
+		LIT = { give_guarantee = LIV }
+LIV = { give_guarantee = LIT }
+	}
+	option = {
+		name = anewera.58.b
+		ai_chance = { factor = 50}
+		add_resource = { type = steel amount = -2 state = 206 }
+add_resource = { type = steel amount = 2 state = 190 }
+	}
+}
+
+##Event: Deposition of Jane Grey
+news_event = {
+	id = anewera.59
+	title = anewera.59.title
+	desc = anewera.59.desc
+	picture = GFX_news_event_deposition_of_jane
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = anewera.59.a
+		trigger = { original_tag = ENG }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Mary I" 
+            desc = "POLITICS_MARY_DESC" 
+            picture = "portrait_mary_i.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {the_bloody}
+        }
+    }
+	
+	option = {
+	    name = anewera.59.a
+		trigger = { NOT = { original_tag = ENG } }
+	}
+}
+
+##Event: Execution Of The Lady Jane
+news_event = {
+	id = anewera.60
+	title = anewera.60.title
+	desc = anewera.60.desc
+	picture = GFX_news_event_jane_death
+    major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = anewera.60.a
+		trigger = { original_tag = ENG } 
+		ai_chance = { factor = 100}
+		add_stability = -0.05
+	}
+	
+	option = {
+	    name = anewera.60.a
+		trigger = { NOT = { original_tag = ENG } }
+	}
+}
+
+##Event: Death of Mary I
+news_event = {
+	id = anewera.61
+	title = anewera.61.title
+	desc = anewera.61.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.61.a
+		trigger = { original_tag = ENG } 
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Elizabeth I" 
+            desc = "POLITICS_ELIZABETH_DESC" 
+            picture = "portrait_elizabeth_i.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {the_virgin_queen}
+        }
+    }
+	
+	option = {
+	    name = anewera.61.a
+		trigger = { NOT = { original_tag = ENG } }
+	}
+}
+
+##Event: Mary Queen of Scots tries to take over Elizabeth I
+news_event = {
+	id = anewera.62
+	title = anewera.62.title
+	desc = anewera.62.desc
+	picture = GFX_report_event_germany_politician_handshake
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.62.a
+		ai_chance = { factor = 90}
+		add_stability = -0.05
+		add_political_power = -25
+		create_country_leader= {
+			name = "Mary Queen Of Scots"
+			desc = "POLITICS_JANE_GREY_DESC" 
+			picture = "nophoto.dds"
+			expire = "1965.1.1" 
+			ideology = falangism
+			traits = {
+			}	
+		}
+	}
+	option = {
+		name = anewera.62.b
+		ai_chance = { factor = 10}
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+##Event: Geography and Astronomy Books Burned
+country_event = {
+	id = anewera.63
+	title = anewera.63.title
+	desc = anewera.63.desc
+	picture = GFX_report_event_spr_nationalists_capture_tank
+	fire_only_once = yes
+	trigger = {
+		original_tag = ENG
+date > 1552.1.1
+	}
+	option = {
+		name = anewera.63.a
+		ai_chance = { factor = 100}
+		add_stability = -0.05
+		add_political_power = -75
+add_war_support = 0.05
+	}
+}
+##Event: War Blows Up In The North
+country_event = {
+	id = anewera.64
+	title = anewera.64.title
+	desc = anewera.64.desc
+	picture = GFX_report_event_RCMP
+	fire_only_once = yes
+	trigger = {
+		RUS = { has_war_with = POL }
+RUS = { has_war_support > 0.15 }
+POL = { has_war_support > 0.15 }
+SWE = { has_war_support > 0.15 }
+OR = { 
+original_tag = SWE 
+original_tag = POL
+original_tag = RUS
+} }
+
+	option = {
+		name = anewera.64.a
+		ai_chance = { factor = 100}
+		add_war_support = 0.1
+add_ideas = war_economy
+		hidden_effect = { news_event = anewera.65 } 
+add_manpower = 50000
+set_global_flag = POPUP_NORTHERN_BATTLE
+	}
+}
+##Event: Northern Challenge
+news_event = {
+	id = anewera.65
+	title = anewera.65.title
+	desc = anewera.65.desc
+	picture = GFX_news_event_ast_army
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = anewera.65.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: Beginning of The Livonian War
+news_event = {
+	id = anewera.66
+	title = anewera.66.title
+	desc = anewera.66.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		RUS = { has_war_with = LIV }
+RUS = { has_war_support > 0.15 }
+original_tag = RUS
+} 
+	
+	option = {
+		name = anewera.66.a
+		ai_chance = { factor = 100}
+		add_stability = -0.05
+	}
+}
+##Event: Mary I and Philip II Marries
+news_event = {
+	id = anewera.67
+	title = anewera.67.title
+	desc = anewera.67.desc
+	picture = GFX_report_event_spr_franco_victory
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.67.a
+		ai_chance = { factor = 100}
+		add_stability = 0.05
+add_political_power = 25
+	}
+}
+##Event: The Protestant Coup
+news_event = {
+	id = anewera.68
+	title = anewera.68.title
+	desc = anewera.68.desc
+	picture = GFX_report_event_lithuania_army
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.68.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: The Protestants Storm Vienna!
+country_event = {
+	id = anewera.69
+	title = anewera.69.title
+	desc = anewera.69.desc
+	picture = GFX_report_event_dutch_soldiers_indonesia
+	is_triggered_only = yes
+	option = {
+		name = anewera.69.a
+		ai_chance = { factor = 50}
+		release_puppet= SPA
+	}
+	option = {
+		name = anewera.69.b
+		ai_chance = { factor = 50}
+		change_tag_from= PCA
+	}
+}
+##Event: Pope's Declaration About Crusade
+news_event = {
+	id = anewera.70
+	title = anewera.70.title
+	desc = anewera.70.desc
+	picture = GFX_report_event_chinese_soldiers_city_ruin
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		PAP = { has_war_with = TUR }
+OR = {
+original_tag = PAP
+original_tag = POL
+original_tag = FRA
+original_tag = AUS
+original_tag = PRS
+original_tag = ITA
+} } 
+	option = {
+		name = anewera.70.a
+		ai_chance = { factor = 100}
+		add_political_power = 25 
+		hidden_effect = { news_event = anewera.71 } 
+set_global_flag = CRUSADE_AGAINST_TUR
+create_wargoal= { 
+type = annex_everything 
+target = TUR
+}
+	}
+}
+##Event: Deus Vult!
+news_event = {
+	id = anewera.71
+	title = anewera.71.title
+	desc = anewera.71.desc
+	picture = GFX_report_event_generic_riot
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = CRUSADE_AGAINST_TUR
+	}
+	option = {
+		name = anewera.71.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: Protestant Cooliation In The Austria Uprises!
+country_event = {
+	id = anewera.72
+	title = anewera.72.title
+	desc = anewera.72.desc
+	picture = GFX_report_event_spr_carlists
+	fire_only_once = yes
+	trigger = {
+		original_tag = AUS
+date > 1555.7.1
+	}
+	option = {
+		name = anewera.72.a
+		ai_chance = { factor = 50}
+		add_stability = -0.15
+add_war_support = -0.05
+add_manpower = -5000
+	}
+	option = {
+		name = anewera.72.b
+		ai_chance = { factor = 50}
+		change_tag_from= D01
+start_civil_war = {
+	ideology = falangism
+	size = 0.5
+}
+	}
+}
+##Event: War Or Peace?
+country_event = {
+	id = anewera.74
+	title = anewera.74.title
+	desc = anewera.74.desc
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes
+	option = {
+		name = anewera.74.a
+		ai_chance = { factor = 45}
+		HLS = { create_faction = HOL_PACT } 
+		HLS = { add_to_faction = ROOT } 
+DEN = { 
+create_wargoal= { 
+type = annex_everything 
+target = ROOT
+} }  }
+
+	option = {
+		name = anewera.74.b
+		ai_chance = { factor = 55}
+		DEN = { 
+annex_country= {
+ target = ROOT
+} }
+	}
+}
+##Event: Poland Demands Annexation!
+country_event = {
+	id = anewera.75
+	title = anewera.75.title
+	desc = anewera.75.desc
+	picture = GFX_report_event_spr_italian_volunteers
+	is_triggered_only = yes
+	option = {
+		name = anewera.75.a
+		ai_chance = { factor = 50}
+		POL = {
+annex_country= {
+ target = PRE transfer_troops = yes
+} }
+	}
+	option = {
+		name = anewera.75.b
+		ai_chance = { factor = 50}
+		POL = {
+create_wargoal= { 
+type = annex_everything 
+target = PRE
+} }
+	}
+}
+##Event: Dutch People Demands Reforms
+country_event = {
+	id = anewera.76
+	title = anewera.76.title
+	desc = anewera.76.desc
+	picture = GFX_report_event_french_resistance_02
+	fire_only_once = yes
+	trigger = {
+		tag = SPR 
+OR = {
+has_global_flag = DUTCH_REVOLT_DEMANDS
+}
+date > 1958.1.1  
+}
+	option = {
+		name = anewera.76.a
+		ai_chance = { factor = 50}
+		add_stability = -0.05
+add_political_power = -25
+country_event = anewera.77 days = 5
+	}
+	option = {
+		name = anewera.76.b
+		ai_chance = { factor = 50}
+		add_stability = -0.05
+add_political_power = -100
+country_event = anewera.79 days = 5
+	}
+}
+##Event: Allowing Calvanism? (Reforms)
+country_event = {
+	id = anewera.77
+	title = anewera.77.title
+	desc = anewera.77.desc
+	picture = GFX_report_event_hungary_parliament
+	is_triggered_only = yes
+	option = {
+		name = anewera.77.a
+		ai_chance = { factor = 50}
+		add_stability = 0.05 
+country_event = anewera.78 days = 5
+	}
+	option = {
+		name = anewera.77.b
+		ai_chance = { factor = 50}
+		country_event = anewera.79 days = 5
+add_stability = -0.05
+add_political_power = -100
+	}
+}
+##Event: Dutch Representatives Demand Independence
+country_event = {
+	id = anewera.78
+	title = anewera.78.title
+	desc = anewera.78.desc
+	picture = GFX_report_event_soviet_german_soldier_handshake
+	is_triggered_only = yes
+	option = {
+		name = anewera.78.a
+		ai_chance = { factor = 50}
+
+release_puppet = HOL
+add_stability = 0.05
+add_political_power = 100
+	}
+	option = {
+		name = anewera.78.b
+		ai_chance = { factor = 50}
+		country_event = anewera.79 days = 5
+add_stability = -0.05
+add_political_power = -100
+	}
+}
+##Event: Iconoclasm
+country_event = {
+	id = anewera.79
+	title = anewera.79.title
+	desc = anewera.79.desc
+	picture = GFX_report_event_manchukuo_army_2
+	is_triggered_only = yes
+	option = {
+		name = anewera.79.a
+		ai_chance = { factor = 100}
+		army_experience = 25
+		country_event = anewera.80 days = 5
+navy_experience = 25
+add_political_power = 75
+add_war_support = 0.1
+	}
+}
+
+
+##Event: Dutch Revolt!
+country_event = {
+	id = anewera.80
+	title = anewera.80.title
+	desc = anewera.80.desc
+	picture = GFX_report_event_spr_solidify_the_frontlines
+	is_triggered_only = yes
+	option = {
+		name = anewera.80.a
+		ai_chance = { factor = 100}
+
+release_puppet = HOL
+declare_war_on= { 
+target = HOL 
+type = annex_everything 
+}
+add_war_support = 0.05
+add_political_power = 25
+	}
+	option = {
+		name = anewera.80.b
+		ai_chance = { factor = 100}
+
+release_puppet = HOL
+add_stability = 0.05
+add_political_power = -5
+add_war_support = -0.15
+	}
+}
+
+##Event: Austrian Demands
+country_event = {
+	id = anewera.81
+	title = anewera.81.title
+	desc = anewera.81.desc
+	picture = GFX_report_event_ast_planning
+	is_triggered_only = yes
+	option = {
+		name = anewera.81.a
+		ai_chance = { factor = 50}
+
+    AUS = { annex_country = { target = ROOT } 
+     }	
+	}
+	option = {
+		name = anewera.81.b
+		ai_chance = { factor = 1}
+
+    AUS = { puppet = ROOT } 
+	}
+	option = {
+		name = anewera.81.c
+		ai_chance = { factor = 50}
+
+    AUS = { country_event = anewera.82 } 
+	}
+}
+
+##Event: Austrian Rejection
+country_event = {
+	id = anewera.82
+	title = anewera.82.title
+	desc = anewera.82.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	option = {
+		name = anewera.82.a
+		ai_chance = { factor = 100}
+
+     add_political_power = -15
+	}
+}
+
+##Event: Treaty of Boulogne
+news_event = {
+	id = anewera.83
+	title = anewera.83.title
+	desc = anewera.83.desc
+	picture = GFX_news_event_boulogne
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.83.a
+		ai_chance = { factor = 100}
+	}
+}
+##Event: An earthquake as struck Shaanxi!
+country_event = {
+	id = anewera.84
+	title = anewera.84.title
+	desc = anewera.84.desc
+	picture = GFX_report_event_journalists_speech
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		date = 1556.1.23
+                 original_tag = CHI
+	}
+	
+	option = {
+		name = anewera.84.a
+		ai_chance = { factor = 100}
+			622 = {
+				add_manpower = -830000
+			}
+		}
+	}
+
+##Event: Passing of John III
+news_event = {
+	id = anewera.85
+	title = anewera.85.title
+	desc = anewera.85.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.85.a
+		trigger = { original_tag = POR }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Sebastian" 
+            desc = "POLITICS_SEBASTIAN_DESC" 
+            picture = "portrait_sebastian_i.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {inexperienced_monarch}
+        }
+    }
+	
+	option = {
+	    name = anewera.85.a
+		trigger = { NOT = { original_tag = POR } }
+	}
+}
+##Event: Franco-Ottoman Alliance
+news_event = {
+	id = anewera.86
+	title = anewera.86.title
+	desc = anewera.86.desc
+	picture = GFX_news_event_franco_ottoman_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.86.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Death of Pope Julius III
+news_event = {
+	id = anewera.87
+	title = anewera.87.title
+	desc = anewera.87.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Julius III"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.87.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		remove_ideas = pro_habsburg_sentiment
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.87.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}
+##Event: Death of Pope Marcellus II
+news_event = {
+	id = anewera.88
+	title = anewera.88.title
+	desc = anewera.88.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Marcellus II"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.88.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.88.a
+		trigger = { NOT = { original_tag = PAP }}
+    }
+}	
+##Event: Death of Pope Paul IV
+news_event = {
+	id = anewera.89
+	title = anewera.89.title
+	desc = anewera.89.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Paul IV"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.89.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		remove_ideas = pro_valois_sentiment
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.89.a
+		trigger = { NOT = { original_tag = PAP }}
+    }
+}
+##Event: Election of Pope Marcellus II
+news_event = {
+	id = anewera.90
+	title = anewera.90.title
+	desc = anewera.90.desc
+	picture = GFX_news_event_generic_pope_coronation
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    check_variable = {
+            var = SPR.eng_papal_influence
+            value = FRA.ger_papal_influence
+            compare = greater_than_or_equals
+        }
+	}
+	
+    option = {
+		name = anewera.90.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Marcellus II" 
+            desc = "POLITICS_MARCELLLUS_DESC" 
+            picture = "portrait_marcellus_ii.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {his_holiness_the_pope}
+        }
+		clr_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.90.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}	
+##Event: Election of Pope Paul IV
+news_event = {
+	id = anewera.91
+	title = anewera.91.title
+	desc = anewera.91.desc
+	picture = GFX_news_event_generic_pope_coronation
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+		check_variable = {
+            var = FRA.ger_papal_influence
+            value = SPR.eng_papal_influence
+            compare = greater_than_or_equals 
+        }
+	}
+	
+    option = {
+		name = anewera.91.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Paul IV" 
+            desc = "POLITICS_PAUL_DESC" 
+            picture = "portrait_paul_iv.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {his_holiness_the_pope}
+        }
+		add_ideas = pro_valois_sentiment
+		clr_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.91.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}	
+##Event: Election of Pope Julius III
+news_event = {
+	id = anewera.92
+	title = anewera.92.title
+	desc = anewera.92.desc
+	picture = GFX_news_event_generic_pope_coronation
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.92.a
+		ai_chance = { factor = 100}
+		clr_global_flag = pope_has_died
+	}
+}
+
+##Event: Election of Pope Pius IV
+news_event = {
+	id = anewera.93
+	title = anewera.93.title
+	desc = anewera.93.desc
+	picture = GFX_news_event_generic_pope_coronation
+	major = yes
+	is_triggered_only = yes
+	trigger = {}
+	
+    option = {
+		name = anewera.93.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Pius IV" 
+            desc = "POLITICS_PAUL_DESC" 
+            picture = "portrait_pius_iv.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {his_holiness_the_pope}
+        }
+		clr_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.93.a
+		trigger = { NOT = { original_tag = PAP } }
+	}
+}
+
+##Event: Passing of Christian III
+news_event = {
+	id = anewera.94
+	title = anewera.94.title
+	desc = anewera.94.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.94.a
+		trigger = { original_tag = DEN }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Frederick II" 
+            desc = "POLITICS_FREDERICK_DESC" 
+            picture = "portrait_frederick_ii.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+	
+	option = {
+	    name = anewera.94.a
+		trigger = { NOT = { original_tag = DEN } }
+	}
+}
+
+##Event: New Governor of Milan
+country_event = {
+	id = anewera.95
+	title = anewera.95.title
+	desc = anewera.95.desc
+	picture = GFX_report_event_milan
+	fire_only_once = yes
+	trigger = {
+		original_tag = MIL
+        date > 1556.1.16
+	}
+	
+	option = {
+	    name = anewera.95.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Cristoforo Madruzzo" 
+            desc = "POLITICS_CRISTOFORO_DESC" 
+            picture = "cristoforo_madruzzo.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Governor of the Netherlands
+country_event = {
+	id = anewera.96
+	title = anewera.96.title
+	desc = anewera.96.desc
+	picture = GFX_report_event_netherlands
+	fire_only_once = yes
+	trigger = {
+		original_tag = HOL
+        date > 1555.10.1
+	}
+	
+	option = {
+	    name = anewera.96.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Emmanuel Philibert" 
+            desc = "POLITICS_EMMANUEL_DESC" 
+            picture = "portrait_emmanuel_philibert.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Viceroy of New Spain
+country_event = {
+	id = anewera.97
+	title = anewera.97.title
+	desc = anewera.97.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = NSP
+        date > 1550.11.25
+	}
+	
+	option = {
+	    name = anewera.97.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Luis de Velasco" 
+            desc = "POLITICS_LUIS_DESC" 
+            picture = "luis_de_velasco.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Viceroy of Spanish Peru
+country_event = {
+	id = anewera.98
+	title = anewera.98.title
+	desc = anewera.98.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = SPP
+        date > 1550.11.25
+	}
+	
+	option = {
+	    name = anewera.98.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Antonio de Mendoza" 
+            desc = "POLITICS_ANTONIO_DESC" 
+            picture = "antonio_de_mendoza.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Viceroy of Spanish Peru
+country_event = {
+	id = anewera.99
+	title = anewera.99.title
+	desc = anewera.99.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = SPP
+        date > 1552.7.21
+	}
+	
+	option = {
+	    name = anewera.99.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Melchor Bravo de Saravia" 
+            desc = "POLITICS_MELCHOR_DESC" 
+            picture = "melchor_bravo_de_saravia.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Viceroy of Naples
+country_event = {
+	id = anewera.101
+	title = anewera.101.title
+	desc = anewera.101.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = NAP
+        date > 1553.2.21
+	}
+	
+	option = {
+	    name = anewera.101.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Pedro Pacheco de Villena" 
+            desc = "POLITICS_PEDRO_DESC" 
+            picture = "pedro_pacheco_de_villena.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Viceroy of Naples
+country_event = {
+	id = anewera.102
+	title = anewera.102.title
+	desc = anewera.102.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = NAP
+        date > 1556.1.16
+	}
+	
+	option = {
+	    name = anewera.102.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Fernando Álvarez de Toledo" 
+            desc = "POLITICS_FERNANDO_DESC" 
+            picture = "duke_of_alba.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Governor of Milan
+country_event = {
+	id = anewera.103
+	title = anewera.103.title
+	desc = anewera.103.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = MIL
+        date > 1558.1.1
+	}
+	
+	option = {
+	    name = anewera.103.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Gonzalo II Fernández de Córdoba" 
+            desc = "POLITICS_GONZOLO_DESC" 
+            picture = "gonzolo_ii_fernandez_cordoba.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+	
+##Event: Death of Maurice of Saxony
+country_event = {
+	id = anewera.104
+	title = anewera.104.title
+	desc = anewera.104.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = SAX
+        date > 1553.7.9
+	}
+	
+    option = {
+		name = anewera.104.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Augustus" 
+            desc = "POLITICS_AUGUSTUS_DESC" 
+            picture = "augustus_of_saxony.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Henry V of Mecklenburg
+country_event = {
+	id = anewera.105
+	title = anewera.105.title
+	desc = anewera.105.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = MEK
+        date > 1552.2.6
+	}
+	
+    option = {
+		name = anewera.105.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Philip" 
+            desc = "POLITICS_PHILIP_DESC" 
+            picture = "philip_of_mek.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Philip of Mecklenburg 
+country_event = {
+	id = anewera.106
+	title = anewera.106.title
+	desc = anewera.106.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = MEK
+        date > 1557.1.4
+	}
+	
+    option = {
+		name = anewera.106.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "John Albert I" 
+            desc = "POLITICS_JOHN_DESC" 
+            picture = "john_albert_i.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of WIlliam IV of Bavaria
+country_event = {
+	id = anewera.107
+	title = anewera.107.title
+	desc = anewera.107.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = BAY
+        date > 1550.3.7
+	}
+	
+    option = {
+		name = anewera.107.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Albert V" 
+            desc = "POLITICS_ALBERT_DESC" 
+            picture = "portrait_albert_v.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Francesco III of Mantua
+country_event = {
+	id = anewera.108
+	title = anewera.108.title
+	desc = anewera.108.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = MNU
+        date > 1550.2.22
+	}
+	
+    option = {
+		name = anewera.108.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Guglielmo" 
+            desc = "POLITICS_GUGLIELMO_DESC" 
+            picture = "portrait_guglielmo_gonzaga.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Francesco Donato of Venice
+country_event = {
+	id = anewera.109
+	title = anewera.109.title
+	desc = anewera.109.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = VNI
+        date > 1553.5.23
+	}
+	
+    option = {
+		name = anewera.109.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Marcantonio Trivisan" 
+            desc = "POLITICS_MARCANTONIO_DESC" 
+            picture = "marcantonio_trivisan.dds"
+            expire = "1965.1.1" 
+            ideology = liberalism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Marcantonio Trevisan of Venice
+country_event = {
+	id = anewera.110
+	title = anewera.110.title
+	desc = anewera.110.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = VNI
+        date > 1554.5.31
+	}
+	
+    option = {
+		name = anewera.110.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Francesco Venier" 
+            desc = "POLITICS_FRANCESCO_DESC" 
+            picture = "francesco_venier.dds"
+            expire = "1965.1.1" 
+            ideology = liberalism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Francesco Venier of Venice
+country_event = {
+	id = anewera.111
+	title = anewera.111.title
+	desc = anewera.111.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = VNI
+        date > 1556.6.2
+	}
+	
+    option = {
+		name = anewera.111.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Lorenzo Priuli" 
+            desc = "POLITICS_LORENZO_DESC" 
+            picture = "lorenzo_priuli.dds"
+            expire = "1965.1.1" 
+            ideology = liberalism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Lorenzo Priuli of Venice
+country_event = {
+	id = anewera.112
+	title = anewera.112.title
+	desc = anewera.112.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = VNI
+        date > 1559.8.17
+	}
+	
+    option = {
+		name = anewera.112.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Girolamo Priuli" 
+            desc = "POLITICS_GIROLAMO_DESC" 
+            picture = "girolamo_priuli.dds"
+            expire = "1965.1.1" 
+            ideology = liberalism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Ecrole II of Ferrara
+country_event = {
+	id = anewera.113
+	title = anewera.113.title
+	desc = anewera.113.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = FER
+        date > 1559.10.3
+	}
+	
+    option = {
+		name = anewera.113.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Alfonso II" 
+            desc = "POLITICS_ALFONSO_DESC" 
+            picture = "alfonso_ii.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+
+##Event: Death of Ecrole II of Modena
+country_event = {
+	id = anewera.114
+	title = anewera.114.title
+	desc = anewera.114.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = MOD
+        date > 1559.10.3
+	}
+	
+    option = {
+		name = anewera.114.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Alfonso II" 
+            desc = "POLITICS__DESC" 
+            picture = "alfonso.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: New Governor-General of Brazil
+country_event = {
+	id = anewera.115
+	title = anewera.115.title
+	desc = anewera.115.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = BPC
+        date > 1553.5.1
+	}
+	
+	option = {
+	    name = anewera.115.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Duarte da Costa" 
+            desc = "POLITICS_DUARTE_DESC" 
+            picture = "duarte_da_costa.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: New Governor-General of Brazil
+country_event = {
+	id = anewera.116
+	title = anewera.116.title
+	desc = anewera.116.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = BPC
+        date > 1558.1.3
+	}
+	
+	option = {
+	    name = anewera.116.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Mem de Sá" 
+            desc = "POLITICS_MEM_DESC" 
+            picture = "mem_de_sa.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+        	traits = {}
+        }
+    }
+}
+
+##Event: Death of Charles III of Savoy
+country_event = {
+	id = anewera.117
+	title = anewera.117.title
+	desc = anewera.117.desc
+	picture = GFX_report_event_generic_funeral_icon
+	fire_only_once = yes
+	trigger = {
+		original_tag = SVY
+        date > 1553.8.17
+	}
+	
+    option = {
+		name = anewera.117.a
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Honorat II" 
+            desc = "POLITICS_HONORAT_DESC" 
+            picture = "honorat_ii.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+    }
+}
+
+##Event: Death of Joanna the Mad
+news_event = {
+	id = anewera.118
+	title = anewera.118.title
+	desc = anewera.118.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.118.a
+		trigger = { original_tag = SPR }
+		ai_chance = { factor = 100}
+    }
+	
+	option = {
+	    name = anewera.118.a
+		trigger = { NOT = { original_tag = SPR } }
+	}
+}
+
+##Event: Siena Joins the Valois Alliance
+news_event = {
+	id = anewera.119
+	title = anewera.119.title
+	desc = anewera.119.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.119.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Parma Joins the Valois Alliance
+news_event = {
+	id = anewera.120
+	title = anewera.120.title
+	desc = anewera.120.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.120.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Ferrara Joins the Valois Alliance
+news_event = {
+	id = anewera.121
+	title = anewera.121.title
+	desc = anewera.121.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.121.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Modena Joins the Valois Alliance
+news_event = {
+	id = anewera.122
+	title = anewera.122.title
+	desc = anewera.122.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.122.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Papal States Joins the Valois Alliance
+news_event = {
+	id = anewera.123
+	title = anewera.123.title
+	desc = anewera.123.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.123.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+##Event: Genoa Joins the Habsburg Alliance
+news_event = {
+	id = anewera.124
+	title = anewera.124.title
+	desc = anewera.124.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.124.a
+		ai_chance = { factor = 100 }
+	} 
+}
+
+##Event: Florence Joins the Habsburg Alliance
+news_event = {
+	id = anewera.125
+	title = anewera.125.title
+	desc = anewera.125.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.125.a
+		ai_chance = { factor = 100 }
+	} 
+}
+
+##Event: Papal States Joins the Habsburg Alliance
+news_event = {
+	id = anewera.126
+	title = anewera.126.title
+	desc = anewera.126.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.126.a
+		ai_chance = { factor = 100 }
+	} 
+}
+
+##Event: Brandenburg Joins the Schmalkaldic League
+news_event = {
+	id = anewera.127
+	title = anewera.127.title
+	desc = anewera.127.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.127.a
+		ai_chance = { factor = 100 }
+	} 
+}
+
+##Event: Mecklenburg Joins the Schmalkaldic League
+news_event = {
+	id = anewera.128
+	title = anewera.128.title
+	desc = anewera.128.desc
+	picture = GFX_news_event_generic_alliance
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.128.a
+		ai_chance = { factor = 100 }
+	} 
+}
+
+#large treasure fleet arrives from the indies
+
+country_event = {
+	id = anewera.129
+	title = anewera.129.title
+	desc = anewera.129.desc
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Very Good!"
+		add_timed_idea = {
+		    idea = SPR_large_treasure
+		    days = 180
+		}
+	}
+}
+
+#medium treasure fleet arrives from the indies
+
+country_event = {
+	id = anewera.130
+	title = anewera.130.title
+	desc = anewera.130.desc
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Good!"
+		add_timed_idea = {
+		    idea = SPR_medium_treasure
+		    days = 180
+		}
+	}
+}
+
+#small treasure fleet arrives from the indies
+
+country_event = {
+	id = anewera.131
+	title = anewera.131.title
+	desc = anewera.131.desc
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Is that all?"
+		add_timed_idea = {
+		    idea = SPR_small_treasure
+		    days = 180
+		}
+	}
+}
+
+#lost at sea
+
+country_event = {
+	id = anewera.132
+	title = anewera.132.title
+	desc = anewera.132.desc
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "This is a disaster!"
+	}
+}
+
+##Event: Election of Pope Alexander VII
+news_event = {
+	id = anewera.133
+	title = anewera.133.title
+	desc = anewera.133.desc
+	picture = GFX_news_event_generic_pope_coronation
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = anewera.133.a
+		ai_chance = { factor = 100}
+		clr_global_flag = pope_has_died
+	}
+}
+
+##Event: Death of Pope Alexander VII
+news_event = {
+	id = anewera.134
+	title = anewera.134.title
+	desc = anewera.134.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Alexander VII"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.134.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		remove_ideas = pro_valois_sentiment
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.134.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}
+
+##Event: Election of Pope Paul IV
+news_event = {
+	id = anewera.135
+	title = anewera.135.title
+	desc = anewera.135.desc
+	picture = GFX_news_event_generic_pope_coronation
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+		check_variable = {
+            var = FRA.ger_papal_influence
+            value = SPR.eng_papal_influence
+            compare = greater_than
+        }
+	}
+	
+    option = {
+		name = anewera.135.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Paul IV" 
+            desc = "POLITICS_PAUL_DESC" 
+            picture = "portrait_paul_iv.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {his_holiness_the_pope}
+        }
+		add_ideas = pro_valois_sentiment
+		clr_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.135.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}	
+
+##Event: Death of Pope Paul IV
+news_event = {
+	id = anewera.136
+	title = anewera.136.title
+	desc = anewera.136.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Paul IV"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.136.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		remove_ideas = pro_valois_sentiment
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.136.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}
+
+##Event: Election of Pope Clement VIII
+news_event = {
+	id = anewera.137
+	title = anewera.137.title
+	desc = anewera.137.desc
+	picture = GFX_news_event_generic_pope_coronation
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+		check_variable = {
+            var = SPR.eng_papal_influence
+            value = FRA.ger_papal_influence
+            compare = greater_than 
+		}
+	}
+	
+    option = {
+		name = anewera.137.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "Clement VIII" 
+            desc = "POLITICS_CLEMENT_DESC" 
+            picture = "alvarez_pope.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {his_holiness_the_pope}
+        }
+		add_ideas = pro_habsburg_sentiment
+		clr_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.137.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}
+
+##Event: Death of Pope Clement VIII
+news_event = {
+	id = anewera.138
+	title = anewera.138.title
+	desc = anewera.138.desc
+	picture = GFX_news_event_generic_funeral_icon
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Clement VIII"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.138.a
+		trigger = { original_tag = PAP }
+		ai_chance = { factor = 100}
+		create_country_leader= {
+            name = "College of Cardinals" 
+            desc = "POLITICS_CARDINALS_DESC" 
+            picture = "College_of_Cardinals.dds"
+            expire = "1965.1.1" 
+            ideology = despotism
+            traits = {}
+        }
+		remove_ideas = pro_habsburg_sentiment
+		set_global_flag = pope_has_died
+    }
+	
+	option = {
+	    name = anewera.138.a
+		trigger = { NOT = { original_tag = PAP }}
+	}
+}
+
+##Event: Wyatt's Rebellion!
+country_event = {
+    id = anewera.139
+    title = anewera.139.title
+    desc = anewera.139.desc
+    picture = GFX_news_event_generic_alliance
+    is_triggered_only = yes
+    
+    fire_only_once = yes
+    
+    trigger = {
+        has_country_leader = {
+           name = "Mary I"
+           ruling_only = yes
+        }
+    }
+    
+    option = { # Support the Queen
+        name = anewera.139.a
+        trigger = { is_ai = no }
+        hidden_effect = {
+            start_civil_war = {
+                ruling_party = neutrality
+                ideology = communism #Change to communism so that rebellion is communist
+                size = 0.5
+                capital = 127 #swap capital
+                states = { 127 1159 1161 1157 128 } #swap state lists 
+            }
+            
+            news_event = { hours = 6 id = anewera.140 }
+            set_global_flag = english_civil_war
+            
+            set_equipment_fraction = 0.5
+            set_stability = 0.9
+            set_war_support = 0.8
+			
+		    random_country = { #this block needs to be added to both options to Wyatt leads the communist rebellion either way
+                limit = {
+                    original_tag = ENG
+                    has_government = communism
+                }
+                create_country_leader= {
+                    name = "Thomas Wyatt" 
+                    desc = "POLITICS_WYATT_DESC" 
+                    picture = "thomas_wyatt.dds"
+                    expire = "1965.1.1" 
+                    ideology = stalinism
+                      traits = {}
+                }
+				add_ideas = Anglican
+				add_ideas = english_traditions
+            }
+        }
+    }
+    option = { # Support the Peasants
+        name = anewera.139.b
+        hidden_effect = {
+            start_civil_war = {
+			    ruling_party = communism
+                ideology = neutrality #change to neutrality so rebellion is monarchist
+                size = 0.5
+                capital = 338 #swap capital
+                states = { 1162 1158 125 1160 129 130 132 1163 131 1164 1165 122 338 1156 123 941 945 797 113 942 951 952 135 954 953 950 }
+            }
+			
+            news_event = { hours = 6 id = anewera.140 } #change to your news event
+            set_global_flag = english_civil_war
+			
+			set_equipment_fraction = 0.5
+            set_stability = 0.9
+            set_war_support = 0.8
+			
+		    set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+            
+            random_country = { #this block needs to be added to both options to Wyatt leads the communist rebellion either way
+                limit = {
+                    original_tag = ENG
+                    has_government = communism
+                }
+                create_country_leader= {
+                    name = "Thomas Wyatt" 
+                    desc = "POLITICS_WYATT_DESC" 
+                    picture = "thomas_wyatt.dds"
+                    expire = "1965.1.1" 
+                    ideology = stalinism
+                      traits = {}
+                }
+				set_cosmetic_tag = ENG_wyatt
+				add_ideas = government_rank_1
+				add_ideas = Anglican
+            }
+			random_other_country = {
+                limit = {
+                    original_tag = ENG
+                    has_government = neutrality
+                }
+				transfer_state = 126
+                transfer_state = 29
+				set_capital = 126
+				set_cosmetic_tag = ENG_mary
+				add_ideas = Catholic
+				add_ideas = government_rank_2
+				add_ideas = english_traditions
+            }
+        }
+    }
+}
+
+##Event: Wyatt's Rebellion!
+news_event = {
+	id = anewera.140
+	title = anewera.140.title
+	desc = anewera.140.desc
+	picture = GFX_news_event_generic_alliance
+	major = yes
+    is_triggered_only = yes
+	trigger = {
+	    has_country_leader = {
+           name = "Mary I"
+           ruling_only = yes
+	    }
+	}
+	
+    option = {
+		name = anewera.140.a
+		trigger = { original_tag = ENG }
+		ai_chance = { factor = 100}
+    }
+	
+	option = {
+	    name = anewera.140.a
+		trigger = { NOT = { original_tag = ENG }}
+	}
+}
+
+##Event: Buy the Morrocan Straits
+country_event = {
+    id = anewera.141
+    title = anewera.141.title
+    desc = anewera.141.desc
+    picture = GFX_news_event_generic_alliance
+
+    is_triggered_only = yes
+    
+
+    trigger = {
+        NOT = { has_war_with = POR }
+    }
+    
+    option = {
+        name = anewera.141.a
+        ai_chance = { #ai_chance doesn't do anything if there is only one option (or only one available)
+            factor = 20
+            modifier = {
+                factor = 0
+                is_historical_focus_on = no
+            }
+        }
+        effect_tooltip = {
+            SPR = {
+                transfer_state = 923
+                add_state_core = 923
+                remove_state_claim = 923
+            }
+            POR = {   
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 4
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+		POR = { country_event = { id = anewera.142 days = 2 } }
+    }
+}
+
+##Events: Spain Demands the Morrocan Straits
+country_event = {
+    id = anewera.142
+    title = anewera.142.title
+    desc = anewera.142.desc
+    picture = GFX_news_event_generic_alliance
+    
+    is_triggered_only = yes
+    
+    option = { #there is only one option, so they can't refuse
+        name = anewera.142.a
+        ai_chance = { 
+            factor = 1 #factor 0 means the AI won't take this option if they have another available.
+            modifier = {
+                factor = 0
+                OR = {
+                    any_other_country = {
+                        is_major = yes
+                        OR = {
+                            is_in_faction_with = POR
+                            has_guaranteed = POR
+                        }
+                    }
+                }
+            }
+        }
+        effect_tooltip = { #should be sure to add the factory construction effect to the tooltip here too.
+            SPR = {
+                if = {
+                    limit = { POR = { owns_state = 923 controls_state = 923 } }
+                    transfer_state = 923
+                }
+            }
+		    POR = {   
+                random_owned_controlled_state = {
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 4
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+        SPR = {country_event = { id = anewera.143} }
+    }
+    option = { #there is only one option, so they can't refuse
+        name = anewera.142.b
+        ai_chance = { 
+            factor = 1 #factor 0 means the AI won't take this option if they have another available.
+            modifier = {
+                factor = 0
+                OR = {
+                    any_other_country = {
+                        is_major = yes
+                        OR = {
+                            is_in_faction_with = POR
+                            has_guaranteed = POR
+                        }
+                    }
+                }
+            }
+        }
+        effect_tooltip = { #should be sure to add the factory construction effect to the tooltip here too.
+        }
+		SPR = {country_event = { id = anewera.144} }
+    }
+}
+
+# Portugal Cedes the Straits
+country_event = {
+	id = anewera.143
+	title = anewera.143.title
+	desc = anewera.143.desc
+	picture = GFX_news_event_generic_alliance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.143.a
+		if = {
+			limit = { 
+				POR = { 
+					owns_state = 923
+					controls_state = 923
+				}
+			}
+			transfer_state = 923
+		}
+	    news_event = { id = anewera.145 hours = 6 }
+    }
+}
+
+# Portugal Refuses to Cede the Straits
+country_event = {
+	id = anewera.144
+	title = anewera.144.title
+	desc = anewera.144.desc
+	picture = GFX_news_event_generic_alliance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anewera.144.a
+	}
+}
+
+## Portugal Cedes the Morrocan Straits
+news_event = {
+	id = anewera.145
+	title = anewera.145.title
+	desc = anewera.145.desc
+	picture = GFX_news_event_generic_alliance
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.145.a
+		ai_chance = { factor = 100}
+    }
+}
+
+## Treaty of Torgau
+news_event = {
+	id = anewera.146
+	title = anewera.146.title
+	desc = anewera.146.desc
+	picture = GFX_news_event_boulogne
+	major = yes
+    is_triggered_only = yes
+
+    option = {
+		name = anewera.146.a
+		SAX = { create_faction = "Schmalkaldic League"
+		    add_to_faction = BRN
+		    add_to_faction = MEK
+	    }
+		ai_chance = { factor = 100}
+    }
+}
+
+## Second Schmalkaldic War
+news_event = {
+	id = anewera.147
+	title = anewera.147.title
+	desc = anewera.147.desc
+	picture = GFX_news_event_generic_alliance
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.147.a
+        SAX = { create_wargoal = { type = puppet_wargoal_focus target = AUS } }
+		ai_chance = { factor = 100}
+    }
+}
+
+## Parma Joins Valois Alliance
+news_event = {
+	id = anewera.148
+	title = anewera.148.title
+	desc = anewera.148.desc
+	picture = GFX_news_event_generic_alliance
+	major = yes
+    is_triggered_only = yes
+	
+    option = {
+		name = anewera.148.a
+		FRA = { add_to_faction = PRM }
+		ai_chance = { factor = 100}
+    }
+}

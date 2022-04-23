@@ -1,0 +1,18 @@
+state={
+	id=1117
+	name="Blambangan"
+	history={
+		owner = BLA
+		add_core_of = BLA
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 12472 7654
+	}
+	manpower=3882130
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

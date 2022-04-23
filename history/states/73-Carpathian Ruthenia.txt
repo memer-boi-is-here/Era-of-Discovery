@@ -1,0 +1,27 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 100000
+	
+	state_category = rural
+	
+	history={
+		victory_points = {
+			3548 1 
+		}
+		owner = TRA
+		add_core_of = TRA
+add_core_of = HUN
+add_core_of = UKR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		
+	}
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+}

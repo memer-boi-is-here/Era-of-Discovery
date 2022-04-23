@@ -1,0 +1,168 @@
+ideas = {
+	country = {
+		uprest_netherlands = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			
+			modifier = {
+				stability_weekly_factor = -0.01
+			}
+			
+		
+		}
+		sun_never_sets = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			
+			modifier = {
+				stability_weekly_factor = 0.005
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				resistance_growth = -0.03
+			}
+			
+		
+		}
+		ruler_excommunicated = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			on_add= {
+				
+				PAP = {
+					add_opinion_modifier = {
+						target = AUS
+						modifier = has_excommunicated_ruler
+					}
+				}
+				AUS = {
+					add_opinion_modifier = {
+						target = PAP
+						modifier = has_excommunicated_ruler
+					}
+				}
+			}
+			on_remove = {
+				every_country = {
+					limit = { has_opinion_modifier = ruler_excommunicated }
+					remove_opinion_modifier = {
+						target = AUS
+						modifier = ruler_excommunicated
+					}
+				}
+				PAP = {
+					remove_opinion_modifier = {
+						target = AUS
+						modifier = has_excommunicated_ruler
+					}
+				}
+				AUS = {
+					remove_opinion_modifier = {
+						target = PAP
+						modifier = has_excommunicated_ruler
+					}
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		religious_peace = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		offensive_tactics = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		defensive_tactics = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			modifier = {
+				army_defence_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		persecuted_religion = { #Persecuted religion
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fury_on_austria
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = 0.5 = -0.25
+				war_support_weekly = 0.01
+			}
+		}
+	}
+}

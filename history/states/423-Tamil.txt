@@ -1,0 +1,33 @@
+
+state={
+	id=423
+	name="STATE_423" # Madurai
+	manpower = 29147500
+	
+	state_category = rural
+	
+	resources={
+		rubber=19
+	}
+
+	history={
+		owner = VIJ
+		add_core_of = VIJ
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		
+			10278 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10278 1 
+		}
+
+	}
+
+	provinces={
+		1409 4327 4416 7265 7288 7363 8067 10130 10246 10274 10808 12247 12275 
+	}
+}

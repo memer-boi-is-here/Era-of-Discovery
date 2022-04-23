@@ -1,0 +1,27 @@
+state=
+{
+	id=1179
+	name="Medri Bahri"
+	manpower = 10000
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = MDR
+		add_core_of = MDR
+		victory_points = {
+			12766 1
+		}
+		buildings = {
+			infrastructure = 3
+			
+			12766 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		5047 5091 12723 5017 
+	}
+}

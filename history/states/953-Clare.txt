@@ -1,0 +1,20 @@
+state={
+	id=953
+	name="Clare"
+
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+
+	provinces={
+		 11334
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

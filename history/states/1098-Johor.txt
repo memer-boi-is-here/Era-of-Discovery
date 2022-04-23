@@ -1,0 +1,18 @@
+state={
+	id=1098
+	name="Johor"
+	history={
+		owner = JOH
+		add_core_of = JOH
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 1277 12181 12168 10209 12343 12184 10225 12212 1533 1332 1373 1345
+	}
+	manpower=429302
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

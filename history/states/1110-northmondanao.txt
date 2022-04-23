@@ -1,0 +1,18 @@
+state={
+	id=1110
+	name="North Mondanao"
+	history={
+		owner = MAG
+		add_core_of = MAG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		  4427 1234 12116 4266 12158
+	}
+	manpower=428213
+	buildings_max_level_factor=3.000
+	state_category=rural
+}

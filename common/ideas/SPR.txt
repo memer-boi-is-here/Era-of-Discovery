@@ -1,0 +1,520 @@
+ideas = {
+
+	country = {
+
+        unrest_over_the_unification = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = unrest_over_the_unification
+			
+			modifier = {
+                stability_factor = -0.15
+				recruitable_population_factor = -0.1
+			}
+		}
+		
+	    the_spanish_inquisition = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = the_spanish_inquisition 
+			
+			modifier = {
+                 operative_slot = 1
+				 root_out_resistance_effectiveness_factor = 0.25
+				 stability_factor = -0.1
+				 recruitable_population_factor = -0.1
+			}
+		}
+		
+		spanish_golden_age = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = spanish_golden_age
+			
+			modifier = {
+                 consumer_goods_factor = -0.05
+				 stability_factor = 0.05
+				 war_support_factor = -0.1
+			}
+		}
+		
+		spanish_treasure_fleet = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+			
+			on_add = {
+				add_to_variable = {
+				  money_factor = 0.5
+				}
+			  }
+			on_remove = {
+				add_to_variable = {
+				  money_factor = -0.5
+				}
+			}
+
+			removal_cost = -1
+
+			picture = spanish_treasure_fleet
+			
+			modifier = {
+                production_speed_dockyard_factor = 0.1
+				navy_max_range_factor = 0.1
+				naval_morale_factor = 0.05
+				custom_modifier_tooltip = weekly_income_tt	
+			}
+		}
+
+	}
+	
+    # POLITICAL
+	political_advisor = {
+
+        ruy_gomez = {
+
+			picture = ruy_gomez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { chief_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		juan_martinez = {
+
+			picture = juan_martinez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { archbishop_of_toledo }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		antonio_perez = {
+
+			picture = antonio_perez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { finance_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			on_add = {
+				add_to_variable = {
+				  money_factor = 0.5
+				}
+			  }
+			on_remove = {
+				add_to_variable = {
+				  money_factor = -0.5
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+			
+		}
+
+		simon_renard = {
+
+			picture = simon_renard
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { foreign_diplomat }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		gonzalo_jimenez = {
+
+			picture = gonzalo_jimenez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { explorer }
+			on_add = {
+				add_to_variable = {
+					max_colonies = 1
+				}
+			}
+			on_remove = {
+				add_to_variable = {
+					max_colonies = -1
+				}
+			}
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+	 
+		}
+		
+		miguel_lopez_a = {
+
+			picture = miguel_lopez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { high_admiral }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		fernando_de_valdes_salas = {
+
+			picture = fernando_de_valdes_salas
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { grand_inquisitor }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		juan_bautista = {
+
+			picture = juan_bautista
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { construction_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		fernando_alvarez = {
+
+			picture = fernando_alvarez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { war_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+    # MILITARY
+	army_chief = {
+		
+	    fernando_alvarez_a = {
+		
+		    picture = fernando_alvarez
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    luis_de_requesens_y_zuniga = {
+		
+		    picture = luis_de_requesens_y_zuniga
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		gabriel_de_la_cueva = {
+		
+		    picture = gabriel_de_la_cueva
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+	
+	    alvaro_de_bazan = {
+		
+	        picture = gabriel_de_la_cueva
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+		    }
+		}
+		
+		miguel_lopez = {
+		
+		    picture = miguel_lopez
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		juan_martinez_de_recalde = {
+		
+		    picture = juan_martinez_de_recalde
+			
+			allowed = {
+				original_tag = SPR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+	}
+	
+	high_command = {
+		
+        juan_francisco_fernandez = {
+			ledger = army
+			
+			picture = juan_francisco_fernandez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		martin_de_gurrea = {
+			ledger = army
+			
+			picture = martin_de_gurrea
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pedro_de_toledo = {
+			ledger = army
+			
+			picture = pedro_de_toledo
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { army_cavalry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    ferrante_gonzaga = {
+			ledger = army
+			
+			picture = ferrante_gonzaga
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pedro_menendez = {
+			ledger = navy
+			
+			picture = pedro_menendez
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}

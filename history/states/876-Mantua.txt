@@ -1,0 +1,19 @@
+state={
+	id=876
+	name="STATE_876"
+	history = {
+		owner = MNU
+		add_core_of = MNU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 6
+		}
+		}
+	provinces={
+		3776 11734 
+	}
+	manpower=3241
+	buildings_max_level_factor=1.000
+	state_category=town
+}

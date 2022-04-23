@@ -1,0 +1,18 @@
+state={
+	id=1097
+	name="North Sumatra"
+	history={
+		owner = ACE
+		add_core_of = ACE
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7463 7327 4446 12302 10522 7673 4652 8360 1648 12488 10509 7658
+	}
+	manpower=429302
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

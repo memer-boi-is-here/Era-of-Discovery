@@ -1,0 +1,21 @@
+state={
+	id=865
+	name="STATE_865"
+	history = {
+		owner = SPR
+		add_core_of = SPR
+add_core_of = FRA
+add_core_of = CAT
+add_core_of = OCC
+        buildings = {
+			infrastructure = 3
+			
+		}
+		}
+	provinces={
+		9853 
+	}
+	manpower=9088
+	buildings_max_level_factor=1.000
+	state_category=town
+}

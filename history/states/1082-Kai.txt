@@ -1,0 +1,22 @@
+state={
+	id=1082
+	name="Kai"
+	provinces={
+		12072 
+	}
+		history={
+			owner = TAK
+		add_core_of = TAK
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

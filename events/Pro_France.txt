@@ -1,0 +1,79 @@
+#Prolox
+
+add_namespace = french
+
+###########################
+# OTTOMAN-FRENCH ALLIANCE #
+###########################
+country_event = { 
+	id = french.1
+	title = french.1.t
+	desc = french.1.d
+	picture = GFX_french_ottoman_alliance
+	fire_only_once = no
+	
+	is_triggered_only = yes
+
+	option = { #TUR accepts
+		name = french.1.a
+		ai_chance = { factor = 60 }
+		
+		hidden_effect = {
+			news_event = {
+				id = TUR_FRA_alliance.2
+				days = 0
+				random = 2
+			}
+			set_global_flag = FRA_TUR_alliance
+		}
+	}
+	option = { #TUR refuses
+		name = french.1.b
+		ai_chance = { factor = 40 }
+		hidden_effect = {
+			FRA = {
+				news_event = {
+					id = TUR_FRA_alliance.3
+					days = 0
+					random = 2
+				}
+			}
+		}
+	}
+}
+############################
+# PROPOSE PEACE TO ENGLAND #
+############################
+country_event = { 
+	id = french.2
+	title = french.2.t
+	desc = french.2.d
+	picture = GFX_french_ottoman_alliance
+	fire_only_once = no
+	
+	is_triggered_only = yes
+
+	option = { #ENG accepts
+		name = french.2.a
+		ai_chance = { factor = 85 }
+		
+		hidden_effect = {
+			news_event = {
+				id = calais_taken.0
+				days = 0
+			}
+		}
+	}
+	option = { #ENG refuses
+		name = french.2.b
+		ai_chance = { factor = 15 }
+		hidden_effect = {
+			FRA = {
+				news_event = {
+					id = peace_refused.0
+					days = 0
+				}
+			}
+		}
+	}
+}

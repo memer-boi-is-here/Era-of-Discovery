@@ -1,0 +1,18 @@
+state={
+	id=1103
+	name="Pattani"
+	history={
+		owner = PTN
+		add_core_of = PTN
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 1279 4297 7329
+	}
+	manpower=530218
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

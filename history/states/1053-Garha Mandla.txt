@@ -1,0 +1,18 @@
+state={
+	id=1053
+	name="STATE_1053"
+	history={
+		owner = GML
+		add_core_of = GML
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		4883 4950 10030 12799 12854
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

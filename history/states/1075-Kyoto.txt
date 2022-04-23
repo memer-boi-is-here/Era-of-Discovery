@@ -1,0 +1,27 @@
+state={
+	id=1075
+	name="Kyoto"
+	provinces={
+		1067 4142 11960 
+	}
+		history={
+			owner = ASH
+		add_core_of = ASH
+	buildings = {
+	infrastructure = 3
+
+	dockyard = 1		
+	arms_factory = 1
+	industrial_complex = 1
+	11960  = {
+	     naval_base = 1
+	}
+	}
+	victory_points = {
+			11960 40 
+		}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

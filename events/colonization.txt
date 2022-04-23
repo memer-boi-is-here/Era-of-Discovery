@@ -1,0 +1,822 @@
+add_namespace = colonization
+
+country_event = { #Mexican Colony
+	id = colonization.1
+	title = colonization.1.title
+	desc = colonization.1.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		check_variable = {
+			MEX_colony_count > 4
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = MEX
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.1.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = MEX
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+country_event = { #Brazilian Colony
+	id = colonization.2
+	title = colonization.2.title
+	desc = colonization.2.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		check_variable = {
+			BRA_colony_count > 4
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = BRA
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.2.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = BRA
+			inherit_technology = ROOT
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+country_event = { #American Colony
+	id = colonization.3
+	title = colonization.3.title
+	desc = colonization.3.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = allah		
+				check_variable = {
+					USA_colony_count > 4
+				}
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = USA
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.3.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = USA
+			inherit_technology = ROOT
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+country_event = { #Canadian Colony
+	id = colonization.4
+	title = colonization.4.title
+	desc = colonization.4.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = allah		
+				check_variable = {
+					CAN_colony_count > 4
+				}
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = CAN
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.4.b
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = CAN
+			inherit_technology = ROOT
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+
+country_event = { #Central American Colony
+	id = colonization.5
+	title = colonization.5.title
+	desc = colonization.5.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		
+				check_variable = {
+					HON_colony_count > 4
+				}
+			
+		
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = HON
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.5.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = HON
+			inherit_technology = ROOT
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+
+country_event = { #Peruian Colony
+	id = colonization.6
+	title = colonization.6.title
+	desc = colonization.6.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		check_variable = {
+			PRU_colony_count > 4
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = PRU
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.6.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+		}
+		create_dynamic_country = {
+			original_tag = PRU
+			inherit_technology = ROOT
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+country_event = { #La Platan Colony
+	id = colonization.7
+	title = colonization.7.title
+	desc = colonization.7.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		check_variable = {
+			ARG_colony_count > 4
+			
+		}
+		NOT = {
+			AND = {
+				any_country = {
+					AND = {
+						original_tag = ARG
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.7.a
+		ai_chance = { factor = 100}
+		country_event = {
+			id = colonization.8
+			days = 2
+		}
+		create_dynamic_country = {
+			original_tag = ARG
+			inherit_technology = ROOT
+			set_variable = {
+				overlord = ROOT
+			}
+			ROOT = {
+				set_variable = {
+					newest_colony = PREV
+				}
+				release_puppet = PREV
+			}
+		}
+	}
+}
+country_event = { #Decide a name for colony
+	id = colonization.8 
+	title = colonization.8.title
+	desc = colonization.8.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = "colonization.8.a" #ADJ Country
+		ai_chance = { factor = 100}
+		var:newest_colony = {
+			set_cosmetic_tag = COUNTRY_SUBJECT_1
+		}
+		
+	}
+	option = {
+		name = "colonization.8.b" #New Castille
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = SPR
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = SPR_SUBJECT_1
+					}  
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = SPR_SUBJECT_1
+		}
+	}
+	option = {
+		name = "colonization.8.c" #New France
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = FRA
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = FRA_SUBJECT_1
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = FRA_SUBJECT_1
+		}
+	}
+	option = {
+		name = "colonization.8.d" #New Champagne
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = FRA
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = FRA_SUBJECT_2
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = FRA_SUBJECT_2
+		}
+	}
+	option = {
+		name = "colonization.8.e" #New Normandy
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = FRA
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = FRA_SUBJECT_3
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = FRA_SUBJECT_3
+		}
+	}
+	option = {
+		name = "colonization.8.f" #New Brittany
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = FRA
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = FRA_SUBJECT_4
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = FRA_SUBJECT_4
+		}
+	}
+	option = {
+		name = "colonization.8.g" #New England
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = ENG
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = ENG_SUBJECT_1
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = ENG_SUBJECT_1
+		}
+	}
+	option = {
+		name = "colonization.8.h" #New Wales
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = ENG
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = ENG_SUBJECT_2
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = ENG_SUBJECT_2
+		}
+	}
+	option = {
+		name = "colonization.8.i" #Thirteen Colonies
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = ENG
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = ENG_SUBJECT_3
+					}
+				}
+			}
+			var:newest_colony = {
+				original_tag = USA
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = ENG_SUBJECT_3
+		}
+	}
+	option = {
+		name = "colonization.8.j" #New Portugal
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = POR
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = POR_SUBJECT_1
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = POR_SUBJECT_1
+		}
+	}
+	option = {
+		name = "colonization.8.k" #New Holland
+		ai_chance = { factor = 100}
+		trigger = {
+			AND = {
+				original_tag = HOL
+				NOT = {
+					any_country = {
+						is_subject_of = ROOT
+						has_cosmetic_tag = HOL_SUBJECT_1
+					}
+				}
+			}
+		}
+		var:newest_colony = {
+			set_cosmetic_tag = HOL_SUBJECT_1
+		}
+	}
+}
+country_event = { #Give Land to Brazil
+	id = colonization.9
+	title = colonization.9.title
+	desc = colonization.9.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		OR = {
+			BPC = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = BRA
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = BRA
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.9.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = BRA
+			}
+			
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = BPC
+						original_tag = BRA
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Give Land to Mexico
+	id = colonization.10
+	title = colonization.10.title
+	desc = colonization.10.desc
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		OR = {
+			NSP = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = MEX
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = MEX
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.9.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = MEX
+			}
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = NSP
+						original_tag = MEX
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}
+country_event = { #Give Land to Murica
+	id = colonization.11
+	title = colonization.11.title
+	desc = colonization.11.desc
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		OR = {
+			USA = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = USA
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = USA
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.11.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = USA
+			}
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = USA
+						original_tag = USA
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}
+country_event = { #Give Land to Canada
+	id = colonization.12
+	title = colonization.12.title
+	desc = colonization.12.desc
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = { 
+		OR = {
+			CAN = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = CAN
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = CAN
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.12.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = CAN
+			}
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = CAN
+						original_tag = CAN
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}
+country_event = { #Give Land to Peru
+	id = colonization.13
+	title = colonization.13.title
+	desc = colonization.13.desc
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		OR = {
+			SPP = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = PRU
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = PRU
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.13.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = PRU
+			}
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = SPP
+						original_tag = PRU
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}
+country_event = { #Give Land to Peru
+	id = colonization.14
+	title = colonization.14.title
+	desc = colonization.14.desc
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		OR = {
+			ARG = {
+				is_subject_of = ROOT
+			}
+			any_country = {
+				original_tag = ARG
+				is_subject_of = ROOT
+			}
+		}
+		any_owned_state = {
+			is_core_of = ARG
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = colonization.14.a
+		ai_chance = { factor = 100}
+		
+		every_owned_state = {
+			limit = {
+				is_core_of = ARG
+			}
+			random_country = {
+				limit = {
+					OR = {
+						original_tag = ARG
+						original_tag = ARG
+					}
+					is_subject_of = ROOT
+				}
+				transfer_state = PREV
+				PREV = {
+					add_core_of = PREV
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=984
+	name="STATE_984"
+
+	history={
+		owner = CHG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CHG
+
+	}
+
+	provinces={
+		1698 1778 5076 7971 12596 12820
+	}
+	manpower=217230
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

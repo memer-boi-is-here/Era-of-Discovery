@@ -1,0 +1,79 @@
+scripted_gui = {
+
+	culture_buttons_gui = {
+		context_type = selected_state_context
+		window_name = "culture_buttons"
+		
+		parent_window_token = selected_state_view
+		properties = {
+            religion_icon = {
+                image = [THIS.GetReligionIcon] 
+            }
+        }
+		visible = {
+			#always = no
+		}
+		effects = {
+		#	open_culture_list_button_click = {
+		#		ROOT = {
+		#			IF = {
+		#				limit = {
+		#					check_variable = {
+		#						open_culture_list_button = 1
+		#					}
+	#					}
+		#				set_variable = {open_culture_list_button = 0}
+		#				else = {
+		#					set_variable = {open_culture_list_button = 1}
+	#					}
+	#				}
+	#				
+	#			}
+	#		} 
+	#	}
+		triggers = {
+		#	make_core_button_click_enabled = {
+		#		ROOT = {
+		#			has_political_power > 99
+		#		}
+		#		is_controlled_by = ROOT
+		#		NOT = {
+		#			is_core_of = ROOT
+		#		}
+		#		OR = {
+		#			AND = {
+		#				ROOT = {
+		#					has_country_flag = accepts_german_culture
+		#				}
+		#				check_variable = {
+		#					culture_german >68
+		#				}
+		#			}
+		#		}
+		#	}
+		#	set_claim_button_click_enabled = {
+		#		ROOT = {
+		#			has_political_power > 49 
+		#		}
+		#		NOT = {
+		#			is_controlled_by = ROOT
+		#			is_claimed_by = ROOT
+		#		}
+		#	}
+		}
+	}
+	culture_list = {
+		context_type = selected_state_context
+		window_name = "culture_list"
+		
+		parent_window_token = selected_state_view
+		visible = {
+			ROOT = {
+				check_variable = {
+					open_culture_list_button = 1
+				}
+			}
+		}
+	}
+}
+

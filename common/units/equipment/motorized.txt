@@ -1,0 +1,36 @@
+equipments = {
+
+	supply_wagon = {
+		year = 1500
+
+		is_archetype = yes
+		picture = archetype_supply_wagon		
+		is_buildable = no
+		type = {
+			#infantry #Removing inf type 
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 12
+		reliability = 0.8
+		hardness = 0.1
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 2.5
+		resources = {
+			steel = 1
+		}
+	}
+
+	supply_wagon_1 = {
+		year = 1500
+		archetype = supply_wagon
+		priority = 30			
+	}
+
+}

@@ -1,0 +1,24 @@
+state={
+	id=986
+	name="Kongo"
+
+	history={
+		owner = KNG
+		buildings = {
+			infrastructure = 2
+				8248 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8248 1 
+		}
+	}
+
+	provinces={
+		5117 5158 7548 8219 8248 10025 10968 12925 12945 12981 
+	}
+	manpower=400485
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

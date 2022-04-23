@@ -1,0 +1,771 @@
+characters = {
+	AUS_ferdinand_i = {
+		name = "Ferdinand I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/portrait_ferdinand_i.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist trait_cautious organizer expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { peacemaker }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	AUS_maximilian_archduke_of_austria = {
+		name = "Maximilian, Archduke of Austria"
+		advisor = {
+			slot = high_command
+			idea_token = maximilian_ii
+			ledger  = army 
+				allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_maximilian_ii"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_maximilian_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { bearer_of_artillery inflexible_strategist infantry_leader trait_engineer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_ferdinand_ii_archduke_of_further_austria = {
+		name = "Ferdinand II, Archduke of Further Austria"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_ferdinand_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { trait_reckless trickster aggressive_assaulter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	AUS_giovanni_battista_castaldo = {
+		name = "Giovanni Battista Castaldo"
+		advisor = {
+			slot = army_chief
+			idea_token = giovanni_battista_castaldo
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = giovanni_battista_castaldo_p
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					war_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_giovanni_battista_castaldo"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_giovanni_battista_castaldo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard war_hero infantry_leader adaptable }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	AUS_guglielmo_gonzaga_duke_of_mantua = {
+		name = "Guglielmo Gonzaga, Duke of Mantua"
+		advisor = {
+			slot = army_chief
+			idea_token = guglielmo_gonzaga
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_maneuver_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_guglielmo_gonzaga"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_guglielmo_gonzaga.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader politically_connected trait_engineer fortress_buster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	AUS_stephen_báthory = {
+		name = "Stephen Báthory"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_stephen_bathory.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer cavalry_leader winter_specialist ambusher }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	AUS_peter_ernst_i_von_mansfeldvorderort = {
+		name = "Peter Ernst I von Mansfeld-Vorderort"
+		advisor = {
+			slot = high_command
+			idea_token = peter_ernst_von_mansfeld
+			ledger  = army 
+				allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					army_logistics_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_peter_ernst_von_mansfeld"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_peter_ernst_von_mansfeld.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer hill_fighter infantry_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	AUS_ruprecht_von_eggenberg = {
+		name = "Ruprecht von Eggenberg"
+		advisor = {
+			slot = high_command
+			idea_token = ruprecht_von_eggenberg
+			ledger  = army 
+				allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_ruprecht_von_eggenberg"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_ruprecht_von_eggenberg.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer trait_mountaineer scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	AUS_richard_strein = {
+		name = "Richard Strein"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_richard_strein.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist guerilla_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	AUS_george_khevenhuller = {
+		name = "George Khevenhuller"
+		advisor = {
+			slot = high_command
+			idea_token = george_khevenhuller
+			ledger  = army 
+				allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					army_drill_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_george_khevenhuller"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_george_khevenhuller.dds"
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader ranger }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_istvan_dobo = {
+		name = "Istvan Dobo"
+		advisor = {
+			slot = high_command
+			idea_token = istvan_dobo
+			ledger  = army 
+				allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					army_artillery_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_istvan_dobo"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_istvan_dobo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_alvaro_de_bazan_1st_marquess_of_santa_cruz = {
+		name = "Alvaro de Bazan, 1st Marquess of Santa Cruz"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_alvaro_de_bazan.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_miguel_lopez_de_legazpi = {
+		name = "Miguel Lopez de Legazpi"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_miguel_lopez.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_juan_martinez_de_recalde = {
+		name = "Juan Martinez de Recalde"
+		advisor = {
+			slot = navy_chief
+			idea_token = juan_martinez_de_recalde
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_juan_martinez_de_recalde"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_juan_martinez.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_pedro_menendez_de_aviles = {
+		name = "Pedro Menendez de Aviles"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_pedro_menendez.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	AUS_adolf_meyer = {
+		name = "Adolf Meyer"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1563.1.1.12"
+			id = -1
+		}
+	}
+	AUS_staffan_muller = {
+		name = "Staffan Muller"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1567.1.1.12"
+			id = -1
+		}
+	}
+	AUS_hans_behrmann = {
+		name = "Hans Behrmann"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1555.1.1.12"
+			id = -1
+		}
+	}
+	AUS_johan_jakob_fugger = {
+		advisor = {
+			slot = political_advisor
+			idea_token = johan_jakob_fugger
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					finance_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				on_add  = {
+					add_to_variable  = {
+						money_factor = 0.500
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				modifier  = {
+					custom_modifier_tooltip  = weekly_income_tt
+				}
+		}
+		name = "johan_jakob_fugger"
+		portraits = {
+			army = {
+				small = "GFX_idea_johan_jakob_fugger"
+			}
+		}
+	}
+	AUS_miguel_lopez = {
+		advisor = {
+			slot = navy_chief
+			idea_token = miguel_lopez
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_maneuver_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "miguel_lopez"
+		portraits = {
+			army = {
+				small = "GFX_idea_miguel_lopez"
+			}
+		}
+	}
+	AUS_richard_strein = {
+		advisor = {
+			slot = political_advisor
+			idea_token = richard_strein
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					fortification_engineer 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "richard_strein"
+		portraits = {
+			army = {
+				small = "GFX_idea_richard_strein"
+			}
+		}
+	}
+	AUS_alvaro_de_bazan = {
+		advisor = {
+			slot = navy_chief
+			idea_token = alvaro_de_bazan
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "alvaro_de_bazan"
+		portraits = {
+			army = {
+				small = "GFX_idea_gabriel_de_la_cueva"
+			}
+		}
+	}
+	AUS_simon_renard = {
+		advisor = {
+			slot = political_advisor
+			idea_token = simon_renard
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					foreign_diplomat 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "simon_renard"
+		portraits = {
+			army = {
+				small = "GFX_idea_simon_renard"
+			}
+		}
+	}
+	AUS_bartholomeus_welser = {
+		advisor = {
+			slot = political_advisor
+			idea_token = bartholomeus_welser
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					explorer 
+				}
+				on_add  = {
+					add_to_variable  = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "bartholomeus_welser"
+		portraits = {
+			army = {
+				small = "GFX_idea_bartholomeus_welser"
+			}
+		}
+	}
+	AUS_hugo_blotius = {
+		advisor = {
+			slot = political_advisor
+			idea_token = hugo_blotius
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					construction_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "hugo_blotius"
+		portraits = {
+			army = {
+				small = "GFX_idea_hugo_blotius"
+			}
+		}
+	}
+	AUS_cristoforo_madruzzo = {
+		advisor = {
+			slot = political_advisor
+			idea_token = cristoforo_madruzzo
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					chief_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "cristoforo_madruzzo"
+		portraits = {
+			army = {
+				small = "GFX_idea_cristoforo_madruzzo"
+			}
+		}
+	}
+	AUS_antonin_brus_mohenlnice = {
+		advisor = {
+			slot = political_advisor
+			idea_token = antonin_brus_mohenlnice
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					archbishop_of_prague 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "antonin_brus_mohenlnice"
+		portraits = {
+			army = {
+				small = "GFX_idea_antonin_brus_mohenlnice"
+			}
+		}
+	}
+	AUS_jan_cornelisz_vermeyen = {
+		advisor = {
+			slot = political_advisor
+			idea_token = jan_cornelisz_vermeyen
+			allowed  = {
+					original_tag  = AUS
+				}
+				traits  = {
+					court_painter 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "jan_cornelisz_vermeyen"
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_cornelisz_vermeyen"
+			}
+		}
+	}
+	AUS_ferdinand_ii = {
+		advisor = {
+			slot = army_chief
+			idea_token = ferdinand_ii
+			allowed  = {
+					original_tag  = AUS
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "ferdinand_ii"
+		portraits = {
+			army = {
+				small = "GFX_idea_ferdinand_ii"
+			}
+		}
+	}
+}

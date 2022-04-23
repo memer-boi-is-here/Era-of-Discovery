@@ -1,0 +1,22 @@
+
+state={
+	id=1048
+	name="Chandrapur"
+
+	history={
+		owner = CDP
+		add_core_of = CDP
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+
+	provinces={
+		5019 7619 10511 11950 12781 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

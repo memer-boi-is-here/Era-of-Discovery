@@ -1,0 +1,14 @@
+add_namespace = anewera2
+
+on_actions = {
+	 on_startup = {
+		 effect = {
+			  every_country = {
+				 limit = {
+					 exists = yes
+					 is_ai = no
+				 }
+				 country_event = { hours = 0 id = startup_event.1 }
+			}
+		}
+    }

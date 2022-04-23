@@ -1,0 +1,33 @@
+add_namespace = religion
+
+country_event = {
+	id = religion.1
+	title = religion.1.title
+	desc = religion.1.desc
+	picture = GFX_report_event_europe_funeral
+	fire_only_once = no
+	
+	trigger = {
+		any_owned_state = {
+			is_same_religion_as_owner = no
+			resistance > 40
+			NOT = {
+				is_core_of = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = religion.1.a
+		ai_chance = { factor = 100}
+		every_owned_state = {
+			limit = {
+				is_same_religion_as_owner = no
+				resistance > 25
+			}
+			add_resistance = 100
+		}
+	}
+}

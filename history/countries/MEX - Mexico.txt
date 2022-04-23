@@ -1,0 +1,17 @@
+﻿add_ideas = {disorganized_tribes}
+
+
+
+create_country_leader = {
+	name = "Unorganized Tribes"
+	desc = "POLITICS_GABRIEL_TERRA_DESC"
+	picture = "Tribes.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+1550.1.1 = {
+}

@@ -1,0 +1,233 @@
+capital = 141	
+
+recruit_character = POR_john_iii
+recruit_character = POR_luís_of_portugal_duke_of_beja
+recruit_character = POR_teodósio_i_duke_of_braganza
+recruit_character = POR_duarte_duke_of_guimarães
+recruit_character = POR_antónio_de_noronha_1st_count_of_linhares
+recruit_character = POR_luís_de_ataíde_3rd_count_of_atouguia
+recruit_character = POR_francisco_de_mascarenhas_1st_count_of_vila_da_horta
+recruit_character = POR_aires_de_albuquerque_e_saldanha
+recruit_character = POR_martim_afonso_de_sousa
+recruit_character = POR_mem_de_sá
+recruit_character = POR_antónio_prior_of_crato
+recruit_character = POR_andré_de_mesquita
+recruit_character = POR_caetano_dias
+recruit_character = POR_vicente_machado
+recruit_character = POR_luis_de_ataide
+recruit_character = POR_bras_cubas
+recruit_character = POR_henry_aviz_a
+recruit_character = POR_aires_de_saldanha
+recruit_character = POR_henry_aviz
+recruit_character = POR_francisco_de_mascarenhas
+recruit_character = POR_antonio_de_noronha
+recruit_character = POR_duarte_da_costa	
+
+set_research_slots = 3
+
+set_stability = 0.8
+set_war_support = 0.2
+
+add_ideas = government_rank_2
+
+oob = "POR_1550"
+
+add_ideas = {
+	first_circumnavigation
+	the_portuguese_inquisition
+	portuguese_trade_empire
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	gwtank = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+
+}
+
+set_convoys = 80
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "John III"
+	picture = "portrait_john_iii.dds"
+	ideology = despotism
+	traits = { the_pious }
+}
+
+create_field_marshal = {
+	name = "John III"
+	picture = "portrait_john_iii.dds"
+	traits = { expert_delegator organizer brilliant_strategist trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Luís of Portugal, Duke of Beja"
+	picture = "portrait_luis_of_beja.dds"
+	traits = { bearer_of_artillery trait_engineer inflexible_strategist infantry_leader  }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Teodósio I, Duke of Braganza"
+	picture = "portrait_teodosio_i.dds"
+	traits = { aggressive_assaulter trickster war_hero }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Duarte, Duke of Guimarães"
+	picture = "portrait_duarte_of_guimaraes.dds"
+	traits = { adaptable infantry_leader trait_reckless jungle_rat }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "António de Noronha, 1st Count of Linhares"
+	picture = "portrait_antonio_de_noronha.dds"
+	traits = { fortress_buster trait_engineer invader_ii politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Luís de Ataíde, 3rd Count of Atouguia"
+	picture = "portrait_luís de ataíde.dds"
+	traits = { ambusher winter_specialist cavalry_leader cavalry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Francisco de Mascarenhas, 1st Count of Vila da Horta"
+	picture = "portrait_francisco_de_mascarenhas.dds"
+	traits = { naval_invader ranger }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Aires de Albuquerque e Saldanha"
+	picture = "portrait_aires_de_saldanha.dds"
+	traits = { politically_connected infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 0
+}
+	
+create_navy_leader = {
+	name = "Martim Afonso de Sousa"
+	picture = "portrait_martim_de_sousa.dds"
+	traits = { big_guns_expert ironside battleship_adherent old_guard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Mem de Sá"
+	picture = "portrait_mem_de_sa.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "António, Prior of Crato"
+	picture = "portrait_antonio_of_crato.dds"
+	traits = { destroyer_leader fleet_protector chief_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+set_autonomy = {
+	target = BPC
+	autonomous_state = autonomy_colony
+}
+
+add_ideas = Catholic
+
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+add_opinion_modifier = { target = SPR modifier = small_decrease }
+add_opinion_modifier = { target = ALG modifier = large_decrease }
+add_opinion_modifier = { target = CIR modifier = large_decrease }
+
+set_rule = { can_join_factions = no }
+
+add_ideas = portugese_traditions
+
+country_event = { id = anewera.85 days = "2718" }

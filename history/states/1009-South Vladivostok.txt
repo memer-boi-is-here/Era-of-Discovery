@@ -1,0 +1,22 @@
+state={
+	id=1009
+	name="South Vladivostok"
+	
+	history={
+		owner = JNZ
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JNZ
+	}
+	
+	provinces={
+		810 957 3787 3843 3977 6838 6961 11879
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

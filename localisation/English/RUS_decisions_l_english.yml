@@ -1,0 +1,22 @@
+﻿l_english:
+  
+##Categories
+    RUS_colinize_the_east:0 "Colinize The East"
+    RUS_reclaim_kiev_cores:0 "Reclaim Kiev Cores"
+
+##RUS_colinize_the_east
+    settle_northern_urals:0 "Settle Northern Urals"
+    settle_salekhard:0 "Settle Salekhard"
+    settle_tobolsk:0 "Settle Tobolsk"
+
+##RUS_reclaim_kiev_cores
+    core_khante_of_kazan:0 "Core Khante of Kazan"
+    core_north_astrakhan_khanate:0 "Core North Astrakhan Khanate"
+    core_east_astrakhan_khanate:0 "Core East Astrakhan Khanate"
+    core_central_astrakhan_khanate:0 "Core Central Astrakhan Khanate"
+    core_south_astrakhan_khanate:0 "Core South Astrakhan Khanate"
+    core_north_crimean_khanate:0 "Core North Crimean Khanate"
+    core_east_crimean_khanate:0 "Core EastCrimean Khanate"
+    core_central_crimean_khanate:0 "Core Central Crimean Khanate"
+    core_south_crimean_khanate:0 "Core South Crimean Khanate"
+    core_west_crimean_khanate:0 "Core West Crimean Khanate"

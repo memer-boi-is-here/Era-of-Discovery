@@ -1,0 +1,35 @@
+
+
+state={
+	id=849
+	name="STATE_849"
+	manpower = 150000
+	resources={
+		steel=59 # was: 100
+		aluminium=14 # was: 24
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = PLT
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+		add_core_of = PLT
+	
+		#set_demilitarized_zone = yes
+		
+	
+		
+	}
+
+	provinces={
+		3558 563 11547 6568 3530 9517
+	}
+	
+	
+}

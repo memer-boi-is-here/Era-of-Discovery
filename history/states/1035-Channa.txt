@@ -1,0 +1,22 @@
+state={
+	id=1035
+	name="Channa"
+	history={
+		owner = VIJ
+		add_core_of = VIJ
+		victory_points = {
+			8011 1 
+		}
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+	provinces={
+		8011 12146 12734
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=1019
+	name="Maolian"
+	
+	history={
+		owner = JNZ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JNZ
+	}
+	
+	provinces={
+		927 3929 9841 9883 11823 11850 11862
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

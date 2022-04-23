@@ -1,0 +1,257 @@
+ideas = {
+	
+	country = {
+	
+		founder_of_schmalkaldic_league = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = founder_of_schmalkaldic_league
+			
+			modifier = {
+				 war_support_factor = 0.15
+				 defense_bonus_against = 0.1
+			}
+
+		}
+		
+		birthplace_of_protestantism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = birthplace_of_protestantism
+			
+			modifier = {
+				 political_power_gain = 0.1
+				 political_advisor_cost_factor = -0.25
+				 stability_factor = 0.1
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	augustus_of_saxony = {
+			
+			picture = augustus_of_saxony
+			
+			allowed = {
+				original_tag = SAX
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_frederick_i = {
+			
+			picture = john_frederick_i
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		johann_wilhelm = {
+			
+			picture = johann_wilhelm
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_frederick_ii = {
+			
+			picture = john_frederick_ii
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		augustus_of_saxony_a = {
+
+			picture = augustus_of_saxony
+			
+			allowed = {
+				original_tag = SAX
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		john_frederick_i_a = {
+
+			picture = john_frederick_i
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		johann_wilhelm_a = {
+
+			picture = johann_wilhelm
+			
+			allowed = {
+				original_tag = SAX
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+
+	    augustus_of_saxony_b = {
+			ledger = army
+
+			picture = augustus_of_saxony
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_frederick_ii_a = {
+			ledger = army
+			
+			picture = john_frederick_ii
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_frederick_i_b = {
+			ledger = army
+			
+			picture = john_frederick_i
+			
+			allowed = {
+				original_tag = SAX
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

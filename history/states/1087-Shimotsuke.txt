@@ -1,0 +1,22 @@
+state={
+	id=1087
+	name="Shimotsuke"
+	provinces={
+		993 1113 
+	}
+		history={
+			owner = UTS
+		add_core_of = UTS
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

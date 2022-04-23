@@ -1,0 +1,219 @@
+ideas = {
+	political_advisor = {
+
+		SWI_giuseppe_motta = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		SWI_johannes_baumann = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = SWI
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		SWI_roger_masson = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		SWI_ernst_wetter = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	# MILITARY
+	army_chief = {
+
+		SWI_johann_august_sutter = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWI_ernst_laur = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		SWI_rene_von_graffenried = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWI_hans_peter_bichsel_sohn = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		SWI_hermann_hessel_lorenz = {
+			ledger = army
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWI_jean_de_muralt = {
+			ledger = army
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		SWI_eugen_bircher = {
+			ledger = army
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWI_etienne_primault = {
+			ledger = air
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWI_hans_oehler = {
+			ledger = navy
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SWI
+			}
+			
+
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

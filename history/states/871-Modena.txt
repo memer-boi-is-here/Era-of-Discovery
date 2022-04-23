@@ -1,0 +1,27 @@
+state={
+	id=871
+	name="STATE_871"
+	history = {
+		owner = MOD
+		add_core_of = MOD
+		victory_points = {
+			6973 1 
+		}
+		victory_points = {
+			9752 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 2
+			
+		}
+		}
+	provinces={
+		3976 9752 
+	}
+	manpower=19300
+	buildings_max_level_factor=1.000
+	state_category=town
+}

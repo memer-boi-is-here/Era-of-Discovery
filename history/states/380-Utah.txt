@@ -1,0 +1,27 @@
+state= {
+	id=380
+	name="STATE_380"
+	manpower=10000
+	
+	state_category = rural
+	
+	resources={
+		tungsten=76 # was: 106
+	}
+
+	history={
+		owner = XXX
+
+		buildings = {
+			infrastructure = 3
+
+		}
+		
+		victory_points = {
+			4865 1 
+		}
+	}
+	provinces={
+		1756 4668 4742 4865 7764 10582 10662 13153 7888 12535
+	}
+}

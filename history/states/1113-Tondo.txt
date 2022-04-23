@@ -1,0 +1,18 @@
+state={
+	id=1113
+	name="Tondo"
+	history={
+		owner = TON
+		add_core_of = TON
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 7351 7323 1288 10236 12236 10306
+	}
+	manpower=1068213
+	buildings_max_level_factor=3.000
+	state_category=rural
+}

@@ -1,0 +1,308 @@
+characters = {
+	SNA_signoria = {
+		name = "Signoria"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNA/portrait_siena_leader.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	SNA_piero_strozzi = {
+		name = "Piero Strozzi"
+		advisor = {
+			slot = army_chief
+			idea_token = piero_strozzi_a
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = piero_strozzi
+			ledger = army 
+				allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_piero_strozzi"
+			}
+			army = {
+				large = "gfx/leaders/SNA/portrait_piero_strozzi.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SNA_leone_strozzi = {
+		name = "Leone Strozzi"
+		advisor = {
+			slot = political_advisor
+			idea_token = leone_strozzi
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = leone_strozzi_a
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leone_strozzi_b
+			ledger = army 
+				allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_leone_strozzi"
+			}
+			army = {
+				large = "gfx/leaders/SNA/portrait_leone_strozzi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SNA_lelio_sozzini = {
+		name = "Lelio Sozzini"
+		advisor = {
+			slot = high_command
+			idea_token = lelio_sozzini
+			ledger = army 
+				allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lelio_sozzini_p
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_lelio_sozzini"
+			}
+			army = {
+				large = "gfx/leaders/SNA/portrait_lelio_sozzini.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SNA_mariano_sozzini = {
+		name = "Mariano Sozzini"
+		advisor = {
+			slot = navy_chief
+			idea_token = mariano_sozzini
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mariano_sozzini_p
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mariano_sozzini"
+			}
+			army = {
+				large = "gfx/leaders/SNA/portrait_mariano_sozzini.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SNA_jim_jones = {
+		name = "Jim Jones"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	SNA_lucas_walker = {
+		name = "Lucas Walker"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1559.1.1.12"
+			id = -1
+		}
+	}
+	SNA_peter_smith = {
+		name = "Peter Smith"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			expire = "1568.1.1.12"
+			id = -1
+		}
+	}
+	SNA_piero_strozzi_p = {
+		advisor = {
+			slot = political_advisor
+			idea_token = piero_strozzi_p
+			allowed = {
+					original_tag = SNA
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "piero_strozzi_p"
+		portraits = {
+			army = {
+				small = "GFX_idea_piero_strozzi"
+			}
+		}
+	}
+}

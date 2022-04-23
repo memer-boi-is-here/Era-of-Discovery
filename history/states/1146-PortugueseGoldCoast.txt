@@ -1,0 +1,21 @@
+
+state={
+	id=1146
+	name="Portuguese Gold Coast"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+			
+		}
+		add_core_of = POR
+	}
+
+	provinces={
+		12742
+	}
+}

@@ -1,0 +1,71 @@
+TUR_selling_indian_ports = {
+	
+	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
+
+	allowed = {
+        TUR = { has_country_flag = can_sell_indian_ports }
+		OR = {
+			tag = POR
+			tag = SPR
+			tag = FRA
+			tag = ENG
+			tag = SCO
+			tag = AUS
+			tag = HOL
+			tag = VNI
+			tag = SVY
+			tag = GEN
+			tag = NAP
+			tag = DEN
+			tag = NOR
+		}
+	}
+	
+	visible = {
+        TUR = { has_country_flag = can_sell_indian_ports }
+		OR = {
+			tag = POR
+			tag = SPR
+			tag = FRA
+			tag = ENG
+			tag = SCO
+			tag = AUS
+			tag = HOL
+			tag = VNI
+			tag = SVY
+			tag = GEN
+			tag = NAP
+			tag = DEN
+			tag = NOR
+		}
+
+	}
+	
+	visible_when_empty = yes
+	
+}
+
+TUR_war_for_Singapore = {
+	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
+
+	allowed = {
+        TUR = { has_completed_focus = TUR_challenge_portugal }
+		tag = TUR
+		has_war_with = POR
+	}
+	
+	visible = {
+        TUR = { has_completed_focus = TUR_challenge_portugal }
+		tag = TUR
+		has_war_with = POR
+
+	}
+	
+	
+	on_map_area = {
+			name = TUR_end_war_timing
+			state = 336
+		}
+	
+	visible_when_empty = yes
+}

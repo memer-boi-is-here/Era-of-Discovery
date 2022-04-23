@@ -1,0 +1,19 @@
+state={
+	id=1044
+	name="Bastar"
+	history={
+		owner = BST
+		add_core_of = BST
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+	provinces={
+		7428 7465 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

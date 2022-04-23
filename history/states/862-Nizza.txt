@@ -1,0 +1,27 @@
+state={
+	id=862
+	name="STATE_862"
+	history = {
+		owner = SVY
+		add_core_of = SVY
+add_core_of = OCC
+        buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			indsutrial_complex = 2
+			dockyard = 3
+			
+			9909 = {
+				naval_base = 2
+
+			}
+			
+		}
+		}
+	provinces={
+		3959 9909 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

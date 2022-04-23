@@ -1,0 +1,18 @@
+state={
+	id=1032
+	name="Kayamkulm"
+	history={
+		owner = KAY
+		add_core_of = KAY
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		1321 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

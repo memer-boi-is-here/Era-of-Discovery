@@ -1,0 +1,18 @@
+state={
+	id=1119
+	name="Lanao"
+	history={
+		owner = LAN
+		add_core_of = LAN
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 10214 10243 10300 12273
+	}
+	manpower=1002242
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

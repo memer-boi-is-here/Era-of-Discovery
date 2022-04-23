@@ -1,0 +1,520 @@
+characters = {
+	DEN_frederick_ii = {
+		name = "Frederick II"
+		advisor = {
+			slot = army_chief
+			idea_token = frederick_ii
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_frederick_ii"
+			}
+			civilian = {
+				large = "gfx/leaders/DEN/portrait_frederick_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	DEN_christian_iii = {
+		name = "Christian III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/portrait_christian_iii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist offensive_doctrine inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { father_of_danish_lutheranism }
+			expire = "1559.1.1.1"
+			id = -1
+		}
+	}
+	DEN_adolf_duke_of_holsteingottorp = {
+		name = "Adolf, Duke of Holstein-Gottorp"
+		advisor = {
+			slot = high_command
+			idea_token = adolf_old
+			ledger = army 
+				allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					army_artillery_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_adolf_old"
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_adolf.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	DEN_daniel_rantzau = {
+		name = "Daniel Rantzau"
+		advisor = {
+			slot = political_advisor
+			idea_token = daniel_rantzau
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = daniel_rantzau_a
+			ledger = army 
+				allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_daniel_rantzau"
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_daniel_rantzau.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	DEN_johan_rantzau = {
+		name = "Johan Rantzau"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_johan_rantzau.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	DEN_pontus_de_la_gardie = {
+		name = "Pontus De la Gardie"
+		advisor = {
+			slot = high_command
+			idea_token = pontus_gardie
+			ledger = army 
+				allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					army_drill_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_pontus_gardie"
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_pontus_gardie.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	DEN_herluf_trolle = {
+		name = "Herluf Trolle"
+		advisor = {
+			slot = navy_chief
+			idea_token = herluf_trolle
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_herluf_trolle"
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_herluf_trolle.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	DEN_otte_knudsen_rud = {
+		name = "Otte Knudsen Rud"
+		advisor = {
+			slot = navy_chief
+			idea_token = otte_rud
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					navy_chief_commerce_raiding_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_otte_rud"
+			}
+			army = {
+				large = "gfx/leaders/DEN/portrait_otte_rud.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	DEN_niels_trampe = {
+		name = "Niels Trampe"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	DEN_frederik_trampe = {
+		name = "Frederik Trampe"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			expire = "1558.1.1.12"
+			id = -1
+		}
+	}
+	DEN_carl_urne = {
+		name = "Carl Urne"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1560.1.1.12"
+			id = -1
+		}
+	}
+	DEN_johannes_bugenhagen = {
+		advisor = {
+			slot = political_advisor
+			idea_token = johannes_bugenhagen
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					apostle_of_the_north 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "johannes_bugenhagen"
+		portraits = {
+			army = {
+				small = "GFX_idea_johannes_bugenhagen"
+			}
+		}
+	}
+	DEN_ludvig_munk_a = {
+		advisor = {
+			slot = high_command
+			idea_token = ludvig_munk_a
+			ledger = navy 
+				allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ludvig_munk_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_ludvig_munk"
+			}
+		}
+	}
+	DEN_johan_rantzau_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = johan_rantzau_a
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "johan_rantzau_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_johan_rantzau"
+			}
+		}
+	}
+	DEN_claus_bille = {
+		advisor = {
+			slot = political_advisor
+			idea_token = claus_bille
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "claus_bille"
+		portraits = {
+			army = {
+				small = "GFX_idea_claus_bille"
+			}
+		}
+	}
+	DEN_peder_oxe = {
+		advisor = {
+			slot = political_advisor
+			idea_token = peder_oxe
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "peder_oxe"
+		portraits = {
+			army = {
+				small = "GFX_idea_peder_oxe"
+			}
+		}
+	}
+	DEN_johan_rantzau = {
+		advisor = {
+			slot = political_advisor
+			idea_token = johan_rantzau
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					chief_minister 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "johan_rantzau"
+		portraits = {
+			army = {
+				small = "GFX_idea_johan_rantzau"
+			}
+		}
+	}
+	DEN_ludvig_munk = {
+		advisor = {
+			slot = political_advisor
+			idea_token = ludvig_munk
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					lord_high_admiral 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ludvig_munk"
+		portraits = {
+			army = {
+				small = "GFX_idea_ludvig_munk"
+			}
+		}
+	}
+	DEN_christoffer_valkendorff = {
+		advisor = {
+			slot = political_advisor
+			idea_token = christoffer_valkendorff
+			allowed = {
+					original_tag = DEN
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "christoffer_valkendorff"
+		portraits = {
+			army = {
+				small = "GFX_idea_christoffer_valkendorff"
+			}
+		}
+	}
+}

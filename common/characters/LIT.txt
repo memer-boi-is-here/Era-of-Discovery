@@ -1,0 +1,484 @@
+characters = {
+	LIT_sigismund_ii_augustus = {
+		name = "Sigismund II Augustus"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/portrait_sigismund_ii.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { father_of_the_commonwealth }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	LIT_mikołaj_the_red_radziwiłł = {
+		name = "Mikołaj the Red Radziwiłł"
+		advisor = {
+			slot = army_chief
+			idea_token = mikolaj_radziwill_a
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mikolaj_radziwill
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					chief_minister 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mikolaj_radziwill"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_mikolaj_radziwill.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist offensive_doctrine inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	LIT_mikołaj_the_black_radziwiłł = {
+		name = "Mikołaj the Black Radziwiłł"
+		advisor = {
+			slot = political_advisor
+			idea_token = mikolaj_k_radziwill
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mikolaj_k_radziwill_a
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mikolaj_k_radziwill"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_mikolaj_k_radziwill.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	LIT_krzysztof_mikołaj_the_thunderbolt_radziwiłł = {
+		name = "Krzysztof Mikołaj the Thunderbolt Radziwiłł"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_krzysztof_mikolaj_radziwill.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	LIT_konstanty_wasyl_ostrogski = {
+		name = "Konstanty Wasyl Ostrogski"
+		advisor = {
+			slot = political_advisor
+			idea_token = konstanty_wasyl_ostrogski
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_konstanty_wasyl_ostrogski"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_konstanty_wasyl_ostrogski.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	LIT_andrzej_sapieha = {
+		name = "Andrzej Sapieha"
+		advisor = {
+			slot = political_advisor
+			idea_token = andrzej_sapieha
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_andrzej_sapieha"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_andrzej_sapieha.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	LIT_mikołaj_vii_radziwiłł = {
+		name = "Mikołaj VII Radziwiłł"
+		advisor = {
+			slot = high_command
+			idea_token = mikolaj_vii_radziwill
+			ledger = army 
+				allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mikolaj_vii_radziwill"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_mikołaj_vii_radziwiłł.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	LIT_jan_kostka = {
+		name = "Jan Kostka"
+		advisor = {
+			slot = navy_chief
+			idea_token = jan_kostka
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jan_kostka"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_jan_kostka.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	LIT_hrehory_chodkiewicz = {
+		name = "Hrehory Chodkiewicz"
+		advisor = {
+			slot = navy_chief
+			idea_token = hrehory_chodkiewicz
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_hrehory_chodkiewicz"
+			}
+			army = {
+				large = "gfx/leaders/LIT/portrait_hrehory_chodkiewicz.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	LIT_valdemaras_birutis = {
+		name = "Valdemaras Birutis"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	LIT_vytautas_bradziunas = {
+		name = "Vytautas Bradziunas"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	LIT_kazys_landsbergis = {
+		name = "Kazys Landsbergis"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	LIT_pawel_holszanski = {
+		advisor = {
+			slot = political_advisor
+			idea_token = pawel_holszanski
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					archbishop_of_vilnius 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "pawel_holszanski"
+		portraits = {
+			army = {
+				small = "GFX_idea_pawel_holszanski"
+			}
+		}
+	}
+	LIT_krzysztof_mikolaj_radziwill = {
+		advisor = {
+			slot = political_advisor
+			idea_token = krzysztof_mikolaj_radziwill
+			allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "krzysztof_mikolaj_radziwill"
+		portraits = {
+			army = {
+				small = "GFX_idea_krzysztof_mikolaj_radziwill"
+			}
+		}
+	}
+	LIT_andrzej_sapieha_a = {
+		advisor = {
+			slot = high_command
+			idea_token = andrzej_sapieha_a
+			ledger = army 
+				allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_drill_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "andrzej_sapieha_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_andrzej_sapieha"
+			}
+		}
+	}
+	LIT_krzysztof_mikolaj_radziwill_a = {
+		advisor = {
+			slot = high_command
+			idea_token = krzysztof_mikolaj_radziwill_a
+			ledger = army 
+				allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "krzysztof_mikolaj_radziwill_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_krzysztof_mikolaj_radziwill"
+			}
+		}
+	}
+	LIT_konstanty_wasyl_ostrogski_a = {
+		advisor = {
+			slot = high_command
+			idea_token = konstanty_wasyl_ostrogski_a
+			ledger = army 
+				allowed = {
+					original_tag = LIT
+				}
+				traits = {
+					army_artillery_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "konstanty_wasyl_ostrogski_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_konstanty_wasyl_ostrogski"
+			}
+		}
+	}
+}

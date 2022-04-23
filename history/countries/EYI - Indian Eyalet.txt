@@ -1,0 +1,4 @@
+﻿capital = 291 
+
+add_ideas = government_rank_1
+

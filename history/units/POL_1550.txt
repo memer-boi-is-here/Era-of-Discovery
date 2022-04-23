@@ -1,0 +1,222 @@
+division_template = {
+	name = "Pike Infantry"
+ 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POL_INF_01
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+	}
+	supPOLt = {
+		artillery = { x = 0 y = 0 }  # POLnish Arty Rgt/Bge had 2 Bn 105mm arty
+		POLineer = { x = 0 y = 1 }   # POL Bn
+	}
+}
+division_template = {
+	name = "Cuirassiers" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POL_CAV_01
+	# Note: POLnish divisions were 2x brigades of 2x2 rgts each, + supPOLt
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Halberdier" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POL_INF_02
+	# Note: POLnish divisions were 2x brigades of 2x2 rgts each, + supPOLt
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		anti_air_brigade = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		anti_air_brigade = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+	}
+	supPOLt = {
+		POLineer = { x = 0 y = 0 }   # POL Bn
+	}
+}
+division_template = {
+	name = "Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POL_CAV_02
+	# Note: POLnish divisions were 2x brigades of 2x2 rgts each, + supPOLt
+	regiments = {
+		heavy_cavalry = { x = 0 y = 0 }
+		heavy_cavalry = { x = 0 y = 1 }
+		heavy_cavalry = { x = 1 y = 0 }
+		heavy_cavalry = { x = 1 y = 1 }
+		heavy_cavalry = { x = 2 y = 0 }
+		heavy_cavalry = { x = 2 y = 1 }
+	}
+	supPOLt = {
+	}
+}
+division_template = {
+	name = "Demi-Lancer" 		# Used for both regular infantry divisions and larger garrison divisions
+	division_names_group = POL_CAV_03
+	# Note: POLnish divisions were 2x brigades of 2x2 rgts each, + supPOLt
+	regiments = {
+		light_cavalry = { x = 0 y = 0 }
+		light_cavalry = { x = 0 y = 1 }
+		light_cavalry = { x = 1 y = 0 }
+		light_cavalry = { x = 1 y = 1 }
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+	}
+	supPOLt = {
+	}
+}
+units = {
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9427
+		division_template = "Cuirassiers"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9427
+		division_template = "Halberdier"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9427
+		division_template = "Halberdier"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9427
+		division_template = "Demi-Lancer"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9427
+		division_template = "Pike Infantry"
+		start_exPOLience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	fleet = {
+		name = "Polish Sea Commission"			
+		naval_base = 362
+		task_force = {				
+			name = "Carracks, Fleet"
+			location = 362
+			### Carrack Division 1 ###									
+			ship = { name = "Ritter Sankt Georg" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = POL version_name = "Carrack Class" } } }				
+        }
+		task_force = {					
+			name = "Cruisers, Fleet"
+			location = 362
+			# Galleon Division 2 #			
+			ship = { name = "Great Sun" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Galleon Class" } } }				
+			ship = { name = "Saggitarius" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Galleon Class" } } }							
+			# Cruiser Division 6 #		
+			ship = { name = "Black Eagle" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = POL version_name = "Galleon Class" } } }					
+        }
+        task_force = {					
+			name = "Galley, Fleet"				
+			location = 362
+			### Galley Squadron 1 ###				
+			# 1st Galley Division #				
+			ship = { name = "Saint Peter" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Galley Class" } } }
+			ship = { name = "Fortune" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Galley Class" } } }
+			# 2nd Galley Division #				
+			ship = { name = "White Eagle" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Galley Class" } } }
+			ship = { name = "Star" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Galley Class" } } }
+        }			
+    }
+}
+

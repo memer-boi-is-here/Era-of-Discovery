@@ -1,0 +1,21 @@
+state={
+	id=879
+	name="STATE_879"
+	history={
+		owner = SNA
+		add_core_of = SNA
+        buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 1
+			
+		}
+	}
+	provinces={
+		6875 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,72 @@
+convert_state = {
+	IF = {
+		limit = {
+			OWNER = {
+				has_idea = protestant
+			}
+		}
+		set_variable = {
+			religion = 1
+		}
+		else_if = {
+			limit = {
+				OWNER = {
+					has_idea = catholic
+				}
+			}
+			set_variable = {
+				religion = 2
+			}
+			else_if = {
+				limit = {
+					OWNER = {
+						has_idea = reformed
+					}
+				}
+				set_variable = {
+					religion = 3
+				}
+				else_if = {
+					limit = {
+						OWNER = {
+							has_idea = orthodox
+						}
+					}
+					set_variable = {
+						religion = 4
+					}
+					else_if = {
+						limit = {
+							OWNER = {
+								has_idea = anglican
+							}
+						}
+						set_variable = {
+							religion = 5
+						}
+						else_if = {
+							limit = {
+								OWNER = {
+									has_idea = sunni
+								}
+							}
+							set_variable = {
+								religion = 6
+							}
+							else_if = {
+								limit = {
+									OWNER = {
+										has_idea = shia
+									}
+								}
+								set_variable = {
+									religion = 7
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

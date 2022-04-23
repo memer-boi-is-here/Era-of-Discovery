@@ -1,0 +1,34 @@
+
+state={
+	id=735
+	name="STATE_735"
+
+	history={
+		owner = SVY
+		add_core_of = SVY
+add_core_of = OCC
+		victory_points = {
+			778 1 
+		}
+		victory_points = {
+			9909 5 
+		}
+		victory_points = {
+			6784 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+
+	}
+
+	provinces={
+		641 764 778 3650 3764 6609 6639 6784 9590 9603 9745 11573 
+	}
+	manpower=90750
+	buildings_max_level_factor=1.000
+	state_category=town
+}

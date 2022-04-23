@@ -1,0 +1,24 @@
+state={
+	id=1074
+	name="Settsu"
+	provinces={
+		7072 7113 
+	}
+		history={
+			owner = HOS
+		add_core_of = HOS
+	buildings = {
+	infrastructure = 3
+	
+	dockyard = 1		
+	arms_factory = 1
+	industrial_complex = 1
+	7072 = {
+	     naval_base = 1
+	}
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

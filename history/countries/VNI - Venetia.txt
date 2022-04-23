@@ -1,0 +1,177 @@
+﻿capital = 160
+
+recruit_character = VNI_francesco_donato
+recruit_character = VNI_marco_antonio_bragadin
+recruit_character = VNI_jacopo_soranzo
+recruit_character = VNI_pietro_loredan
+recruit_character = VNI_nicolò_da_ponte
+recruit_character = VNI_sebastiano_venier
+recruit_character = VNI_agostino_barbarigo
+recruit_character = VNI_john_brown
+recruit_character = VNI_bob_evans
+recruit_character = VNI_marcus_evans
+recruit_character = VNI_marco_antonio_bragadin_a
+
+add_ideas = {
+     maritime_republic
+	 mediterranean_trade_hegemony
+}
+
+oob = "VNI_1550"
+
+set_research_slots = 2
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+
+set_convoys = 50
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 53
+	fascism = 20
+	communism = 2
+	neutrality = 25
+}
+
+create_country_leader = {
+		name = "Francesco Donato"
+		picture = "Francesco-Donato.dds"
+		ideology = liberalism
+		traits = {
+             
+		}
+	}
+	
+	create_field_marshal = {
+	    name = "Marco Antonio Bragadin"
+    	picture = "portrait_marco_antonio_bragadin.dds"
+	    traits = { logistics_wizard infantry_leader war_hero }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Jacopo Soranzo"
+    	picture = "portrait_jacopo_soranzo.dds"
+	    traits = { scavenger trait_reckless media_personality }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Pietro Loredan"
+    	picture = "portrait_pietro_loredan.dds"
+	    traits = { cavalry_expert cavalry_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Nicolò da Ponte"
+    	picture = "portrait_nicolo_a_ponte.dds"
+	    traits = { urban_assault_specialist infantry_officer }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 1
+	    planning_skill = 0
+	    logistics_skill = 0
+    }
+	
+	create_navy_leader = {
+	    name = "Sebastiano Venier"
+    	picture = "portrait_sebastiano_venier.dds"
+	    traits = { big_guns_expert ironside battleship_adherent old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 4
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Agostino Barbarigo"
+    	picture = "portrait_agostino_barbarigo.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+
+add_ideas = Catholic
+
+add_opinion_modifier = { target = TUR modifier = large_decrease }

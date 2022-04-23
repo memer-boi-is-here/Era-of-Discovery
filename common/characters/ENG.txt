@@ -1,0 +1,751 @@
+characters = {
+	ENG_john_dudley_1st_duke_of_northumberland = {
+		name = "John Dudley, 1st Duke of Northumberland"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_john_dudley.dds"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer politically_connected infantry_leader offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ENG_william_howard = {
+		name = "William Howard, 1st Baron Howard of Effingham"
+		advisor = {
+			slot = army_chief
+			idea_token = william_howard
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_william_howard"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_william_howard.dds"
+			}
+		}
+		field_marshal = {
+			traits = { bearer_of_artillery war_hero organizer aggressive_assaulter }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	ENG_francis_talbot = {
+		name = "Francis Talbot, 5th Earl of Shrewsbury"
+		advisor = {
+			slot = army_chief
+			idea_token = francis_talbot
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_chief_maneuver_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_francis_talbot"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_francis_talbot.dds"
+			}
+		}
+		field_marshal = {
+			traits = { trait_cautious trait_engineer unyielding_defender }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_william_herbert = {
+		name = "William Herbert, 1st Earl of Pembroke"
+		advisor = {
+			slot = high_command
+			idea_token = william_herbert
+			ledger = army 
+				allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_infantry_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_william_herbert"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_william_herbert.dds"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard war_hero thorough_planner }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_henry_carey_1st_baron_hunsdon = {
+		name = "Henry Carey, 1st Baron Hunsdon"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_henry_carey.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader skilled_staffer infantry_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	ENG_george_talbot_6th_earl_of_shrewsbury = {
+		name = "George Talbot, 6th Earl of Shrewsbury"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_george_talbot.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery inflexible_strategist trickster fortress_buster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ENG_thomas_wentworth = {
+		name = "Thomas Wentworth, 2nd Baron Wentworth"
+		advisor = {
+			slot = high_command
+			idea_token = thomas_wentworth
+			ledger = army 
+				allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_wentworth"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_thomas_wentworth.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader urban_assault_specialist ambusher }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_edward_hastings_1st_baron_hastings_of_loughborough = {
+		name = "Edward Hastings, 1st Baron Hastings of Loughborough"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_edward_hastings.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer hill_fighter scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_sir_francis_knollys = {
+		name = "Sir Francis Knollys"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_francis_knollys.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard infantry_leader adaptable }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_ambrose_dudley_3rd_earl_of_warwick = {
+		name = "Ambrose Dudley, 3rd Earl of Warwick"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_ambrose_dudley.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless trait_mountaineer infantry_expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_thomas_percy = {
+		name = "Thomas Percy, 7th Earl of Northumberland"
+		advisor = {
+			slot = high_command
+			idea_token = thomas_percy
+			ledger = army 
+				allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_regrouping_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_percy"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_thomas_percy.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer invader_ii }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_henry_manners_2nd_earl_of_rutland = {
+		name = "Henry Manners, 2nd Earl of Rutland"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_henry_manners.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_edward_clinton_1st_earl_of_lincoln = {
+		name = "Edward Clinton, 1st Earl of Lincoln"
+		advisor = {
+			slot = political_advisor
+			idea_token = edward_clinton
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					lord_high_admiral 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+    }
+	ENG_edward_clinton_a = {
+	    name = "Edward Clinton, 1st Earl of Lincoln"
+        advisor = {
+		    slot = navy_chief
+		    idea_token = edward_clinton_a
+		    allowed = {
+					original_tag = ENG
+				}
+				traits = {
+			        navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+	    }
+		portraits = {
+			army = {
+				small = "GFX_idea_edward_clinton"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_edward_clinton.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_john_hawkins = {
+		name = "Sir John Hawkins"
+		advisor = {
+			slot = navy_chief
+			idea_token = john_hawkins
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					navy_chief_maneuver_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_hawkins"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_john_hawkins.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly blue_water_expert cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_thomas_wyndham = {
+		name = "Sir Thomas Wyndham"
+		advisor = {
+			slot = high_command
+			idea_token = thomas_wyndham
+			ledger = navy 
+				allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_wyndham"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_thomas_wyndham.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer bold destroyer_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_martin_frobisher = {
+		name = "Sir Martin Frobisher"
+		advisor = {
+			slot = high_command
+			idea_token = martin_frobisher
+			ledger = navy 
+				allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					navy_screen_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_martin_frobisher"
+			}
+			army = {
+				large = "gfx/leaders/ENG/portrait_martin_frobisher.dds"
+			}
+		}
+		navy_leader = {
+			traits = { caustic_personality ground_pounder }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ENG_stanley_hamilton = {
+		name = "Stanley Hamilton"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1562.1.1.12"
+			id = -1
+		}
+	}
+	ENG_winston_hamilton = {
+		name = "Winston Hamilton"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			expire = "1568.1.1.12"
+			id = -1
+		}
+	}
+	ENG_william_hardinge = {
+		name = "William Hardinge"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1559.1.1.12"
+			id = -1
+		}
+	}
+	ENG_john_dudley_duke_of_northumberland = {
+		advisor = {
+			slot = political_advisor
+			idea_token = john_dudley_duke_of_northumberland
+			allowed = {
+					original_tag = ENG
+				}
+				available = {
+					not = {
+						has_completed_focus = ENG_execute_john_dudley 
+					}
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_dudley_duke_of_northumberland"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_dudley_duke_of_northumberland"
+			}
+		}
+	}
+	ENG_thomas_cranmer = {
+		advisor = {
+			slot = political_advisor
+			idea_token = thomas_cranmer
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					archbishop_of_canterbury 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "thomas_cranmer"
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_cranmer"
+			}
+		}
+	}
+	ENG_reginald_pole = {
+		advisor = {
+			slot = political_advisor
+			idea_token = reginald_pole
+			allowed = {
+					original_tag = ENG
+				}
+				available = {
+					if = {
+						has_completed_focus = ENG_execute_john_dudley 
+					}
+				}
+				traits = {
+					archbishop_of_canterbury 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "reginald_pole"
+		portraits = {
+			army = {
+				small = "GFX_idea_reginald_pole"
+			}
+		}
+	}
+	ENG_john_dudley_duke_of_northumberland_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = john_dudley_duke_of_northumberland_a
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_dudley_duke_of_northumberland_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_dudley_duke_of_northumberland"
+			}
+		}
+	}
+	ENG_william_sharington = {
+		advisor = {
+			slot = political_advisor
+			idea_token = william_sharington
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "william_sharington"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_sharington"
+			}
+		}
+	}
+	ENG_john_russell = {
+		advisor = {
+			slot = navy_chief
+			idea_token = john_russell
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_russell"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_russell"
+			}
+		}
+	}
+	ENG_thomas_radclyffe = {
+		advisor = {
+			slot = political_advisor
+			idea_token = thomas_radclyffe
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "thomas_radclyffe"
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_radclyffe"
+			}
+		}
+	}
+	ENG_thomas_darcy = {
+		advisor = {
+			slot = political_advisor
+			idea_token = thomas_darcy
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					war_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "thomas_darcy"
+		portraits = {
+			army = {
+				small = "GFX_idea_thomas_darcy"
+			}
+		}
+	}
+	ENG_william_paulet = {
+		advisor = {
+			slot = political_advisor
+			idea_token = william_paulet
+			allowed = {
+					original_tag = ENG
+				}
+				traits = {
+					lord_high_treasurer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "william_paulet"
+		portraits = {
+			army = {
+				small = "GFX_idea_william_paulet"
+			}
+		}
+	}
+}

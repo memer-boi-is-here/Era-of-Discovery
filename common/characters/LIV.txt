@@ -1,0 +1,260 @@
+characters = {
+	LIV_gotthard_kettler = {
+		name = "Gotthard Kettler"
+		advisor = {
+			slot = high_command
+			idea_token = gotthard_kettler_a
+			ledger = army 
+				allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					army_logistics_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = gotthard_kettler_p
+			allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = gotthard_kettler
+			allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_gotthard_kettler"
+			}
+			civilian = {
+				large = "gfx/leaders/LIV/gotthard_kettler.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	LIV_gotthard_kettler_duke_of_courland = {
+		name = "Gotthard Kettler, Duke of Courland"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/LIV/gotthard_kettler.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	LIV_philipp_schall_von_bell = {
+		name = "Philipp Schall von Bell"
+		advisor = {
+			slot = political_advisor
+			idea_token = philipp_schall_von_bell_p
+			allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = philipp_schall_von_bell_a
+			allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_philipp_schall_von_bell"
+			}
+			army = {
+				large = "gfx/leaders/LIV/portrait_philipp_schall_von_bell.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	LIV_wilhelm_von_brandenburg = {
+		name = "Wilhelm von Brandenburg"
+		advisor = {
+			slot = political_advisor
+			idea_token = wilhelm_von_brandenburg_p
+			allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wilhelm_von_brandenburg
+			ledger = army 
+				allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_wilhelm_von_brandenburg"
+			}
+			army = {
+				large = "gfx/leaders/LIV/portrait_wilhelm_von_brandenburg.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	LIV_alexander_walker = {
+		name = "Alexander Walker"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1567.1.1.12"
+			id = -1
+		}
+	}
+	LIV_jim_white = {
+		name = "Jim White"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1564.1.1.12"
+			id = -1
+		}
+	}
+	LIV_lucas_smith = {
+		name = "Lucas Smith"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1560.1.1.12"
+			id = -1
+		}
+	}
+	LIV_philipp_schall_von_bell = {
+		advisor = {
+			slot = high_command
+			idea_token = philipp_schall_von_bell
+			ledger = army 
+				allowed = {
+					original_tag = LIV
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "philipp_schall_von_bell"
+		portraits = {
+			army = {
+				small = "GFX_idea_philipp_schall_von_bell"
+			}
+		}
+	}
+}

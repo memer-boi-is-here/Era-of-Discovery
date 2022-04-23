@@ -1,0 +1,18 @@
+state={
+	id=1051
+	name="STATE_1051"
+	history={
+		owner = CUT
+		add_core_of = CUT
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		1061 1190 7020 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

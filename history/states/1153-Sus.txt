@@ -1,0 +1,22 @@
+
+state={
+	id=1153
+	name="Sus"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = SUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = SUS
+	}
+
+	provinces={
+		1958
+	}
+}

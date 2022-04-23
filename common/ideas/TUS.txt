@@ -1,0 +1,278 @@
+ideas = {
+	
+	country = {
+	
+		italian_renaissance = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = italian_renaissance
+			
+			modifier = {
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+
+		}
+		
+		medici_patronage = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = medici_patronage
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.05
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	gian_giacomo_medici_p = {
+			
+			picture = gian_giacomo_medici
+			
+			allowed = {
+				original_tag = TUS
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		benedetto_varchi = {
+			
+			picture = benedetto_varchi
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		agostino_ramelli = {
+			
+			picture = agostino_ramelli
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		benvenuto_cellini_p = {
+			
+			picture = benvenuto_cellini
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		alessandro_vitelli_p = {
+			
+			picture = alessandro_vitelli
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		gian_giacomo_medici_a = {
+
+			picture = gian_giacomo_medici
+			
+			allowed = {
+				original_tag = TUS
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		giulio_de_medici = {
+
+			picture = giulio_de_medici
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		chiappino_vitelli = {
+
+			picture = chiappino_vitelli
+			
+			allowed = {
+				original_tag = TUS
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	high_command = {
+
+	    gian_giacomo_medici = {
+			ledger = army
+
+			picture = gian_giacomo_medici
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		alessandro_vitelli = {
+			ledger = army
+			
+			picture = alessandro_vitelli
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		benvenuto_cellini = {
+			ledger = army
+			
+			picture = benvenuto_cellini
+			
+			allowed = {
+				original_tag = TUS
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

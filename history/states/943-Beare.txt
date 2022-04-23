@@ -1,0 +1,20 @@
+state={
+	id=943
+	name="Beare"
+
+	history={
+		owner = BER
+		add_core_of = BER
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+
+	provinces={
+		 9405
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

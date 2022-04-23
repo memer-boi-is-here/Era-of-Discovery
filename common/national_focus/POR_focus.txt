@@ -1,0 +1,320 @@
+focus_tree = {
+	id = portugal
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+	#Focus for Take the Gold of Corrupt Churches"
+	focus = {
+		id = POR_take_the_gold_of_corrupt_churches
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_infrastructure_around_portugal }
+		mutually_exclusive = { focus = POR_fund_the_corrupt_churches }
+		completion_reward = {
+			
+			add_stability= -3.00Submitadd_political_power= 150
+		
+		}
+	}
+
+	#Focus for Discovery of North America"
+	focus = {
+		id = POR_discovery_of_north_america
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = POR_discovery_of_south_america }
+		search_filters = {  FOCUS_FILTER_ANNEXATION  } 
+	}
+
+	#Focus for Discovery of South America"
+	focus = {
+		id = POR_discovery_of_south_america
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = POR_discovery_of_north_america }
+		search_filters = {  FOCUS_FILTER_ANNEXATION  } 
+		completion_reward = {
+			
+			set_state_owner= 500
+		
+		}
+	}
+
+	#Focus for Civilian Factories 1"
+	focus = {
+		id = POR_civilian_factories_1
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_infrastructure_around_portugal }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = industrial_complex
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		
+		}
+	}
+
+	#Focus for Guns for Every Soldier"
+	focus = {
+		id = POR_guns_for_every_soldier
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_founding_the_colonial_empire }
+		completion_reward = {
+			
+			add_equipment_to_stockpile= {
+ type = infantry_equipment_1
+amount = 50000 
+producer = POR
+}
+		
+		}
+	}
+
+	#Focus for Industry in Lisbon"
+	focus = {
+		id = POR_industry_in_lisbon
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_discovery_of_south_america }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 5
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 6
+ add_building_construction = {
+ type = arms_factory
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		
+		}
+	}
+
+	#Focus for Founding the Colonial Empire"
+	focus = {
+		id = POR_founding_the_colonial_empire
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_discovery_of_south_america }
+	}
+
+	#Focus for Reduce Inflation"
+	focus = {
+		id = POR_reduce_inflation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {  FOCUS_FILTER_POLITICAL  } 
+		completion_reward = {
+			
+			add_political_power= 50
+		
+		}
+	}
+
+	#Focus for Infrastructure around Portugal"
+	focus = {
+		id = POR_infrastructure_around_portugal
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_reduce_inflation }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 10
+instant_build = yes}
+
+}
+		
+		}
+	}
+
+	#Focus for Fund the Corrupt Churches"
+	focus = {
+		id = POR_fund_the_corrupt_churches
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_infrastructure_around_portugal }
+		mutually_exclusive = { focus = POR_take_the_gold_of_corrupt_churches }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			add_political_power= -100add_stability= 10
+		
+		}
+	}
+
+	#Focus for Civilian Factories 2"
+	focus = {
+		id = POR_civilian_factories_2
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_civilian_factories_1 }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = industrial_complex
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		
+		}
+	}
+
+	#Focus for Take more Lands in South America"
+	focus = {
+		id = POR_take_more_lands_in_south_america
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_founding_the_colonial_empire }
+		search_filters = {  FOCUS_FILTER_ANNEXATION  } 
+		completion_reward = {
+			
+			add_stability= 25set_state_owner= 501add_political_power= 50
+		
+		}
+	}
+
+	#Focus for Discover India"
+	focus = {
+		id = POR_discover_india
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_guns_for_every_soldier }
+		search_filters = {  FOCUS_FILTER_ANNEXATION  } 
+		completion_reward = {
+			
+			set_state_owner= 321
+		
+		}
+	}
+
+	#Focus for Mines in our Colonies"
+	focus = {
+		id = POR_mines_in_our_colonies
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 12
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_civilian_factories_2 }
+		search_filters = {  FOCUS_FILTER_INDUSTRY  } 
+		completion_reward = {
+			
+			add_resource= { 
+type = steel
+amount = 80
+state = 500 
+}
+		
+		}
+	}
+
+	#Focus for Take all of Brazil"
+	focus = {
+		id = POR_take_all_of_brazil
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = POR_guns_for_every_soldier }
+		search_filters = {  FOCUS_FILTER_ANNEXATION  } 
+		completion_reward = {
+			
+			set_state_owner= 495set_state_owner= 499set_state_owner= 505set_state_owner= 504set_state_owner= 497set_state_owner= 280set_state_owner= 498
+		
+		}
+	}
+
+#End of focuses 
+ }

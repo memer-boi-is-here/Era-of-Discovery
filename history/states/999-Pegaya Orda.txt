@@ -1,0 +1,19 @@
+state={
+	id=999
+	name="Pegaya Orda"
+	
+	history={
+		owner = OIR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = OIR
+	}
+	
+	provinces={
+		1297 4665 4734 4789 4803 4866 7274 7757 7825 10652 12515 12536
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

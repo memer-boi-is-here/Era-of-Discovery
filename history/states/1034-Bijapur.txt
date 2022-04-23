@@ -1,0 +1,22 @@
+
+state={
+	id=1034
+	name="Bijapur"
+
+	history={
+		owner = BIJ
+		add_core_of = BIJ
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+
+	provinces={
+		4278 4291 4395 5032 7232 7250 10208 10210 10799 12105 12208 12295 13248 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

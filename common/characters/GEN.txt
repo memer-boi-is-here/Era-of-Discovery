@@ -1,0 +1,299 @@
+characters = {
+	GEN_gaspare_g._bracelli = {
+		name = "Gaspare G. Bracelli"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GEN/portrait_genoa_leader.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	GEN_nicolò_doria = {
+		name = "Nicolò Doria"
+		advisor = {
+			slot = political_advisor
+			idea_token = nicolo_doria_p
+			allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nicolo_doria_a
+			allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_nicolo_doria"
+			}
+			army = {
+				large = "gfx/leaders/GEN/portrait_nicolo_doria.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	GEN_simone_spinola = {
+		name = "Simone Spinola"
+		advisor = {
+			slot = political_advisor
+			idea_token = simone_spinola_p
+			allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = simone_spinola
+			ledger = army 
+				allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_simone_spinola"
+			}
+			army = {
+				large = "gfx/leaders/GEN/portrait_simone_spinola.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	GEN_andrea_doria = {
+		name = "Andrea Doria"
+		advisor = {
+			slot = navy_chief
+			idea_token = andrea_doria
+			allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_andrea_doria"
+			}
+			army = {
+				large = "gfx/leaders/GEN/portrait_andrea_doria.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	GEN_giovanni_andrea_doria = {
+		name = "Giovanni Andrea Doria"
+		advisor = {
+			slot = navy_chief
+			idea_token = giovanni_andrea_doria
+			allowed = {
+					original_tag = GEN
+				}
+				cost = 150.000
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = giovanni_andrea_doria_a
+			ledger = navy 
+				allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_giovanni_andrea_doria"
+			}
+			army = {
+				large = "gfx/leaders/GEN/portrait_giovanni_andrea_doria.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	GEN_jim_wilson = {
+		name = "Jim Wilson"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1558.1.1.12"
+			id = -1
+		}
+	}
+	GEN_jim_roberts = {
+		name = "Jim Roberts"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1563.1.1.12"
+			id = -1
+		}
+	}
+	GEN_lucas_smith = {
+		name = "Lucas Smith"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			expire = "1568.1.1.12"
+			id = -1
+		}
+	}
+	GEN_nicolo_doria = {
+		advisor = {
+			slot = high_command
+			idea_token = nicolo_doria
+			ledger = army 
+				allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "nicolo_doria"
+		portraits = {
+			army = {
+				small = "GFX_idea_nicolo_doria"
+			}
+		}
+	}
+	GEN_giovanni_andrea_doria_p = {
+		advisor = {
+			slot = political_advisor
+			idea_token = giovanni_andrea_doria_p
+			allowed = {
+					original_tag = GEN
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "giovanni_andrea_doria_p"
+		portraits = {
+			army = {
+				small = "GFX_idea_giovanni_andrea_doria"
+			}
+		}
+	}
+}

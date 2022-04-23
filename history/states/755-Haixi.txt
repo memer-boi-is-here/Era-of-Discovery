@@ -1,0 +1,21 @@
+state={
+	id=755
+	name="STATE_755"
+	provinces={
+		2053 10750 10796 12846 13146
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = XSM
+		add_core_of = XSM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		
+
+	}
+}

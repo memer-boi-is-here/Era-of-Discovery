@@ -1,0 +1,1768 @@
+focus_tree = {
+	id = Papacy_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PAP
+		}
+	}
+	
+	focus = {
+		id = PAP_a_new_pope
+		icon = GFX_PAP_a_new_pope-45400
+		x = 4
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PAP_persia
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 1
+		
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_final_triumphs
+		prerequisite = { focus = PAP_the_final_triumphs }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = PER }
+		}
+	}
+
+	focus = {
+		id = PAP_germania
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_final_triumphs
+		prerequisite = { focus = PAP_the_final_triumphs }
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = POL }
+			create_wargoal = { type = annex_everything target = AUS }
+			hidden_effect = {
+				add_state_claim = 1016
+				add_state_claim = 1011
+				add_state_claim = 1008
+				add_state_claim = 1007
+				add_state_claim = 1006
+				add_state_claim = 863
+				add_state_claim = 860
+				add_state_claim = 859
+				add_state_claim = 858
+				add_state_claim = 857
+				add_state_claim = 856
+				add_state_claim = 855
+				add_state_claim = 854
+				add_state_claim = 853
+				add_state_claim = 852
+				add_state_claim = 851
+				add_state_claim = 850
+				add_state_claim = 849
+				add_state_claim = 845
+				add_state_claim = 843
+				add_state_claim = 842
+				add_state_claim = 808
+				add_state_claim = 805
+				add_state_claim = 801
+				add_state_claim = 798
+				add_state_claim = 763
+				add_state_claim = 188
+				add_state_claim = 87
+				add_state_claim = 86
+				add_state_claim = 85
+				add_state_claim = 68
+				add_state_claim = 67
+				add_state_claim = 66
+				add_state_claim = 65
+				add_state_claim = 64
+				add_state_claim = 63
+				add_state_claim = 62
+				add_state_claim = 61
+				add_state_claim = 60
+				add_state_claim = 59
+				add_state_claim = 58
+				add_state_claim = 57
+				add_state_claim = 56
+				add_state_claim = 55
+				add_state_claim = 54
+				add_state_claim = 53
+				add_state_claim = 52
+				add_state_claim = 51
+				add_state_claim = 50
+				add_state_claim = 42
+				add_state_claim = 28
+				add_state_claim = 5
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_rome_reborn
+		icon = GFX_PAP_rome_reborn-45397
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_memories_of_rome
+		prerequisite = { focus = PAP_memories_of_rome }
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SVY }
+			create_wargoal = { type = annex_everything target = NAP }
+			create_wargoal = { type = annex_everything target = FLO }
+			create_wargoal = { type = annex_everything target = FER }
+			create_wargoal = { type = annex_everything target = GEN }
+			create_wargoal = { type = annex_everything target = MOD }
+			create_wargoal = { type = annex_everything target = LUC }
+			create_wargoal = { type = annex_everything target = URB }
+			create_wargoal = { type = annex_everything target = SNA }
+			create_wargoal = { type = annex_everything target = MIL }
+		}
+	}
+	
+	focus = {
+		id = PAP_proclaim_the_roman_empire
+		icon = GFX_PAP_proclaim_the_roman_empire-45372
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_rome_reborn
+		prerequisite = { focus = PAP_rome_reborn }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_faction = "Imperium Romanum"
+		}
+	}
+
+	focus = {
+		id = PAP_military_industry_3
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_military_industry_2
+		prerequisite = { focus = PAP_military_industry_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_french_protection
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_enforce_our_claim_over_parma
+		prerequisite = { focus = PAP_enforce_our_claim_over_parma }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			FRA = { give_guarantee = PAP }
+		}
+	}
+
+	focus = {
+		id = PAP_carthage
+		icon = GFX_PAP_carthage-45447
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_hispaniam
+		prerequisite = { focus = PAP_hispaniam }
+ 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ALG }
+			create_wargoal = { type = annex_everything target = TUN }
+		}
+	}
+
+	focus = {
+		id = PAP_improving_the_papal_military
+		icon = GFX_PAP_improving_the_papal_military-45386
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.75 uses = 3 category = land_doctrine }
+		}
+	}
+
+
+	focus = {
+		id = PAP_send_alessandro_to_parma
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_pope_julius_iii
+		prerequisite = { focus = PAP_pope_julius_iii }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			give_guarantee = PRM
+			add_opinion_modifier = { target = PRM modifier = large_increase }
+			PRM = {
+				add_political_power = 50
+				add_opinion_modifier = { target = PAP modifier = large_increase }
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_enforce_our_claim_over_parma
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_pope_alexander_vii
+		prerequisite = { focus = PAP_pope_alexander_vii }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = PRM }
+			add_state_claim = 161
+		}
+	}
+
+	focus = {
+		id = PAP_rome_wasnt_built_in_a_day
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 14
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			every_owned_state = {
+			       add_building_construction = {
+				      type = infrastructure
+		              level = 2
+					  instant_build = yes
+				  }
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_defending_the_mediterranean
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_improving_the_papal_military
+		prerequisite = { focus = PAP_improving_the_papal_military }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = PAP_military_innovations
+		icon = GFX_goal_rhineland
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_improving_the_papal_military
+		prerequisite = { focus = PAP_improving_the_papal_military }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+
+	focus = {
+		id = PAP_to_a_glorious_future
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 22
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PAP_neutrality_focus
+		icon = GFX_goal_continuous_boost_freedom
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_french_protection
+		prerequisite = { focus = PAP_french_protection focus = PAP_bring_back_the_council_of_trent }
+		mutually_exclusive = { focus = PAP_join_the_hapsburg_alliance focus = PAP_join_the_valois_alliance }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.2
+		}
+	}
+
+	focus = {
+		id = PAP_bring_back_the_council_of_trent
+		icon = GFX_PAP_bring_back_the_council_of_trent-46248
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_send_alessandro_to_parma
+		prerequisite = { focus = PAP_send_alessandro_to_parma }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = -0.1
+		}
+	}
+
+	focus = {
+		id = PAP_maintain_the_status_quo
+		icon = GFX_PAP_maintain_the_status_quo-46249
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_completed_focus = PAP_join_the_hapsburg_alliance
+		}
+		
+		relative_position_id = PAP_to_a_glorious_future
+		prerequisite = { focus = PAP_to_a_glorious_future }
+		mutually_exclusive = { focus = PAP_the_holy_wars focus = PAP_memories_of_rome }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = PAP_memories_of_rome
+		icon = GFX_PAP_memories_of_rome-45424
+		x = 0
+		y = 1
+		
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_to_a_glorious_future
+		prerequisite = { focus = PAP_to_a_glorious_future }
+		mutually_exclusive = { focus = PAP_the_holy_wars focus = PAP_maintain_the_status_quo }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_neutrality_focus
+		}
+		
+		completion_reward = {
+			add_stability = 0.05  
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = PAP_the_holy_wars
+		icon = GFX_PAP_the_holy_wars-45369
+		x = -4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_to_a_glorious_future
+		prerequisite = { focus = PAP_to_a_glorious_future }
+		mutually_exclusive = { focus = PAP_memories_of_rome focus = PAP_maintain_the_status_quo }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_join_the_valois_alliance
+		}
+		
+		completion_reward = {
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_repurpose_the_papacy
+		icon = GFX_PAP_repurpose_the_papacy-45400
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_proclaim_the_roman_empire
+		prerequisite = { focus = PAP_proclaim_the_roman_empire }
+		mutually_exclusive = { focus = PAP_dismantle_the_papacy }
+ 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 5000  
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = PAP_pax_per_bellum
+		icon = GFX_PAP_pax_per_bellum-46190
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_byzantium
+		prerequisite = { focus = PAP_byzantium }
+		prerequisite = { focus = PAP_carthage }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PAP_an_advanced_army
+		icon = GFX_focus_chi_army_reform
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_military_innovations
+		prerequisite = { focus = PAP_military_innovations }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = PAP_the_kingdom_of_god
+		icon = GFX_PAP_the_kingdom_of_god-52080
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_tenth_crusade
+		prerequisite = { focus = PAP_the_tenth_crusade }
+		mutually_exclusive = { focus = PAP_reform_the_kingdom_of_jerusalem }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_neighbor_country = {
+				limit = {
+					OR = {
+						has_idea = protestant
+						has_idea = reformed
+						has_idea = sunni
+					}
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					OR = {
+						has_idea = protestant
+						has_idea = reformed
+						has_idea = sunni
+					}
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_support_catholicism_in_england
+		icon = GFX_PAP_support_catholicism_in_england-48465
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_maintain_the_status_quo
+		prerequisite = { focus = PAP_maintain_the_status_quo }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			give_guarantee = ENG
+		}
+	}
+
+	
+	focus = {
+		id = PAP_giovanni_del_monte
+		icon = GFX_PAP_giovanni_del_monte-45384
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		available = {		
+		    check_variable = {
+                var = SPR.eng_papal_influence
+                value = FRA.ger_papal_influence
+                compare = greater_than_or_equals
+            }    
+		}
+		
+		relative_position_id = PAP_a_new_pope
+		prerequisite = { focus = PAP_a_new_pope }
+		mutually_exclusive = { focus = PAP_alessandro_farnese }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_country_leader = {
+	           name = "Julius III"
+	           desc = "Giovanni Del Monte"
+	           picture = "Pope_Julius_III.dds"
+	           expire = "1570.1.1"
+	           ideology = Despotism
+	           traits = {his_holiness_the_pope}
+            }
+			add_ideas = pro_habsburg_sentiment
+			country_event = anewera.92
+		}
+	}
+
+	focus = {
+		id = PAP_join_the_hapsburg_alliance
+		icon = GFX_PAP_join_the_hapsburg_alliance-48475
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_bring_back_the_council_of_trent
+		prerequisite = { focus = PAP_bring_back_the_council_of_trent }
+		mutually_exclusive = { focus = PAP_join_the_valois_alliance focus = PAP_neutrality_focus }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SPR = { add_to_faction = PAP }
+		}
+	}
+
+	focus = {
+		id = PAP_reforge_the_aurelian_walls
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_defending_the_mediterranean
+		prerequisite = { focus = PAP_defending_the_mediterranean }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			if = {
+				limit = { controls_state = 2 }
+				121 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+							level < 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 868 }
+				868 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+							level < 2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_pope_julius_iii
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_giovanni_del_monte
+		prerequisite = { focus = PAP_giovanni_del_monte }
+ 
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PAP_pope_alexander_vii
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_ippolito_este
+		prerequisite = { focus = PAP_ippolito_este }
+ 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PAP_military_industry_1
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_improving_the_papal_military
+		prerequisite = { focus = PAP_rome_wasnt_built_in_a_day }
+		prerequisite = { focus = PAP_improving_the_papal_military }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_civilian_industry_1
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_improving_the_papal_military
+		prerequisite = { focus = PAP_improving_the_papal_military }
+		prerequisite = { focus = PAP_rome_wasnt_built_in_a_day }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+            }			
+		}
+	}
+
+	focus = {
+		id = PAP_military_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_military_industry_1
+		prerequisite = { focus = PAP_military_industry_1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_civilian_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_civilian_industry_1
+		prerequisite = { focus = PAP_civilian_industry_1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_britannia
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_final_triumphs
+		prerequisite = { focus = PAP_the_final_triumphs }
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ENG }
+			create_wargoal = { type = annex_everything target = SCO }
+			create_wargoal = { type = annex_everything target = IRE }
+		}
+	}
+
+	focus = {
+		id = PAP_ippolito_este
+		icon = GFX_PAP_ippolito_este-45383
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		available = {		
+		    check_variable = {
+                var = FRA.ger_papal_influence
+                value = SPR.eng_papal_influence
+                compare = greater_than 
+            }    
+		}
+		
+		relative_position_id = PAP_a_new_pope
+		prerequisite = { focus = PAP_a_new_pope }
+		mutually_exclusive = { focus = PAP_giovanni_del_monte }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_country_leader = {
+	           name = "Alexander VII"
+	           desc = "ALEX_VII"
+	           picture = "ippolito_este.dds"
+	           expire = "1570.1.1"
+	           ideology = Despotism
+	           traits = { his_holiness_the_pope }
+            }
+			add_ideas = pro_valois_sentiment
+		    country_event = anewera.133
+		}
+	}
+
+	focus = {
+		id = PAP_forgive_sins_for_military_service
+		icon = GFX_focus_up_joan_of_arc
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_an_advanced_army
+		prerequisite = { focus = PAP_an_advanced_army }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = PAP_civilian_industry_3
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_civilian_industry_2
+		prerequisite = { focus = PAP_civilian_industry_2 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_the_tenth_crusade
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_deus_vult
+		prerequisite = { focus = PAP_deus_vult }
+		prerequisite = { focus = PAP_this_is_step_one }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = TUR }
+			add_state_claim = 454
+		}
+	}
+
+	focus = {
+		id = PAP_crusader_armies
+		icon = GFX_PAP_crusader_armies-45375
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_holy_wars
+		prerequisite = { focus = PAP_the_holy_wars }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+
+	focus = {
+		id = PAP_finish_the_northern_crusades
+		icon = GFX_PAP_finish_the_northern_crusades-45345
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_kingdom_of_god
+		prerequisite = { focus = PAP_the_kingdom_of_god focus = PAP_reform_the_kingdom_of_jerusalem }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = LIV }
+		}
+	}
+
+	focus = {
+		id = PAP_dismantle_the_papacy
+		icon = GFX_PAP_dismantle_the_papacy-45421
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_proclaim_the_roman_empire
+		prerequisite = { focus = PAP_proclaim_the_roman_empire }
+		mutually_exclusive = { focus = PAP_repurpose_the_papacy }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability= -0.15  
+			add_manpower = 10000
+		}
+	}
+
+	focus = {
+		id = PAP_rebuild_the_legions
+		icon = GFX_PAP_rebuild_the_legions-45397
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_dismantle_the_papacy
+		prerequisite = { focus = PAP_dismantle_the_papacy focus = PAP_repurpose_the_papacy }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 10000  
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = PAP_byzantium
+		icon = GFX_PAP_byzantium-45448
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_gallia
+		prerequisite = { focus = PAP_gallia }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = TUR}
+		}
+	}
+
+	focus = {
+		id = PAP_gallia
+		icon = GFX_PAP_gallia-45451
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_rebuild_the_legions
+		prerequisite = { focus = PAP_rebuild_the_legions }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = FRA }
+		}
+	}
+
+	focus = {
+		id = PAP_hispaniam
+		icon = GFX_PAP_hispaniam-45455
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_rebuild_the_legions
+		prerequisite = { focus = PAP_rebuild_the_legions }
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SPR }
+			create_wargoal = { type = annex_everything target = POR }
+		}
+	}
+
+	focus = {
+		id = PAP_befriend_the_jesuits
+		icon = GFX_PAP_befriend_the_jesuits-48473
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_maintain_the_status_quo
+		prerequisite = { focus = PAP_maintain_the_status_quo }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			puppet = SAL
+		}
+	}
+
+	focus = {
+		id = PAP_found_the_collegium_germanicum
+		icon = GFX_PAP_found_the_collegium_germanicum-48471
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_maintain_the_status_quo
+		prerequisite = { focus = PAP_maintain_the_status_quo }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PAP_each_journey_begins_with_a_single_step
+		icon = GFX_PAP_each_journey_begins_with_a_single_step-52069
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_holy_wars
+		prerequisite = { focus = PAP_the_holy_wars }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			annex_country = { target = URB transfer_troops = yes } 
+		}
+	}
+
+	focus = {
+		id = PAP_this_is_step_one
+		icon = GFX_PAP_this_is_step_one-52068
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_each_journey_begins_with_a_single_step
+		prerequisite = { focus = PAP_each_journey_begins_with_a_single_step }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = VIN }
+			add_state_claim = 183
+		}
+	}
+
+	focus = {
+		id = PAP_the_army_of_the_lord
+		icon = GFX_PAP_i_am_the_senate-46250
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_crusader_armies
+		prerequisite = { focus = PAP_crusader_armies }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+
+	focus = {
+		id = PAP_reform_the_kingdom_of_jerusalem
+		icon = GFX_PAP_reform_the_kingdom_of_jerusalem-52076
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_tenth_crusade
+		prerequisite = { focus = PAP_the_tenth_crusade }
+		mutually_exclusive = { focus = PAP_the_kingdom_of_god }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			PAL = { is_subject_of = PAP }
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+		      remove_idea = sunni
+              add_idea = catholic
+		    }
+			add_political_power = 300
+		}
+	}
+
+	focus = {
+		id = PAP_deus_vult
+		icon = GFX_PAP_deus_vult-52087
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_army_of_the_lord
+		prerequisite = { focus = PAP_the_army_of_the_lord }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = war_economy
+			}
+		}
+	}
+
+	focus = {
+		id = PAP_the_death_of_a_pope
+		icon = GFX_PAP_the_death_of_a_pope-45400
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_found_the_collegium_germanicum
+		prerequisite = { focus = PAP_befriend_the_jesuits }
+		prerequisite = { focus = PAP_support_catholicism_in_england }
+		prerequisite = { focus = PAP_found_the_collegium_germanicum }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			date > 1554.1.1
+		}
+		
+		completion_reward = {
+			add_stability = -0.3
+		}
+	}
+
+	focus = {
+		id = PAP_pope_marcellus_ii
+		icon = GFX_PAP_pope_marcellus_ii-56171
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_death_of_a_pope
+		prerequisite = { focus = PAP_the_death_of_a_pope }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_country_leader = {
+	           name = "Marcellus II"
+	           desc = "Marcellus II"
+	           picture = "Portrait_Yugoslavia_Peter_II.dds"
+	           expire = "1570.1.1"
+	           ideology = Despotism
+	           traits = { his_holiness_the_pope }
+            }
+		}
+	}
+
+
+	focus = {
+		id = PAP_pope_paul_iv
+		icon = GFX_PAP_pope_paul_iv-56172
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_pope_marcellus_ii
+		prerequisite = { focus = PAP_pope_marcellus_ii }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_country_leader = {
+	           name = "Pope Paul IV"
+	           desc = "Pope Paul IV"
+	           picture = "Portrait_Yugoslavia_Peter_II.dds"
+	           expire = "1570.1.1"
+	           ideology = Despotism
+	           traits = { }
+            }
+		}
+	}
+
+	focus = {
+		id = PAP_join_the_valois_alliance
+		icon = GFX_focus_chi_reach_out_to_france
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_french_protection
+		prerequisite = { focus = PAP_french_protection }
+		mutually_exclusive = { focus = PAP_neutrality_focus focus = PAP_join_the_hapsburg_alliance }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			FRA = { add_to_faction = PAP }
+		}
+	}
+	
+	focus = {
+		id = PAP_the_final_triumphs
+		icon = GFX_PAP_the_final_triumphs-45356
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_pax_per_bellum
+		prerequisite = { focus = PAP_pax_per_bellum }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	
+	focus = {
+		id = PAP_the_papal_states
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		x = 12
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = PAP_improve_avignon
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_papal_states
+		prerequisite = { focus = PAP_the_papal_states }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_the_holy_wars
+		}
+		
+		completion_reward = {
+			866 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PAP_found_religios_order_of_memel
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_papal_states
+		prerequisite = { focus = PAP_the_papal_states }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_pope_marcellus_ii
+		}
+		
+		completion_reward = {
+			transfer_state = 188
+		}
+	}
+	
+	focus = {
+		id = PAP_improve_memel
+		icon = GFX_focus_generic_industry_1
+		x = 1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_found_religios_order_of_memel
+		prerequisite = { focus = PAP_found_religios_order_of_memel }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			188 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PAP_catholic_prussia
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = -1
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_found_religios_order_of_memel
+		prerequisite = { focus = PAP_found_religios_order_of_memel }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			PRE = {
+				swap_ideas = {
+					remove_idea = protestant
+					add_idea = catholic
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PAP_join_the_union_of_polish_lithuania
+		icon = GFX_goal_generic_dangerous_deal
+		x = 0
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_catholic_prussia
+		prerequisite = { focus = PAP_catholic_prussia }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_pope_paul_iv
+		}
+		
+		completion_reward = {
+			POL = { add_to_faction = PAP }
+		}
+	}
+	
+	focus = {
+		id = PAP_found_religios_order_of_breisgau
+		icon = GFX_focus_generic_self_management
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_the_papal_states
+		prerequisite = { focus = PAP_the_papal_states }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = PAP_found_the_collegium_germanicum
+		}
+		
+		completion_reward = {
+			transfer_state = 843
+		}
+	}
+	
+	focus = {
+		id = PAP_improve_breisgau
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = PAP_found_religios_order_of_breisgau
+		prerequisite = { focus = PAP_found_religios_order_of_breisgau }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			843 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+ }

@@ -1,0 +1,373 @@
+ideas = {
+	
+	country = {
+	
+	    anti_swedish_policy = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = anti_swedish_policy
+			
+			targeted_modifier = { tag = SWE attack_bonus_against = 0.1 }
+            targeted_modifier = { tag = SWE defense_bonus_against = 0.1 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+				custom_modifier_tooltip = anti_swedish_policy_tt
+			}
+		}
+		
+		religious_upheaval = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = religious_upheaval
+			
+			modifier = {
+			    stability_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		dissolution_of_the_kalmar_union = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = dissolution_of_the_kalmar_union
+			
+			modifier = {
+			    stability_factor = -0.3
+				war_support_factor = 0.3
+				opinion_gain_monthly = -2
+			}
+		}
+	
+	}	
+	
+
+	political_advisor = {
+
+        johan_rantzau = {
+
+			picture = johan_rantzau
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { chief_minister }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		johannes_bugenhagen = {
+
+			picture = johannes_bugenhagen
+
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { apostle_of_the_north }
+			
+		    ai_will_do = {
+				factor = 1
+			}
+		}
+
+	    christoffer_valkendorff = {
+			
+			picture = christoffer_valkendorff
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		peder_oxe = {
+			
+			picture = peder_oxe
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		claus_bille = {
+			
+			picture = claus_bille
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ludvig_munk = {
+		 
+		     picture = ludvig_munk
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { lord_high_admiral }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		daniel_rantzau = {
+			
+			picture = daniel_rantzau
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	army_chief = {
+		
+
+		frederick_ii = {
+			
+			picture = frederick_ii
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		johan_rantzau_a = {
+			
+			picture = johan_rantzau
+			
+			allowed = {
+				original_tag = DEN
+			}
+		
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+
+		herluf_trolle = {
+			
+			picture = herluf_trolle
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		otte_rud = {
+			
+			picture = otte_rud 
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		adolf_old = {
+		
+			ledger = army
+			
+			picture = adolf_old
+
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    daniel_rantzau_a = {
+			ledger = army
+
+			picture = daniel_rantzau
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pontus_gardie = {
+		
+			ledger = army
+
+			picture = pontus_gardie
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { army_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ludvig_munk_a = {
+			ledger = navy
+
+			picture = ludvig_munk
+			
+			allowed = {
+				original_tag = DEN
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

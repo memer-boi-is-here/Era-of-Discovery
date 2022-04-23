@@ -1,0 +1,336 @@
+﻿l_english: 
+
+##Focus Then Desc    
+
+SPR_fund_calvinism_in_europe:0 "Fund Calvinism in Europe"
+SPR_fund_calvinism_in_europe_desc:0 "Funding and pushing for Calvinism will make our people a more cohesive unit, bickering less about construction contracts and who gets what."
+
+SPR_fund_lutheranism_in_europe:0 "Fund Lutheranism in Europe"
+SPR_fund_lutheranism_in_europe_desc:0 "Funding and pushing for Lutheranism will make our people a more cohesive unit, bickering less about construction contracts and who gets what."
+
+SPR_replace_the_king:0 "Replace the King"
+SPR_replace_the_king_desc:0 ""
+
+SPR_build_calvinist_churches:0 "Build Calvinist Churches"
+SPR_build_calvinist_churches_desc:0 "Calvinist churches on every street corner. That is how we will reinforce our will."
+
+SPR_expand_barcelona:0 "Expand Barcelona"
+SPR_expand_barcelona_desc:0 ""
+
+SPR_expand_madrid:0 "Expand Madrid"
+SPR_expand_madrid_desc:0 ""
+
+SPR_condemn_french_influence:0 "Condemn French Influence"
+SPR_condemn_french_influence_desc:0 "The French are not our allies, nor are they anyone the Spanish should concern themselves with. We should condemn their actions."
+
+SPR_focus_on_foreign_affairs:0 "Focus on Foreign Affairs"
+SPR_focus_on_foreign_affairs_desc:0 "We need to increase our influence in the world, it is pitiful."
+
+SPR_follow_the_ideas_of_luther:0 "Follow the Ideas of Luther"
+SPR_follow_the_ideas_of_luther_desc:0 ""
+
+SPR_ban_protestant_ideas:0 "Ban Protestant Ideas"
+SPR_ban_protestant_ideas_desc:0 "Protestant ideas have no place in our country. They are only weighing us down."
+
+SPR_stop_the_spanish_inquisition:0 "Stop the Spanish Inquisition"
+SPR_stop_the_spanish_inquisition_desc:0 "The Spanish Inquisition is a horrible affront to God and his children. It will not go on any longer."
+
+SPR_colonial_expansion:0 "Colonial Expansion"
+SPR_colonial_expansion_desc:0 "Our expansion should not be viewed in a negative light. We are bringing what is right to the world."
+
+SPR_forced_conversions:0 "Forced Conversions"
+SPR_forced_conversions_desc:0 "Converting people to our religion, making our population more religiously homogenous, will dispel quarrels. Hopefully."
+
+SPR_exile_protestants:0 "Exile Protestants"
+SPR_exile_protestants_desc:0 "With the protestants exiled, we can now lessen the Inquisitions negative effects on our populace."
+
+SPR_tensions_in_italy:0 "Tensions in Italy"
+SPR_tensions_in_italy_desc:0 "Italy has shown to be a problem, and can be expected to, for the foreseeable future, hinder us. We must prepare the people to swiftly end this if such a case arises."
+
+SPR_a_catholic_holy_roman_empire:0 "A Catholic Holy Roman Empire"
+SPR_a_catholic_holy_roman_empire_desc:0 ""
+
+SPR_constitutional_monarchy:0 "Constitutional Monarchy"
+SPR_constitutional_monarchy_desc:0 ""
+
+SPR_invest_in_new_spain:0 "Invest in New Spain"
+SPR_invest_in_new_spain_desc:0 "New Spain will be our bastion of hope for the people, a sprawling expanse, rich of culture and religion."
+
+SPR_invest_in_south_america:0 "Invest in South America"
+SPR_invest_in_south_america_desc:0 "South America may be a better hope for our future than Africa. We should invest in it."
+
+SPR_invest_in_asia_and_the_pacific:0 "Invest in Asia and the Pacific"
+SPR_invest_in_asia_and_the_pacific_desc:0 "Our start of trade in the Asia sphere of influence starts now."
+
+SPR_focus_on_internal_affairs:0 "Focus on Internal Affairs"
+SPR_focus_on_internal_affairs_desc:0 "Our internal policy must be reviewed in the case of conflict or differences, lest we become weak through infighting."
+
+SPR_reinforce_the_peseta:0 "Reinforce the Escudo"
+SPR_reinforce_the_peseta_desc:0 "Our currency is undervalued, and we look like impoverished peoples when we review our inflation. We must fix the inflation and reinforce our main currency"
+
+SPR_the_religious_question:0 "The Religious Question"
+SPR_the_religious_question_desc:0 "Some people in our country have decided to stray from the catholic path. Should we reinforce this behavior, or quash it?"
+
+SPR_follow_the_reformation:0 "Follow the Reformation"
+SPR_follow_the_reformation_desc:0 "Reforming our government to meet modern needs is of utmost importance."
+
+SPR_reinforce_the_spanish_inquisition:0 "Reinforce the Spanish Inquisition"
+SPR_reinforce_the_spanish_inquisition_desc:0 "Reinforcing the Spanish Inquisition will allow us to control our country much better. Although, people don't like the looming threat of them."
+
+SPR_civilian_industrial_development_i:0 "Civilian Industrial Development I"
+SPR_civilian_industrial_development_i_desc:0 ""
+
+SPR_civilian_industrial_development_ii:0 "Civilian Industrial Development II"
+SPR_civilian_industrial_development_ii_desc:0 ""
+
+SPR_military_industrial_development_i:0 "Military Industrial Development I"
+SPR_military_industrial_development_i_desc:0 ""
+
+SPR_military_industrial_development_ii:0 "Military Industrial Development II"
+SPR_military_industrial_development_ii_desc:0 ""
+
+SPR_improve_the_road_networks:0 "Improve the Road Networks"
+SPR_improve_the_road_networks_desc:0 ""
+
+SPR_revitalize_our_travelways:0 "Revitalize our Travelways"
+SPR_revitalize_our_travelways_desc:0 "Our roads are horrible, and our horses and men have trouble navigating through our own country at times. This is required to be improved"
+
+SPR_finish_of_the_inca:0 "Finish of the Inca"
+SPR_finish_of_the_inca_desc:0 "The Incans will be eradicated if we will it."
+
+SPR_oppress_religious_minorities:0 "Oppress Religious Minorities"
+SPR_oppress_religious_minorities_desc:0 "Catholicism is the one true religion. Anyone who says otherwise is a blasphemer and should be excommunicated."
+
+SPR_invest_into_our_research:0 "Invest into our Research"
+SPR_invest_into_our_research_desc:0 ""
+
+SPR_improve_relations_with_the_pope:0 "Improve Relations with the Pope"
+SPR_improve_relations_with_the_pope_desc:0 "The Pope is an important figure and we should make sure we are in good standing."
+
+SPR_the_holy_roman_empire_situation:0 "The Holy Roman Empire Situation"
+SPR_the_holy_roman_empire_situation_desc:0 "The developments surrounding the Roman Empire are something we should look in to. There is nothing the Spanish empire cannot do."
+
+SPR_seek_assistance_from_the_italian_states:0 "Seek Assistance From the Italian States"
+SPR_seek_assistance_from_the_italian_states_desc:0 "The Italian people have always had our backs in conflict and hardship. We should extend the hand of friendship."
+
+SPR_habsburgvalois_war:0 "Habsburg-Valois War"
+SPR_habsburgvalois_war_desc:0 "France does not deserve to be a nation. There is no reason Spain should not take the lands and put them to good use."
+
+SPR_improve_production:0 "Improve production"
+SPR_improve_production_desc:0 "Our production is outdated and very poor. We must improve our methods if we want to keep up with the modern world."
+
+SPR_expand_the_iron_mills:0 "Expand the Iron Mills"
+SPR_expand_the_iron_mills_desc:0 ""
+
+SPR_set_up_african_trade_outposts:0 "Set up African Trade Outposts"
+SPR_set_up_african_trade_outposts_desc:0 "Our African trade outposts will allow us to gain  capital."
+
+SPR_follow_the_ideas_of_calvin:0 "Follow the Ideas of Calvin"
+SPR_follow_the_ideas_of_calvin_desc:0 "Calvinism is the one true way of life. Calvinism will guide us through harsh and trying times."
+
+SPR_all_hail_the_habsburgs:0 "All Hail the Habsburgs"
+SPR_all_hail_the_habsburgs_desc:0 "The Habsburg family is of utmost importance to us strategically. We need to make sure we are on good standing with them."
+
+SPR_support_frederick_ii:0 "Support Frederick II"
+SPR_support_frederick_ii_desc:0 ""
+
+SPR_a_hapsburg_denmark:0 "A Hapsburg Denmark"
+SPR_a_hapsburg_denmark_desc:0 ""
+
+SPR_the_reign_of_charles_v:0 "The Reign of Charles V"
+SPR_the_reign_of_charles_v_desc:0 ""
+
+SPR_closer_cooperation_with_austria:0 "Closer Cooperation with Austria"
+SPR_closer_cooperation_with_austria_desc:0 "Austria Is welcome to join spain on the path to glory if it so chooses."
+
+SPR_expand_mexico_city:0 "Expand Mexico City"
+SPR_expand_mexico_city_desc:0 "Mexico city should be furthered in development to prove to the people that it is a bastion of Spanish will."
+
+SPR_expand_peru:0 "Expand South American"
+SPR_expand_peru_desc:0 "Peru is an important piece of our South American colonies. We should reinforce that through expansion."
+
+SPR_expand_la_plata:0 "Expand La Plata"
+SPR_expand_la_plata_desc:0 ""La Plata" Is the label of a strip of land in South America. Rightfully, it should be a colony of Spain."
+
+SPR_move_the_peruvian_capital:0 "Move the Peruvian Capital"
+SPR_move_the_peruvian_capital_desc:0 "The Peruvian capital is not in a strategically viable place. We need to relocate it if we're interested in keeping it safe."
+
+SPR_found_the_spanish_east_india_company:0 "Found the Spanish East India Company"
+SPR_found_the_spanish_east_india_company_desc:0 "The Spanish East India Company is vital to our success as a trading nation. To not invest in it is to invite poverty."
+
+SPR_sell_indulgences:0 "Sell Indulgences"
+SPR_sell_indulgences_desc:0 ""
+
+SPR_contest_portuguese_trade_dominance:0 "Contest Portuguese Trade Dominance"
+SPR_contest_portuguese_trade_dominance_desc:0 "We will not let the Portuguese be the driving factor of trade in the world. As of today, we fight for our right to prosper."
+
+SPR_supremacy_of_catholicism:0 "Supremacy of Catholicism"
+SPR_supremacy_of_catholicism_desc:0 "Catholicism is the one true way of worship, and any heretics found denying such should be exiled or converted."
+
+SPR_colonize_the_philippines:0 "Colonize the Philippines"
+SPR_colonize_the_philippines_desc:0 "The Pilipino deserve to be a civilized folk, with a religion to match. Let us be their guiding hand."
+
+SPR_expand_into_africa:0 "Expand into Africa"
+SPR_expand_into_africa_desc:0 "Our African colonization plan must be realized and fully followed through for us to be a powerful nation."
+
+SPR_subjugate_morocco:0 "Subjugate Morocco"
+SPR_subjugate_morocco_desc:0 "Morocco is, from this day forward, a rightful subject of the Spanish empire."
+
+SPR_build_lutheran_churches:0 "Build Lutheran Churches"
+SPR_build_lutheran_churches_desc:0 "Lutheran churches on every street corner. That is how we will reinforce our will."
+
+SPR_strengthen_the_crown:0 "Strengthen the Crown"
+SPR_strengthen_the_crown_desc:0 ""
+
+SPR_establish_a_parliament:0 "Establish a Parliament"
+SPR_establish_a_parliament_desc:0 ""
+
+SPR_the_army:0 "The Army"
+SPR_the_army_desc:0 ""
+
+SPR_improve_relations_with_the_electors:0 "Improve Relations with the Electors"
+SPR_improve_relations_with_the_electors_desc:0 "The Electors opinion of us is of most importance. We will not let them be"
+
+SPR_ally_with_brandenburg:0 "Ally with Brandenburg"
+SPR_ally_with_brandenburg_desc:0 "Guaranteeing Brandenburg would help us hopefully gain a worthy ally to our cause."
+
+SPR_invest_in_the_military:0 "Invest in the Military"
+SPR_invest_in_the_military_desc:0 ""
+
+SPR_the_navy:0 "The Navy"
+SPR_the_navy_desc:0 ""
+
+SPR_doctrine_effort:0 "Doctrine Effort"
+SPR_doctrine_effort_desc:0 ""
+
+SPR_weapons_technology:0 "Weapons Technology"
+SPR_weapons_technology_desc:0 ""
+
+SPR_consolidate_royal_power:0 "Consolidate Royal Power"
+SPR_consolidate_royal_power_desc:0 ""
+
+SPR_build_more_cannons:0 "Build More Cannons"
+SPR_build_more_cannons_desc:0 ""
+
+SPR_make_more_muskets:0 "Make More Muskets"
+SPR_make_more_muskets_desc:0 ""
+
+SPR_standardization_of_caliber:0 "Standardization of Caliber"
+SPR_standardization_of_caliber_desc:0 "Standardizing our caliber of firearms will help us mass produce them, and stop all this bothersome incompatibility issues."
+
+SPR_focus_on_manpower:0 "Focus on Manpower"
+SPR_focus_on_manpower_desc:0 ""
+
+SPR_befriend_england:0 "Befriend England"
+SPR_befriend_england_desc:0 ""
+
+SPR_convert_the_king:0 "Convert the King"
+SPR_convert_the_king_desc:0 ""
+
+SPR_deradicalize_the_catholic_church:0 "Deradicalize the Catholic Church"
+SPR_deradicalize_the_catholic_church_desc:0 "Now that the threat of heretics is lessened and we can move past this event, our country can rest easy and we can lessen the negative impacts of the church on our people."
+
+SPR_the_dutch_republic_demands_reform:0 "The Dutch Republic Demands Reform"
+SPR_the_dutch_republic_demands_reform_desc:0 ""
+
+SPR_the_sun_never_sets:0 "The Sun Never Sets"
+SPR_the_sun_never_sets_desc:0 "It is our time to take what is rightfully ours."
+
+SPR_contest_ottoman_expansion:0 "Contest Ottoman Expansion"
+SPR_contest_ottoman_expansion_desc:0 "The Ottoman Empire should not be allowed to exist under any circumstances. It is an affront to our religious ways and should be dealt with as swiftly as possible."
+
+SPR_expand_naval_production:0 "Expand Naval Production"
+SPR_expand_naval_production_desc:0 ""
+
+SPR_fortify_the_mediterranean_coast:0 "Fortify the Mediterranean Coast"
+SPR_fortify_the_mediterranean_coast_desc:0 ""
+
+SPR_contest_the_english:0 "Contest the English"
+SPR_contest_the_english_desc:0 "The English have came and stolen many of our future prospects from us through"
+
+SPR_collaborate_with_the_french:0 "Collaborate with The French"
+SPR_collaborate_with_the_french_desc:0 "The French are a people we should try to improve our relationship with. Strategically, This would benefit us both."
+
+SPR_expand_spanish_peru:0 "Expand Spanish Peru"
+SPR_expand_spanish_peru_desc:0 ""
+
+SPR_slit_up_new_spain:0 "Redraw Borders"
+SPR_slit_up_new_spain_desc:0 ""
+
+SPR_dont_slit_up_new_spain:0 "Don't Redraw Border"
+SPR_dont_slit_up_new_spain_desc:0 ""
+
+SPR_dont_slit_up_la_plata:0 "Don't Split up La Plata"
+SPR_dont_slit_up_la_plata_desc:0 ""
+
+SPR_slit_up_la_plata:0 "Split up La Plata"
+SPR_slit_up_la_plata_desc:0 ""
+
+SPR_slit_up_peru:0 "Split up Peru"
+SPR_slit_up_peru_desc:0 ""
+
+SPR_dont_slit_up_peru:0 "Don't Split up Peru"
+SPR_dont_slit_up_peru_desc:0 ""
+
+SPR_puppet_venezuela:0 "Puppet Venezuela"
+SPR_puppet_venezuela_desc:0 ""
+
+SPR_exspand_new_spain:0 "Expand New Sain"
+SPR_exspand_new_spain_desc:0 ""
+
+SPR_treaty_of_tordesillas:0 "Treaty of Tordesillas"
+SPR_treaty_of_tordesillas_desc:0 ""
+
+SPR_burn_treaty_of_tordesillas:0 "Burn Treaty of Tordesillas"
+SPR_burn_treaty_of_tordesillas_desc:0 ""
+
+SPR_buy_moroccan_straits:0 "Buy Moroccan Straits"
+SPR_buy_moroccan_straits_desc:0 ""
+
+SPR_subjugate_algeria:0 "Subjugate Algeria"
+SPR_subjugate_algeria_desc:0 ""
+
+SPR_subjugate_tunis:0 "Subjugate Tunis"
+SPR_subjugate_tunis_desc:0 ""
+
+SPR_demand_corsica:0 "Demand Corsica"
+SPR_demand_corsica_desc:0 ""
+
+SPR_demand_valletta:0 "Demand Valletta"
+SPR_demand_valletta_desc:0 ""
+
+SPR_crowned_king_of_the_church:0 "Crowned King of The Church"
+SPR_crowned_king_of_the_church_desc:0 ""
+
+SPR_start_french_sanctions:0 "Start French Sanctions"
+SPR_start_french_sanctions_desc:0 ""
+
+SPR_begin_divding_south_france:0 "Begin Divding South France"
+SPR_begin_divding_south_france_desc:0 ""
+
+SPR_begin_divding_north_france:0 "Begin Divding North France"
+SPR_begin_divding_north_france_desc:0 ""
+
+SPR_give_savoy_the_alpines:0 "Give Savoy The Alpines"
+SPR_give_savoy_the_alpines_desc:0 ""
+
+SPR_give_the_netherlands_picardy:0 "Give The Netherlands Picardy"
+SPR_give_the_netherlands_picardy_desc:0 ""
+
+SPR_future_of_iberia:0 "Future of Iberia"
+SPR_future_of_iberia_desc:0 ""
+
+SPR_unite_iberia:0 "Unite Iberia"
+SPR_unite_iberia_desc:0 ""
+
+SPR_united_states_iberia:0 "United States Iberia"
+SPR_united_states_iberia_desc:0 ""
+
+SPR_united_iberian_alliance:0 "United Iberian Alliance"
+SPR_united_iberian_alliance_desc:0 ""
+
+SPR_integrate_portugal:0 "Integrate Portugal"
+SPR_integrate_portugal_desc:0 ""
+
+SPR_the_armada:0 "The Armada"
+SPR_the_armada_desc:0 ""

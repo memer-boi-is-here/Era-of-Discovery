@@ -1,0 +1,18 @@
+state={
+	id=1109
+	name="Island of Banten"
+	history={
+		owner = XXX
+		add_core_of = XXX
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 4211
+	}
+	manpower=128213
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

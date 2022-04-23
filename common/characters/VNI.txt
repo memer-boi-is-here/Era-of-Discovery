@@ -1,0 +1,362 @@
+characters = {
+	VNI_francesco_donato = {
+		name = "Francesco Donato"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNI/Francesco-Donato.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	VNI_marco_antonio_bragadin = {
+		name = "Marco Antonio Bragadin"
+		advisor = {
+			slot = high_command
+			idea_token = marco_antonio_bragadin
+			ledger = army 
+				allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = marco_antonio_bragadin_p
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_marco_antonio_bragadin"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_marco_antonio_bragadin.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	VNI_jacopo_soranzo = {
+		name = "Jacopo Soranzo"
+		advisor = {
+			slot = political_advisor
+			idea_token = jacopo_soranzo_p
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = jacopo_soranzo
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jacopo_soranzo"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_jacopo_soranzo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	VNI_pietro_loredan = {
+		name = "Pietro Loredan"
+		advisor = {
+			slot = high_command
+			idea_token = pietro_loredan
+			ledger = army 
+				allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pietro_loredan_p
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_pietro_loredan"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_pietro_loredan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	VNI_nicolò_da_ponte = {
+		name = "Nicolò da Ponte"
+		advisor = {
+			slot = high_command
+			idea_token = nicolo_da_ponte
+			ledger = army 
+				allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nicolo_da_ponte_p
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_nicolo_da_ponte"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_nicolo_a_ponte.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	VNI_sebastiano_venier = {
+		name = "Sebastiano Venier"
+		advisor = {
+			slot = navy_chief
+			idea_token = sebastiano_venier
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_sebastiano_venier"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_sebastiano_venier.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	VNI_agostino_barbarigo = {
+		name = "Agostino Barbarigo"
+		advisor = {
+			slot = navy_chief
+			idea_token = agostino_barbarigo
+			allowed = {
+					original_tag = VNI
+				}
+				cost = 150.000
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_agostino_barbarigo"
+			}
+			army = {
+				large = "gfx/leaders/VNI/portrait_agostino_barbarigo.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	VNI_john_brown = {
+		name = "John Brown"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1563.1.1.12"
+			id = -1
+		}
+	}
+	VNI_bob_evans = {
+		name = "Bob Evans"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	VNI_marcus_evans = {
+		name = "Marcus Evans"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1565.1.1.12"
+			id = -1
+		}
+	}
+	VNI_marco_antonio_bragadin_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = marco_antonio_bragadin_a
+			allowed = {
+					original_tag = VNI
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "marco_antonio_bragadin_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_marco_antonio_bragadin"
+			}
+		}
+	}
+}

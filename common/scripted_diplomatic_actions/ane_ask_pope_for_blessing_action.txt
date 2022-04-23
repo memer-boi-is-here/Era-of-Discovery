@@ -1,0 +1,72 @@
+scripted_diplomatic_actions = {
+
+	ask_for_blessings = {
+
+		allowed = {
+			NOT = {
+				ROOT = {
+					has_idea = PAP_the_popes_blessing
+				}
+			}
+		}
+
+		visible = {
+			ROOT = { has_idea = catholic }
+			PAP = { exists = yes }
+		}
+
+		selectable = {
+			tag = PAP
+		}
+
+		can_be_accepted = {
+
+		}
+
+		can_be_sent = {
+
+		}
+
+		cost = 50
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes
+
+		send_description = ask_for_blessings_desc
+		receive_description = ask_for_blessings_receive
+		accept_title = ask_for_blessings_accept_title
+		accept_description = ask_for_blessings_accept_desc
+		reject_title = ask_for_blessings_reject_title
+		reject_description = ask_for_blessings_reject_desc
+
+		on_sent_effect = {
+		}
+		complete_effect = {
+			ROOT = {
+				add_timed_idea = {
+					idea = PAP_the_popes_blessing 
+					days = 365
+				}
+			}
+		}
+		reject_effect = {
+			ROOT = { add_stability = -0.02 }
+		}
+
+		ai_desire = {
+			modifier = {
+				add = 10
+			}
+		}
+		ai_acceptance = {
+			base_desire = {
+				modifier = {
+					factor = 10
+				}
+			}
+		}
+
+	}
+
+
+}

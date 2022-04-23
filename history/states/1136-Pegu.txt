@@ -1,0 +1,24 @@
+
+state={
+	id=1136
+	name="Pegu"
+
+	history={
+		owner = PEG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = PEG
+
+	}
+
+	provinces={
+		1296 1315 1330 1385 1403 1417 4275 4293 4336 4408 7254 7295 7382 10154 10182 10217 10223 10267 12125 12127 12197 12238 12267 12284 12292 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

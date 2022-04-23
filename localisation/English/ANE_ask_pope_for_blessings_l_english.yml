@@ -1,0 +1,11 @@
+﻿l_english:
+ ASK_FOR_BLESSINGS_ACTION_DESC:0 "Ask for Blessings"
+ ASK_FOR_BLESSINGS_TITLE:0 "Ask the Pope for His Blessing"
+ ask_for_blessings_desc:0 "We should ask the Pope for His Blessing, which will help boost our strength in the Faith."
+ ask_for_blessings_receive:0 "A country has asked us for the Pope's blessing"
+ ask_for_blessings_accept_title:0 "The Pope Accepts!"
+ ask_for_blessings_accept_desc:0 "The Pope has §Gblessed us§!"
+ ask_for_blessings_reject_title:0 "The Pope Rejects Us!"
+ ask_for_blessings_reject_title_desc:0 "The Pope has §Rrefused to bless us§."
+ PAP_the_popes_blessing:0 "The Pope's Blessing"
+ PAP_the_popes_blessing_desc:0 "This country has been blessed by the Pope."

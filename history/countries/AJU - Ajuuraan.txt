@@ -1,0 +1,43 @@
+﻿capital = 559
+set_research_slots = 3
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 59 }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+set_variable = { adm_limit = 4 }
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+set_convoys = 10
+set_oob = "KIL_1936"
+
+
+##add_ideas = techgroup6
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 1
+	communism = 0
+	neutrality = 90
+	democratic = 9
+}	
+
+add_ideas = Sunni

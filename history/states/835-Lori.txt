@@ -1,0 +1,19 @@
+state={
+	id=835
+	name="STATE_835"
+	history={
+		owner = PER
+		add_core_of = PER
+add_core_of = ARM
+        buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		11708 12380 12441 13123 
+	}
+	manpower= 333000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,22 @@
+state={
+	id=1083
+	name="Shinano"
+	provinces={
+		4069 10015 10100 10128 
+	}
+		history={
+			owner = OGA
+		add_core_of = OGA
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

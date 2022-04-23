@@ -1,0 +1,37 @@
+
+state={
+	id=300
+	name="STATE_300"
+	manpower = 10000
+	
+	state_category = large_city
+	
+	resources={
+		oil=1 # was: 2
+		steel=1 # was: 2
+	}
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 3
+			
+		
+			10362 = {
+				naval_base = 1
+				bunker = 1
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = ARG
+add_core_of = BRA
+
+		victory_points = {
+			10362 5
+		}
+
+	}
+
+	provinces={
+		1613 1626 1641 1654 4457 10347 10362 10502 12336 12440 12468 12481 12496 
+	}
+}

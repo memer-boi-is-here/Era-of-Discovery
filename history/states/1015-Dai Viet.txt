@@ -1,0 +1,20 @@
+
+state={
+	id=1015
+	name="Dai Viet"
+	
+	history={
+		owner = VIN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = VIN
+	}
+	
+	provinces={
+		4119 7518 12075 12319
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

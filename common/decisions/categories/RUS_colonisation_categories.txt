@@ -1,0 +1,13 @@
+RUS_colinize_the_east = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		tag = RUS
+	}
+}
+
+RUS_reclaim_kiev_cores = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		tag = RUS
+	}
+}

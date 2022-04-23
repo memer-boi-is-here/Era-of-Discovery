@@ -1,0 +1,436 @@
+ideas = {
+	
+	country = {
+	
+		auld_alliance = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = auld_alliance
+			
+			targeted_modifier = { tag = FRA trade_opinion_factor = 0.05 }
+			targeted_modifier = { tag = FRA opinion_gain_monthly = 4 }
+			
+			modifier = {
+				war_support_factor = 0.075
+			}
+
+		}
+		
+		french_debt = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = french_debt
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				min_export = -0.25
+			}
+			
+		}
+		
+		divided_government = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = divided_government
+			
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.1
+				justify_war_goal_time = 0.5
+			}
+			
+		}
+	
+    }
+
+
+	political_advisor = {
+	
+    	james_hamilton_duke_of_chatellerault = {
+			
+			picture = james_hamilton_duke_of_chatellerault
+			
+			allowed = {
+				original_tag = SCO
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		james_beaton_archbishop_of_glasgow = {
+			
+			picture = james_beaton_archbishop_of_glasgow
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { archbishop_of_glasgow }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		archibald_campbell_earl_of_argyll = {
+			
+			picture = archibald_campbell_earl_of_argyll
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { lord_high_treasurer }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		george_seton = {
+			
+			picture = george_seton
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		james_hepburn_earl_of_bothwell = {
+			
+			picture = james_hepburn_earl_of_bothwell
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_erskine = {
+			
+			picture = john_erskine
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		william_maitland = {
+			
+			picture = william_maitland
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { construction_minister }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mary_of_guise = {
+			
+			picture = mary_of_guise
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			available = {
+				has_completed_focus = sco_legitimate_mary_of_guise
+			}
+			
+			traits = { regent }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_knox = {
+			
+			picture = john_knox
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			available = {
+				has_completed_focus = sco_john_is_the_new_religious_head
+			}
+			
+			traits = { the_reverend }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	
+	army_chief = {
+
+		james_stewart = {
+
+			picture = james_stewart
+			
+			allowed = {
+				original_tag = SCO
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		archibald_campbell_earl_of_argyll_a = {
+
+			picture = archibald_campbell_earl_of_argyll
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		william_kirkcaldy_of_grange = {
+
+			picture = william_kirkcaldy_of_grange
+			
+			allowed = {
+				original_tag = SCO
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		william_murray_of_tullibardine = {
+
+			picture = william_murray_of_tullibardine
+			
+			allowed = {
+				original_tag = SCO
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		matthew_stewart_lennox = {
+			ledger = army
+			
+			picture = matthew_stewart_lennox
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		archibald_douglas_angus = {
+			ledger = army
+
+			picture = archibald_douglas_angus
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+      	hugh_montgomerie = {
+			ledger = navy
+			
+			picture = hugh_montgomerie
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		gilbert_kennedy = {
+			ledger = army
+			
+			picture = gilbert_kennedy
+			
+			allowed = {
+				original_tag = SCO
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+
+}

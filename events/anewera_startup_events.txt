@@ -1,0 +1,66 @@
+﻿add_namespace = startup_event
+
+country_event = {
+	id = startup_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event startup_event.1"}
+	title = "Greetings and Welcome to the Era of Discovery!"
+	desc = "Era of Discovery is one of the most unique historical mods in the Hearts of Iron IV modding community. We are the first mod to delve into the mid-16th century. We will mainly focus on the Habsburg-Valois rivalry during the waning years of the Italian wars and particularly focus on the struggle for religious unity during the Protestant Reformation and for example the French Wars of Religion. We will strive on making multiple different start dates to cover the major conflicts within the fifty year long Italian Wars. Our first start date will be from 1550-1560 with many earlier dates to follow. Our mod will incorporate a relatively realistic economy and colonization system to ensure proper gameplay. We hope that you will all enjoy this mod and use it to learn more untold history from the 1500’s. Happy Playing!"
+
+	picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's play!"
+		ai_chance = { factor = 100 }
+		country_event = { id = startup_event.4 }
+	}
+
+	option = {
+		name = "Uh, What is this Religion System?"
+		ai_chance = { factor = 0 }
+		country_event = { id = startup_event.2 }
+		country_event = { id = startup_event.4 }
+	}
+	option = {
+		name = "How do I Colonize?"
+		ai_chance = { factor = 0 }
+		country_event = { id = startup_event.3 }
+		country_event = { id = startup_event.4 }
+	}
+}
+
+country_event = {
+	id = startup_event.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event startup_event.2"}
+	title = "Religion System"
+	desc = "hey"
+
+	picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's do This!"
+		ai_chance = { factor = 100 }
+		country_event = { id = startup_event.4 }
+	}
+}
+
+country_event = {
+	id = startup_event.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event startup_event.3"}
+	title = "Colonization System"
+	desc = "hey"
+
+	picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Here we go!"
+		ai_chance = { factor = 100 }
+		country_event = { id = startup_event.4 }
+	}
+}
+

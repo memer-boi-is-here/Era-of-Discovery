@@ -1,0 +1,38 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	help_in_war = {
+		value = 15
+	}
+	ambition_on_our_land = {
+		value = -20
+	}
+	FRA_accepts_TUR_ally = {
+		value = 25
+	}
+	taxes_raised = {
+		value = -20
+	}
+	TUR_naval_raids = {
+		value = -20 
+	}
+	pro_agreement = {
+		value = 20 
+	}
+	damaging_country = { #the actor
+		value = -30 
+	}
+	damaged_country = { #who receive the action
+		value = -30 
+	}
+	
+}

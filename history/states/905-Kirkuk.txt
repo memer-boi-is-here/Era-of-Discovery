@@ -1,0 +1,15 @@
+state={
+	id=905
+	name="STATE_905"
+	history={
+		owner = TUR
+		add_core_of = TUR
+add_core_of = IRQ
+		}
+	provinces={
+		6826 8123 10793 
+	}
+	manpower=187500
+	buildings_max_level_factor=1.000
+	state_category = town
+}

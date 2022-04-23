@@ -1,0 +1,508 @@
+﻿l_english:
+SPR_P_industry_for_consumers_i:0 "Industry for Consumers I"
+SPR_P_industry_for_consumers_i_desc:0 "We must build industry for our populace, lest they despise us."
+SPR_P_streamline_industry:0 "Streamline Industry"
+SPR_P_streamline_industry_desc:0 "We must streamline and speed up the process of building so we may create industry faster"
+SPR_P_chromium_production:0 "Chromium Production"
+SPR_P_chromium_production_desc:0 "We should start producing chromium, either for our own production, or to trade to others."
+SPR_P_steel_mills:0 "Steel Mills"
+SPR_P_steel_mills_desc:0 "We should increase the capacity of our steel mills, so that we can have more steel."
+SPR_P_mine_for_tungsten:0 "Mine for Tungsten"
+SPR_P_mine_for_tungsten_desc:0 "We require harder, more sturdy metal for the projects we wish to pursue."
+SPR_P_mine_for_aluminum:0 "Mine for Aluminum"
+SPR_P_mine_for_aluminum_desc:0 "We require a more flexible kind of metal for the projects we want to produce."
+SPR_P_turn_the_heretics:0 "Turn the Heretics"
+SPR_P_turn_the_heretics_desc:0 "Now that we have taken the lands the Protestants have settled on, the time has come to re-educate them and make them come back to the true faith."
+SPR_P_war_on_protestantism:0 "War on Protestantism"
+SPR_P_war_on_protestantism_desc:0 "We must cleanse the world of these Protestant scum!"
+SPR_P_big_ships:0 "Big Ships"
+SPR_P_big_ships_desc:0 "Battleships are the powerhouse of any navy, and we should put an effort into giving these powerhouses even more power"
+SPR_P_vye_for_naval_dominance:0 "Vye for Naval Dominance"
+SPR_P_vye_for_naval_dominance_desc:0 "We should focus our efforts on trying to become a naval power of the region"
+SPR_P_heavy_navy:0 "Heavy Navy"
+SPR_P_heavy_navy_desc:0 "We will focus on larger, heavier ships able to dish out and take powerful hits"
+SPR_P_mixed_navy:0 "Mixed Navy"
+SPR_P_mixed_navy_desc:0 "We must be sure to have a healthy mix of heavier and lighter ships, lest we be unbalanced and exploitable"
+SPR_P_skirmish_navy:0 "Skirmish Navy"
+SPR_P_skirmish_navy_desc:0 "We will starve out and skirmish with our smaller navy, for we do not have the larger ships able to punch through thicker armor or resist heavier shots."
+SPR_P_medium_ships:0 "Medium Ships"
+SPR_P_medium_ships_desc:0 "Cruisers are an important part of any navy, and ours will not be lacking in them"
+SPR_P_focus_on_piracy:0 "Focus on Piracy"
+SPR_P_focus_on_piracy_desc:0 "We do not have the industry to focus on large fleets of powerful ships. We should instead try hit-and-run tactics, along with looting weaker enemy ships."
+SPR_P_create_navy:0 "Create A Navy"
+SPR_P_create_navy_desc:0 "We should create a navy, so that we may project our power into the sea."
+SPR_P_small_ships:0 "Small Ships"
+SPR_P_small_ships_desc:0 "Small and nimble ships are able to outmaneuver larger and slower ships, making them important to the naval effort."
+SPR_P_refine_industry:0 "Refine Industry"
+SPR_P_refine_industry_desc:0 "We should further refine our industrial techniques and equipment, so we can make the most out of what we have."
+SPR_P_combined_industry:0 "Combined Industry"
+SPR_P_combined_industry_desc:0 "We should work to integrate our industries more, so that we can fit more into a smaller space."
+SPR_P_industry_for_military_ii:0 "Industry for Military II"
+SPR_P_industry_for_military_ii_desc:0 "Continuously improving our military industry cannot harm our chances in any future wars."
+SPR_P_industry_for_military_i:0 "Industry for Military I"
+SPR_P_industry_for_military_i_desc:0 "We must build industry for our army, lest they be unarmed in combat."
+SPR_P_industry_for_consumers_ii:0 "Industry for Consumers II"
+SPR_P_industry_for_consumers_ii_desc:0 "We must build industry for our populace, lest they despise us."
+SPR_P_France_industry:0 "France Industry"
+SPR_P_France_industry_desc:0 "We Frances are known to be industrial people. We will show just how industrial we can be."
+SPR_P_serve_a_greater_purpose_together:0 "Serve a Greater Purpose Together"
+SPR_P_serve_a_greater_purpose_together_desc:0 "Now that we have grown in size and power, we can better serve the Holy Roman Empire"
+SPR_P_unify_our_region:0 "Unify Our Region"
+SPR_P_unify_our_region_desc:0 "We are no good split up and squabbling like this. We should try to subjugate our nearby allies so we can serve a greater purpose together"
+SPR_P_betray_the_empire:0 "Betray the Empire"
+SPR_P_betray_the_empire_desc:0 "Now that we have grown in power, we do not need the Holy Roman Empire anymore."
+SPR_P_promote_nationalism:0 "Promote Nationalism"
+SPR_P_promote_nationalism_desc:0 "We must be proud of our nation, even if it is a small one in the grand scheme of things."
+SPR_P_a_split_but_cooperative_whole:0 "A Split But Cooperative Whole"
+SPR_P_a_split_but_cooperative_whole_desc:0 "While we are not so different from our fellow Holy Roman Empire members, we are better off separate in our own peoples, but still working together"
+SPR_P_greater_imperial_good:0 "Greater Imperial Good"
+SPR_P_greater_imperial_good_desc:0 "We must stay subservient to the Holy Roman Empire, so that it may stay strong and not be split into squabbling factions."
+SPR_P_the_imperial_question:0 "The Imperial Question"
+SPR_P_the_imperial_question_desc:0 "We must question how we are going to go on in the Holy Roman Empire, and our goals."
+SPR_P_selfish_desires:0 "Selfish Desires"
+SPR_P_selfish_desires_desc:0 "While the Holy Roman Empire is important, we will put our own goals slightly above theirs in importance."
+SPR_P_promote_unity:0 "Promote Unity"
+SPR_P_promote_unity_desc:0 "We are a part of a greater whole, and must make sure we do not rock the boat with our tendencies."
+SPR_P_settled_in_our_place:0 "Settled in our Place"
+SPR_P_settled_in_our_place_desc:0 "We are in this position for a reason. We cannot fail our Emperor, especially in this decisive and divisive time."
+SPR_P_religious_unrest:0 "Religious Unrest"
+SPR_P_religious_unrest_desc:0 "We must decide whether we will follow the tide of the Reformation, or stay loyal to the Pope."
+SPR_P_loyalty_to_the_pope:0 "Loyalty to the Pope"
+SPR_P_loyalty_to_the_pope_desc:0 "We must stay Catholic and loyal to the Pope, not going along with these rebellious upstarts"
+SPR_P_reform_the_church:0 "Reform the Church"
+SPR_P_reform_the_church_desc:0 "The Catholic Church is bloated and corrupt, we must reform the religion to keep this from happening again."
+SPR_P_luthers_ideals:0 "Luther's Ideals"
+SPR_P_luthers_ideals_desc:0 "We must live up to Luther's ideal, where we are free to believe in Jesus and his salvation without paying fees to a church."
+SPR_P_calvins_ideals:0 "Calvin's Ideals"
+SPR_P_calvins_ideals_desc:0 "We are guided by God's preeminent omniscient wisdom, knowing that our fates are laid out ahead of us."
+SPR_P_religious_tolerance:0 "Religious Tolerance"
+SPR_P_religious_tolerance_desc:0 "We should stay peaceful and tolerant of others, for they shall learn the errors of their way, and we cannot show compassion and oppress others at the same time"
+SPR_P_peaceful_catholicism:0 "Peaceful Catholicism"
+SPR_P_peaceful_catholicism_desc:0 "The fools who believe in the Reformation will come crawling back once they realize it is fake. There is no need to purge them because of their heresy."
+SPR_P_shiny_guns:0 "Shiny Guns"
+SPR_P_shiny_guns_desc:0 "Getting new guns to help arm our military would be of great help to their training"
+SPR_P_France_armies:0 "France Armies"
+SPR_P_France_armies_desc:0 "France military might is known far and wide. We must make sure we live up to this legend."
+SPR_P_research_doctrine_i:0 "Research Doctrine I"
+SPR_P_research_doctrine_i_desc:0 "We should put more resources into researching doctrine for our battles"
+SPR_P_equipment_improvement_i:0 "Equipment Improvement I"
+SPR_P_equipment_improvement_i_desc:0 "We should look into improving our equipment, for it is far from the best it could be."
+SPR_P_research_doctrine_ii:0 "Research Doctrine II"
+SPR_P_research_doctrine_ii_desc:0 "We should split our focus so we can research more diverse doctrine over a similar period of time"
+SPR_P_create_space_for_industry:0 "Create Space for Industry"
+SPR_P_create_space_for_industry_desc:0 "We need to create more space so we can fit in more industry."
+SPR_P_build_up_infrastructure:0 "Build Up Infrastructure"
+SPR_P_build_up_infrastructure_desc:0 "We need to better connect our lands, so that goods and people can swiftly move from one end of it to the other."
+SPR_P_internal_politics:0 "Internal Politics"
+SPR_P_internal_politics_desc:0 "While there are a great many forces around us trying to influence us, we must make sure to stay true to ourselves and decide our politics ourselves"
+SPR_P_authority_focus:0 "Authority Focus"
+SPR_P_authority_focus_desc:0 "We must make sure to empower our ruler so that they may do what is necessary."
+SPR_P_egalitarian_focus:0 "Egalitarian Focus"
+SPR_P_egalitarian_focus_desc:0 "We should instead focus on what our people want and need, and supply those accordingly."
+SPR_P_keep_the_status_quo:0 "Keep the Status Quo"
+SPR_P_keep_the_status_quo_desc:0 "Our current policy and government is good enough, we do not need to drastically change it"
+SPR_P_empower_the_ruler:0 "Empower the Ruler"
+SPR_P_empower_the_ruler_desc:0 "We should establish our current leader as the de facto ruler of our lands, giving them ultimate power over our people"
+SPR_P_empower_the_people:0 "Empower the People"
+SPR_P_empower_the_people_desc:0 "We should give our people more power over our country, perhaps even letting them choose who is in control"
+SPR_P_equipment_improvement_ii:0 "Equipment Improvement II"
+SPR_P_equipment_improvement_ii_desc:0 "We should continue to improve our equipment, so we have the highest of quality for our guns"
+SPR_P_shiny_cannons:0 "Shiny Cannons"
+SPR_P_shiny_cannons_desc:0 "We should get some new artillery to use for our armies"
+SPR_P_research_doctrine_iii:0 "Research Doctrine III"
+SPR_P_research_doctrine_iii_desc:0 "We must continue our doctrinal research, lest our enemies pounce upon us with superior tactics"
+SPR_P_improve_equipment_iii:0 "Improve Equipment III"
+SPR_P_improve_equipment_iii_desc:0 "We need to have the best of equipment, and we do not. Yet."
+SPR_P_special_forces:0 "Special Forces"
+SPR_P_special_forces_desc:0 "We must have specialized forces able to take on any task necessary for victory"
+SPR_P_mine_for_iron:0 "Mine for Iron"
+SPR_P_mine_for_iron_desc:0 "We should search our lands for more iron, to help feed our industry"
+SPR_P_save_the_heretics:0 "Save the Heretics"
+SPR_P_save_the_heretics_desc:0 "We must save the Heretics from their own sin, by blood if necessary."
+SPR_P_militarism:0 "Militarism"
+SPR_P_militarism_desc:0 "Those who view the military as a necessary evil are doomed to hesitate in the face of war. We will ingrain militarism into our culture to become a people of soldiers."
+SPR_P_war_on_protestantism:0 "War on Protestantism"
+SPR_P_war_on_protestantism_desc:0 "We must cleanse the world of these Protestant scum!"
+SPR_P_band_together:0 "Band Together"
+SPR_P_band_together_desc:0 "Fellow Lutherans and Protestants should band together and get along with each other."
+SPR_P_leave_the_holy_roman_empire:0 "Leave the Holy Roman Empire"
+SPR_P_leave_the_holy_roman_empire_desc:0 "We cannot stand for the corruption in the Catholic church that is supported by most of the Holy Roman Empire. We should leave it, before it taints us."
+SPR_P_try_to_convert_inside_the_empire:0 "Try to Convert Inside the Empire"
+SPR_P_try_to_convert_inside_the_empire_desc:0 "We should stay a part of the Holy Roman Empire, to show that we are not enemies, and we only want to guide them to the true version of Christianity"
+SPR_P_saved_by_god:0 "Saved by God"
+SPR_P_saved_by_god_desc:0 "We know our destiny is written by God, we must now only figure out what His plan is"
+SPR_P_a_protestant_union:0 "A Protestant Union"
+SPR_P_a_protestant_union_desc:0 "Protestants should officially ally with each other so that we may protect ourselves from bloodthirsty Catholics."
+SPR_P_war_studies:0 "War Studies"
+SPR_P_war_studies_desc:0 "We must always be knowledgeable in the art of war, lest we be caught unawares."
+SPR_P_military_youth:0 "Military Youth"
+SPR_P_military_youth_desc:0 "Organizations to promote discipline and political education of young people in our nation will foster loyalty and self-sacrifice early."
+SPR_P_foreign_expeditions:0 "Foreign Expiditions"
+SPR_P_foreign_expeditions_desc:0 "With our enemies prepared to intervene in distant conflicts on behalf of their ideals, we must be ready to do the same for ours."
+SPR_P_spread_the_peoples_power:0 "Spread the People's Power"
+SPR_P_spread_the_peoples_power_desc:0 "We must do our best to show others the glory of letting the people lead."
+SPR_P_light_cruiser_focus:0 "Light Cruiser Focus"
+SPR_P_light_cruiser_focus_desc:0 "We need ships able to at least somewhat keep up with our destroyers, but still be able to have more firepower."
+SPR_P_fill_the_seas:0 "Fill the Seas"
+SPR_P_fill_the_seas_desc:0 "We should compensate with our smaller and weaker ships with numbers, and fill the seas with swarms of our ships, able to take down any greater and more powerful ship.."
+SPR_P_destroyer_focus:0 "Destroyer Focus"
+SPR_P_destroyer_focus_desc:0 "We need to put more focus on the smaller Destroyer, surprisingly effective given its minuscule size compared to other ships."
+SPR_P_battleship_focus:0 "Battleship Focus"
+SPR_P_battleship_focus_desc:0 "Battleships are a powerful part of any fleet with good composition, able to support the other ships against more powerful ships, and able to take hits from ships in its own weight class."
+SPR_P_super_heavy_battleships:0 "Super-Heavy Battleships"
+SPR_P_super_heavy_battleships_desc:0 "We must prepare the heaviest and most powerful capital ships to be able to crush our enemies."
+SPR_P_local_navy_supremacy:0 "Local Navy Supremacy"
+SPR_P_local_navy_supremacy_desc:0 "With our powerful and heavily-armed fleet, we are doubtless the most powerful navy in our region."
+SPR_P_increase_industrial_spending:0 "Increase Industrial Spending"
+SPR_P_increase_industrial_spending_desc:0 "We must better our industry, so that we can compete with other nations."
+SPR_P_loyal_to_the_end:0 "Loyal to the End"
+SPR_P_loyal_to_the_end_desc:0 "We will never leave the Holy Roman Empire, not even the last man in our land will dare to betray our greater purpose."
+SPR_P_a_time_of_peace:0 "A Time of Peace"
+SPR_P_a_time_of_peace_desc:0 "We should not use war, for we are a more civilized people, and we are beyond that."
+SPR_P_strike_against_the_empire:0 "Strike Against the Empire"
+SPR_P_strike_against_the_empire_desc:0 "We cannot allow the Holy Roman Empire to tSVYaten us. We should continue to strike against it."
+SPR_P_strength_of_diversity:0 "Strength of Diversity"
+SPR_P_strength_of_diversity_desc:0 "Our Diversity is our strength, we should not unify for fear of losing that."
+SPR_P_dangers_of_complacency:0 "Dangers of Complacency"
+SPR_P_dangers_of_complacency_desc:0 "While we are secure in our place, we must make sure not to fall into complacency"
+SPR_P_enhance_infrastructure:0 "Enhance Infrastructure"
+SPR_P_enhance_infrastructure_desc:0 "We need to make sure that our infrastructure is as high-quality as possible."
+
+
+l_english: 
+
+SPR_P_alliance_with_the_ottomans:0 "Alliance with the Ottomans"
+SPR_P_alliance_with_the_ottomans_desc:0 ""
+
+SPR_P_alliance_with_the_republic_of_siena:0 "Alliance with the Republic of Siena"
+SPR_P_alliance_with_the_republic_of_siena_desc:0 ""
+
+SPR_P_seek_ottoman_assistance:0 "Seek Ottoman assistance"
+SPR_P_seek_ottoman_assistance_desc:0 ""
+
+SPR_P_habsburgvalois_war:0 "Habsburg-Valois War"
+SPR_P_habsburgvalois_war_desc:0 "The Italian War of 1551–1559, sometimes known as the Habsburg–Valois War and the Last Italian War, began when Henry II of France declared war against Holy Roman Emperor Charles V with the intent of recapturing Italy and ensuring French, rather than Habsburg, domination of European affairs. Historians have emphasized the importance of gunpowder technology, new styles of fortification to resist cannon fire, and the increased professionalization of the soldiers."
+
+SPR_P_edict_of_chteaubriant:0 "Edict of Châteaubriant"
+SPR_P_edict_of_chteaubriant_desc:0 "The Edict of Châteaubriant, issued from the seat of Anne, duc de Montmorency in Brittany, was promulgated by Henri II of France, 27 June 1551. The Edict was one of an increasingly severe series of measures taken by Henry II against Protestants, whom he regarded as heretics. In the preamble, the Edict frankly reported that previous measures against heresy in the kingdom had proved ineffectual."
+
+SPR_P_legacy_of_francis_i:0 "Legacy of Francis I"
+SPR_P_legacy_of_francis_i_desc:0 ""
+
+SPR_P_threat_of_huguenots:0 "Threat of Huguenots"
+SPR_P_threat_of_huguenots_desc:0 "Huguenots were French Protestants who held to the Reformed, or Calvinist, tradition of Protestantism. The term has its origin in early 16th century France. It was frequently used in reference to those of the Reformed Church of France from the time of the Protestant Reformation. By contrast, the Protestant populations of eastern France, in Alsace, Moselle, and Montbéliard, were mainly German Lutherans."
+
+SPR_P_habsburgvalois_rivalry:0 "Habsburg-Valois Rivalry"
+SPR_P_habsburgvalois_rivalry_desc:0 "The term France–Habsburg rivalry describes the rivalry between France and the House of Habsburg. The Habsburgs headed an expansive and evolving Empire that included, at various times, the Holy Roman Empire, the Spanish Empire and the Austro-Hungarian Empire from the Diet of Augsburg in the High Middle Ages until the dissolution of the monarchy following the World War I in the Late modern period."
+
+SPR_P_french_claims_on_italy:0 "French Claims on Italy"
+SPR_P_french_claims_on_italy_desc:0 ""
+
+SPR_P_swiss_mercenaries:0 "Swiss Mercenaries"
+SPR_P_swiss_mercenaries_desc:0 ""
+
+SPR_P_the_duchy_of_luxemburg:0 "The Duchy of Luxemburg"
+SPR_P_the_duchy_of_luxemburg_desc:0 ""
+
+SPR_P_french_guarantee:0 "French Guarantee"
+SPR_P_french_guarantee_desc:0 ""
+
+SPR_P_engish_guarantee:0 "Engish Guarantee"
+SPR_P_engish_guarantee_desc:0 ""
+
+SPR_P_engish_netherlands:0 "Engish Netherlands"
+SPR_P_engish_netherlands_desc:0 ""
+
+SPR_P_puppet_belguim:0 "Puppet Belguim"
+SPR_P_puppet_belguim_desc:0 ""
+
+SPR_P_3rd_belguin_confrence:0 "3rd Belguin Confrence"
+SPR_P_3rd_belguin_confrence_desc:0 ""
+
+SPR_P_end_of_aachen:0 "End of Aachen"
+SPR_P_end_of_aachen_desc:0 ""
+
+SPR_P_2nd_belguin_confrence:0 "2nd Belguin Confrence"
+SPR_P_2nd_belguin_confrence_desc:0 ""
+
+SPR_P_end_of_liege:0 "End of Liege"
+SPR_P_end_of_liege_desc:0 ""
+
+SPR_P_1st_belguin_confrence:0 "1st Belguin Confrence"
+SPR_P_1st_belguin_confrence_desc:0 ""
+
+SPR_P_belguim_freedom:0 "Belguim Freedom"
+SPR_P_belguim_freedom_desc:0 ""
+
+SPR_P_pressure_netherlands:0 "Pressure Netherlands"
+SPR_P_pressure_netherlands_desc:0 ""
+
+SPR_P_forgive_england:0 "Forgive England"
+SPR_P_forgive_england_desc:0 ""
+
+SPR_P_send_aid_to_scotland:0 "Send Aid to Scotland"
+SPR_P_send_aid_to_scotland_desc:0 ""
+
+SPR_P_kick_him_when_hes_down:0 "Kick Him When Hes Down"
+SPR_P_kick_him_when_hes_down_desc:0 ""
+
+SPR_P_alliance_with_the_netherlands:0 "Alliance With The Netherlands"
+SPR_P_alliance_with_the_netherlands_desc:0 ""
+
+SPR_P_stab_in_the_back:0 "Stab in The Back"
+SPR_P_stab_in_the_back_desc:0 ""
+
+SPR_P_netherlands_freedom:0 "Netherlands Freedom"
+SPR_P_netherlands_freedom_desc:0 ""
+
+SPR_P_guarantee_the_netherlands:0 "Guarantee The Netherlands"
+SPR_P_guarantee_the_netherlands_desc:0 ""
+
+SPR_P_march_into_besancon:0 "March Into Besancon"
+SPR_P_march_into_besancon_desc:0 ""
+
+SPR_P_take_back_lothringen:0 "Annex The Prince of Bishoprics"
+SPR_P_take_back_lothringen_desc:0 ""
+
+SPR_P_demand_lothringen_vasselship:0 "Demand Lothringen Vasselship"
+SPR_P_demand_lothringen_vasselship_desc:0 ""
+
+SPR_P_break_will_to_fight:0 "Break Will to Fight"
+SPR_P_break_will_to_fight_desc:0 ""
+
+SPR_P_continue_the_war:0 "Ally With Parma"
+SPR_P_continue_the_war_desc:0 ""
+
+SPR_P_demand_avigon:0 "Demand Avigon"
+SPR_P_demand_avigon_desc:0 ""
+
+SPR_P_break_the_will_to_fight:0 "Break The Will to Fight"
+SPR_P_break_the_will_to_fight_desc:0 ""
+
+SPR_P_dominion_of_siena:0 "Dominion of Siena"
+SPR_P_dominion_of_siena_desc:0 ""
+
+SPR_P_build_up_siena:0 "Build up Siena"
+SPR_P_build_up_siena_desc:0 ""
+
+SPR_P_survey_the_land:0 "Survey The Land"
+SPR_P_survey_the_land_desc:0 ""
+
+SPR_P_anti_british_coalition:0 "Anti-British Coalition"
+SPR_P_anti_british_coalition_desc:0 "In order to further protect ourselves against our English enemies, we can invite France to our coalition, since they are also enemies of the English."
+
+SPR_P_expand_the_infrastructure:0 "Expand The Infrastructure"
+SPR_P_expand_the_infrastructure_desc:0 ""
+
+SPR_P_build_more_infrastructure:0 "Build More Infrastructure"
+SPR_P_build_more_infrastructure_desc:0 "F."
+
+SPR_P_revitalize_our_travelways:0 "Revitalize our Travelways"
+SPR_P_revitalize_our_travelways_desc:0 "Our roads are horrible, and our horses and men have trouble navigating through our own country at times. This is required to be improved"
+
+SPR_P_the_army:0 "The Army"
+SPR_P_the_army_desc:0 ""
+
+SPR_P_invest_in_the_military:0 "Invest in the Military"
+SPR_P_invest_in_the_military_desc:0 ""
+
+SPR_P_the_navy:0 "The Navy"
+SPR_P_the_navy_desc:0 ""
+
+SPR_P_doctrine_effort:0 "Doctrine Effort"
+SPR_P_doctrine_effort_desc:0 ""
+
+SPR_P_weapons_technology:0 "Weapons Technology"
+SPR_P_weapons_technology_desc:0 ""
+
+SPR_P_consolidate_royal_power:0 "Consolidate Royal Power"
+SPR_P_consolidate_royal_power_desc:0 ""
+
+SPR_P_build_more_cannons:0 "Build More Cannons"
+SPR_P_build_more_cannons_desc:0 ""
+
+SPR_P_make_more_muskets:0 "Make More Muskets"
+SPR_P_make_more_muskets_desc:0 ""
+
+SPR_P_form_coast_guard:0 "Form Coast Guard"
+SPR_P_form_coast_guard_desc:0 "."
+
+SPR_P_build_a_fleet:0 "Build a Fleet"
+SPR_P_build_a_fleet_desc:0 ""
+
+SPR_P_expand_naval_production:0 "Expand Naval Production"
+SPR_P_expand_naval_production_desc:0 ""
+
+SPR_P_civilian_industrial_development_i:0 "Civilian Industrial Development I"
+SPR_P_civilian_industrial_development_i_desc:0 ""
+
+SPR_P_civilian_industrial_development_ii:0 "Civilian Industrial Development II"
+SPR_P_civilian_industrial_development_ii_desc:0 ""
+
+SPR_P_military_industrial_development_i:0 "Military Industrial Development I"
+SPR_P_military_industrial_development_i_desc:0 ""
+
+SPR_P_military_industrial_development_ii:0 "Military Industrial Development II"
+SPR_P_military_industrial_development_ii_desc:0 ""
+
+SPR_P_improve_the_road_networks:0 "Improve the Road Networks"
+SPR_P_improve_the_road_networks_desc:0 ""
+
+SPR_P_revitalize_our_travelways:0 "Revitalize our Travelways"
+SPR_P_revitalize_our_travelways_desc:0 "Our roads are horrible, and our horses and men have trouble navigating through our own country at times. This is required to be improved"
+
+SPR_P_invest_into_our_research:0 "Invest into our Research"
+SPR_P_invest_into_our_research_desc:0 ""
+
+SPR_P_improve_production:0 "Improve production"
+SPR_P_improve_production_desc:0 "Our production is outdated and very poor. We must improve our methods if we want to keep up with the modern world."
+
+SPR_P_crush_the_resistance:0 "Crush The Resistance"
+SPR_P_crush_the_resistance_desc:0 ""
+
+SPR_P_savoy_industrial_expansion_ii:0 "Savoy Industrial Expansion II"
+SPR_P_savoy_industrial_expansion_ii_desc:0 ""
+
+SPR_P_savoy_industrial_expansion_i:0 "Savoy Industrial Expansion I"
+SPR_P_savoy_industrial_expansion_i_desc:0 ""
+
+SPR_P_savoy_military_development:0 "Savoy Military Development"
+SPR_P_savoy_military_development_desc:0 ""
+
+SPR_P_savoy_civilian_development:0 "Savoy Civilian Development"
+SPR_P_savoy_civilian_development_desc:0 ""
+
+SPR_P_build_up_turin:0 "Build up Turin"
+SPR_P_build_up_turin_desc:0 ""
+
+SPR_P_seed_chambery_and_nizza:0 "Seed Chambery And Nizza"
+SPR_P_seed_chambery_and_nizza_desc:0 ""
+
+SPR_P_take_naples:0 "Take Naples"
+SPR_P_take_naples_desc:0 ""
+
+SPR_P_french_malta:0 "French Malta"
+SPR_P_french_malta_desc:0 ""
+
+SPR_P_expand_quebec_industry:0 "Expand Quebec Industry"
+SPR_P_expand_quebec_industry_desc:0 ""
+
+SPR_P_quebec_arms_factory_ii:0 "Quebec Arms Factory II"
+SPR_P_quebec_arms_factory_ii_desc:0 ""
+
+SPR_P_quebec_civilian_factory_ii:0 "Quebec Civilian Factory II"
+SPR_P_quebec_civilian_factory_ii_desc:0 ""
+
+SPR_P_quebec_arms_factory_i:0 "Quebec Arms Factory I"
+SPR_P_quebec_arms_factory_idesc:0 ""
+
+SPR_P_quebec_civilian_factory_i:0 "Quebec Civilian Factory I"
+SPR_P_quebec_civilian_factory_i_desc:0 ""
+
+SPR_P_new_france:0 "New France"
+SPR_P_new_france_desc:0 ""
+
+SPR_P_quebecen_roads:0 "Quebecen Roads"
+SPR_P_quebecen_roads_desc:0 ""
+
+SPR_P_african_trade_expansion:0 "African Trade Expansion"
+SPR_P_african_trade_expansion_desc:0 ""
+
+SPR_P_build_ivory_raods:0 "Build Ivory Roads"
+SPR_P_build_ivory_raods_idesc:0 ""
+
+SPR_P_uproot_tribes_for_ivory_raods:0 "Uproot Tribes For Ivory Roads"
+SPR_P_uproot_tribes_for_ivory_raods_desc:0 ""
+
+SPR_P_settle_the_ivory_coast:0 "Settle The Ivory Coast"
+SPR_P_settle_the_ivory_coast_desc:0 ""
+
+SPR_P_conquer_the_desert:0 "Conquer The Desert"
+SPR_P_conquer_the_desert_desc:0 ""
+
+SPR_P_build_african_dirt_roads:0 "Build African Dirt Roads"
+SPR_P_build_african_dirt_roads_desc:0 ""
+
+SPR_P_connect_africa_holdings:0 "Connect Africa Holdings"
+SPR_P_connect_africa_holdings_desc:0 ""
+
+SPR_P_expand_into_africa:0 "Expand Into Africa"
+SPR_P_expand_into_africa_desc:0 ""
+
+SPR_P_french_quebec:0 "French Quebec"
+SPR_P_french_quebec_desc:0 ""
+
+SPR_P_french_africa:0 "French Africa"
+SPR_P_french_africa_desc:0 ""
+
+SPR_P_colonisation:0 "Colonisation"
+SPR_P_colonisation_desc:0 ""
+
+SPR_P_slit_up_hinterpommern:0 "Slit up Hinterpommern"
+SPR_P_slit_up_hinterpommern_desc:0 ""
+
+SPR_P_alliance_with_german_princes:0 "Alliance With German Princes"
+SPR_P_alliance_with_german_princes_desc:0 ""
+
+SPR_P_aid_mecklenburg:0 "Aid Mecklenburg"
+SPR_P_aid_mecklenburg_desc:0 ""
+
+SPR_P_aid_brandenburg:0 "Aid Brandenburg"
+SPR_P_aid_brandenburg_desc:0 ""
+
+SPR_P_aid_saxory:0 "Aid Saxory"
+SPR_P_aid_saxory_desc:0 ""
+
+SPR_P_convert_the_prince_of_mecklenburg:0 "Convert The Prince of Mecklenburg"
+SPR_P_convert_the_prince_of_mecklenburg_desc:0 ""
+
+SPR_P_convert_the_prince_of_brandenburg:0 "Convert The Prince of Brandenburg"
+SPR_P_convert_the_prince_of_brandenburg_desc:0 ""
+
+SPR_P_convert_the_prince_of_saxory:0 "Convert The Prince of Saxory"
+SPR_P_convert_the_prince_of_saxory_desc:0 ""
+
+SPR_P_protestant_german_princes:0 "Protestant German Princes"
+SPR_P_protestant_german_princes_desc:0 ""
+
+SPR_P_puppet_venetia:0 "Puppet Venetia"
+SPR_P_puppet_venetia_desc:0 ""
+
+SPR_P_war_for_wallonie:0 "War For Wallonie"
+SPR_P_war_for_wallonie_desc:0 ""
+
+SPR_P_alliance_with_the_pope:0 "Alliance With The German Pope"
+SPR_P_alliance_with_the_pope_desc:0 ""
+
+SPR_P_take_florence:0 "Take Florence"
+SPR_P_take_florence_desc:0 ""
+
+SPR_P_annex_modena_and_lucca:0 "Annex Modena And Lucca"
+SPR_P_annex_modena_and_lucca_desc:0 ""
+
+SPR_P_more_muskets:0 "More Muskets"
+SPR_P_more_muskets_desc:0 ""
+
+SPR_P_send_old_muskets:0 "Send Old Muskets"
+SPR_P_send_old_muskets_desc:0 ""
+
+SPR_P_prince_of_bishoprics:0 "Prince of Bishoprics"
+SPR_P_prince_of_bishoprics_desc:0 ""
+
+SPR_P_seed_liege_to_the_netherlands:0 "Seed Liege to The Netherlands"
+SPR_P_seed_liege_to_the_netherlands_desc:0 ""
+
+SPR_P_propose_the_duchy_of_luxemburg:0 "Propose The Duchy of Luxemburg"
+SPR_P_propose_the_duchy_of_luxemburg_desc:0 ""
+
+SPR_P_seed_eastern_wallonia_to_the_netherlands:0 "Seed Eastern Wallonia to The Netherlands"
+SPR_P_seed_eastern_wallonia_to_the_netherlands_desc:0 ""
+
+SPR_P_support_netherlands_claims:0 "Support Netherlands Claims"
+SPR_P_support_netherlands_claims_desc:0 ""
+
+SPR_P_resistance_in_eastern_wallonia:0 "Resistance in Eastern Wallonia"
+SPR_P_resistance_in_eastern_wallonia_desc:0 ""
+
+SPR_P_resistance_in_wallonie:0 "Resistance in Wallonie"
+SPR_P_resistance_in_wallonie_desc:0 ""

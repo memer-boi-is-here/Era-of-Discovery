@@ -1,0 +1,29 @@
+
+state={
+	id=217
+	name="STATE_217"
+
+	history={
+		owner = ATK
+		victory_points = {
+			3529 10 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+
+		}
+		add_core_of = ATK
+		
+
+	}
+
+	provinces={
+		498 520 3503 3517 3529 3555 6479 6527 6541 6575 9504 9530 11395 11447 11474 11484 
+	}
+	manpower= 78000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,18 @@
+state={
+	id=1060
+	name="STATE_1060"
+	history={
+		owner = KRC
+		add_core_of = KRC
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		1502 1588 1645 1847 4506 4876 7582 7894 10567 12485
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

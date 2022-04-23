@@ -1,0 +1,33 @@
+
+state={
+	id=231
+	name="STATE_231"
+
+	history={
+		owner = PER
+		victory_points = {
+			1599 5 
+		}
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+
+		}
+		add_core_of = PER
+add_core_of = GEO
+add_core_of = ARM
+		
+
+	}
+
+	provinces={
+		1530 1599 4534 6436 6669 6671 9702 
+	}
+	manpower= 333000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

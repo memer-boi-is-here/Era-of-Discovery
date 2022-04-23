@@ -1,0 +1,219 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_france_focus_legacy_of_frances_I"
+		texturefile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_france_focus_legacy_of_frances_I_shine"
+		texturefile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_legacy_of_frances_I.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_france_focus_valois_habusburg_war"
+		texturefile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_france_focus_valois_habusburg_war_shine"
+		texturefile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_valois_habusburg_war.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_france_focus_ottoman_alliance"
+		texturefile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_france_focus_ottoman_alliance_shine"
+		texturefile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_ottoman_alliance.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_france_focus_threat_of_the_huguenots"
+		texturefile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_france_focus_threat_of_the_huguenots_shine"
+		texturefile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+			animationtexturefile = "gfx/interface/goals/france_focus_threat_of_the_huguenots.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_annex_the_prince_bishoprics"
+		texturefile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_annex_the_prince_bishoprics_shine"
+		texturefile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+			animationtexturefile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+			animationtexturefile = "gfx/interface/goals/annex_the_prince_bishoprics.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_seek_alliance_with_siena"
+		texturefile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_seek_alliance_with_siena_shine"
+		texturefile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+			animationtexturefile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+			animationtexturefile = "gfx/interface/goals/seek_alliance_with_siena.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+}

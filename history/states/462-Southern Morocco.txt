@@ -1,0 +1,26 @@
+
+state={
+	id=462
+	name="STATE_462"
+	manpower = 1865552
+	
+	state_category = wasteland
+
+	history={
+		owner = MOR
+		add_core_of = MOR
+		victory_points = {
+			4108 1 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 3
+		}
+	}
+
+	provinces={
+		1102 4108 4139 5046 7069 7203 10070 10107 11943
+	}
+}

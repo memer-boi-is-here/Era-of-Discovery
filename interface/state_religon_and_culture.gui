@@ -1,0 +1,51 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name ="culture_buttons"
+		position = { x=125 y =-80 }	
+		
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		IconType = {
+			name = "religion_icon"   
+			position = { x = 0 y = 0 }  
+			Orientation = center  
+			quadTextureSprite = ""
+			pdx_tooltip = religion_name
+		}
+		
+		
+		
+	}
+	containerWindowType = {
+		name ="culture_list"
+		position = { x=200 y =-300 }	
+		
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_army_insignia_selection_bg"
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+
+			name ="culture_list_text"
+
+			position = { x = 15 y = 40 }
+			#textureFile = ""
+			font = "cg_16b"  
+			#borderSize = {x = 0 y = 0}
+			text = "culture_list_text_text"	 
+			format = center
+			maxWidth = 280
+			maxHeight = 20000000
+		}
+	}
+
+}

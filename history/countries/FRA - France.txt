@@ -1,0 +1,339 @@
+﻿capital = 16
+
+recruit_character = FRA_henry_ii
+recruit_character = FRA_francis_duke_of_guise
+recruit_character = FRA_anne_de_montmorency_duke_of_montmorency
+recruit_character = FRA_jacques_dalbon_seigneur_de_saint_andre
+recruit_character = FRA_paul_de_thermes
+recruit_character = FRA_louis_prince_of_conde
+recruit_character = FRA_francis_de_scepeaux
+recruit_character = FRA_gaspard_de_saulx
+recruit_character = FRA_jean_count_of_soissons_and_enghien
+recruit_character = FRA_albert_de_gondi
+recruit_character = FRA_armand_de_gontraut,_baron_de_biron
+recruit_character = FRA_francis_iii_de_la_rochefoucauld
+recruit_character = FRA_gabriel_de_lorges_1st_earl_of_montgomery
+recruit_character = FRA_gaspard_ii_de_coligny
+recruit_character = FRA_claude_dannebault
+recruit_character = FRA_francis_de_coligny_dandelot
+recruit_character = FRA_jean_ribault
+recruit_character = FRA_aimable_harispe
+recruit_character = FRA_hugo_vaillant
+recruit_character = FRA_lazare_dubois
+recruit_character = FRA_catherine_de_medici
+recruit_character = FRA_jean_bullant
+recruit_character = FRA_francis_de_montmorency
+recruit_character = FRA_gabriel_de_luetz
+recruit_character = FRA_francis_de_la_rochefoucauld
+recruit_character = FRA_charles_cardinal_of_lorraine
+recruit_character = FRA_charles_de_cosse_count_of_brissac
+
+oob = "FRA_1550"
+
+set_research_slots = 3
+
+set_global_flag = pope_has_died
+
+set_stability = 0.6
+set_war_support = 0.1
+
+add_ideas = {
+    French_Renaissance
+	claims_in_italy
+	huguenot_resistance
+	taille_tax
+}
+
+set_convoys = 110
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+# Starting tech
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+	fleet_in_being = 1
+
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Henry II"
+	picture = "portrait_henry_ii.dds"
+	ideology = despotism
+	traits = {
+		devout_catholic
+	}
+}
+
+create_field_marshal = {
+	name = "Henry II"
+	picture = "portrait_henry_ii.dds"
+	traits = { inspirational_leader aggressive_assaulter expert_delegator offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Francis, Duke of Guise"
+	picture = "portrait_francis_duke_of_guise.dds"
+	traits = { harsh_leader brilliant_strategist war_hero fast_planner }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+	
+create_field_marshal = {
+	name = "Anne de Montmorency, Duke of Montmorency"
+	picture = "portrait_anne_de_montmorency.dds"
+	traits = { unyielding_defender infantry_officer organizer adaptable  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+	
+create_field_marshal = {
+	name = "Jacques d'Albon, Seigneur de Saint Andre"
+	picture = "portrait_jacques_d_albon.dds"
+	traits = { career_officer offensive_doctrine trickster  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_field_marshal = {
+	name = "Paul de Thermes"
+	picture = "portrait_paul_de_thermes.dds"
+	traits = { thorough_planner old_guard }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Louis, Prince of Conde"
+	picture = "portrait_louis_prince_of_conde.dds"
+	traits = { infantry_expert adaptable infantry_officer skilled_staffer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Francis de Scepeaux"
+	picture = "portrait_francis_de_scepeaux.dds"
+	traits = { ambusher trait_mountaineer trait_reckless winter_specialist }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4 
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+	name = "Gaspard de Saulx"
+	picture = "portrait_gaspard_de_saulx.dds"
+	traits = { fortress_buster hill_fighter inflexible_strategist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Jean, Count of Soissons and Enghien"
+	picture = "portrait_jean_count_of_soissons_and_enghien.dds"
+	traits = { scavenger trickster trait_reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Albert de Gondi"
+	picture = "portrait_albert_de_gondi.dds"
+	traits = { guerilla_fighter trait_engineer bearer_of_artillery }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+	
+create_corps_commander = {
+	    name = "Armand de Gontraut, Baron de Biron"
+    	picture = "portrait_armand_de_gontraut_baron_de_biron.dds"
+	    traits = { cavalry_expert cavalry_officer urban_assault_specialist }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+}
+	
+create_corps_commander = {
+	name = "Francis III de la Rochefoucauld"
+	picture = "portrait_francis_de_la_rochefoucauld.dds"
+	traits = { ranger cavalry_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gabriel de Lorges, 1st Earl of Montgomery"
+	picture = "portrait_gabriel_de_lorges.dds"
+	traits = { invader_ii politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+	
+create_navy_leader = {
+	name = "Gaspard II de Coligny"
+	picture = "portrait_gaspard_de_coligny.dds"
+	traits = { big_guns_expert ironside battleship_adherent old_guard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+	
+create_navy_leader = {
+	name = "Claude d'Annebault"
+	picture = "portrait_claude_d_annebault.dds"
+	traits = { cruiser_captain blue_water_expert gentlemanly }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Francis de Coligny d'Andelot"
+	picture = "portrait_francis_de_coligny_d_andelot.dds"
+	traits = { destroyer_leader bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+	
+create_navy_leader = {
+	name = "Jean Ribault"
+	picture = "portrait_jean_ribault.dds"
+	traits = { destroyer_leader bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+give_guarantee = SCO
+
+add_opinion_modifier = { target = SCO modifier = large_decrease }
+
+add_ideas = catholic
+
+add_ideas = government_rank_2
+
+country_event = { id = anewera.2 days = "3477" }
+
+create_faction = "Valois Alliance"
+add_to_faction = SAV
+
+set_autonomy = {
+	target = SVY
+	autonomous_state = autonomy_integrated_puppet
+}
+
+add_opinion_modifier = { target = SCO modifier = huge_increase }
+add_opinion_modifier = { target = AUS modifier = large_decrease }
+add_opinion_modifier = { target = SPR modifier = large_decrease }
+add_opinion_modifier = { target = HOL modifier = medium_decrease }
+add_opinion_modifier = { target = NSP modifier = medium_decrease }
+add_opinion_modifier = { target = SPP modifier = medium_decrease }
+add_opinion_modifier = { target = ENG modifier = large_decrease }
+add_opinion_modifier = { target = TUR modifier = medium_increase }
+add_opinion_modifier = { target = LOR modifier = medium_decrease }
+
+if = {
+	limit = {
+		has_idea = claims_in_italy
+    }
+
+	add_opinion_modifier = {
+		target = NAP
+		modifier = large_decrease
+	}
+
+	add_opinion_modifier = {
+		target = MIL
+		modifier = large_decrease
+	}
+
+	add_ideas = french_traditions
+}

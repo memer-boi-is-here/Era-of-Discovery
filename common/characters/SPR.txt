@@ -1,0 +1,701 @@
+characters = {
+	SPR_philip_prince_of_asturias = {
+		name = "Philip, Prince of Asturias"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_philip_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { trait_reckless harsh_leader aggressive_assaulter inspirational_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SPR_fernando_alvarez_3rd_duke_of_alba = {
+		name = "Fernando Alvarez, 3rd Duke of Alba"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_fernando_alvarez.dds"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard career_officer war_hero thorough_planner }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SPR_emmanuel_philibert_duke_of_savoy = {
+		name = "Emmanuel Philibert, Duke of Savoy"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_emmanuel_philibert.dds"
+			}
+		}
+		field_marshal = {
+			traits = { bearer_of_artillery infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SPR_gabriel_de_la_cueva_5th_duke_of_alburquerque = {
+		name = "Gabriel de la Cueva, 5th Duke of Alburquerque"
+		advisor = {
+			slot = army_chief
+			idea_token = gabriel_de_la_cueva
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_maneuver_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_gabriel_de_la_cueva"
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_gabriel_de_la_cueva.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SPR_juan_francisco_fernandez_de_hijar_3rd_duke_of_aliaga = {
+		name = "Juan Francisco Fernandez de Hijar, 3rd Duke of Aliaga"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_juan_francisco_fernandez.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist ambusher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SPR_martin_de_gurrea_y_aragon_4th_duke_of_villahermosa = {
+		name = "Martin de Gurrea y Aragon, 4th Duke of Villahermosa"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_martin_de_gurrea.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious ranger fortress_buster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_fadrique_alvarez_de_toledo_4th_duke_of_alba = {
+		name = "Fadrique Alvarez de Toledo, 4th Duke of Alba"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_fadrique_alvarez.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless trickster scavenger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_pedro_de_toledo_osorio_5th_marquess_of_villafranca = {
+		name = "Pedro de Toledo Osorio, 5th Marquess of Villafranca"
+		advisor = {
+			slot = high_command
+			idea_token = pedro_de_toledo
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_cavalry_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_pedro_de_toledo"
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_pedro_de_toledo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SPR_ruy_gomez_de_silva_1st_prince_of_eboli = {
+		name = "Ruy Gomez de Silva, 1st Prince of Eboli"
+		advisor = {
+			slot = political_advisor
+			idea_token = ruy_gomez
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					chief_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_ruy_gomez"
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_ruy_gomez.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_alvaro_de_bazan_1st_marquess_of_santa_cruz = {
+		name = "Alvaro de Bazan, 1st Marquess of Santa Cruz"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_alvaro_de_bazan.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_ferrante_gonzaga = {
+		advisor = {
+			slot = high_command
+			idea_token = ferrante_gonzaga
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_logistics_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "ferrante_gonzaga"
+		portraits = {
+			army = {
+				small = "GFX_idea_ferrante_gonzaga"
+			}
+		}
+	}
+	SPR_miguel_lopez = {
+		advisor = {
+			slot = navy_chief
+			idea_token = miguel_lopez
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_maneuver_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "miguel_lopez"
+		portraits = {
+			army = {
+				small = "GFX_idea_miguel_lopez"
+			}
+		}
+	}
+	SPR_fernando_alvarez_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = fernando_alvarez_a
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "fernando_alvarez_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_fernando_alvarez"
+			}
+		}
+	}
+	SPR_fernando_de_valdes_salas = {
+		advisor = {
+			slot = political_advisor
+			idea_token = fernando_de_valdes_salas
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					grand_inquisitor 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "fernando_de_valdes_salas"
+		portraits = {
+			army = {
+				small = "GFX_idea_fernando_de_valdes_salas"
+			}
+		}
+	}
+	SPR_miguel_lopez_a = {
+		advisor = {
+			slot = political_advisor
+			idea_token = miguel_lopez_a
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					high_admiral 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "miguel_lopez_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_miguel_lopez"
+			}
+		}
+	}
+	SPR_alvaro_de_bazan = {
+		advisor = {
+			slot = navy_chief
+			idea_token = alvaro_de_bazan
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "alvaro_de_bazan"
+		portraits = {
+			army = {
+				small = "GFX_idea_gabriel_de_la_cueva"
+			}
+		}
+	}
+	SPR_simon_renard = {
+		advisor = {
+			slot = political_advisor
+			idea_token = simon_renard
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					foreign_diplomat 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "simon_renard"
+		portraits = {
+			army = {
+				small = "GFX_idea_simon_renard"
+			}
+		}
+	}
+	SPR_gonzalo_jimenez = {
+		advisor = {
+			slot = political_advisor
+			idea_token = gonzalo_jimenez
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					explorer 
+				}
+				on_add  = {
+					add_to_variable  = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "gonzalo_jimenez"
+		portraits = {
+			army = {
+				small = "GFX_idea_gonzalo_jimenez"
+			}
+		}
+	}
+	SPR_juan_bautista = {
+		advisor = {
+			slot = political_advisor
+			idea_token = juan_bautista
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					construction_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "juan_bautista"
+		portraits = {
+			army = {
+				small = "GFX_idea_juan_bautista"
+			}
+		}
+	}
+	SPR_martin_de_gurrea = {
+		advisor = {
+			slot = high_command
+			idea_token = martin_de_gurrea
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "martin_de_gurrea"
+		portraits = {
+			army = {
+				small = "GFX_idea_martin_de_gurrea"
+			}
+		}
+	}
+	SPR_pedro_menendez = {
+		advisor = {
+			slot = high_command
+			idea_token = pedro_menendez
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "pedro_menendez"
+		portraits = {
+			army = {
+				small = "GFX_idea_pedro_menendez"
+			}
+			army = {
+				large = "gfx/leaders/AUS/portrait_pedro_menendez.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_juan_martinez = {
+		advisor = {
+			slot = political_advisor
+			idea_token = juan_martinez
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					archbishop_of_toledo 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "juan_martinez"
+		portraits = {
+			army = {
+				small = "GFX_idea_juan_martinez"
+			}
+		}
+	}
+	SPR_antonio_perez = {
+		advisor = {
+			slot = political_advisor
+			idea_token = antonio_perez
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					finance_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				on_add  = {
+					add_to_variable  = {
+						money_factor = 0.500
+					}
+				}
+				on_remove  = {
+					add_to_variable  = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				modifier  = {
+					custom_modifier_tooltip  = weekly_income_tt
+				}
+		}
+		name = "antonio_perez"
+		portraits = {
+			army = {
+				small = "GFX_idea_antonio_perez"
+			}
+		}
+	}
+	SPR_fernando_alvarez = {
+		advisor = {
+			slot = political_advisor
+			idea_token = fernando_alvarez
+			allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					war_minister 
+				}
+				do_effect  = {
+					if  = {
+						has_government  = neutrality 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "fernando_alvarez"
+		portraits = {
+			army = {
+				small = "GFX_idea_fernando_alvarez"
+			}
+		}
+	}
+	SPR_juan_francisco_fernandez = {
+		advisor = {
+			slot = high_command
+			idea_token = juan_francisco_fernandez
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "juan_francisco_fernandez"
+		portraits = {
+			army = {
+				small = "GFX_idea_juan_francisco_fernandez"
+			}
+		}
+	}
+	SPR_juan_martinez_de_recalde = {
+		advisor = {
+			slot = navy_chief
+			idea_token = juan_martinez_de_recalde
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "juan_martinez_de_recalde"
+		portraits = {
+			army = {
+				small = "GFX_idea_juan_martinez_de_recalde"
+			}
+			army = {
+				large = "gfx/leaders/SPR/portrait_juan_martinez.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SPR_luis_de_requesens_y_zuniga = {
+		advisor = {
+			slot = army_chief
+			idea_token = luis_de_requesens_y_zuniga
+			allowed  = {
+					original_tag  = SPR
+				}
+				cost  = 150.000
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name = "luis_de_requesens_y_zuniga"
+		portraits = {
+			army = {
+				small = "GFX_idea_luis_de_requesens_y_zuniga"
+			}
+		}
+	}
+}

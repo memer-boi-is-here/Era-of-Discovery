@@ -1,0 +1,19 @@
+state={
+	id=1000
+	name="South Chagatai"
+	
+	history={
+		owner = CHG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CHG
+	}
+	
+	provinces={
+		2099 5100 7997 10834 10865 12890
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

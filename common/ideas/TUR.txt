@@ -1,0 +1,572 @@
+ideas = {
+
+    country = {
+	    economic_inflation = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+			
+			on_add = {
+				add_to_variable = {
+				  money_factor = -0.3
+				}
+			  }
+			on_remove = {
+				add_to_variable = {
+				  money_factor = 0.3
+				}
+			}
+
+			removal_cost = -1
+
+			picture = econimic_inflation
+			
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = -0.1
+				custom_modifier_tooltip = Weekly_income_tt
+			}
+		}
+		
+	    anti_habsburg_policy = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = anti_habsburg_policy
+			
+			targeted_modifier = { tag = AUS attack_bonus_against = 0.1 }
+            targeted_modifier = { tag = AUS defense_bonus_against = 0.1 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+			    trade_opinion_factor = -0.15
+				custom_modifier_tooltip = anti_habsburg_policy_tt
+			}
+		}
+		
+		seat_of_the_empire = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = seat_of_the_empire
+			
+			modifier = {
+				non_core_manpower = 0.15
+				license_subject_master_purchase_cost = -0.2
+				subjects_autonomy_gain = 0.1
+			}
+		}
+		
+	    civil_unrest_in_the_balkans = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = civil_unrest_in_the_balkans
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				weekly_manpower = -10000
+				war_support_factor = -0.1
+			}
+		}
+		
+		ottoman_renaissance = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = ottoman_renaissance
+			
+			modifier = {
+			    political_power_gain = 0.05
+				war_support_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+	    vigor_of_the_empire = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = vigor_of_the_empire
+			
+			modifier = {
+			   justify_war_goal_time = -0.03
+			   industrial_capacity_factory = 0.04
+			   war_support_factor = 0.03
+			}
+		}
+	
+	}
+
+	political_advisor = {
+
+        rustem_pasha = {
+
+			picture = rustem_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { grand_vizier }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		ebussuud_efendi = {
+
+			picture = ebussuud_efendi
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { grand_muftis_of_constantinople }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+
+		lutfi_pasha = {
+
+			picture = lutfi_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { finance_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			on_add = {
+				add_to_variable = {
+				  money_factor = 0.5
+				}
+			  }
+			on_remove = {
+				add_to_variable = {
+				  money_factor = -0.5
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+			
+		}
+
+		koca_sinan_pasha = {
+
+			picture = koca_sinan_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { foreign_diplomat }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		piri_reis = {
+
+			picture = piri_reis
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { explorer }
+			on_add = {
+				add_to_variable = {
+					max_colonies = 1
+				}
+			}
+			on_remove = {
+				add_to_variable = {
+					max_colonies = -1
+				}
+			}
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+	 
+		}
+		
+		dragut = {
+
+			picture = dragut
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { high_admiral }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sokollu_mehmed_pasha = {
+
+			picture = sokollu_mehmed_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { construction_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sehzade_mustafa = {
+
+			picture = sehzade_mustafa
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+	##		available = {
+	##			NOT = {
+	##				has_completed_focus = TUR_execute_sehzade_mustafa
+	##			}
+	##		}
+			
+			traits = { war_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	   selim_ii_p = {
+	
+			picture = selim_ii
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			available = {
+				IF = {
+					has_completed_focus = TUR_execute_sehzade_mustafa
+				}
+			}
+			
+			traits = { war_minister }
+			
+			do_effect = {
+				always = yes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	army_chief = {
+		
+	    rustem_pasha_a = {
+		
+		    picture = rustem_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    sokollu_mehmed_pasha_a = {
+		
+		    picture = sokollu_mehmed_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		lutfi_pasha_a = {
+		
+		    picture = lutfi_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+	
+	    ali_pasha = {
+		
+	        picture = ali_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+		    }
+		}
+		
+		occhiali = {
+		
+		    picture = occhiali
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		seydi_ali_reis = {
+		
+		    picture = seydi_ali_reis
+			
+			allowed = {
+				original_tag = TUR
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+	}
+	
+	high_command = {
+		
+        selim_ii = {
+			ledger = army
+			
+			picture = selim_ii
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		lala_mustafa_pasha = {
+			ledger = army
+			
+			picture = lala_mustafa_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		bali_bey = {
+			ledger = army
+			
+			picture = bali_bey
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { army_cavalry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    yusuf_sinan_pasha = {
+			ledger = army
+			
+			picture = yusuf_sinan_pasha
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dragut_a = {
+			ledger = navy
+			
+			picture = dragut
+			
+			allowed = {
+				original_tag = TUR
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}

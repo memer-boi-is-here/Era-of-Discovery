@@ -1,0 +1,18 @@
+state={
+	id=1055
+	name="STATE_1055"
+	history={
+		owner = GUG
+		add_core_of = GUG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		10802 12801
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

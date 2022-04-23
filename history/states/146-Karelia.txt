@@ -1,0 +1,26 @@
+
+state={
+	id=146
+	name = "STATE_146"
+
+	history = {
+		owner = RUS
+		add_core_of = RUS
+        add_core_of = FIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			9206 3 
+		}
+
+	}
+
+	provinces={
+		7 80 2332 2998 3185 6052 6153 6210 9176 11046 11156 13114 13115 
+	}
+	manpower= 287000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

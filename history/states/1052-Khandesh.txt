@@ -1,0 +1,22 @@
+
+state={
+	id=1052
+	name="STATE_1052"
+
+	history={
+		owner = KDS
+		add_core_of = KDS
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+	}
+
+	provinces={
+		7177 7205 7430 10872 11993 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

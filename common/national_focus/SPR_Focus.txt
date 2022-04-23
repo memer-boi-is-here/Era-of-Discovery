@@ -1,0 +1,2854 @@
+focus_tree = {
+	id = SPR_Focus_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	focus = {
+		id = SPR_colonial_expansion
+		icon = GFX_goal_generic_military_deal
+		x = 6
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_manpower = 10000
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_finish_of_the_inca
+		icon = GFX_SPR_finish_of_the_inca-78244
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_colonial_expansion
+		prerequisite = { focus = SPR_colonial_expansion }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			INC = { exists = no }
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = INC }
+		}
+	}
+	
+		focus = {
+		id = SPR_invest_in_new_spain
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		
+		available = {
+		    or = {
+               has_completed_focus = SPR_dont_slit_up_new_spain
+		       has_completed_focus = SPR_slit_up_new_spain
+			}
+		}
+		
+		completion_reward = {
+			NSP = {
+               random_owned_controlled_state = {
+                  add_extra_state_shared_building_slots = 1
+               }
+               random_owned_controlled_state = {
+                  add_extra_state_shared_building_slots = 1
+               }
+               random_owned_controlled_state = {
+                  add_extra_state_shared_building_slots = 1
+               }
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_invest_in_south_america
+		icon = GFX_goal_invest_in_south_america
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			494 = {
+              add_building_construction = {
+	             type = industrial_complex
+	             level = 1
+	             instant_build = yes
+              }
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_into_africa
+		icon = GFX_goal_expand_into_africa
+		x = -5
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_subjugate_morocco
+		icon = GFX_focus_generic_africa_factory
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_into_africa
+		prerequisite = { focus = SPR_expand_into_africa }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = MOR }
+			create_wargoal = { type = annex_everything target = WAT }
+			create_wargoal = { type = annex_everything target = BLD }
+            add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_fund_calvinism_in_europe
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_build_calvinist_churches
+		prerequisite = { focus = SPR_build_calvinist_churches }
+		
+		ai_will_do = {
+		    factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = antonio_perez
+		}
+	}
+	
+	focus = {
+		id = SPR_fund_lutheranism_in_europe
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		 
+		relative_position_id = SPR_build_lutheran_churches
+		prerequisite = { focus = SPR_build_lutheran_churches }
+		
+		ai_will_do = {
+		    factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = juan_martinez
+		}
+	}
+	
+	focus = {
+		id = SPR_build_calvinist_churches
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_follow_the_ideas_of_calvin
+		prerequisite = { focus = SPR_follow_the_ideas_of_calvin }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state= {
+                 add_building_construction = {
+				      type = infrastructure
+		              level = 2
+					  instant_build = yes
+				 }
+           }
+	    }
+	}
+	
+	focus = {
+		id = SPR_expand_barcelona
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_the_iron_mills
+		prerequisite = { focus = SPR_expand_the_iron_mills }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			165 = {
+              add_extra_state_shared_building_slots = 2
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_madrid
+		icon = GFX_goal_generic_cavalry
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_the_iron_mills
+		prerequisite = { focus = SPR_expand_the_iron_mills }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			41 = {
+              add_extra_state_shared_building_slots = 2
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_condemn_french_influence
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_tensions_in_italy
+		prerequisite = { focus = SPR_tensions_in_italy }
+		mutually_exclusive = { focus = SPR_collaborate_with_the_french }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			FRA = {
+              add_opinion_modifier= { 
+                 target = SPR
+                 modifier = protest_action 
+              }
+            }
+           add_opinion_modifier= { 
+              target = FRA
+              modifier = protest_action 
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_focus_on_foreign_affairs
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 42
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = SPR_follow_the_ideas_of_luther
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_stop_the_spanish_inquisition
+		prerequisite = { focus = SPR_stop_the_spanish_inquisition }
+		mutually_exclusive = { focus = SPR_follow_the_ideas_of_calvin }
+		
+		completion_reward = {
+		    add_stability = 0.075
+		    custom_effect_tooltip = "Reaplace Base Stability: +7.50%"
+			custom_effect_tooltip = "Effective change:"
+			custom_effect_tooltip = "Political Power Gain: -25%"
+			custom_effect_tooltip = "Consumer Goods Factories: -5.0%"
+			custom_effect_tooltip = "Production Efficiency Cap: +25.00%"
+			custom_effect_tooltip = "Production Efficency growth: +25.00%"
+			hidden_effect = {
+			  swap_ideas = {
+		          remove_idea = catholic
+                  add_idea = protestant
+		      }
+		   }
+		}
+	}
+	
+	focus = {
+		id = SPR_ban_protestant_ideas
+		icon = GFX_focus_por_concordat
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_reinforce_the_spanish_inquisition
+		prerequisite = { focus = SPR_reinforce_the_spanish_inquisition }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+            add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = SPR_stop_the_spanish_inquisition
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_follow_the_reformation
+		prerequisite = { focus = SPR_follow_the_reformation }
+		
+		completion_reward = {
+			add_stability = 0.1
+            add_political_power = 10
+		}
+	}
+	
+	focus = {
+		id = SPR_forced_conversions
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_supremacy_of_catholicism
+		prerequisite = { focus = SPR_supremacy_of_catholicism }
+		
+		completion_reward = {
+			add_stability = 0.05
+            add_political_power = -25
+		}
+	}
+	
+	focus = {
+		id = SPR_exile_protestants
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_ban_protestant_ideas
+		prerequisite = { focus = SPR_ban_protestant_ideas }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = -3000
+            add_stability = 0.1
+            add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = SPR_tensions_in_italy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_foreign_affairs
+		prerequisite = { focus = SPR_focus_on_foreign_affairs }
+		
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = PAP }
+		}
+	}
+	
+	focus = {
+		id = SPR_a_catholic_holy_roman_empire
+		icon = GFX_focus_por_concordat
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_holy_roman_empire_situation
+		prerequisite = { focus = SPR_the_holy_roman_empire_situation }
+		mutually_exclusive = { focus = SPR_improve_relations_with_the_electors }
+	
+	completion_reward = {
+			puppet = LIE
+			LIE = { transfer_state = 8 }
+			puppet = AAC
+			AAC = { transfer_state = 801 }
+			HOL = { transfer_state = 34 }
+		}
+	}
+	
+	focus = {
+		id = SPR_constitutional_monarchy
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_establish_a_parliament
+		prerequisite = { focus = SPR_establish_a_parliament }
+		
+		completion_reward = {
+		    add_stability = 0.1
+			add_popularity = { 
+              ideology = democratic
+              popularity = 0.0125 
+            }
+		}
+	}
+
+	focus = {
+		id = SPR_invest_in_asia_and_the_pacific
+		icon = GFX_focus_usa_focus_on_asia
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_focus_on_internal_affairs
+		icon = GFX_goal_tripartite_pact
+		x = 29
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SPR_reinforce_the_peseta
+		icon = GFX_goal_spanish_reinforce_peseta
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_internal_affairs
+		prerequisite = { focus = SPR_focus_on_internal_affairs }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_variable = { money = 25 }
+		}
+	}
+	
+	focus = {
+		id = SPR_the_religious_question
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_internal_affairs
+		prerequisite = { focus = SPR_focus_on_internal_affairs }
+		
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_follow_the_reformation
+		icon = GFX_focus_up_joan_of_arc
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_religious_question
+		prerequisite = { focus = SPR_the_religious_question }
+		mutually_exclusive = { focus = SPR_oppress_religious_minorities }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+            swap_ideas = {
+		      remove_idea = catholic
+              add_idea = protestant
+		    }
+		}
+	} 
+	
+	focus = {
+		id = SPR_reinforce_the_spanish_inquisition
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_oppress_religious_minorities
+		prerequisite = { focus = SPR_oppress_religious_minorities }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+            add_political_power = 175
+		}
+	}
+	
+	focus = {
+		id = SPR_civilian_industrial_development_i
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_revitalize_our_travelways
+		prerequisite = { focus = SPR_revitalize_our_travelways }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			}
+            random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			}
+            random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+               type = industrial_complex
+               level = 1
+               instant_build = yes
+           }
+		}
+	
+	  }
+	}
+	
+	focus = {
+		id = SPR_civilian_industrial_development_ii
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_civilian_industrial_development_i
+		prerequisite = { focus = SPR_civilian_industrial_development_i }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_military_industrial_development_i
+		icon = GFX_goal_generic_construct_mil_factory 
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_revitalize_our_travelways
+		prerequisite = { focus = SPR_revitalize_our_travelways }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			   add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+			   }
+               add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+		       }
+	        }
+            random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			   add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes }
+               add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+			   }
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_military_industrial_development_ii  
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_military_industrial_development_i
+		prerequisite = { focus = SPR_military_industrial_development_i }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+            random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_improve_the_road_networks
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -12
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_internal_affairs
+		prerequisite = { focus = SPR_focus_on_internal_affairs }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+             }
+		}
+	}
+	
+	focus = {
+		id = SPR_revitalize_our_travelways
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_reinforce_the_peseta
+		prerequisite = { focus = SPR_reinforce_the_peseta }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+            random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+            random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_oppress_religious_minorities
+		
+		icon = GFX_focus_mex_soldaderas
+		x = -6
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_religious_question
+		prerequisite = { focus = SPR_the_religious_question }
+		mutually_exclusive = { focus = SPR_follow_the_reformation }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = fernando_de_valdes_salas
+		}
+	}
+	
+	focus = {
+		id = SPR_invest_into_our_research
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_improve_the_road_networks
+		prerequisite = { focus = SPR_improve_the_road_networks }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = SPR_improve_relations_with_the_pope
+		icon = GFX_focus_por_concordat
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_oppress_religious_minorities
+		prerequisite = { focus = SPR_oppress_religious_minorities }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = { 
+                   target = PAP 
+                   modifier = huge_increase 
+               }
+		}
+	}
+	
+	focus = {
+		id = SPR_the_holy_roman_empire_situation
+		icon = GFX_goal_generic_special_forces
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_foreign_affairs
+		prerequisite = { focus = SPR_focus_on_foreign_affairs }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SPR_seek_assistance_from_the_italian_states
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_condemn_french_influence
+		prerequisite = { focus = SPR_condemn_french_influence }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		    GEN = {
+               add_opinion_modifier= { 
+                   target = SPR 
+                   modifier = attache_sent 
+               }
+           }
+           SVY = {
+              add_opinion_modifier= { 
+                  target = SPR 
+                  modifier = attache_sent 
+              }
+           }
+           MIL = {
+              add_opinion_modifier= { 
+                  target = SPR 
+                  modifier = attache_sent 
+              }
+           }
+           VNI = {
+              add_opinion_modifier= { 
+                  target = SPR 
+                  modifier = attache_sent 
+              }
+          }
+          PRM = {
+              add_opinion_modifier= { 
+                  target = SPR 
+                  modifier = attache_sent 
+              }
+          }
+          MOD = {
+              add_opinion_modifier= { 
+                 target = SPR 
+                 modifier = attache_sent 
+              }
+          }
+          LUC = {
+              add_opinion_modifier= { 
+                 target = SPR 
+                 modifier = attache_sent 
+              }
+          }
+          SNA = {
+            add_opinion_modifier= { 
+                target = SPR 
+                modifier = attache_sent 
+            }
+          }
+	    }
+	}
+	
+	focus = {
+		id = SPR_habsburgvalois_war
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_closer_cooperation_with_austria
+		prerequisite = { focus = SPR_closer_cooperation_with_austria }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			AUS = {
+               has_war_with = yes
+            }
+			FRA = {
+               has_war_with = yes
+            }
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = FRA }
+		}
+	}
+	
+	focus = {
+		id = SPR_improve_production
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_invest_into_our_research
+		prerequisite = { focus = SPR_invest_into_our_research }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 1.0 
+                uses = 1
+                category = industry 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_the_iron_mills
+		icon = GFX_focus_generic_steel
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_improve_production
+		prerequisite = { focus = SPR_improve_production }
+		
+		completion_reward = {
+			add_resource = { type = steel amount = 12
+                state = 41 
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_set_up_african_trade_outposts
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_subjugate_morocco
+		prerequisite = { focus = SPR_subjugate_morocco }
+		
+		completion_reward = {
+		    custom_effect_tooltip = "Gain 50 Ducats"
+			add_to_variable = { money = 50 }
+		}
+	}
+	
+	focus = {
+		id = SPR_follow_the_ideas_of_calvin
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_stop_the_spanish_inquisition
+		prerequisite = { focus = SPR_stop_the_spanish_inquisition }
+		mutually_exclusive = { focus = SPR_follow_the_ideas_of_luther }
+		
+		completion_reward = {
+			add_stability = 0.075
+            add_ideas = SPR_A_Calvinist_Future
+		}
+	}
+	
+	focus = {
+		id = SPR_all_hail_the_habsburgs
+		icon = GFX_goal_spain_all_hail_the_habsburg
+		x = 1 
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_seek_assistance_from_the_italian_states
+		prerequisite = { focus = SPR_seek_assistance_from_the_italian_states focus = SPR_collaborate_with_the_french }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+            add_opinion_modifier = { 
+               target = AUS
+               modifier = attache_sent 
+            }
+            AUS = {
+               add_opinion_modifier= { 
+                   target = SPR
+                   modifier = attache_sent 
+               }
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_support_frederick_ii
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_a_hapsburg_denmark
+		prerequisite = { focus = SPR_a_hapsburg_denmark }
+		
+		completion_reward = {
+			DEN = {
+               add_stability = 0.05
+            }
+            add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_a_hapsburg_denmark
+		icon = GFX_focus_hol_the_foundations_of_defense 
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_all_hail_the_habsburgs
+		prerequisite = { focus = SPR_all_hail_the_habsburgs }
+		
+		available = {
+			DEN = {
+              has_completed_focus= DEN_Habsburg_Diplomacy
+            }
+		}
+		
+		completion_reward = {
+			DEN = {
+                add_opinion_modifier = {
+                target = SPR
+                modifier = attache_sent
+                }
+                add_opinion_modifier = {
+                target = AUS
+                modifier = attache_sent
+                }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_the_reign_of_charles_v
+		icon = GFX_goal_the_reign_of_charles_v
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_all_hail_the_habsburgs
+		prerequisite = { focus = SPR_all_hail_the_habsburgs }
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_closer_cooperation_with_austria
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_contest_the_english
+		prerequisite = { focus = SPR_contest_the_english focus = SPR_befriend_england }
+        
+        bypass = {
+		     has_completed_focus = SPR_befriend_england
+		}
+
+		completion_reward = {
+			create_faction = "Spanish Alliance" 
+			SPR = { add_to_faction = AUS }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_mexico_city
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_invest_in_new_spain
+		prerequisite = { focus = SPR_invest_in_new_spain }
+		
+		available = {
+		    or = {
+               has_completed_focus = SPR_dont_slit_up_peru
+               has_completed_focus = SPR_slit_up_peru
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			277 = {
+               add_extra_state_shared_building_slots = 2
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_peru
+		icon = GFX_focus_por_luso_tropicalism
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_invest_in_south_america
+		prerequisite = { focus = SPR_invest_in_south_america }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_completed_focus = SPR_slit_up_peru
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = "Bypass if focus Slit up Peru is completed"
+			SPP = {
+                transfer_state = 487
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_la_plata
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_spanish_peru
+		prerequisite = { focus = SPR_expand_spanish_peru }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		    or = {
+               has_completed_focus = SPR_dont_slit_up_new_spain
+			   has_completed_focus = SPR_slit_up_new_spain
+			}
+		} 
+		
+		completion_reward = {
+			puppet = ARG
+			hidden_effect = {
+		         SPP = { 
+			          transfer_state = 488
+			     }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_spanish_peru
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_invest_in_south_america
+		prerequisite = { focus = SPR_invest_in_south_america }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_completed_focus = SPR_slit_up_peru
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = "Bypass if focus Slit up Peru is completed"
+			SPP = {
+			transfer_state = 302	
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_slit_up_peru
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_slit_up_la_plata
+		prerequisite = { focus = SPR_slit_up_la_plata focus = SPR_dont_slit_up_la_plata }
+		mutually_exclusive = { focus = SPR_dont_slit_up_peru }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			BOL = {
+			transfer_state = 302
+			transfer_state = 487
+			}
+			puppet = BOL
+			PAN = {
+			transfer_state = 304
+			transfer_state = 685
+			}
+			puppet = PAN
+		}
+	}
+	
+	focus = {
+		id = SPR_dont_slit_up_peru
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 8
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_dont_slit_up_la_plata
+		prerequisite = { focus = SPR_dont_slit_up_la_plata focus = SPR_slit_up_la_plata }
+		mutually_exclusive = { focus = SPR_slit_up_peru }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.2
+			add_war_support = -0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_slit_up_new_spain
+		icon = GFX_focus_generic_industry_1
+		x = 8
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		mutually_exclusive = { focus = SPR_dont_slit_up_new_spain }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SPP = {
+			     transfer_state = 307
+			     transfer_state = 489
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_dont_slit_up_new_spain
+		icon = GFX_focus_generic_industry_1
+		x = 6
+		y = 1
+		cost = 8
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_finish_of_the_inca
+		prerequisite = { focus = SPR_finish_of_the_inca }
+		mutually_exclusive = { focus = SPR_slit_up_new_spain }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+    
+	focus = {
+		id = SPR_dont_slit_up_la_plata
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 8
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_dont_slit_up_new_spain
+		prerequisite = { focus = SPR_dont_slit_up_new_spain focus = SPR_slit_up_new_spain }
+		mutually_exclusive = { focus = SPR_slit_up_la_plata }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_slit_up_la_plata
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		cost = 8
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_slit_up_new_spain
+		prerequisite = { focus = SPR_slit_up_new_spain focus = SPR_dont_slit_up_new_spain }
+		mutually_exclusive = { focus = SPR_dont_slit_up_la_plata }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			CHL = {
+			transfer_state = 279
+			transfer_state = 507
+			transfer_state = 512
+			}
+			puppet = CHL
+		}
+	}
+	
+	
+	
+	focus = {
+		id = SPR_move_the_peruvian_capital
+		icon = GFX_focus_por_the_pink_map
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_peru
+		prerequisite = { focus = SPR_expand_peru }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_completed_focus = SPR_slit_up_peru
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = "Bypass if focus Slit up Peru is completed"
+			SPP = {
+                set_capital = 303
+                add_stability = 0.025
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_found_the_spanish_east_india_company
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_invest_in_asia_and_the_pacific
+		prerequisite = { focus = SPR_invest_in_asia_and_the_pacific }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+            navy_experience = 10
+            add_tech_bonus = {
+                name = USA_fund_the_navy
+                uses = 1
+                bonus = 1.0
+                category = naval_doctrine
+            }
+            add_to_variable = { money = 25 }
+		}
+	}
+	
+	focus = {
+		id = SPR_sell_indulgences
+		icon = GFX_focus_eng_the_kings_party
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_improve_relations_with_the_pope
+		prerequisite = { focus = SPR_improve_relations_with_the_pope }
+		
+		completion_reward = {
+			add_to_variable = { money = 25 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SPR_contest_portuguese_trade_dominance
+		icon = GFX_goal_generic_territory_or_war
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_found_the_spanish_east_india_company
+		prerequisite = { focus = SPR_found_the_spanish_east_india_company }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_opinion_modifier= { 
+                 target = POR
+                 modifier = minor_sanctions
+            }
+            POR = {
+                 add_opinion_modifier= { 
+                     target = SPR
+                     modifier = minor_sanctions
+                 }
+           }				
+		   add_to_variable = { money = 25 }
+		}
+	}
+	
+	focus = {
+		id = SPR_supremacy_of_catholicism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_oppress_religious_minorities
+		prerequisite = { focus = SPR_oppress_religious_minorities }
+		
+		completion_reward = {
+			add_manpower = -2000
+            add_stability = 0.025
+		}
+	}
+	
+	focus = {
+		id = SPR_colonize_the_philippines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_contest_portuguese_trade_dominance
+		prerequisite = { focus = SPR_contest_portuguese_trade_dominance }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = PHI }
+		}
+	}
+
+	focus = {
+		id = SPR_build_lutheran_churches
+		icon = GFX_focus_por_concordat
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_follow_the_ideas_of_luther
+		prerequisite = { focus = SPR_follow_the_ideas_of_luther }
+		 
+		completion_reward = {
+			random_owned_controlled_state = {
+                 add_extra_state_shared_building_slots = 2
+            }
+            add_stability = 0.025
+            add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SPR_strengthen_the_crown
+		icon = GFX_focus_generic_home_defense 
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_reign_of_charles_v
+		prerequisite = { focus = SPR_the_reign_of_charles_v }
+		mutually_exclusive = { focus = SPR_establish_a_parliament }
+		
+		completion_reward = {
+			add_popularity = { 
+                  ideology = fascism
+                  popularity = 0.05 
+            }
+            add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_establish_a_parliament
+		icon = GFX_focus_generic_self_management
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_reign_of_charles_v
+		prerequisite = { focus = SPR_the_reign_of_charles_v }
+		mutually_exclusive = { focus = SPR_strengthen_the_crown }
+		
+		completion_reward = {
+			add_popularity = { 
+                 ideology = democratic
+                 popularity = 0.075 
+            }
+            add_stability = -0.025
+		}
+	}
+	
+	focus = {
+		id = SPR_the_army
+		icon = GFX_focus_generic_military_academy
+		x = -6
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_focus_on_foreign_affairs
+		prerequisite = { focus = SPR_focus_on_foreign_affairs }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = SPR_improve_relations_with_the_electors
+		icon = GFX_goal_generic_army_doctrines
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_holy_roman_empire_situation
+		prerequisite = { focus = SPR_the_holy_roman_empire_situation }
+		mutually_exclusive = { focus = SPR_a_catholic_holy_roman_empire }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			all_country = {
+                 limit = {
+				      OR = { 
+					       tag = DIE 
+						   tag = HLS 
+						   tag = HAM 
+						   tag = LUB 
+						   tag = MEK 
+						   tag = POM 
+						   tag = BRN 
+						   tag = SAX 
+						   tag = THU 
+						   tag = LUN 
+						   tag = VER 
+						   tag = BRE 
+						   tag = OLD 
+						   tag = MUN 
+						   tag = BRU 
+						   tag = CLG 
+						   tag = KLE 
+						   tag = TER 
+						   tag = HES 
+						   tag = FRK 
+						   tag = LOR 
+						   tag = ALS 
+						   tag = PLT 
+						   tag = BAD 
+						   tag = RAV 
+						   tag = WUR 
+						   tag = ULM 
+						   tag = BAY 
+						   tag = ANS 
+						   tag = MAI 
+						   ag = WRZ 
+					   } 
+		    	 }
+                 add_opinion_modifier = {
+                       target = SPR
+                       modifier = offered_support
+                 }
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_ally_with_brandenburg
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_improve_relations_with_the_electors
+		prerequisite = { focus = SPR_improve_relations_with_the_electors }
+		
+		completion_reward = {
+			give_guarantee = BRN
+		}
+	}
+	
+	focus = {
+		id = SPR_invest_in_the_military
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_madrid
+		prerequisite = { focus = SPR_expand_barcelona focus = SPR_expand_madrid }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+              remove_idea = civilian_economy
+              add_idea = partial_economic_mobilisation
+              }
+		}
+	}
+	
+	focus = {
+		id = SPR_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_military_industrial_development_ii
+		prerequisite = { focus = SPR_military_industrial_development_ii focus = SPR_civilian_industrial_development_ii }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+            random_owned_controlled_state = {
+               add_extra_state_shared_building_slots = 3	
+               add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+               }
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_doctrine_effort
+		icon = GFX_goal_generic_navy_cruiser
+		x = 2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_army
+		prerequisite = { focus = SPR_the_army }
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = land_doctrine 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_weapons_technology
+		icon = GFX_goal_generic_small_arms
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_army
+		prerequisite = { focus = SPR_the_army }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = land_doctrine 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_consolidate_royal_power
+		icon = GFX_focus_generic_monarchy_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_strengthen_the_crown
+		prerequisite = { focus = SPR_strengthen_the_crown }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { 
+                 ideology = fascism
+                 popularity = 0.15 
+            }
+        add_stability = -0.025
+		}
+	}
+	
+	focus = {
+		id = SPR_build_more_cannons
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_weapons_technology
+		prerequisite = { focus = SPR_weapons_technology }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = artillery_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = artillery
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_make_more_muskets
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_build_more_cannons
+		prerequisite = { focus = SPR_build_more_cannons }
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = industry
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_standardization_of_caliber
+		icon = GFX_goal_generic_small_arms
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_doctrine_effort
+		prerequisite = { focus = SPR_doctrine_effort }
+		mutually_exclusive = { focus = SPR_focus_on_manpower }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+                 add_extra_state_shared_building_slots = 1
+                 add_building_construction = {
+                      type = arms_factory
+                      level = 1
+                      instant_build = yes
+                }
+		   }
+	   }
+    } 
+	
+	focus = {
+		id = SPR_focus_on_manpower
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_doctrine_effort
+		prerequisite = { focus = SPR_doctrine_effort }
+		mutually_exclusive = { focus = SPR_standardization_of_caliber }
+		
+		completion_reward = {
+             add_manpower = 40000
+			 add_stability = -0.2
+			 add_war_support = -0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_befriend_england
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_a_catholic_holy_roman_empire
+		prerequisite = { focus = SPR_a_catholic_holy_roman_empire }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			SPR = { add_to_faction = ENG }
+		}
+	}
+	
+	focus = {
+		id = SPR_convert_the_king
+		icon = GFX_goal_generic_cavalry
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_follow_the_ideas_of_calvin
+		prerequisite = { focus = SPR_follow_the_ideas_of_calvin }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+	
+	focus = {
+		id = SPR_deradicalize_the_catholic_church
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_exile_protestants
+		prerequisite = { focus = SPR_exile_protestants }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1 
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_the_dutch_republic_demands_reform
+		icon = GFX_focus_BUL_prussia_of_the_balkans 
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_forced_conversions
+		prerequisite = { focus = SPR_forced_conversions }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = DEN }
+		}
+	}
+	
+	focus = {
+		id = SPR_the_sun_never_sets
+		icon = GFX_goal_the_sun_never_sets	
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_subjugate_tunis
+		prerequisite = { focus = SPR_set_up_african_trade_outposts focus = SPR_subjugate_tunis }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+              remove_idea = government_rank_2
+              add_idea = government_rank_3
+              }
+		}
+	}
+	
+	focus = {
+		id = SPR_contest_ottoman_expansion
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_closer_cooperation_with_austria
+		prerequisite = { focus = SPR_closer_cooperation_with_austria }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = TUR }
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_naval_production
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_the_navy
+		prerequisite = { focus = SPR_the_navy }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+		}
+	}
+	
+	focus = {
+		id = SPR_contest_the_english
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_ally_with_brandenburg
+		prerequisite = { focus = SPR_ally_with_brandenburg }
+		
+		available = {
+			date > 1552.1.1
+		}
+		
+		
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = ENG }
+		}
+	}
+	
+	focus = {
+		id = SPR_collaborate_with_the_french
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_tensions_in_italy
+		prerequisite = { focus = SPR_tensions_in_italy }
+		mutually_exclusive = { focus = SPR_condemn_french_influence }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			FRA = { transfer_state = 831 }
+		}
+	}
+	
+	
+		focus = {
+		id = SPR_puppet_venezuela
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_la_plata
+		prerequisite = { focus = SPR_expand_la_plata }
+		prerequisite = { focus = SPR_move_the_peruvian_capital }
+		
+		
+		completion_reward = {
+	         puppet = VEN
+		     hidden_effect = {
+		         VEN = { 
+			          transfer_state = 488
+			     }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_exspand_new_spain
+		icon = GFX_focus_mex_redeem_aztlan
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_mexico_city
+		prerequisite = { focus = SPR_expand_mexico_city }
+		
+		
+		completion_reward = {
+	         NSP = {
+			      transfer_state = 484
+			      transfer_state = 483
+			      transfer_state = 482
+			      transfer_state = 481
+			      transfer_state = 480
+			      transfer_state = 479
+			      transfer_state = 478
+			 }
+		}
+	}
+	
+	focus = {
+		id = SPR_treaty_of_tordesillas
+		icon = GFX_focus_por_recover_brazil
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_slit_up_peru
+		prerequisite = { focus = SPR_slit_up_peru focus = SPR_dont_slit_up_peru }
+		mutually_exclusive = { focus = SPR_burn_treaty_of_tordesillas }
+		
+		available = { 
+		     ARG = {
+			      controls_state = 502
+		          controls_state = 300
+			 }
+		}
+		
+		completion_reward = {
+		     transfer_state = 1146
+		     transfer_state = 697
+	         BPC = {
+			      transfer_state = 502
+			      transfer_state = 300
+			 }
+			 hidden_effect = {
+			      BPC = {
+			          transfer_state = 844
+			          transfer_state = 687
+			          transfer_state = 505
+			          transfer_state = 504
+			          transfer_state = 503
+			          transfer_state = 503
+			          transfer_state = 501
+			          transfer_state = 500
+			          transfer_state = 499
+			          transfer_state = 498
+			          transfer_state = 497
+			          transfer_state = 496
+			          transfer_state = 495
+			          transfer_state = 310
+			          transfer_state = 309
+			          transfer_state = 280
+				  }
+			 }
+		}
+	}
+	
+	focus = {
+		id = SPR_burn_treaty_of_tordesillas
+		icon = GFX_focus_por_recover_latin_america
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_dont_slit_up_peru
+		prerequisite = { focus = SPR_slit_up_peru focus = SPR_dont_slit_up_peru }
+		mutually_exclusive = { focus = SPR_treaty_of_tordesillas }
+		
+		available = { 
+		     controls_state = 502
+		     controls_state = 300
+		}
+		
+		completion_reward = {
+		     add_stability = -0.05
+			 add_war_support = 0.2
+	         POR = { create_wargoal = { type = annex_everything target = SPR } }
+		}
+    }
+	
+	focus = {
+		id = SPR_buy_moroccan_straits
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = -2
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_colonial_expansion
+		prerequisite = { focus = SPR_colonial_expansion }
+	##	mutually_exclusive = {  }
+		
+	##	available = { 
+	
+	##	}
+		
+	    completion_reward = {
+	        country_event = anewera.141
+		}
+    }
+	
+	focus = {
+		id = SPR_subjugate_algeria
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_into_africa
+		prerequisite = { focus = SPR_expand_into_africa }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ALG }
+            add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_subjugate_tunis
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_subjugate_algeria
+		prerequisite = { focus = SPR_subjugate_algeria }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = TUN }
+			create_wargoal = { type = annex_everything target = DJE }
+            add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_demand_corsica
+		icon = GFX_goal_generic_political_pressure
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_seek_assistance_from_the_italian_states
+		prerequisite = { focus = SPR_seek_assistance_from_the_italian_states }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			puppet = GEN
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_demand_valletta
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_collaborate_with_the_french
+		prerequisite = { focus = SPR_collaborate_with_the_french }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			transfer_state = 116
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = SPR_crowned_king_of_the_church
+		icon = GFX_focus_hol_united_netherlands
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_constitutional_monarchy
+		prerequisite = { focus = SPR_constitutional_monarchy }
+		prerequisite = { focus = SPR_consolidate_royal_power }
+		 
+		 available = {
+		     PAP = { is_subject_of = SPR }
+		 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = "Puppet Wargoal Focus on Italy"
+		    hidden_effect = {
+			     create_wargoal = { type = puppet_wargoal_focus target = GEN }
+			     create_wargoal = { type = puppet_wargoal_focus target = PRM }
+			     create_wargoal = { type = puppet_wargoal_focus target = MOD }
+			     create_wargoal = { type = puppet_wargoal_focus target = LUC }
+			     create_wargoal = { type = puppet_wargoal_focus target = FER }
+			     create_wargoal = { type = puppet_wargoal_focus target = TUS }
+			     create_wargoal = { type = puppet_wargoal_focus target = SNA }
+			     create_wargoal = { type = puppet_wargoal_focus target = URB }
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_start_french_sanctions
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_closer_cooperation_with_austria
+		prerequisite = { focus = SPR_closer_cooperation_with_austria }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  FRA = { 
+			     add_stability = -0.1
+			     add_war_support = 0.3
+			     create_wargoal = { type = annex_everything target = SPR } 
+			  }
+	    }
+	}
+	
+	focus = {
+		id = SPR_begin_divding_south_france
+		icon = GFX_focus_spr_war_of_independence
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_start_french_sanctions
+		prerequisite = { focus = SPR_start_french_sanctions }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  FRA = { 
+			     add_stability = -0.025
+			  }
+	    }
+	}
+	
+	focus = {
+		id = SPR_begin_divding_north_france
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_start_french_sanctions
+		prerequisite = { focus = SPR_start_french_sanctions }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  FRA = { 
+			     add_stability = -0.025
+			  }
+	    }
+	}
+	
+	focus = {
+		id = SPR_give_savoy_the_alpines
+		icon = GFX_focus_focus_fra_border
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_begin_divding_south_france
+		prerequisite = { focus = SPR_begin_divding_south_france }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  SVY = { 
+			      leave_faction
+			      transfer_state = 866
+			      transfer_state = 32
+			      transfer_state = 31
+			  }
+			  FRA = { 
+			     add_stability = -0.1
+			  }
+	    }
+	}
+	
+	focus = {
+		id = SPR_give_the_netherlands_picardy
+		icon = GFX_focus_hol_gateway_to_europe
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_begin_divding_north_france
+		prerequisite = { focus = SPR_begin_divding_north_france }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  HOL = {
+			      transfer_state = 785
+			  }
+			  FRA = { 
+			     add_stability = -0.1
+			  }
+	    }
+	}
+	
+	focus = {
+		id = SPR_future_of_iberia
+		icon = GFX_focus_por_iberian_summit
+		x = 5
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_deradicalize_the_catholic_church
+		prerequisite = { focus = SPR_deradicalize_the_catholic_church }
+		prerequisite = { focus = SPR_fund_calvinism_in_europe focus = SPR_fund_lutheranism_in_europe }
+		 
+	##	available = {
+		     
+	##	}
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		       leave_faction
+			   add_stability = 0.1
+	    }
+	}
+	
+	focus = {
+		id = SPR_unite_iberia
+		icon = GFX_focus_generic_attack_portugal
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_future_of_iberia
+		prerequisite = { focus = SPR_future_of_iberia }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  create_wargoal = { type = annex_everything target = POR }
+	    }
+	}
+	
+	focus = {
+		id = SPR_united_states_iberia
+		icon = GFX_focus_por_remember_olivenca
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_future_of_iberia
+		prerequisite = { focus = SPR_future_of_iberia }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  puppet = CAT
+	    }
+	}
+	
+	focus = {
+		id = SPR_united_iberian_alliance
+		icon = GFX_focus_por_the_kingdom_reunited
+		x = 1
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_united_states_iberia
+		prerequisite = { focus = SPR_united_states_iberia focus = SPR_integrate_portugal }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  create_faction = "United Iberia" 
+			  add_to_faction = POR 
+	    }
+	}
+	
+	focus = {
+		id = SPR_integrate_portugal
+		icon = GFX_focus_chi_legislative_yuan
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_unite_iberia
+		prerequisite = { focus = SPR_unite_iberia }
+		 
+	##	 available = {
+		     
+	##	 }
+		 
+	    ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			  add_state_core = 795
+			  add_state_core = 181
+			  add_state_core = 180
+			  add_state_core = 179
+			  add_state_core = 112
+	    }
+	}
+	
+	focus = {
+		id = SPR_the_armada
+		icon = GFX_focus_chi_legislative_yuan
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_expand_naval_production
+		prerequisite = { focus = SPR_expand_naval_production }
+		 
+		available = {
+		     date > 1554.1.1
+			 has_war = no
+		}
+		 
+	    ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			  add_ideas = spanish_armada
+	    }
+	}
+	
+ }

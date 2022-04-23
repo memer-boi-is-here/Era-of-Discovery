@@ -1,0 +1,20 @@
+
+state={
+	id=1011
+	name="Lauenburg"
+	
+	history={
+		owner = LUN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LUN
+	}
+	
+	provinces={
+		6298 9320
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

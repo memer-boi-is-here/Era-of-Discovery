@@ -1,0 +1,318 @@
+﻿capital = 175
+
+recruit_character = SPR_philip_prince_of_asturias
+recruit_character = SPR_fernando_alvarez_3rd_duke_of_alba
+recruit_character = SPR_emmanuel_philibert_duke_of_savoy
+recruit_character = SPR_gabriel_de_la_cueva_5th_duke_of_alburquerque
+recruit_character = SPR_juan_francisco_fernandez_de_hijar_3rd_duke_of_aliaga
+recruit_character = SPR_martin_de_gurrea_y_aragon_4th_duke_of_villahermosa
+recruit_character = SPR_fadrique_alvarez_de_toledo_4th_duke_of_alba
+recruit_character = SPR_pedro_de_toledo_osorio_5th_marquess_of_villafranca
+recruit_character = SPR_ruy_gomez_de_silva_1st_prince_of_eboli
+recruit_character = SPR_alvaro_de_bazan_1st_marquess_of_santa_cruz
+recruit_character = SPR_ferrante_gonzaga
+recruit_character = SPR_miguel_lopez
+recruit_character = SPR_fernando_alvarez_a
+recruit_character = SPR_fernando_de_valdes_salas
+recruit_character = SPR_miguel_lopez_a
+recruit_character = SPR_alvaro_de_bazan
+recruit_character = SPR_simon_renard
+recruit_character = SPR_gonzalo_jimenez
+recruit_character = SPR_juan_bautista
+recruit_character = SPR_martin_de_gurrea
+recruit_character = SPR_pedro_menendez
+recruit_character = SPR_juan_martinez
+recruit_character = SPR_antonio_perez
+recruit_character = SPR_fernando_alvarez
+recruit_character = SPR_juan_francisco_fernandez
+recruit_character = SPR_juan_martinez_de_recalde
+recruit_character = SPR_luis_de_requesens_y_zuniga
+
+oob = "SPR_1550"
+set_research_slots = 3
+
+set_global_flag = pope_has_died
+
+set_stability = 0.8
+set_war_support = 0.2
+
+set_technology = {
+	arquebus = 1
+	snaplock_musket = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+
+}
+
+
+add_opinion_modifier = { target = FRA modifier = large_decrease }
+add_opinion_modifier = { target = AUS modifier = huge_increase }
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+add_opinion_modifier = { target = POR modifier = small_decrease }
+
+set_convoys = 150
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+add_ideas = {
+     unrest_over_the_unification
+	 the_spanish_inquisition
+	 spanish_golden_age
+	 spanish_treasure_fleet
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Charles I"
+	picture = "portrait_charles_i.dds"
+	ideology = despotism
+	traits = {
+		holy_roman_emperor
+	}
+}
+
+create_field_marshal = {
+	name = "Charles I"
+	picture = "portrait_charles_i.dds"
+	traits = { inspirational_leader expert_delegator brilliant_strategist old_guard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Philip, Prince of Asturias"
+	picture = "portrait_philip_ii.dds"
+	traits = { inspirational_leader aggressive_assaulter trait_reckless harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+	
+create_field_marshal = {
+	name = "Fernando Alvarez, 3rd Duke of Alba"
+	picture = "portrait_fernando_alvarez.dds"
+	traits = { old_guard thorough_planner career_officer war_hero }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_field_marshal = {
+	name = "Emmanuel Philibert, Duke of Savoy"
+	picture = "portrait_emmanuel_philibert.dds"
+	traits = { logistics_wizard infantry_leader bearer_of_artillery }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Luis de Requesens y Zuniga"
+	picture = "portrait_luis_de_requensens.dds"
+	traits = { infantry_expert skilled_staffer infantry_officer career_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gabriel de la Cueva, 5th Duke of Alburquerque"
+	picture = "portrait_gabriel_de_la_cueva.dds"
+	traits = { adaptable trickster politically_connected bearer_of_artillery }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Juan Francisco Fernandez de Hijar, 3rd Duke of Aliaga"
+	picture = "portrait_juan_francisco_fernandez.dds"
+	traits = { ambusher urban_assault_specialist infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Martin de Gurrea y Aragon, 4th Duke of Villahermosa"
+	picture = "portrait_martin_de_gurrea.dds"
+	traits = { fortress_buster ranger trait_cautious }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Fadrique Alvarez de Toledo, 4th Duke of Alba"
+	picture = "portrait_fadrique_alvarez.dds"
+	traits = { scavenger trait_reckless trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+	create_corps_commander = {
+	name = "Pedro de Toledo Osorio, 5th Marquess of Villafranca"
+	picture = "portrait_pedro_de_toledo.dds"
+	traits = { cavalry_expert cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ruy Gomez de Silva, 1st Prince of Eboli"
+	picture = "portrait_ruy_gomez.dds"
+	traits = { politically_connected infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 0
+}
+
+create_navy_leader = {
+	name = "Alvaro de Bazan, 1st Marquess of Santa Cruz"
+	picture = "portrait_alvaro_de_bazan.dds"
+	traits = { big_guns_expert ironside battleship_adherent old_guard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Miguel Lopez de Legazpi"
+	picture = "portrait_miguel_lopez.dds"
+	traits = { cruiser_captain superior_tactician bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Juan Martinez de Recalde"
+	picture = "portrait_juan_martinez.dds"
+	traits = { destroyer_leader fleet_protector chief_engineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Pedro Menendez de Aviles"
+	picture = "portrait_pedro_menendez.dds"
+	traits = { spotter gentlemanly }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+add_ideas = Catholic
+
+create_faction = "Habsburg Alliance"
+add_to_faction = AUS
+add_to_faction = SLA
+add_to_faction = NSP
+add_to_faction = SPP
+add_to_faction = NAP
+add_to_faction = HOL
+add_to_faction = MIL
+
+add_ideas = spanish_traditions
+
+add_ideas = government_rank_2
+
+country_event = { id = anewera.46 days = "2206" }
+country_event = { id = anewera.47 days = "3185" }
+country_event = { id = anewera.43 days = "188" }
+country_event = { id = anewera.118 days = "1928" }
+
+set_autonomy = {
+		target = NAP
+		autonomous_state = autonomy_puppet
+	}
+
+set_autonomy = {
+		target = NSP
+		autonomous_state = autonomy_colony
+	}
+
+set_autonomy = {
+		target = SPP
+		autonomous_state = autonomy_colony
+	}
+	
+set_autonomy = {
+		target = MIL
+		autonomous_state = autonomy_puppet
+	}
+	
+set_autonomy = {
+		target = HOL
+		autonomous_state = autonomy_puppet
+	}	

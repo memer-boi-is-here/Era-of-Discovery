@@ -1,0 +1,368 @@
+characters = {
+	BRN_joachim_ii_hector = {
+		name = "Joachim II Hector"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRN/portrait_joachim_ii.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	BRN_joachim_ii_hector_elector_of_brandenburg = {
+		name = "Joachim II Hector, Elector of Brandenburg"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/BRN/portrait_joachim_ii.dds"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader logistics_wizard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	BRN_john_george_of_brandenburg = {
+		name = "John George of Brandenburg"
+		advisor = {
+			slot = army_chief
+			idea_token = john_george_a
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = john_george_p
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_john_george"
+			}
+			army = {
+				large = "gfx/leaders/BRN/portrait_john_george.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless media_personality scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	BRN_albert_alcibiades_margrave_of_brandenburgkulmbach = {
+		name = "Albert Alcibiades, Margrave of Brandenburg-Kulmbach"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/BRN/portrait_albert_alcibiades.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	BRN_john_margrave_of_brandenburgküstrin = {
+		name = "John, Margrave of Brandenburg-Küstrin"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/BRN/portrait_john_marg.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	BRN_sigismund_of_brandenburg = {
+		name = "Sigismund of Brandenburg"
+		advisor = {
+			slot = navy_chief
+			idea_token = sigismund
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sigismund_p
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					fortification_engineer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_sigismund"
+			}
+			army = {
+				large = "gfx/leaders/BRN/portrait_sigismund.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	BRN_bob_jones = {
+		name = "Bob Jones"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	BRN_alexander_williams = {
+		name = "Alexander Williams"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			expire = "1570.1.1.12"
+			id = -1
+		}
+	}
+	BRN_lucas_jones = {
+		name = "Lucas Jones"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1567.1.1.12"
+			id = -1
+		}
+	}
+	BRN_albert_alcibiades_p = {
+		advisor = {
+			slot = political_advisor
+			idea_token = albert_alcibiades_p
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "albert_alcibiades_p"
+		portraits = {
+			army = {
+				small = "GFX_idea_albert_alcibiades"
+			}
+		}
+	}
+	BRN_albert_alcibiades_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = albert_alcibiades_a
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "albert_alcibiades_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_albert_alcibiades"
+			}
+		}
+	}
+	BRN_john_marg_p = {
+		advisor = {
+			slot = political_advisor
+			idea_token = john_marg_p
+			allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "john_marg_p"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_marg"
+			}
+		}
+	}
+	BRN_albert_alcibiades = {
+		advisor = {
+			slot = high_command
+			idea_token = albert_alcibiades
+			ledger = army 
+				allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "albert_alcibiades"
+		portraits = {
+			army = {
+				small = "GFX_idea_albert_alcibiades"
+			}
+		}
+	}
+	BRN_john_george = {
+		advisor = {
+			slot = high_command
+			idea_token = john_george
+			ledger = army 
+				allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_george"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_george"
+			}
+		}
+	}
+	BRN_john_marg = {
+		advisor = {
+			slot = high_command
+			idea_token = john_marg
+			ledger = army 
+				allowed = {
+					original_tag = BRN
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "john_marg"
+		portraits = {
+			army = {
+				small = "GFX_idea_john_marg"
+			}
+		}
+	}
+}

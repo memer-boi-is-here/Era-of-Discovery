@@ -1,0 +1,24 @@
+state={
+	id=952
+	name="Cork"
+
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 3
+			
+		}
+
+		victory_points = {
+			7394 3
+		}
+	}
+
+	provinces={
+		 7394
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

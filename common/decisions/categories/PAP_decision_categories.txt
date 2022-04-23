@@ -1,0 +1,134 @@
+SPR_papal_influence_eng_category = {
+	
+	icon = power_struggle
+
+	allowed = {
+		original_tag = SPR
+		has_dlc = "Man the Guns"
+	}
+
+	picture = GFX_decision_papal_court_influence
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = SPR
+		value = eng_papal_influence_icon_value
+		desc = eng_papal_influence_full_influence_breakdown
+
+		visible = {
+			country_exists = SPR
+		}
+	}
+	
+	custom_icon = {
+		tag = FRA
+		value = ger_papal_influence_icon_value
+		desc = ger_papal_influence_full_influence_breakdown
+
+		visible = {
+			country_exists = FRA
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		PAP = {
+			exists = yes
+			is_subject = no
+		}
+		has_global_flag = pope_has_died
+	}
+}
+
+FRA_papal_influence_ger_category = {
+	
+	icon = power_struggle
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "Man the Guns"
+	}
+
+	picture = GFX_decision_papal_court_influence
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = SPR
+		value = eng_papal_influence_icon_value
+		desc = eng_papal_influence_full_influence_breakdown
+
+		visible = {
+			country_exists = SPR
+		}
+	}
+	
+	custom_icon = {
+		tag = FRA
+		value = ger_papal_influence_icon_value
+		desc = ger_papal_influence_full_influence_breakdown
+
+		visible = {
+			country_exists = FRA
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		PAP = {
+			exists = yes
+			is_subject = no
+		}
+		has_global_flag = pope_has_died
+	}
+}
+
+PAP_papal_influence_hol_category = {
+	
+	icon = power_struggle
+
+	allowed = {
+		original_tag = PAP
+		has_dlc = "Man the Guns"
+	}
+
+	picture = GFX_decision_papal_court_influence
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = SPR
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = SPR
+		}
+	}
+	
+	custom_icon = {
+		tag = FRA
+		value = ger_gateway_to_europe_icon_value
+		desc = ger_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = FRA
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		PAP = {
+			exists = yes
+			is_subject = no
+		}
+		has_global_flag = pope_has_died
+	}
+}

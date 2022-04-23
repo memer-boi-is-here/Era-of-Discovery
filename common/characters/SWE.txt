@@ -1,0 +1,507 @@
+characters = {
+	SWE_gustav_i = {
+		name = "Gustav I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/portrait_gustav_i.dds"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine aggressive_assaulter inspirational_leader expert_delegator }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { the_liberator }
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	SWE_eric_xiv = {
+		name = "Eric XIV"
+		advisor = {
+			slot = high_command
+			idea_token = eric_xiv
+			ledger = army 
+				allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					army_drill_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_eric_xiv"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_eric_xiv.dds"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer trickster offensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SWE_per_brahe_the_elder = {
+		name = "Per Brahe the Elder"
+		advisor = {
+			slot = political_advisor
+			idea_token = per_brahe_the_elder
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					lord_high_steward 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_per_brahe_the_elder"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_per_brahe.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer skilled_staffer infantry_expert adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	SWE_nils_gyllenstierna = {
+		name = "Nils Gyllenstierna"
+		advisor = {
+			slot = high_command
+			idea_token = nils_gyllenstierna
+			ledger = army 
+				allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_nils_gyllenstierna"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_nils_gyllenstierna.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer trait_mountaineer scavenger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	SWE_svante_stensson_sture = {
+		name = "Svante Stensson Sture"
+		advisor = {
+			slot = political_advisor
+			idea_token = svante_stensson_sture
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_svante_stensson_sture"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_svante_stensson_sture.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer hill_fighter guerilla_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SWE_abraham_eriksson_leijonhufvud = {
+		name = "Abraham Eriksson Leijonhufvud"
+		advisor = {
+			slot = army_chief
+			idea_token = abraham_eriksson_leijonhufvud
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_abraham_eriksson_leijonhufvud"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_abraham_eriksson.dds"
+			}
+		}
+		corps_commander = {
+			traits = { ranger cavalry_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	SWE_jakob_tordsson_bagge = {
+		name = "Jakob Tordsson Bagge"
+		advisor = {
+			slot = high_command
+			idea_token = jakob_tordsson_bagge_b
+			ledger = navy 
+				allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = jakob_tordsson_bagge_a
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = jakob_tordsson_bagge
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					lord_high_admiral 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_jakob_tordsson_bagge"
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_jakob_bagge.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard battleship_adherent ironside big_guns_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SWE_baron_klas_kristersson_horn = {
+		name = "Baron Klas Kristersson Horn"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/SWE/portrait_klas_horn.dds"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly blue_water_expert cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	SWE_björn_palmqvist = {
+		name = "Björn Palmqvist"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1563.1.1.12"
+			id = -1
+		}
+	}
+	SWE_martin_lindgren = {
+		name = "Martin Lindgren"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1560.1.1.12"
+			id = -1
+		}
+	}
+	SWE_per_lerström = {
+		name = "Per Lerström"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1557.1.1.12"
+			id = -1
+		}
+	}
+	SWE_lars_siggesson_sparre_a = {
+		advisor = {
+			slot = high_command
+			idea_token = lars_siggesson_sparre_a
+			ledger = army 
+				allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					army_artillery_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "lars_siggesson_sparre_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_lars_siggesson_sparre"
+			}
+		}
+	}
+	SWE_clas_akesson_tott = {
+		advisor = {
+			slot = political_advisor
+			idea_token = clas_akesson_tott
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "clas_akesson_tott"
+		portraits = {
+			army = {
+				small = "GFX_idea_clas_akesson_tott"
+			}
+		}
+	}
+	SWE_per_brahe_the_elder_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = per_brahe_the_elder_a
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "per_brahe_the_elder_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_per_brahe_the_elder"
+			}
+		}
+	}
+	SWE_lars_siggesson_sparre = {
+		advisor = {
+			slot = political_advisor
+			idea_token = lars_siggesson_sparre
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					lord_high_treasurer 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		name = "lars_siggesson_sparre"
+		portraits = {
+			army = {
+				small = "GFX_idea_lars_siggesson_sparre"
+			}
+		}
+	}
+	SWE_joran_persson = {
+		advisor = {
+			slot = political_advisor
+			idea_token = joran_persson
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = neutrality 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "joran_persson"
+		portraits = {
+			army = {
+				small = "GFX_idea_joran_persson"
+			}
+		}
+	}
+	SWE_laurentius_petri = {
+		advisor = {
+			slot = political_advisor
+			idea_token = laurentius_petri
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					primate_of_sweden 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "laurentius_petri"
+		portraits = {
+			army = {
+				small = "GFX_idea_laurentius_petri"
+			}
+		}
+	}
+	SWE_klas_horn = {
+		advisor = {
+			slot = navy_chief
+			idea_token = klas_horn
+			allowed = {
+					original_tag = SWE
+				}
+				traits = {
+					navy_chief_commerce_raiding_1 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "klas_horn"
+		portraits = {
+			army = {
+				small = "GFX_idea_klas_horn"
+			}
+		}
+	}
+}

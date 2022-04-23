@@ -1,0 +1,29 @@
+
+state={
+	id=497
+	name="STATE_497"
+	manpower = 10000
+	
+	state_category = rural
+	
+	resources={
+		rubber=23 # was: 30
+	}
+
+	history={
+		owner = BPC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		
+		}
+		victory_points = {
+			12853 1 
+		}
+
+	}
+
+	provinces={
+		2150 2228 5153 5204 5220 10984 12913 12933 12947 
+	}
+}

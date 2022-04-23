@@ -1,0 +1,25 @@
+
+state={
+	id=765
+	name="STATE_765"
+	manpower = 51600
+	state_category = pastoral
+
+	history={
+		add_core_of = POR
+		owner = POR
+		victory_points = {
+			8051 1
+		}
+		buildings = {
+			infrastructure = 3
+			8051 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		8051
+	}
+}

@@ -1,0 +1,1516 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_generic_goal_artillery"
+		texturefile = "gfx/interface/goals/generic_goal_artillery.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_generic_goal_artillery_shine"
+		texturefile = "gfx/interface/goals/generic_goal_artillery.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_artillery.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_artillery.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_artillery.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_artillery.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+    
+	SpriteType = {
+		name = "GFX_generic_goal_weapons_1"
+		texturefile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_generic_goal_weapons_1_shine"
+		texturefile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_weapons_1.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_generic_goal_weapons_2"
+		texturefile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_generic_goal_weapons_2_shine"
+		texturefile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+			animationtexturefile = "gfx/interface/goals/generic_goal_weapons_2.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_ACR_goal_jesuit"
+		texturefile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_ACR_goal_jesuit_shine"
+		texturefile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_jesuit.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_ACR_goal_literacy"
+		texturefile = "gfx/interface/goals/ACR_goal_literacy.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_ACR_goal_literacy_shine"
+		texturefile = "gfx/interface/goals/ACR_goal_literacy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_literacy.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_literacy.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_literacy.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_literacy.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_ACR_goal_tribes_traditions"
+		texturefile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_ACR_goal_tribes_traditions_shine"
+		texturefile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+			animationtexturefile = "gfx/interface/goals/ACR_goal_tribes_traditions.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_avis"
+		texturefile = "gfx/interface/goals/EQA_goal_avis.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_avis_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_avis.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_avis.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_avis.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_avis.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_avis.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_basic_communities"
+		texturefile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_basic_communities_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_basic_communities.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_bishop_conferences"
+		texturefile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_bishop_conference_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_bishop_conference.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+		
+	SpriteType = {
+		name = "GFX_EQA_goal_catholic_corporativism"
+		texturefile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_catholic_corporativism_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_catholic_corporativism.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_colony"
+		texturefile = "gfx/interface/goals/EQA_goal_colony.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_colony_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_colony.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_colony.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_colony.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_colony.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_colony.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_export_sugar"
+		texturefile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_export_sugar_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_export_sugar.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_kingdom"
+		texturefile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_kingdom_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_kingdom.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_last_crusade"
+		texturefile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_last_crusade_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_last_crusade.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_liberation_theology"
+		texturefile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_liberation_theology_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_liberation_theology.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_march_with_god"
+		texturefile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_march_with_god_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_march_with_god.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_martyrs"
+		texturefile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_martyrs_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_martyrs.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_order_of_christ"
+		texturefile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_order_of_christ_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_order_of_christ.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_pilgrims"
+		texturefile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_pilgrims_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_pilgrims.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_rerum_novarums"
+		texturefile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_rerum_novarum_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_rerum_novarum.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_saint_george"
+		texturefile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_saint_george_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_saint_george.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_seize_church_property"
+		texturefile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_seize_church_property_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_seize_church_property.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_EQA_goal_spiritual_mobilization"
+		texturefile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_EQA_goal_spiritual_mobilization_shine"
+		texturefile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+			animationtexturefile = "gfx/interface/goals/EQA_goal_spiritual_mobilization.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+		
+	SpriteType = {
+		name = "GFX_RGR_goal_hispanohablante"
+		texturefile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RGR_goal_hispanohablante_shine"
+		texturefile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_hispanohablante.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RGR_goal_hispanohablante_2"
+		texturefile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RGR_goal_hispanohablante_2_shine"
+		texturefile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_hispanohablante_2.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RGR_goal_lusofono"
+		texturefile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RGR_goal_lusofono_shine"
+		texturefile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_lusofono.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RGR_goal_plata_republic"
+		texturefile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RGR_goal_plata_republic_shine"
+		texturefile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+			animationtexturefile = "gfx/interface/goals/RGR_goal_plata_republic.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_bonifacio_legacy"
+		texturefile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_bonifacio_legacy_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_bonifacio_legacy.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_faction"
+		texturefile = "gfx/interface/goals/RIO_goal_faction.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_faction_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_faction.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_faction.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_faction.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_faction.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_faction.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_for_the_king"
+		texturefile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_for_the_king_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_for_the_king.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_king_of_brazilians"
+		texturefile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_king_of_brazilians_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_king_of_brazilians.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_moderator"
+		texturefile = "gfx/interface/goals/RIO_goal_moderator.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_moderator_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_moderator.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_moderator.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_moderator.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_moderator.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_moderator.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_nocsc"
+		texturefile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_nocsc_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_nocsc.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_parliamentarism"
+		texturefile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_parliamentarism_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_parliamentarism.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_prestige"
+		texturefile = "gfx/interface/goals/RIO_goal_prestige.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_prestige_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_prestige.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_prestige.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_prestige.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_prestige.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_prestige.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_RIO_goal_puc"
+		texturefile = "gfx/interface/goals/RIO_goal_puc.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_RIO_goal_puc_shine"
+		texturefile = "gfx/interface/goals/RIO_goal_puc.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_puc.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_puc.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RIO_goal_puc.dds"
+			animationtexturefile = "gfx/interface/goals/RIO_goal_puc.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_SPL_goal_integrate_tribes_locked"
+		texturefile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_SPL_goal_integrate_tribes_locked_shine"
+		texturefile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_integrate_tribes_locked.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_SPL_goal_rousseau_locked"
+		texturefile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_SPL_goal_rousseau_locked_shine"
+		texturefile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_rousseau_locked.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_SPL_goal_settle_maracaju_locked"
+		texturefile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_SPL_goal_settle_maracaju_locked_shine"
+		texturefile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_settle_maracaju_locked.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_SPL_goal_settle_ponta_pora_locked"
+		texturefile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_SPL_goal_settle_ponta_pora_locked_shine"
+		texturefile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+			animationtexturefile = "gfx/interface/goals/SPL_goal_settle_ponta_pora_locked.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_XIN_goal_allow_catholics"
+		texturefile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_XIN_goal_allow_catholics_shine"
+		texturefile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+			animationtexturefile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+			animationtexturefile = "gfx/interface/goals/XIN_goal_allow_catholics.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_XIN_goal_ban_catholics"
+		texturefile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_XIN_goal_ban_catholics_shine"
+		texturefile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+			animationtexturefile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+			animationtexturefile = "gfx/interface/goals/XIN_goal_ban_catholics.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+}

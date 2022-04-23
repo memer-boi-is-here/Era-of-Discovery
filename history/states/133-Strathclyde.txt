@@ -1,0 +1,37 @@
+
+state={
+	id=133
+	name="STATE_133" # Lanark
+	manpower = 250000
+	
+	state_category = city
+	
+	resources={
+		steel=21 # was: 36
+	}
+
+	history={
+		add_core_of = SCO
+		owner = SCO
+		victory_points = {
+			3273 15
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 1
+			
+			air_base = 0
+			6395 = {
+				naval_base = 2
+			}
+
+		}
+		
+	}
+
+	provinces={
+		3273 6320 6350 6385 6395 9237 9350 11218 
+	}
+}

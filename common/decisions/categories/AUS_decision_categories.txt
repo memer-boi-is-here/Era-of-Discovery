@@ -1,0 +1,50 @@
+
+AUS_germania = {
+	
+	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
+
+	allowed = {
+            original_tag = AUS
+		}
+
+	priority = {
+		base = 10
+	}
+
+	on_map_area = {
+		name = AUS_germanian_expansion
+		state = 920
+		state = 845
+		state = 54
+		state = 850
+		state = 842
+		state = 808
+		state = 805
+		state = 849
+		state = 50
+		state = 42	
+		state = 851
+		state = 55
+		state = 852
+		state = 51
+		state = 57
+		state = 855
+		state = 860
+		state = 56
+		state = 59
+		state = 863
+		state = 859
+		state = 856
+		state = 60
+		state = 65
+		state = 61
+		state = 63
+		state = 59
+		zoom = 250
+	}
+
+	scripted_gui = AUS_germania_gui
+
+	visible = {
+	 }
+	}

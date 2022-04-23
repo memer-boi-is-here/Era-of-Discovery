@@ -1,0 +1,257 @@
+ideas = {
+	
+	country = {
+	
+		house_of_hohenzollern = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = house_of_hohenzollern
+			
+			modifier = {
+				 stability_factor = 0.1
+				 foreign_subversive_activites = -0.25
+				 political_power_gain = 0.2
+			}
+
+		}
+		
+		bastion_of_protestantism = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = bastion_of_protestantism
+			
+			modifier = {
+				 war_support_factor = 0.2
+				 army_defence_factor = 0.15
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	albert_alcibiades_p = {
+			
+			picture = albert_alcibiades
+			
+			allowed = {
+				original_tag = BRN
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_marg_p = {
+			
+			picture = john_marg
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		john_george_p = {
+			
+			picture = john_george
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sigismund_p = {
+			
+			picture = sigismund
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		albert_alcibiades_a = {
+
+			picture = albert_alcibiades
+			
+			allowed = {
+				original_tag = BRN
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		john_george_a = {
+
+			picture = john_george
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		sigismund = {
+
+			picture = sigismund
+			
+			allowed = {
+				original_tag = BRN
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+
+	    albert_alcibiades  = {
+			ledger = army
+
+			picture = albert_alcibiades
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_marg = {
+			ledger = army
+			
+			picture = john_marg
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_george = {
+			ledger = army
+			
+			picture = john_george
+			
+			allowed = {
+				original_tag = BRN
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

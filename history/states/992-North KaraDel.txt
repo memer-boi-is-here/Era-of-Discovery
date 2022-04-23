@@ -1,0 +1,19 @@
+state={
+	id=992
+	name="North KaraDel"
+	
+	history={
+		owner = OIR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = OIR
+	}
+	
+	provinces={
+		12598 12671
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

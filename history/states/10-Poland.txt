@@ -1,0 +1,29 @@
+
+state={
+	id=10
+	name="STATE_10"
+
+	history={
+		owner = POL
+		victory_points = {
+			3544 25 
+		}
+		victory_points = {
+			402 1 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 2
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		467 524 3482 3544 6511 9400 11492 12562 
+	}
+	manpower=9000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

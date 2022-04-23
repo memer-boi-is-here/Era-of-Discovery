@@ -1,0 +1,213 @@
+﻿capital = 121
+
+recruit_character = SCO_mary_stuart
+recruit_character = SCO_james_hamilton,_duke_of_chatellerault
+recruit_character = SCO_henry_stewart_1st_lord_methvan
+recruit_character = SCO_james_stewart
+recruit_character = SCO_matthew_stewart_lennox
+recruit_character = SCO_archibald_douglas_angus
+recruit_character = SCO_james_douglas_4th_earl_of_morton
+recruit_character = SCO_sébastien_de_luxembourg,_duke_of_penthièvre
+recruit_character = SCO_william_kirkcaldy_of_grange
+recruit_character = SCO_william_murray_of_tullibardine
+recruit_character = SCO_james_hepburn_4th_earl_of_bothwell
+recruit_character = SCO_angus_limond
+recruit_character = SCO_douglas_williams
+recruit_character = SCO_douglas_mccoy
+recruit_character = SCO_george_seton
+recruit_character = SCO_mary_of_guise
+recruit_character = SCO_archibald_campbell_earl_of_argyll_a
+recruit_character = SCO_archibald_campbell_earl_of_argyll
+recruit_character = SCO_gilbert_kennedy
+recruit_character = SCO_john_erskine
+recruit_character = SCO_james_beaton_archbishop_of_glasgow
+recruit_character = SCO_hugh_montgomerie
+recruit_character = SCO_william_maitland
+recruit_character = SCO_john_knox
+recruit_character = SCO_william_murray_of_tullibardine
+recruit_character = SCO_james_hamilton_duke_of_chatellerault
+
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.1
+
+oob = "SCO_1550"
+
+# Starting tech
+set_technology = {
+	arquebus = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Mary Stuart"
+	picture = "portrait_mary_stuart.dds"
+	ideology = despotism
+	traits = { 
+	         inexperienced_monarch
+	}
+}
+
+	create_field_marshal = {
+	    name = "James Hamilton, Duke of Chatellerault"
+    	picture = "portrait_james_hamilton.dds"
+	    traits = { politically_connected brilliant_strategist war_hero unyielding_defender }
+	    skill = 4
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 3
+    }
+	
+	create_field_marshal = {
+	    name = "Henry Stewart, 1st Lord Methvan"
+    	picture = "portrait_henry_stewart.dds"
+	    traits = { aggressive_assaulter trickster hill_fighter }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 3
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "James Stewart, 1st Earl of Moray"
+    	picture = "portrait_james_stewart.dds"
+	    traits = { ambusher trait_mountaineer trait_reckless winter_specialist }
+	    skill = 4
+	    attack_skill = 2
+	    defense_skill = 4 
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_corps_commander = {
+	    name = "Matthew Stewart, 4th Earl of Lennox"
+    	picture = "portrait_matthew_stewart.dds"
+	    traits = { fortress_buster hill_fighter inflexible_strategist }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Archibald Douglas, 6th Earl of Angus"
+    	picture = "portrait_archibald_douglas.dds"
+	    traits = { scavenger trickster trait_reckless }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "James Douglas, 4th Earl of Morton"
+    	picture = "portrait_james_douglas.dds"
+	    traits = { guerilla_fighter trait_engineer infantry_officer }
+	    skill = 2
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Sébastien de Luxembourg, Duke of Penthièvre"
+    	picture = "portrait_sebastien.dds"
+	    traits = { invader_ii politically_connected }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_navy_leader = {
+	    name = "William Kirkcaldy of Grange"
+    	picture = "portrait_william_kirkcaldy.dds"
+	    traits = { cruiser_captain blue_water_expert gentlemanly }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "William Murray of Tullibardine "
+    	picture = "portrait_william_murray.dds"
+	    traits = { destroyer_leader fleet_protector chief_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 3
+    }
+	
+	create_navy_leader = {
+	    name = "James Hepburn, 4th Earl of Bothwell"
+    	picture = "portrait_james_hepburn.dds"
+	    traits = { spotter gentlemanly }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 1
+    }
+	
+add_opinion_modifier = { target = FRA modifier = huge_increase }
+add_opinion_modifier = { target = ENG modifier = large_decrease }
+
+add_ideas = auld_alliance
+add_ideas = french_debt
+add_ideas = divided_government
+
+add_ideas = Catholic
+
+add_ideas = government_rank_2
+
+add_ideas = scottish_traditions
+
+add_opinion_modifier = { target = FRA modifier = huge_increase }

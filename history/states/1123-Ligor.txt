@@ -1,0 +1,18 @@
+state={
+	id=1123
+	name="Ligor"
+	history={
+		owner = LIG
+		add_core_of = LIG
+		buildings = {
+			infrastructure = 3
+			
+		}
+	}
+	provinces={
+		 1308 1281 10158 12201 4312 1394 1366 1337 12286 4371 10156 7236 12131 12230
+	}
+	manpower=3002242
+	buildings_max_level_factor=5.000
+	state_category=large_city
+}

@@ -1,0 +1,26 @@
+
+state = {
+	id=154
+	name="Egri"
+	manpower = 295416
+
+	state_category = city 
+
+	history = {
+		owner = TUR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 0
+		}
+		victory_points = {
+			11659 1 
+		}
+		add_core_of = HUN
+	} 
+
+	provinces={
+		6670 6700 11625 9690 716 684 6716 3731 3713 
+	}
+}

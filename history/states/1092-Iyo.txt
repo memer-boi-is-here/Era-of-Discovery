@@ -1,0 +1,22 @@
+state={
+	id=1092
+	name="Iyo"
+	provinces={
+		4179 7046 
+	}
+		history={
+			owner = KON
+		add_core_of = XXX
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

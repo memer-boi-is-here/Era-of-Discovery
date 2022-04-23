@@ -1,0 +1,1347 @@
+focus_tree = {
+	id = SPR_puppet_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = SPP
+				tag = NSP
+				tag = BPC
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_P_revitalize_our_travelways
+		icon = GFX_goal_generic_army_motorized
+		x = 6
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+	##	relative_position_id = 
+	##	prerequisite = { focus =  }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+            random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+            random_owned_controlled_state = {
+                 add_building_construction = {
+                      type = infrastructure
+                      level = 2
+                      instant_build = yes
+                 }
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_civilian_industrial_development_i
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_revitalize_our_travelways
+		prerequisite = { focus = SPR_P_revitalize_our_travelways }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			}
+            random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			}
+            random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+               type = industrial_complex
+               level = 1
+               instant_build = yes
+           }
+		}
+	
+	  }
+	}
+	
+	focus = {
+		id = SPR_P_civilian_industrial_development_ii
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_civilian_industrial_development_i
+		prerequisite = { focus = SPR_P_civilian_industrial_development_i }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = industrial_complex
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_military_industrial_development_i
+		icon = GFX_goal_generic_construct_mil_factory 
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_revitalize_our_travelways
+		prerequisite = { focus = SPR_P_revitalize_our_travelways }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			   add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+			   }
+               add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+		       }
+	        }
+            random_owned_state = { 
+			   add_extra_state_shared_building_slots = 2 
+			   add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes }
+               add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes 
+			   }
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_P_military_industrial_development_ii  
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_military_industrial_development_i
+		prerequisite = { focus = SPR_P_military_industrial_development_i }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+            random_owned_state = { 
+			        add_extra_state_shared_building_slots = 2 
+					     add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+			        }
+                    add_building_construction = {
+                         type = arms_factory
+                         level = 1
+                         instant_build = yes 
+		            }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_civilian_industrial_development_ii
+		prerequisite = { focus = SPR_P_military_industrial_development_ii focus = SPR_P_civilian_industrial_development_ii } 
+		prerequisite = { focus = SPR_P_doctrine_effort } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+            random_owned_controlled_state = {
+               add_extra_state_shared_building_slots = 3	
+               add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+               }
+           }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_expand_naval_production
+		icon = GFX_focus_generic_navy_battleship2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_the_navy
+		prerequisite = { focus = SPR_P_the_navy }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+			  random_owned_state = {
+		      add_building_construction = {
+				      type = dockyard
+		              level = 1
+					  instant_build = yes
+				      }
+		      }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_improve_the_road_networks
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_revitalize_our_travelways
+		prerequisite = { focus = SPR_P_revitalize_our_travelways }
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+             }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_invest_into_our_research
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_improve_the_road_networks
+		prerequisite = { focus = SPR_P_improve_the_road_networks }
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = SPR_P_improve_production
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_invest_into_our_research
+		prerequisite = { focus = SPR_P_invest_into_our_research }
+		 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 1.0 
+                uses = 1
+                category = industry 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_invest_in_the_military
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_improve_production
+		prerequisite = { focus = SPR_P_improve_production }
+		prerequisite = { focus = SPR_P_military_industrial_development_ii }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_the_army
+		icon = GFX_focus_generic_military_academy
+		x = -4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_revitalize_our_travelways
+		prerequisite = { focus = SPR_P_revitalize_our_travelways }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = SPR_P_doctrine_effort
+		icon = GFX_goal_generic_navy_cruiser
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_the_army
+		prerequisite = { focus = SPR_P_the_army }
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = land_doctrine 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_weapons_technology
+		icon = GFX_goal_generic_small_arms
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_the_army
+		prerequisite = { focus = SPR_P_the_army }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = land_doctrine 
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_build_more_cannons
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_weapons_technology
+		prerequisite = { focus = SPR_P_weapons_technology }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = artillery_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = artillery
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_make_more_muskets
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_build_more_cannons
+		prerequisite = { focus = SPR_P_build_more_cannons }
+		
+		completion_reward = {
+			add_tech_bonus = { 
+                  name = land_doc_bonus 
+                  bonus = 1.0 
+                  uses = 1 
+                  category = industry
+            }
+		}
+	}
+	
+	focus = {
+		id = SPR_P_form_coast_guard
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = SPR_P_doctrine_effort
+		prerequisite = { focus = SPR_P_doctrine_effort }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+		   
+	##	}
+		
+		completion_reward = {
+			navy_experience = 25
+	    }
+	}
+	
+	focus = {
+		id = SPR_P_build_a_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		cost = 10
+		
+		relative_position_id = SPR_P_form_coast_guard
+		prerequisite = { focus = SPR_P_form_coast_guard  }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+		   
+	##	}
+		
+		completion_reward = {
+			add_tech_bonus = {
+               name = capital_ships_bonus
+               bonus = 1.0
+               ahead_reduction = 2
+               uses = 2
+               category = bc_tech
+               category = bb_tech
+           }
+	    }
+	}
+	
+	focus = {
+		id = SPR_P_survey_the_land
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = SPR_P_improve_production
+		prerequisite = { focus = SPR_P_improve_production  }
+	##	mutually_exclusive = { focus =  }
+		
+		available_if_capitulated = no
+		
+		
+		ai_will_do = { factor = 10 }
+		
+	##	available = {
+		   
+	##	}
+		
+		completion_reward = {
+		    random_owned_state = {
+			   add_resource= { 
+				  type = tungsten
+				  amount = 12 
+			  }
+			  add_resource= { 
+				  type = aluminium
+				  amount = 8 
+			 }
+		   }
+	    }
+	}
+	
+	focus = {
+		id = SPR_P_religious_unrest
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = 18
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SPR_P_loyalty_to_the_pope
+		icon = GFX_focus_por_concordat
+		x = -4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_religious_unrest
+		prerequisite = { focus = SPR_P_religious_unrest }
+		mutually_exclusive = { focus = SPR_P_reform_the_church }
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = protestant
+				add_idea = catholic
+            }
+		}
+	}
+
+	focus = {
+		id = SPR_P_reform_the_church
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 4
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_religious_unrest
+		prerequisite = { focus = SPR_P_religious_unrest }
+		mutually_exclusive = { focus = SPR_P_loyalty_to_the_pope }
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = catholic
+				add_idea = protestant
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_P_luthers_ideals
+		icon = GFX_goal_generic_trade
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_reform_the_church
+		prerequisite = { focus = SPR_P_reform_the_church }
+		mutually_exclusive = { focus = SPR_P_calvins_ideals }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = british_austerity_idea
+		}
+	}
+
+	focus = {
+		id = SPR_P_the_imperial_question
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_religious_unrest
+		prerequisite = { focus = SPR_P_religious_unrest }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_P_selfish_desires
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_the_imperial_question
+		prerequisite = { focus = SPR_P_the_imperial_question }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = SPR_P_religious_tolerance
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_peaceful_catholicism
+		prerequisite = { focus = SPR_P_peaceful_catholicism }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_P_calvins_ideals
+		icon = GFX_goal_generic_radar
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_reform_the_church
+		prerequisite = { focus = SPR_P_reform_the_church }
+		mutually_exclusive = { focus = SPR_P_luthers_ideals }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = catholic
+				add_idea = reformed
+			}
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_P_peaceful_catholicism
+		icon = GFX_focus_rom_handle_king
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_loyalty_to_the_pope
+		prerequisite = { focus = SPR_P_loyalty_to_the_pope }
+		mutually_exclusive = { focus = SPR_P_save_the_heretics }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_P_save_the_heretics
+		icon = GFX_focus_spa_fuse_the_parties
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_loyalty_to_the_pope
+		prerequisite = { focus = SPR_P_loyalty_to_the_pope }
+		mutually_exclusive = { focus = SPR_P_peaceful_catholicism }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SPR_P_war_on_protestantism
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_save_the_heretics
+		prerequisite = { focus = SPR_P_save_the_heretics }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			random_neighbor_country = {
+				limit = {
+					not = {
+						has_ideas = catholic
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+						ROOT = { is_subject_of = PREV }
+					}
+				}
+				ROOT = {
+					declare_war_on = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_P_band_together
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_luthers_ideals
+		prerequisite = { focus = SPR_P_luthers_ideals }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			every_country = {
+				limit = { is_on_continent = europe has_idea = protestant }
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = attache_sent
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_P_leave_the_holy_roman_empire
+		icon = GFX_goal_generic_forceful_treaty
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_saved_by_god
+		prerequisite = { focus = SPR_P_saved_by_god focus = SPR_P_band_together }
+		mutually_exclusive = { 
+			focus = SPR_P_try_to_convert_inside_the_empire 
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+		}
+	}
+	
+	focus = {
+		id = SPR_P_saved_by_god
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_calvins_ideals
+		prerequisite = { focus = SPR_P_calvins_ideals }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_P_try_to_convert_inside_the_empire
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_leave_the_holy_roman_empire
+		prerequisite = { focus = SPR_P_leave_the_holy_roman_empire }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_neighbor_country = {
+				limit = { 
+					NOT = { 
+						has_idea = catholic has_war = no 
+					} 
+				}
+				swap_ideas = {
+					remove_idea = catholic
+					add_ideas = potestant
+				}
+			}
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = SPR_P_loyal_to_the_end
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_settled_in_our_place
+		prerequisite = { 
+			focus = SPR_P_settled_in_our_place 
+			focus = SPR_P_a_split_but_cooperative_whole 
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = deterrence
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SPR_P_settled_in_our_place
+		icon = GFX_focus_generic_military_academy
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_promote_unity
+		prerequisite = { focus = SPR_P_promote_unity }
+		mutually_exclusive = { focus = SPR_P_a_split_but_cooperative_whole }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = SPR_P_a_time_of_peace
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_religious_tolerance
+		prerequisite = { focus = SPR_P_religious_tolerance }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = SPR_P_strike_against_the_empire
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_betray_the_empire
+		prerequisite = { focus = SPR_P_betray_the_empire }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+						ROOT = { is_subject_of = PREV }
+					}
+				}
+				ROOT = {
+					declare_war_on = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_P_strength_of_diversity
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_a_split_but_cooperative_whole
+		prerequisite = { focus = SPR_P_a_split_but_cooperative_whole }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.10
+			add_ideas = volunteer_corps_focus
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = SPR_P_dangers_of_complacency
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_settled_in_our_place
+		prerequisite = { focus = SPR_P_settled_in_our_place }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_P_serve_a_greater_purpose_together
+		icon = GFX_goal_tripartite_pact
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_unify_our_region
+		prerequisite = { focus = SPR_P_unify_our_region }
+		mutually_exclusive = { focus = SPR_P_betray_the_empire }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.10
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = SPR_P_greater_imperial_good
+		icon = GFX_goal_generic_national_unity
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_the_imperial_question
+		prerequisite = { focus = SPR_P_the_imperial_question }
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = SPR_P_promote_nationalism
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_selfish_desires
+		prerequisite = { focus = SPR_P_selfish_desires }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.10
+		}
+	}
+	
+		focus = {
+		id = SPR_P_promote_unity
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_greater_imperial_good
+		prerequisite = { focus = SPR_P_greater_imperial_good }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = SPR_P_a_split_but_cooperative_whole
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = -1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_promote_nationalism
+		prerequisite = { 
+			focus = SPR_P_promote_nationalism 
+			focus = SPR_P_promote_unity 
+		}
+		mutually_exclusive = { 
+			focus = SPR_P_unify_our_region 
+		}
+		mutually_exclusive = { 
+			focus = SPR_P_settled_in_our_place 
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SPR_P_betray_the_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1	
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_unify_our_region
+		prerequisite = { focus = SPR_P_unify_our_region }
+		mutually_exclusive = { focus = SPR_P_serve_a_greater_purpose_together }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = SPR_P_unify_our_region
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_promote_nationalism
+		prerequisite = { focus = SPR_P_promote_nationalism }
+		mutually_exclusive = { focus = SPR_P_a_split_but_cooperative_whole }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_subject_of = ROOT
+						has_non_aggression_pact_with = ROOT
+						ROOT = { is_subject_of = PREV }
+					}
+				}
+				ROOT = {
+					declare_war_on = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = HRE_P_turn_the_heretics
+		icon = GFX_focus_CZE_german_puppet
+		x = -1
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		relative_position_id = SPR_P_war_on_protestantism
+		prerequisite = { focus = SPR_P_war_on_protestantism focus = SPR_P_a_time_of_peace }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			every_owned_state = {
+				limit = { NOT = { is_not_core_of = ROOT } }
+				add_core_of = ROOT
+			}
+		}
+	}
+	
+}

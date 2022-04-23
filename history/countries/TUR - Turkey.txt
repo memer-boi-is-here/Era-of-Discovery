@@ -1,0 +1,315 @@
+﻿capital = 1126
+
+recruit_character = TUR_suleiman_i
+recruit_character = TUR_Şehzade_selim_ii
+recruit_character = TUR_rüstem_pasha
+recruit_character = TUR_Şehzade_mustafa
+recruit_character = TUR_koca_sinan_pasha
+recruit_character = TUR_lütfi_pasha
+recruit_character = TUR_sokollu_mehmed_pasha
+recruit_character = TUR_lala_mustafa_pasha
+recruit_character = TUR_Özdemiroğlu_osman_pasha
+recruit_character = TUR_cığalazade_yusuf_sinan_pasha
+recruit_character = TUR_malkoçoğlu_balı_bey
+recruit_character = TUR_dragut
+recruit_character = TUR_müezzinzade_ali_pasha
+recruit_character = TUR_occhiali
+recruit_character = TUR_seydi_ali_reis
+recruit_character = TUR_halim_karabekir
+recruit_character = TUR_mithat_koval
+recruit_character = TUR_abdulkerim_erkilet
+recruit_character = TUR_selim_ii_p
+recruit_character = TUR_piri_reis
+recruit_character = TUR_ebussuud_efendi
+recruit_character = TUR_selim_ii
+
+oob = "OTT_1550"
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	gwtank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1 
+}
+
+if = {
+	limit = {
+		has_start_date < 1550.03.05
+	}
+
+	declare_war_on = {
+		target = POR
+		type = annex_everything
+	}
+}
+
+add_opinion_modifier = { target = FRA modifier = medium_increase }
+add_opinion_modifier = { target = SPR modifier = large_decrease }
+add_opinion_modifier = { target = POR modifier = large_decrease }
+add_opinion_modifier = { target = BPC modifier = large_decrease }
+add_opinion_modifier = { target = NSP modifier = large_decrease }
+add_opinion_modifier = { target = SPP modifier = large_decrease }
+add_opinion_modifier = { target = NAP modifier = large_decrease }
+add_opinion_modifier = { target = VNI modifier = large_decrease }
+add_opinion_modifier = { target = MIL modifier = large_decrease }
+add_opinion_modifier = { target = HOL modifier = large_decrease }
+add_opinion_modifier = { target = AUS modifier = large_decrease }
+add_opinion_modifier = { target = PER modifier = large_decrease }
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1550.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 90
+}
+
+add_ideas = {
+    economic_inflation
+	anti_habsburg_policy
+	seat_of_the_empire
+	civil_unrest_in_the_balkans
+	limited_conscription
+	sunni
+	government_rank_3
+}
+
+set_stability = 0.55
+
+set_convoys = 30
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_country_leader = {
+	name = "Suleiman I"
+	picture = "portrait_suleiman_i.dds"
+	ideology = fascism_ideology
+	traits = { the_magnificent }
+}
+
+	create_field_marshal = {
+	    name = "Suleiman I"
+    	picture = "portrait_suleiman_i.dds"
+	    traits = { inspirational_leader expert_delegator brilliant_strategist old_guard }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 5
+	    planning_skill = 4
+	    logistics_skill = 4
+    }
+	
+	create_field_marshal = {
+	    name = "Şehzade Selim II"
+    	picture = "portrait_selim_ii.dds"
+	    traits = { inspirational_leader aggressive_assaulter trait_reckless harsh_leader }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 4
+	    planning_skill = 3
+	    logistics_skill = 3
+    }
+	
+	create_field_marshal = {
+	    name = "Rüstem Pasha"
+    	picture = "portrait_rustem_pasha.dds"
+	    traits = { old_guard thorough_planner career_officer war_hero }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+	create_field_marshal = {
+	    name = "Şehzade Mustafa"
+    	picture = "portrait_sehzade_mustafa.dds"
+	    traits = { logistics_wizard infantry_leader bearer_of_artillery }
+	    skill = 3
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+
+    create_field_marshal = {
+	    name = "Koca Sinan Pasha"
+    	picture = "portrait_koca_sinan_pasha.dds"
+	    traits = { defensive_doctrine trait_engineer infantry_officer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Lütfi Pasha"
+    	picture = "portrait_lutfi_pasha.dds"
+	    traits = { infantry_expert skilled_staffer infantry_officer career_officer }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 3
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+
+    create_corps_commander = {
+	    name = "Sokollu Mehmed Pasha"
+    	picture = "portrait_sokollu_mehmed_pasha.dds"
+	    traits = { adaptable trickster politically_connected bearer_of_artillery }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Lala Mustafa Pasha"
+    	picture = "portrait_lala_mustafa_pasha.dds"
+	    traits = { ambusher urban_assault_specialist infantry_officer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Özdemiroğlu Osman Pasha"
+    	picture = "portrait_osman_pasha.dds"
+	    traits = { fortress_buster ranger trait_cautious }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+
+    create_corps_commander = {
+	    name = "Cığalazade Yusuf Sinan Pasha"
+    	picture = "portrait_yusuf_sinan_pasha.dds"
+	    traits = { scavenger trait_reckless trickster }
+	    skill = 3
+	    attack_skill = 2
+	    defense_skill = 3
+	    planning_skill = 2
+	    logistics_skill = 1
+    }
+	
+	create_corps_commander = {
+	    name = "Malkoçoğlu Balı Bey"
+    	picture = "portrait_bali_bey.dds"
+	    traits = { cavalry_expert cavalry_leader }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Dragut"
+    	picture = "portrait_dragut.dds"
+	    traits = { big_guns_expert ironside battleship_adherent old_guard }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 4
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Müezzinzade Ali Pasha"
+    	picture = "portrait_ali_pasha.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Occhiali"
+    	picture = "portrait_occhiali.dds"
+	    traits = { destroyer_leader fleet_protector chief_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 3
+    }
+	
+    create_navy_leader = {
+	    name = "Seydi Ali Reis"
+    	picture = "portrait_seydi_ali_reis.dds"
+	    traits = { spotter gentlemanly }
+	    skill = 2
+	    attack_skill = 2
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 1
+    }
+
+set_autonomy = {
+	target = HEJ
+	autonomous_state = autonomy_integrated_puppet	
+}
+
+set_autonomy = {
+	target = CRI
+	autonomous_state = autonomy_integrated_puppet
+}
+
+set_autonomy = {
+	target = MNT
+	autonomous_state = autonomy_dominion
+}
+
+puppet = MOL
+puppet = ROM
+puppet = TRA
+puppet = ALG
+puppet = CIR
+puppet = RAG
+
+add_ideas = ottoman_traditions

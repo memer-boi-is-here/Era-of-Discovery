@@ -1,0 +1,3794 @@
+focus_tree = {
+	id = NAP
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NAP
+		}
+	}
+	
+	continuous_focus_position = { x = 100 y = 1500 }
+	
+	#Focus for Support
+	focus = {
+		id = NAP_support
+		icon = GFX_goal_generic_national_unity
+		x = 17
+		y = 3 
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_italian_wars }
+		mutually_exclusive = { focus = NAP_intervene }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		available = {
+			SPR = { has_completed_focus = SPR_condemn_french_influence }	
+			FRA = { has_completed_focus = FRA_take_naples }
+		}
+		
+		completion_reward = {
+			send_equipment = { target = SVY type = infantry_equipment amount = 500 }
+			send_equipment = { target = SPR type = infantry_equipment amount = 500 }
+			send_equipment = { target = TUS type = infantry_equipment amount = 500 }
+			send_equipment = { target = PAP type = infantry_equipment amount = 500 }
+			send_equipment = { target = VNI type = infantry_equipment amount = 500 }
+		}
+	}
+
+	#Focus for Intervene
+	focus = {
+		id = NAP_intervene
+		icon = GFX_goal_rhineland
+		x = 15
+		y = 3
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_italian_wars }
+		mutually_exclusive = { focus = NAP_support }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = FRA }
+			send_equipment = { target = VEN type = infantry_equipment amount = 100 }
+			send_equipment = { target = PAP type = infantry_equipment amount = 100 }
+			send_equipment = { target = TUS type = infantry_equipment amount = 100 }
+			send_equipment = { target = PRS type = infantry_equipment amount = 100 }
+		}
+	}
+
+	#Focus for Continue public works
+	focus = {
+		id = NAP_continue_public_works
+		icon = GFX_focus_generic_steel
+		x = 23
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pedro_pacheco }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 5 instant_build = yes } }
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 5 instant_build = yes } }
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 5 instant_build = yes } }
+	##		production_factory_efficiency_gain_factor = 5
+		}
+	}
+
+	#Focus for Meet the pope
+	focus = {
+		id = NAP_meet_the_pope
+		icon = GFX_NAP_meet_the_pope-99965
+		x = 8
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_church_and_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = { target = PAP modifier = medium_increase }
+		}
+	}
+
+	#Focus for Pedro Álvarez de Toledo
+	focus = {
+		id = NAP_pedro_lvarez_de_toledo
+		icon = GFX_NAP_pedro_lvarez_de_toledo-102671
+		x = 17
+		y = 10
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_strong_spain_strong_naples }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			date > 1554.1.1
+		}
+		
+		completion_reward = {
+			create_country_leader = { name = "Pedro Álvarez de Toledo y Zúñiga" desc = "POLITICS_PEDRO1_DESC" picture = "Portrait_Pedro1.dds" expire = "1965.1.1" ideology = despotism traits = { } }
+		}
+	}
+
+	#Focus for Pedro Pacheco
+	focus = {
+		id = NAP_pedro_pacheco
+		icon = GFX_NAP_pedro_pacheco-102669
+		x = 25
+		y = 10
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_strong_spain_strong_naples }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			date > 1554.1.1
+		}
+		
+		completion_reward = {
+			create_country_leader = { 
+			name = "Pedro Pacheco" 
+			desc = "" 
+			picture = Pedro.dds 
+			expire = 1965.1.1 
+			ideology = despotism traits = { } }
+			add_stability = 0.09
+		}
+	}
+
+	#Focus for We need a king?
+	focus = {
+		id = NAP_we_need_a_king
+		icon = GFX_focus_focus_fra_down_marianne
+		x = 6
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_kings_opposition }
+		mutually_exclusive = { focus = NAP_weak_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			political_power_daily > 0.5
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_popularity = { ideology = fascism popularity = 0.5 }
+			set_politics = { ruling_party = democratic elections_allowed = no }
+		}
+	}
+
+	#Focus for Support savoy
+	focus = {
+		id = NAP_support_savoy
+		icon = GFX_NAP_support_savoy-102659
+		x = 16
+		y = 1
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_french_influence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_opinion = { target = SAV value <90 }
+		}
+		
+		completion_reward = {
+			send_equipment = { target = SVY type = infantry_equipment amount = 1000 }
+		}
+	}
+
+	#Focus for Weak king
+	focus = {
+		id = NAP_weak_king
+		icon = GFX_focus_rom_handle_king
+		x = 3
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_kings_opposition }
+		mutually_exclusive = { focus = NAP_we_need_a_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_popularity = { ideology = neutrality popularity = 0.4 }
+		}
+	}
+
+	#Focus for King"s opposition
+	focus = {
+		id = NAP_kings_opposition
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 5
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_lower_taxes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 80
+			add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+	#Focus for Power to nobles
+	focus = {
+		id = NAP_power_to_nobles
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 5
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_we_must_continue_the_feudalism }
+		mutually_exclusive = { focus = NAP_church_and_king }
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			add_political_power = -150
+			add_popularity = { ideology = neutrality popularity = 0.2 }
+		}
+	}
+
+	#Focus for Local armies
+	focus = {
+		id = NAP_local_armies
+		icon = GFX_goal_generic_military_deal
+		x = 5
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_power_to_nobles }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = { ideology = neutrality popularity = 0.7 }
+	##		production_factory_efficiency_gain_factor = 0.7
+		}
+	}
+
+	#Focus for Lower taxes
+	focus = {
+		id = NAP_lower_taxes
+		icon = GFX_focus_rom_parties_end
+		x = 5
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_power_to_nobles }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			political_power_daily > 0.8
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+	##		production_factory_efficiency_gain_factor = 0.5
+		}
+	}
+
+	#Focus for Church and King
+	focus = {
+		id = NAP_church_and_king
+		icon = GFX_focus_eng_god_save_the_king
+		x = 9
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_we_must_continue_the_feudalism }
+		mutually_exclusive = { focus = NAP_power_to_nobles }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.3 }
+			add_political_power = -150
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Churchs in every quarters
+	focus = {
+		id = NAP_churchs_in_every_quarters
+		icon = GFX_NAP_churchs_in_every_quarters-102675
+		x = 17
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_develope_the_capital }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			add_political_power = 100
+		}
+	}
+
+	#Focus for Spanish protection
+	focus = {
+		id = NAP_spanish_protection
+		icon = GFX_goal_generic_major_alliance
+		x = 30
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_autonomous_kingdom }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			is_in_faction_with = SPR
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.2 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+	}
+
+	#Focus for Build royal palace
+	focus = {
+		id = NAP_build_royal_palace
+		icon = GFX_focus_por_the_pink_map
+		x = 28
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_autonomous_kingdom }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Autonomous kingdom
+	focus = {
+		id = NAP_autonomous_kingdom
+		icon = GFX_focus_generic_attack_nationalist_spain_focus
+		x = 29
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_don_carlos }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			end_puppet = SPR
+			add_popularity = { ideology = fascism popularity = 0.3 }
+		}
+	}
+
+	#Focus for Consolidate power
+	focus = {
+		id = NAP_consolidate_power
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 25
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_inquisition_tribunals }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = { ideology = neutrality popularity = -0.1 }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_stability = -0.05
+		}
+	}
+
+	#Focus for Inquisition tribunals
+	focus = {
+		id = NAP_inquisition_tribunals
+		icon = GFX_focus_por_concordat
+		x = 25
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_political_power = -100
+		}
+	}
+
+	#Focus for Maybe...
+	focus = {
+		id = NAP_maybe
+		icon = GFX_goal_generic_political_pressure
+		x = 35
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAP_we_must_unite_italy_against_protestant }
+		mutually_exclusive = { focus = NAP_stability_is_more_important }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = { target = PAP type = annex_everything }
+			declare_war_on = { target = URB type = annex_everything }
+			declare_war_on = { target = TUS type = annex_everything }
+			declare_war_on = { target = SNA type = annex_everything }
+			declare_war_on = { target = LUC type = annex_everything }
+			declare_war_on = { target = MOD type = annex_everything }
+			declare_war_on = { target = FER type = annex_everything }
+		}
+	}
+
+	#Focus for Proclaim the Italian Kingdom
+	focus = {
+		id = NAP_proclaim_the_italian_kingdom
+		icon = GFX_NAP_proclaim_the_italian_kingdom-102783
+		x = 40
+		y = 14
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_interior_instability 
+			focus = NAP_unify_occupied_territories 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = NAP_ITA
+			add_stability = 0.05
+			add_manpower = 18000
+			add_war_support = 0.05
+		}
+	}
+
+	#Focus for italian wars
+	focus = {
+		id = NAP_italian_wars
+		icon = GFX_focus_attack_italy
+		x = 16
+		y = 2
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_support_savoy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			FRA = { has_completed_focus = FRA_french_claims_on_italy }
+		}
+		
+		completion_reward = {
+			send_equipment = { target = VEN type = infantry_equipment amount = 100 }
+			send_equipment = { target = PAP type = infantry_equipment amount = 100 }
+			send_equipment = { target = TUS type = infantry_equipment amount = 100 }
+			send_equipment = { target = AUS type = infantry_equipment amount = 100 }
+		}
+	}
+
+	#Focus for Declare war on France
+	focus = {
+		id = NAP_declare_war_on_france
+		icon = GFX_focus_attack_france
+		x = 25
+		y = 4
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_militarization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_manpower_for_recruit_change_to = { value = 0.01 group = mobilization_laws }
+		}
+		
+		completion_reward = {
+			declare_war_on = { target = FRA type = annex_everything }
+		}
+	}
+
+	#Focus for Big city, confused city
+	focus = {
+		id = NAP_big_city_confused_city
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 33
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_quartieri_spagnoli }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.1 }
+			add_popularity = { ideology = communism popularity = -0.1 }
+			add_popularity = { ideology = neutrality popularity = -0.1 }
+		}
+	}
+
+	#Focus for A great capital
+	focus = {
+		id = NAP_a_great_capital
+		icon = GFX_NAP_a_great_capital-102032
+		x = 35
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_rinascimental_city_grid }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+		}
+	}
+
+	#Focus for Raise taxes
+	focus = {
+		id = NAP_raise_taxes
+		icon = GFX_goal_generic_trade
+		x = 35
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_focus_on_quality }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 10
+			add_popularity = { ideology = fascism popularity = -0.3 }
+	##		production_factory_efficiency_gain_factor = 0.8
+		}
+	}
+
+	#Focus for Strong spain, strong naples
+	focus = {
+		id = NAP_strong_spain_strong_naples
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		x = 21
+		y = 9
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_viceroy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			is_puppet = yes
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Don Carlos
+	focus = {
+		id = NAP_don_carlos
+		icon = GFX_NAP_don_carlos-102684
+		x = 29
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_consolidate_power }
+		mutually_exclusive = { focus = NAP_a_viceroy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			create_country_leader = { 
+				name = "Don  Carlos" 
+				desc = "" 
+				picture = "Carlos.dds" 
+				expire = 1568.1.1 
+				ideology = nazism 
+				traits = { } 
+			}
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			set_cosmetic_tag = NAP_I_fascism
+		}
+	}
+
+	#Focus for Develope The capital
+	focus = {
+		id = NAP_develope_the_capital
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 17
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_build_via_toledo }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 5 
+					instant_build = yes 
+				} 
+			}
+		}
+	}
+
+	#Focus for Demolish old structures
+	focus = {
+		id = NAP_demolish_old_structures
+		icon = GFX_focus_spr_class_war
+		x = 15
+		y = 13
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_develope_castel_capuano }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -150
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2 
+					instant_build = yes 
+				} 
+			}
+		}
+	}
+
+	#Focus for Stability is more important
+	focus = {
+		id = NAP_stability_is_more_important
+		icon = GFX_goal_generic_neutrality_focus
+		x = 37
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_we_must_unite_italy_against_protestant }
+		mutually_exclusive = { focus = NAP_maybe }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			add_popularity = { ideology = fascism popularity = 0.3 }
+		}
+	}
+
+	#Focus for We must continue the feudalism?
+	focus = {
+		id = NAP_we_must_continue_the_feudalism
+		icon = GFX_NAP_we_must_continue_the_feudalism-102657
+		x = 7
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_internal_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			political_power_growth > 0.5
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+	#Focus for Internal policy
+	focus = {
+		id = NAP_internal_policy
+		icon = GFX_NAP_internal_policy-102689
+		x = 7
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for French influence
+	focus = {
+		id = NAP_french_influence
+		icon = GFX_focus_fra_french_union
+		x = 20
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#Focus for A new Italian league
+	focus = {
+		id = NAP_a_new_italian_league
+		icon = GFX_goal_generic_forceful_treaty
+		x = 25
+		y = 1
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_french_influence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			create_faction = "Anti-French Italian alliance"
+		}
+	}
+
+	#Focus for Old memories of the Italian League
+	focus = {
+		id = NAP_old_memories_of_the_italian_league
+		icon = GFX_focus_generic_italy_first
+		x = 15
+		y = 4
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_intervene }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_opinion_modifier = { target = VNI modifier = medium_increase }
+			add_opinion_modifier = { target = PAP modifier = medium_increase }
+			add_opinion_modifier = { target = SVY modifier = medium_increase }
+			add_opinion_modifier = { target = TUS modifier = medium_increase }
+		}
+	}
+
+	#Focus for Cateau-cambrésis peace
+	focus = {
+		id = NAP_cateaucambrsis_peace
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 19
+		y = 5
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_old_memories_of_the_italian_league 
+			focus = NAP_help_allies 
+		}
+		mutually_exclusive = { focus = NAP_lose_the_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Lose the war
+	focus = {
+		id = NAP_lose_the_war
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 15
+		y = 5
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_old_memories_of_the_italian_league }
+		mutually_exclusive = { focus = NAP_cateaucambrsis_peace }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		available = {
+			is_puppet = no
+			has_political_power > 250
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -250
+			add_to_variable = { money = -120 }
+		}
+	}
+
+	#Focus for Become french puppet
+	focus = {
+		id = NAP_become_french_puppet
+		icon = GFX_focus_CZE_german_puppet
+		x = 15
+		y = 6
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_lose_the_war }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			FRA = { puppet = NAP }
+			add_stability = 0.025
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+			add_popularity = { ideology = democratic popularity = 0.2 }
+		}
+	}
+
+	#Focus for One kingdom, one nation
+	focus = {
+		id = NAP_one_kingdom_one_nation
+		icon = GFX_focus_generic_monarchy_1
+		x = 10
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_church_and_king }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 30
+			add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+	#Focus for Power to priest
+	focus = {
+		id = NAP_power_to_priest
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 8
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_meet_the_pope }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = -0.2 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = fascism popularity = -0.1 }
+		}
+	}
+
+	#Focus for Catholic education
+	focus = {
+		id = NAP_catholic_education
+		icon = GFX_focus_por_concordat
+		x = 8
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_power_to_priest }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 50
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_stability = 0.1
+			add_political_power = -50
+		}
+	}
+
+	#Focus for Expand Bank of Naples
+	focus = {
+		id = NAP_expand_bank_of_naples
+		icon = GFX_NAP_expand_bank_of_naples-102032
+		x = 10
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_one_kingdom_one_nation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 20
+		}
+		
+		completion_reward = {
+			add_political_power = -20
+			add_stability = 0.05
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			production_factory_efficiency_gain_factor = 0.2
+			swap_ideas = {
+				add_idea = free_trade
+				remove_idea = export_focus
+			}
+			add_to_variable = {money = 200}
+		}
+	}
+
+	#Focus for A french king
+	focus = {
+		id = NAP_a_french_king
+		icon = GFX_NAP_a_french_king-102656
+		x = 15
+		y = 7
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_become_french_puppet }
+		mutually_exclusive = { focus = NAP_noble_opposition }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = { ideology = fascism popularity = 0.2 }
+		}
+	}
+
+	#Focus for Align nobility
+	focus = {
+		id = NAP_align_nobility
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = NAP_expand_bank_of_naples }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+			add_popularity = { ideology = fascism popularity = 0.3 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+
+	#Focus for Less feudalism
+	focus = {
+		id = NAP_less_feudalism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_align_nobility }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Noble rebellion
+	focus = {
+		id = NAP_noble_rebellion
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 7
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_we_need_a_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 50
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -50
+			start_civil_war = { ideology = fascism size = 0.7 }
+			leave_faction = yes
+		}
+	}
+
+	#Focus for Spain intervention
+	focus = {
+		id = NAP_spain_intervention
+		icon = GFX_
+		x = 6
+		y = 8
+		cost = 5
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = NAP_noble_rebellion }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.05
+			add_popularity = { ideology = neutrality popularity = 0.7 }
+			declare_war_on = { target = SPR type = annex_everything }
+		}
+	}
+
+	#Focus for Victory
+	focus = {
+		id = NAP_victory
+		icon = GFX_NAP_victory-102656
+		x = 8
+		y = 9
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_spain_intervention }
+		mutually_exclusive = { focus = NAP_defeat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		completion_reward = {
+			add_stability = 0.075
+			add_political_power = 150
+			end_puppet = NAP
+			add_popularity = { ideology = neutrality popularity = 0.2 }
+		}
+	}
+
+	#Focus for Defeat
+	focus = {
+		id = NAP_defeat
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 4
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_spain_intervention }
+		mutually_exclusive = { focus = NAP_victory }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+			add_political_power = 50
+			is_puppet_of = SPR
+			add_popularity = { ideology = fascism popularity = 0.6 }
+		}
+	}
+
+	#Focus for Noble Republic
+	focus = {
+		id = NAP_noble_republic
+		icon = GFX_NAP_noble_republic-102782
+		x = 8
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_victory }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = NAP_RNP_democratic
+			add_stability = 0.1
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+			add_popularity = { ideology = democratic popularity = 0.5 }
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			set_politics = { ruling_party = democratic elections_allowed = no }
+		}
+	}
+
+	#Focus for Spanish support
+	focus = {
+		id = NAP_spanish_support
+		icon = GFX_
+		x = 9
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_confirm_our_religion 
+			focus = NAP_less_feudalism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 200
+		}
+		
+		completion_reward = {
+			add_political_power = -200
+			has_opinion = { target = SPR value < 100 }
+			add_stability = -0.075
+			add_manpower = -8000
+			add_opinion_modifier = { target = SPR modifier = medium_increase }
+		}
+	}
+
+	#Focus for Noble opposition
+	focus = {
+		id = NAP_noble_opposition
+		icon = GFX_NAP_noble_opposition-101359
+		x = 13
+		y = 7
+		cost = 3
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_become_french_puppet }
+		mutually_exclusive = { focus = NAP_a_french_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			start_civil_war = { ideology = neutrality size = 0.7 }
+		}
+	}
+
+	#Focus for Pope as king
+	focus = {
+		id = NAP_pope_as_king
+		icon = GFX_NAP_pope_as_king-99965
+		x = 13
+		y = 8
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_noble_opposition }
+		mutually_exclusive = { focus = NAP_the_emperor_as_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_government = neutrality
+			has_government = fascism
+		}
+		
+		completion_reward = {
+			PAP = { puppet = NAP }
+		}
+	}
+
+	#Focus for The Emperor as king
+	focus = {
+		id = NAP_the_emperor_as_king
+		icon = GFX_NAP_the_emperor_as_king-102667
+		x = 15
+		y = 8
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_noble_opposition }
+		mutually_exclusive = { focus = NAP_pope_as_king }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_government = fascism
+		}
+		
+		completion_reward = {
+			AUS = { puppet = NAP }
+		}
+	}
+
+	#Focus for Meet the pope
+	focus = {
+		id = NAP_meet_the_pope
+		icon = GFX_NAP_meet_the_pope-99965
+		x = 28
+		y = 2
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_new_italian_league }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_faction = PAP
+		}
+	}
+
+	#Focus for Meet Venice
+	focus = {
+		id = NAP_meet_venice
+		icon = GFX_NAP_meet_venice-102666
+		x = 26
+		y = 2
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_new_italian_league }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_faction = VNI
+		}
+	}
+
+	#Focus for meet the emperor
+	focus = {
+		id = NAP_meet_the_emperor
+		icon = GFX_NAP_meet_the_emperor-102661
+		x = 24
+		y = 2
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_new_italian_league }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_faction = AUS
+		}
+	}
+
+	#Focus for Alliance with florence?
+	focus = {
+		id = NAP_alliance_with_florence
+		icon = GFX_NAP_alliance_with_florence-102660
+		x = 22
+		y = 2
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_new_italian_league }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_faction = TUS
+		}
+	}
+
+	#Focus for help allies
+	focus = {
+		id = NAP_help_allies
+		icon = GFX_goal_generic_territory_or_war
+		x = 17
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_support }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for No more french
+	focus = {
+		id = NAP_no_more_french
+		icon = GFX_focus_focus_fra_maquis
+		x = 19
+		y = 6
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_cateaucambrsis_peace }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.25
+			add_opinion_modifier = { target = FRA modifier = medium_decrease }
+		}
+	}
+
+	#Focus for Diocesi power
+	focus = {
+		id = NAP_diocesi_power
+		icon = GFX_NAP_diocesi_power-102668
+		x = 19
+		y = 7
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_no_more_french }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			add_opinion_modifier = { target = PAP modifier = medium_increase }
+		}
+	}
+
+	#Focus for A viceroy
+	focus = {
+		id = NAP_a_viceroy
+		icon = GFX_focus_spa_caudillo_of_spain
+		x = 21
+		y = 8
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_consolidate_power }
+		mutually_exclusive = { focus = NAP_don_carlos }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = { ideology = fascism popularity = -0.1 }
+		}
+	}
+
+	#Focus for Focus on quality
+	focus = {
+		id = NAP_focus_on_quality
+		icon = GFX_goal_generic_construction2
+		x = 35
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_new_houses }
+		mutually_exclusive = { focus = NAP_focus_on_speed }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 1 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 6 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP }
+	##		production_factory_efficiency_gain_factor = 0.6
+		}
+	}
+
+	#Focus for focus on speed
+	focus = {
+		id = NAP_focus_on_speed
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 33
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_new_houses }
+		mutually_exclusive = { focus = NAP_focus_on_quality }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 1 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 3 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP }
+				add_stability = 0.35
+	##			production_speed_buildings_factor = 0.5
+		}
+	}
+
+	#Focus for Internal progress
+	focus = {
+		id = NAP_internal_progress
+		icon = GFX_goal_generic_position_armies
+		x = 37
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			NAP = { has_completed_focus = NAP_Don_Carlos }
+		}
+		
+		available = {
+			NAP = { has_completed_focus = NAP_Consolidate_power }
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Stabilized situation
+	focus = {
+		id = NAP_stabilized_situation
+		icon = GFX_goal_generic_national_unity
+		x = 29
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_spanish_protection 
+		}
+		prerequisite = { 
+			focus = NAP_build_royal_palace 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+	}
+
+	#Focus for New houses
+	focus = {
+		id = NAP_new_houses
+		icon = GFX_goal_generic_soviet_construction
+		x = 33
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_internal_progress }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 1 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+				`	type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+	##			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER 
+			}
+		}
+	}
+
+	#Focus for Quartieri Spagnoli
+	focus = {
+		id = NAP_quartieri_spagnoli
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 33
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_a_popular_govern }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -5 }
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for a popular govern
+	focus = {
+		id = NAP_a_popular_govern
+		icon = GFX_goal_generic_propaganda
+		x = 33
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_focus_on_speed }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 1 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			add_popularity = { ideology = fascism popularity = 0.2 }
+	##		production_speed_industrial_complex_factor = 0.3
+		}
+	}
+
+	#Focus for rinascimental city grid
+	focus = {
+		id = NAP_rinascimental_city_grid
+		icon = GFX_focus_usa_build_the_pentagon
+		x = 35
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_raise_taxes }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 5 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+	##		production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+
+	#Focus for Military
+	focus = {
+		id = NAP_military
+		icon = GFX_goal_generic_major_war
+		x = 41
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_internal_progress }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Castel Nuovo
+	focus = {
+		id = NAP_castel_nuovo
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_military }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory 
+						size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Mediterranean question
+	focus = {
+		id = NAP_mediterranean_question
+		icon = GFX_goal_generic_navy_battleship
+		x = 42
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_military }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = dockyard size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = dockyard level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = dockyard size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = dockyard level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Fortify Apulia
+	focus = {
+		id = NAP_fortify_apulia
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 40
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_castel_nuovo }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Fortify Calabria
+	focus = {
+		id = NAP_fortify_calabria
+		icon = GFX_goal_generic_neutrality_focus
+		x = 40
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_fortify_apulia }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for fortify abruzzi
+	focus = {
+		id = NAP_fortify_abruzzi
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 41
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_fortify_calabria 
+		}
+		prerequisite = { 
+			focus = NAP_new_ships 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Fortify Bari
+	focus = {
+		id = NAP_fortify_bari
+		icon = GFX_goal_generic_major_war
+		x = 42
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_mediterranean_question }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = dockyard size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = dockyard 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for New ships
+	focus = {
+		id = NAP_new_ships
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 42
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_fortify_bari }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = dockyard size > 0 
+							include_locked = yes 
+						} 
+					} 
+					add_extra_state_shared_building_slots = 1 
+					add_building_construction = { 
+						type = dockyard 
+						level = 1 
+						instant_build = yes 
+					} 
+					set_state_flag = NAP 
+				}
+			add_manpower = 2000
+		}
+	}
+
+	#Focus for Form italy
+	focus = {
+		id = NAP_form_italy
+		icon = GFX_focus_generic_adriatic_sea_focus
+		x = 38
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_don_carlos }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_stability < 0.6
+			has_political_power > 50
+			date > 1556.1.1
+		}
+		completion_reward = {
+			NAP = { add_state_claim = 2 }
+			NAP = { add_state_claim = 868 }
+			NAP = { add_state_claim = 821 }
+			NAP = { add_state_claim = 870 }
+			NAP = { add_state_claim = 879 }
+			NAP = { add_state_claim = 162 }
+			NAP = { add_state_claim = 878 }
+			NAP = { add_state_claim = 872 }
+			NAP = { add_state_claim = 871 }
+			NAP = { add_state_claim = 881 }
+			NAP = { add_state_claim = 159 }
+			NAP = { add_state_claim = 874 }
+		}
+	}
+
+	#Focus for Ask the crown of italy
+	focus = {
+		id = NAP_ask_the_crown_of_italy
+		icon = GFX_NAP_ask_the_crown_of_italy-102690
+		x = 38
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_form_italy }
+		mutually_exclusive = { 
+			focus = NAP_ask_the_crown_of_italy 
+			focus = NAP_ask_to_form_a_confederation 
+			focus = NAP_venetiansavoyard_accord 
+		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_annex_war_goal = SAV
+			has_annex_war_goal = FIR
+			has_annex_war_goal = SIE
+			has_annex_war_goal = VEN
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Interior instability
+	focus = {
+		id = NAP_interior_instability
+		icon = GFX_NAP_interior_instability-101359
+		x = 35
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_maybe }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 50
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = { ideology = fascism popularity = -0.3 }
+		}
+	}
+
+	#Focus for Ask to form a confederation
+	focus = {
+		id = NAP_ask_to_form_a_confederation
+		icon = GFX_goal_generic_territory_or_war
+		x = 41
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_form_italy }
+		mutually_exclusive = { focus = NAP_ask_the_crown_of_italy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_faction = "Italian Confederation"
+		}
+	}
+
+	#Focus for War with italian states
+	focus = {
+		id = NAP_war_with_italian_states
+		icon = GFX_goal_generic_army_artillery2
+		x = 44
+		y = 10
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_venetiansavoyard_accord }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_to_faction = VNI
+			add_to_faction = SVY
+			declare_war_on = { target = PAP type = annex_everything }
+			declare_war_on = { target = URB type = annex_everything }
+			declare_war_on = { target = TUS type = annex_everything }
+			declare_war_on = { target = SNA type = annex_everything }
+			declare_war_on = { target = LUC type = annex_everything }
+			declare_war_on = { target = MOD type = annex_everything }
+			declare_war_on = { target = FER type = annex_everything }
+		}
+	}
+
+	#Focus for Allies intervention
+	focus = {
+		id = NAP_allies_intervention
+		icon = GFX_NAP_allies_intervention-102666
+		x = 44
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_war_with_italian_states }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			is_in_faction_with = SVY
+			is_in_faction_with = VNI
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+		}
+	}
+
+	#Focus for mecenatism
+	focus = {
+		id = NAP_mecenatism
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 31
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_new_houses }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for every church an opera
+	focus = {
+		id = NAP_every_church_an_opera
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 31
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_mecenatism }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Develope Castel Capuano
+	focus = {
+		id = NAP_develope_castel_capuano
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 15
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_build_via_toledo }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Centralization of justice
+	focus = {
+		id = NAP_centralization_of_justice
+		icon = GFX_goal_generic_neutrality_focus
+		x = 19
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pedro_lvarez_de_toledo }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_popularity = { ideology = neutrality popularity = -0.1 }
+		}
+	}
+
+	#Focus for Build "Via Toledo"
+	focus = {
+		id = NAP_build_via_toledo
+		icon = GFX_focus_generic_industry_2
+		x = 16
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pedro_lvarez_de_toledo }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2 
+					instant_build = yes 
+				} 
+			}
+			add_to_variable = {money = -100}
+		}
+	}
+
+	#Focus for New paintings for Castel Capuano
+	focus = {
+		id = NAP_new_paintings_for_castel_capuano
+		icon = GFX_focus_generic_industry_3
+		x = 31
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_every_church_an_opera }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Chiesa del Gesù delle Monache
+	focus = {
+		id = NAP_chiesa_del_ges_delle_monache
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 31
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_new_paintings_for_castel_capuano }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for Fall of Don Pedro
+	focus = {
+		id = NAP_fall_of_don_pedro
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 25
+		y = 14
+		cost = 10
+		
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = NAP_a_more_catholic_nation 
+		}
+		prerequisite = { 
+			focus = NAP_zlEaPOXw 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			date > 1560.1.1
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			retire_country_leader = yes
+		}
+	}
+
+	#Focus for Iron justice
+	focus = {
+		id = NAP_iron_justice
+		icon = GFX_goal_generic_territory_or_war
+		x = 27
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pedro_pacheco }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = fascism popularity = -0.1 }
+		}
+	}
+
+	#Focus for A more catholic nation
+	focus = {
+		id = NAP_a_more_catholic_nation
+		icon = GFX_focus_por_concordat
+		x = 27
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_suppress_brigants 
+		}
+		prerequisite = { 
+			focus = NAP_agrarian_question 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_popularity = { ideology = fascism popularity = -0.1 }
+		}
+	}
+
+	#Focus for Develope the Kingdom
+	focus = {
+		id = NAP_develope_the_kingdom
+		icon = GFX_focus_generic_industry_3
+		x = 23
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_continue_public_works }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 5 
+					instant_build = yes 
+				} 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+	##		production_factory_efficiency_gain_factor = 1
+		}
+	}
+
+	#Focus for Develope The capital
+	focus = {
+		id = NAP_develope_the_capital
+		icon = GFX_focus_generic_industry_2
+		x = 23
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_develope_the_kingdom }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2 
+					instant_build = yes 
+				} 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 1 
+					instant_build = yes 
+				} 
+			set_state_flag = NAP 
+		}
+		random_owned_controlled_state = { 
+			limit = { 
+				free_building_slots = {
+					building = industrial_complex size > 0 
+					include_locked = yes 
+				} 
+			} 
+			add_extra_state_shared_building_slots = 1 
+			add_building_construction = { 
+				type = industrial_complex 
+				level = 1 
+				instant_build = yes 
+			} 
+			set_state_flag = NAP 
+		}
+		}
+	}
+
+	#Focus for Suppress brigants
+	focus = {
+		id = NAP_suppress_brigants
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		x = 27
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_iron_justice }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.2
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_popularity = { ideology = communism popularity = -0.1 }
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+		}
+	}
+
+	#Focus for Pietro Afan di Ribera
+	focus = {
+		id = NAP_pietro_afan_di_ribera
+		icon = GFX_NAP_pietro_afan_di_ribera-102784
+		x = 30
+		y = 16
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_road_to_60 }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_country_leader = { 
+				name = "Pedro Afán de Ribera" 
+				desc = "" 
+				picture = "Ribera.dds" 
+				expire = "1965.1.1" 
+				ideology = despotism traits = { } 
+			}
+			create_country_leader = { 
+				name = "Pedro Afán de Ribera" 
+				desc = "" picture = "Ribera.dds" 
+				expire = "1965.1.1" 
+				ideology = nazism traits = { } 
+			}
+		}
+	}
+
+	#Focus for Defend Pozzuoli from Pirates
+	focus = {
+		id = NAP_defend_pozzuoli_from_pirates
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 19
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_centralization_of_justice }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			num_of_naval_factories > 10
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.04
+		}
+	}
+
+	#Focus for Defend the nation
+	focus = {
+		id = NAP_defend_the_nation
+		icon = GFX_focus_generic_support_the_left_right
+		x = 19
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_defend_pozzuoli_from_pirates }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			add_manpower = 2000
+			add_stability = -0.05
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Fall of Don Pedro
+	focus = {
+		id = NAP_fall_of_don_pedro
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 17
+		y = 14
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_demolish_old_structures 
+		}
+		prerequisite = { 
+			focus = NAP_churchs_in_every_quarters 
+		}
+		prerequisite = { 
+			focus = NAP_defend_the_nation 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			date > 1554.1.1
+		}
+		
+		completion_reward = {
+			kill_country_leader = yes
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	#Focus for road to 60
+	focus = {
+		id = NAP_road_to_60
+		icon = GFX_goal_generic_build_tank
+		x = 30
+		y = 15
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_fall_of_don_pedro 
+		}
+		prerequisite = { 
+			focus = NAP_fall_of_don_pedro 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Try to introduce the inquisition
+	focus = {
+		id = NAP_try_to_introduce_the_inquisition
+		icon = GFX_focus_rom_parties_end
+		x = 30
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NAP_pietro_afan_di_ribera }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.3
+			add_popularity = { ideology = fascism popularity = -0.5 }
+		}
+	}
+
+	#Focus for it"s a success
+	focus = {
+		id = NAP_its_a_success
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 29
+		y = 18
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_try_to_introduce_the_inquisition }
+		mutually_exclusive = { focus = NAP_it_fail }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.03
+			add_popularity = { ideology = fascism popularity = -0.1` }
+			add_popularity = { ideology = communism popularity = 0.2 }
+		}
+	}
+
+	#Focus for it fail
+	focus = {
+		id = NAP_it_fail
+		icon = GFX_goal_generic_trade
+		x = 31
+		y = 18
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_try_to_introduce_the_inquisition }
+		mutually_exclusive = { focus = NAP_its_a_success }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 20
+			add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+	#Focus for Less church"s power
+	focus = {
+		id = NAP_less_churchs_power
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 35
+		y = 17
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pietro_afan_di_ribera }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 150
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.5 }
+			add_stability = -0.5
+			add_political_power = -150
+		}
+	}
+
+	#Focus for Don"t publish Bolle and documents of church
+	focus = {
+		id = NAP_dont_publish_bolle_and_documents_of_church
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 35
+		y = 18
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_less_churchs_power }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_opinion = { target = PAP value < -79 }
+		}
+		
+		completion_reward = {
+			add_stability = -0.3
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Excommunication
+	focus = {
+		id = NAP_excommunication
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 34
+		y = 19
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_dont_publish_bolle_and_documents_of_church }
+		mutually_exclusive = { focus = NAP_back_down_on_laicism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_opinion = { target = PAP value < -50 }
+			has_opinion = { target = FRA value < -50 }
+			has_opinion = { target = SPR value < -50 }
+			has_opinion = { target = AUS value < -50 }
+		}
+		
+		completion_reward = {
+			start_civil_war = { ideology = neutrality size = 0.5 }
+			add_stability = -0.1
+		}
+	}
+
+	#Focus for Back down on laicism
+	focus = {
+		id = NAP_back_down_on_laicism
+		icon = GFX_goal_generic_alliance
+		x = 36
+		y = 19
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_dont_publish_bolle_and_documents_of_church }
+		mutually_exclusive = { 
+			focus = NAP_excommunication 
+			focus = NAP_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_opinion = { target = PAP value < 50 }
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 40
+		}
+	}
+
+	#Focus for Crack down on brigantaggio
+	focus = {
+		id = NAP_crack_down_on_brigantaggio
+		icon = GFX_focus_up_joan_of_arc
+		x = 30
+		y = 19
+		cost = 12
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_its_a_success 
+			focus = NAP_it_fail 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_manpower > 10000
+		}
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Rebellion!
+	focus = {
+		id = NAP_rebellion
+		icon = GFX_focus_rom_parties_end
+		x = 34
+		y = 20
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_excommunication }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			start_civil_war = { ideology = communism size = 0.5 }
+		}
+	}
+
+	#Focus for Continue the road of modernization
+	focus = {
+		id = NAP_continue_the_road_of_modernization
+		icon = GFX_goal_generic_forceful_treaty
+		x = 36
+		y = 20
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_back_down_on_laicism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				} 
+			}
+		}
+	}
+
+	#Focus for Opnion"s pope isn"t important
+	focus = {
+		id = NAP_opnions_pope_isnt_important
+		icon = GFX_focus_rom_handle_king
+		x = 40
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pope_opposition }
+		mutually_exclusive = { focus = NAP_we_must_unite_italy_against_protestant }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			declare_war_on = { target = PAP type = annex_everything }
+			add_opinion_modifier = { target = FRA modifier = large_decrease }
+			add_opinion_modifier = { target = SPR modifier = large_decrease }
+			add_opinion_modifier = { target = AUS modifier = large_decrease }
+			add_opinion_modifier = { target = POR modifier = large_decrease }
+			add_opinion_modifier = { target = POR modifier = large_decrease }
+		}
+	}
+
+	#Focus for Pope opposition
+	focus = {
+		id = NAP_pope_opposition
+		icon = GFX_goal_generic_small_arms
+		x = 38
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_ask_the_crown_of_italy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = PAP modifier = large_decrease }
+			add_stability = -0.05
+			FRA = { give_guarantee = PAP }
+		}
+	}
+
+	#Focus for We must unite italy against protestant
+	focus = {
+		id = NAP_we_must_unite_italy_against_protestant
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 36
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pope_opposition }
+		mutually_exclusive = { focus = NAP_opnions_pope_isnt_important }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_political_power > 7000
+			has_stability > 0.4
+			has_government = fascism
+		}
+		completion_reward = {
+			add_stability = -0.04
+			add_popularity = { ideology = communism popularity = 0.2 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+
+	#Focus for Implement taxation
+	focus = {
+		id = NAP_implement_taxation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 25
+		y = 17
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pietro_afan_di_ribera }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_stability = -0.05
+			add_popularity = { ideology = fascism popularity = -0.5 }
+		}
+	}
+
+	#Focus for Develope The capital
+	focus = {
+		id = NAP_develope_the_capital
+		icon = GFX_NAP_develope_the_capital-102675
+		x = 24
+		y = 18
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_implement_taxation }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 50
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 2
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = dockyard size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = dockyard 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Develope the Kingdom
+	focus = {
+		id = NAP_develope_the_kingdom
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		x = 26
+		y = 18
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_implement_taxation }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = arms_factory size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Militarization
+	focus = {
+		id = NAP_militarization
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 25
+		y = 3
+		cost = 2
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_alliance_with_florence 
+		}
+		prerequisite = { 
+			focus = NAP_meet_the_emperor 
+		}
+		prerequisite = { 
+			focus = NAP_meet_the_pope 
+		}
+		prerequisite = { 
+			focus = NAP_meet_venice 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 10000
+			swap_ideas = {
+				add_idea = partial_economic_mobilisation
+				remove_idea = war_economy
+			}
+		}
+	}
+
+	#Focus for Feed the poor
+	focus = {
+		id = NAP_feed_the_poor
+		icon = GFX_NAP_feed_the_poor-102029
+		x = 25
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_pedro_pacheco }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1 }
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_stability = 0.09
+			add_political_power = 100
+	##		production_factory_efficiency_gain_factor = 5
+			add_to_variable = {money = -90}
+	##		weekly_manpower = 0.05
+		}
+	}
+
+	#Focus for Agrarian question
+	focus = {
+		id = NAP_agrarian_question
+		icon = GFX_NAP_agrarian_question-102028
+		x = 25
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_feed_the_poor }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			 has_political_power > 50
+		}
+		
+		completion_reward = {
+	##		production_factory_efficiency_gain_factor = 0.2
+			add_stability = 0.05
+			add_political_power = -50
+		}
+	}
+
+	#Focus for Venetian-Savoyard accord
+	focus = {
+		id = NAP_venetiansavoyard_accord
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 44
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_form_italy }
+		mutually_exclusive = { focus = NAP_ask_the_crown_of_italy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			VNI = { add_state_claim = 876 }
+			VNI = { add_state_claim = 869 }
+			VNI = { add_state_claim = 39 }
+			VNI = { add_state_claim = 736 }
+			SVY = { add_state_claim = 867 }
+			SVY = { add_state_claim = 1 }
+			SVY = { add_state_claim = 114 }
+			SVY = { add_opinion_modifier = { target = NAP modifier = huge_increase } }
+			add_opinion_modifier = { target = SVY modifier = huge_increase }
+			VNI = { add_opinion_modifier = { target = NAP modifier = huge_increase } }
+			add_opinion_modifier = { target = VNI modifier = huge_increase }
+			leave_faction = yes
+			create_faction = "New Italian League"
+		}
+	}
+
+	#Focus for Resistance to occupation
+	focus = {
+		id = NAP_resistance_to_occupation
+		icon = GFX_focus_rom_abdicate
+		x = 44
+		y = 12
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_allies_intervention }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		completion_reward = {
+			add_stability = -0.2
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+
+	#Focus for Unify occupied territories
+	focus = {
+		id = NAP_unify_occupied_territories
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 44
+		y = 13
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_resistance_to_occupation }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				} 
+			}
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				} 
+			}
+			random_owned_controlled_state = { 
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				} 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					free_building_slots = { 
+						building = industrial_complex size > 0 
+						include_locked = yes 
+					} 
+				} 
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = { 
+					type = industrial_complex 
+					level = 1 
+					instant_build = yes 
+				} 
+				set_state_flag = NAP 
+			}
+		}
+	}
+
+	#Focus for Confirm our religion
+	focus = {
+		id = NAP_confirm_our_religion
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { focus = NAP_catholic_education }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.04
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+	#Focus for Finished reforms
+	focus = {
+		id = NAP_finished_reforms
+		icon = GFX_goal_generic_position_armies
+		x = 33
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		prerequisite = { 
+			focus = NAP_big_city_confused_city 
+			focus = NAP_a_great_capital 
+			focus = NAP_chiesa_del_ges_delle_monache 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 100
+		}
+	}
+	
+#End of focuses 
+ }

@@ -1,0 +1,38 @@
+
+TUR_tradesman_support = {
+	
+	icon = GFX_decision_category_eng_concessions_to_the_trade_unions
+
+	allowed = {
+            original_tag = TUR
+		}
+
+	priority = {
+		base = 10
+	}
+
+	on_map_area = {
+		name = TUR_tradesman_encourage
+		state = 341
+		state = 348
+		state = 49
+		state = 340
+		state = 353
+		state = 339
+		state = 354
+		state = 184
+		state = 344
+		state = 554
+		state = 342
+		state = 291
+		state = 349
+		state = 345
+		state = 346
+		zoom = 250
+	}
+
+	scripted_gui = tradesman_TUR_gui
+
+	visible = {
+	 }
+	}

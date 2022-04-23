@@ -1,0 +1,275 @@
+ideas = {
+	
+	country = {
+	
+		maritime_republic = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = maritime_republic
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				naval_coordination = 0.2
+				naval_speed_factor = 0.1
+			}
+
+		}
+		
+		mediterranean_trade_hegemony = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = mediterranean_trade_hegemony
+			
+			modifier = {
+				convoy_retreat_speed = 0.3
+				consumer_goods_factor = -0.1
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	marco_antonio_bragadin_p = {
+			
+			picture = marco_antonio_bragadin
+			
+			allowed = {
+				original_tag = VNI
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jacopo_soranzo_p = {
+			
+			picture = jacopo_soranzo
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		pietro_loredan_p = {
+			
+			picture = pietro_loredan
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nicolo_da_ponte_p = {
+			
+			picture = nicolo_da_ponte
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		marco_antonio_bragadin_a = {
+
+			picture = marco_antonio_bragadin
+			
+			allowed = {
+				original_tag = VNI
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		jacopo_soranzo = {
+
+			picture = jacopo_soranzo
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		sebastiano_venier = {
+
+			picture = sebastiano_venier
+			
+			allowed = {
+				original_tag = VNI
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    agostino_barbarigo = {
+		
+		    picture = agostino_barbarigo
+			
+			allowed = {
+				original_tag = VNI
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+    }
+	
+	high_command = {
+
+	    marco_antonio_bragadin = {
+			ledger = army
+
+			picture = marco_antonio_bragadin
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pietro_loredan = {
+			ledger = army
+			
+			picture = pietro_loredan
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nicolo_da_ponte = {
+			ledger = army
+			
+			picture = nicolo_da_ponte
+			
+			allowed = {
+				original_tag = VNI
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

@@ -1,0 +1,310 @@
+ideas = {
+	
+	country = {
+	
+		habsburg_religious_oppression = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = habsburg_religious_oppression
+			
+			modifier = {
+				 stability_factor = -0.3
+				 war_support_factor = 0.3
+				 industrial_capacity_factory = -0.2
+			}
+
+		}
+		
+		successor_of_burgundy = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = { 
+				always = yes
+			}
+
+			picture = successor_of_burgundy
+			
+			modifier = {
+				 political_power_gain = 0.15
+				 consumer_goods_factor = -0.1
+				 political_advisor_cost_factor = -0.25
+			}
+			
+		}
+
+    }
+
+
+	political_advisor = {
+	
+    	lamoral_of_egmont = {
+			
+			picture = lamoral_of_egmont
+			
+			allowed = {
+				original_tag = HOL
+			}			
+
+			traits = { chief_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		william_the_silent = {
+			
+			picture = william_the_silent
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { finance_minister }
+
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		emmanuel_philibert = {
+			
+			picture = emmanuel_philibert
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { foreign_diplomat }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    louis_of_nassau = {
+
+			picture = louis_of_nassau
+
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_vi = {
+			
+			picture = john_vi
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { fortification_engineer }
+
+			do_effect = {
+				If = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		
+	}
+	
+	army_chief = {
+
+		lamoral_of_egmont_a = {
+
+			picture = lamoral_of_egmont
+			
+			allowed = {
+				original_tag = HOL
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		william_the_silent_a = {
+
+			picture = william_the_silent
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		sancho_avila = {
+
+			picture = sancho_avila
+			
+			allowed = {
+				original_tag = HOL
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+    }
+	
+	high_command = {
+
+	    lamoral_of_egmont_b = {
+			ledger = army
+
+			picture = lamoral_of_egmont
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_vi_a = {
+			ledger = army
+			
+			picture = john_vi
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		louis_of_nassau_a = {
+		
+			ledger = army
+
+			picture = louis_of_nassau
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		sancho_avila_a = {
+			ledger = navy
+			
+			picture = sancho_avila
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}		
+
+}

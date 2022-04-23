@@ -1,0 +1,151 @@
+form_japanese_shogunate_category = {
+	
+	form_japanese_shogunate = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = SHI
+				original_tag = ITO
+				original_tag = KIK
+				original_tag = OTO
+				original_tag = OUC
+				original_tag = SHO
+				original_tag = MRI
+				original_tag = AMA
+				original_tag = AKA
+				original_tag = YAM
+				original_tag = ISS
+				original_tag = HOS
+				original_tag = KON
+				original_tag = CHO
+				original_tag = HAT
+				original_tag = TSU
+				original_tag = KIT
+				original_tag = ASH
+				original_tag = ASA
+				original_tag = TOK
+				original_tag = ODA
+				original_tag = IMA
+				original_tag = OGA
+				original_tag = ETC
+				original_tag = TAK
+				original_tag = HOJ
+				original_tag = CHB
+				original_tag = SAT
+				original_tag = UTS
+				original_tag = UES
+				original_tag = DAT
+				original_tag = SHB
+				original_tag = AND
+				original_tag = NAN
+				original_tag = AIN
+			}
+		}
+
+		available = {
+			is_subject = no
+			# All clans
+			custom_trigger_tooltip = {
+				tooltip = form_country_japan_required_states_tt
+				controls_state = 528
+				controls_state = 1061
+				controls_state = 1062
+				controls_state = 1063
+				controls_state = 1064
+				controls_state = 1065
+				controls_state = 1066
+				controls_state = 1067
+				controls_state = 1068
+				controls_state = 1069
+				controls_state = 1070
+				controls_state = 1071
+				controls_state = 1072
+				controls_state = 1073
+				controls_state = 1074
+				controls_state = 1075
+				controls_state = 1076
+				controls_state = 1077
+				controls_state = 1078
+				controls_state = 1079
+				controls_state = 1080
+				controls_state = 1081
+				controls_state = 1082
+				controls_state = 1083
+				controls_state = 1084
+				controls_state = 1085
+				controls_state = 1086
+				controls_state = 1087
+				controls_state = 1088
+				controls_state = 1089
+				controls_state = 1090
+				controls_state = 1091
+				controls_state = 1092
+				controls_state = 1093
+				controls_state = 533
+				controls_state = 535
+				controls_state = 282
+						}
+		}
+
+		visible = {
+			OR = {
+				original_tag = SHI
+				original_tag = ITO
+				original_tag = KIK
+				original_tag = OTO
+				original_tag = OUC
+				original_tag = SHO
+				original_tag = MRI
+				original_tag = AMA
+				original_tag = AKA
+				original_tag = YAM
+				original_tag = ISS
+				original_tag = HOS
+				original_tag = KON
+				original_tag = CHO
+				original_tag = HAT
+				original_tag = TSU
+				original_tag = KIT
+				original_tag = ASH
+				original_tag = ASA
+				original_tag = TOK
+				original_tag = ODA
+				original_tag = IMA
+				original_tag = OGA
+				original_tag = ETC
+				original_tag = TAK
+				original_tag = HOJ
+				original_tag = CHB
+				original_tag = SAT
+				original_tag = UTS
+				original_tag = UES
+				original_tag = DAT
+				original_tag = SHB
+				original_tag = AND
+				original_tag = NAN
+				original_tag = AIN
+			}
+			NOT = { has_global_flag = form_japan_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = JAU
+			set_capital = 1075
+
+			hidden_effect = {
+				set_global_flag = form_japan_flag
+			}
+		}		
+
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

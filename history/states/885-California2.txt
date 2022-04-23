@@ -1,0 +1,27 @@
+
+state={
+	id=885
+	name="STATE_885"
+	manpower=10000
+	
+	state_category = metropolis
+	
+	resources={
+		oil=18 
+		aluminium=8 
+	}
+
+	history={
+		owner = XXX
+	    add_core_of = XXX
+		buildings = {
+			infrastructure = 3
+			
+		}
+		
+	}
+
+	provinces={
+		1562 12374 7986 7517 823 4727 11757 11795 12303 4657
+	}
+}

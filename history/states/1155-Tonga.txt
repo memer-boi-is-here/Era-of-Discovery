@@ -1,0 +1,22 @@
+
+state={
+	id=1155
+	name="Tonga"
+	manpower = 25000
+	
+	state_category = town
+
+	history={
+		owner = TNG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = TNG
+	}
+
+	provinces={
+		13264 13265
+	}
+}

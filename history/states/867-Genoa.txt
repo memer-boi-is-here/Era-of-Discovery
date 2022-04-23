@@ -1,0 +1,32 @@
+state={
+	id=867
+	name="STATE_867"
+	history = {
+	    victory_points = {
+			6788 10 
+		}
+		victory_points = {
+			3772 3 
+		}
+		owner = GEN
+		add_core_of = GEN
+		buildings = {
+			infrastructure = 3
+			arms_factory = 5
+			industrial_complex = 7
+			dockyard = 3
+			
+			6788 = {
+				naval_base = 4
+
+			}
+			
+		}
+		}
+	provinces={
+		3772 6788 11891 
+	}
+	manpower=43231
+	buildings_max_level_factor=1.000
+	state_category=town
+}

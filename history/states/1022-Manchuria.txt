@@ -1,0 +1,20 @@
+
+state={
+	id=1022
+	name="Manchuria"
+	
+	history={
+		owner = JNZ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JNZ
+	}
+	
+	provinces={
+		944 973 3944 6806 6964 9766 9897
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

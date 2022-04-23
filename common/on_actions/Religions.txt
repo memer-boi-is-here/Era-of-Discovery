@@ -1,0 +1,1714 @@
+on_actions = {
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = FRA
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = AUS
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SAN
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = RAG
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SPR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BRN
+	   }
+	   set_variable ={religion = 1}}}}   
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DEN
+	   }
+	   set_variable ={religion = 1}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SWE
+	   }
+	   set_variable ={religion = 1}}}}
+   	      on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = POM
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ENG
+	   }
+	   set_variable ={religion = 5}}}}  
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SCO
+	   }
+	   set_variable ={religion = 2}}}}  
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = RUS
+	   }
+	   set_variable ={religion = 4}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SVY
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = PAP
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = URB
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = NAP
+	   }
+	   set_variable ={religion = 2}}}}  
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TUS
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SNA
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LUC
+	   }
+	   set_variable ={religion = 2}}}} 	   
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = FER
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MOD
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MIL
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = VNI
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = GEN
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = PRM
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = POR
+	   }
+	   set_variable ={religion = 2}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = NSP
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SPP
+	   }
+	   set_variable ={religion = 2}}}} 	
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BPC
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HOL
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = POL
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LIT
+	   }
+	   set_variable ={religion = 2}}}}   
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = PRE
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SLA
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MLT
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SAX
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MNT
+	   }
+	   set_variable ={religion = 4}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TUR
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = PER
+	   }
+	   set_variable ={religion = 7}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LBA
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DJE
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TUN
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ALG
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MOR
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ANI
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SHA
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HEJ
+	   }
+	   set_variable ={religion = 6}}}} 
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SAU
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DAW
+	   }
+	   set_variable ={religion = 6}}}}  
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MIK
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = RAS
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = NAJ
+	   }
+	   set_variable ={religion = 6}}}}   	   
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HAD
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MAH
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = YAS
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HOR
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LIV
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TRA
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MOL
+	   }
+	   set_variable ={religion = 4}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ROM
+	   }
+	   set_variable ={religion = 4}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SWI
+	   }
+	   set_variable ={religion = 3}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BAY
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SAL
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LOR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ULM
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = WUR
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = RAV
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ANS
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = WRZ
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = OLD
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = PLT
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MAI
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BAD
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ALS
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LIE
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TRR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MEK
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HES
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BRE
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = VER
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = THU
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = EFR
+	   }
+	   set_variable ={religion = 3}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HLS
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LUB
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = FRK
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DOR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LUN
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BRU
+	   }
+	   set_variable ={religion = 1}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KLE
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = CLG
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MUN
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DIE
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = CIR
+	   }
+	   set_variable ={religion = 4}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UML
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UIB
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UIM
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TCH
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = TET
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UIC
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = WST
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = EBR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = WBR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = FMN
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MGH
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = EOG
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = CLD
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UCH
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = LTR
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DUE
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MCM
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MSG
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = CRB
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BER
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = IRE
+	   }
+	   set_variable ={religion = 2}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = CRI
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ATK
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KZN
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SIB
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KAZ
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KHI
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = BUK
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MUG
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = DAG
+	   }
+	   set_variable ={religion = 6}}}}
+   on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SOG
+	   }
+	   set_variable ={religion = 6}}}}
+	on_startup= {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MLA
+				}
+			set_variable ={religion = 6}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = OMA
+				}
+				set_variable = {religion = 8}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = HAM
+				}
+				set_variable = {religion = 1}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = OIR
+				}
+				set_variable = {religion = 9}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MON
+				}
+				set_variable = {religion = 9}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CHG
+				}
+				set_variable = {religion = 6}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CHI
+				}
+				set_variable = {religion = 10}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = SOL
+				}
+				set_variable = {religion = 9}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = RAJ
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = VIJ
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CUT
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = GUJ
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = AHM
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BIJ
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = ARA
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KOZ
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KOC
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = PUR
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KAY
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = VND
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BID
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BAR
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KDS
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = GML
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CDP
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = GOL
+				}
+				set_variable = {religion = 2}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BST
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KDY
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KAN
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = PAT
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = KAL
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BOI
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = SIN
+				}
+				set_variable = {religion = 6}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = JAI
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = BIK
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = JOD
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = AMB
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MEW
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MAW
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CHD
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = {
+					is_owned_by = SRI
+				}
+				set_variable = {religion = 11}
+			}
+		}
+	}
+    on_startup = {
+	    effect = {
+		    1176 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    186 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    47 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    185 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    731 = {
+		       set_variable = {religion = 4}}}}				   
+	on_startup = {
+	    effect = {
+		    184 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    106 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    48 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    212 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    211 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    77 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    766 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    192 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    197 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    108 = {
+		       set_variable = {religion = 4}}}}		
+	on_startup = {
+	    effect = {
+		    82 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    107 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    764 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    83 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    103 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    104 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    109 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    45 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    154 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    43 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    987 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    989 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    182 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    183 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    164 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    988 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    187 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    23 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    31 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    32 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    1174 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    19 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    25 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    26 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    20 = {
+		       set_variable = {religion = 3}}}}
+	on_startup = {
+	    effect = {
+		    797 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    113 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    945 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    941 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    942 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    951 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    923 = {
+		       set_variable = {religion = 6}}}}	
+	on_startup = {
+	    effect = {
+		    290 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    131 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    130 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    132 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    122 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    128 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    129 = {
+		       set_variable = {religion = 2}}}}	
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = YER
+	   }
+	   set_variable ={religion = 9}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = EJZ
+	   }
+	   set_variable ={religion = 9}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = UDG
+	   }
+	   set_variable ={religion = 9}}}}	 
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = JNZ
+	   }
+	   set_variable ={religion = 9}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = HXI
+	   }
+	   set_variable ={religion = 9}}}}	   
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KRC
+	   }
+	   set_variable ={religion = 9}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KOR
+	   }
+	   set_variable ={religion = 10}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = SIK
+	   }
+	   set_variable ={religion = 6}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KSM
+	   }
+	   set_variable ={religion = 6}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = ADA
+	   }
+	   set_variable ={religion = 6}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = AJU
+	   }
+	   set_variable ={religion = 6}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = KIL
+	   }
+	   set_variable ={religion = 6}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = GLK
+	   }
+	   set_variable ={religion = 11}}}}
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = MDR
+	   }
+	   set_variable ={religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    89 = {
+		       set_variable = {religion = 4}}}}	 
+	on_startup = {
+	    effect = {
+		    91 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    198 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    203 = {
+		       set_variable = {religion = 4}}}}		
+	on_startup = {
+	    effect = {
+		    226 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    221 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    259 = {
+		       set_variable = {religion = 4}}}}		
+	on_startup = {
+	    effect = {
+		    225 = {
+		       set_variable = {religion = 4}}}}	
+    on_startup= {
+     effect = {
+	 every_state = {
+	   limit = {
+	      is_owned_by = AAC
+	   }
+	   set_variable ={religion = 2}}}}				   
+	on_startup = {
+	    effect = {
+		    29 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    952 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    135 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    950 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    953 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    1131 = {
+		       set_variable = {religion = 4}}}}	
+	on_startup = {
+	    effect = {
+		    1130 = {
+		       set_variable = {religion = 4}}}}
+	on_startup = {
+	    effect = {
+		    954 = {
+		       set_variable = {religion = 2}}}}				   
+	on_startup = {
+	    effect = {
+		    1160 = {
+		       set_variable = {religion = 2}}}}			   
+	on_startup = {
+	    effect = {
+		    1161 = {
+		       set_variable = {religion = 2}}}}		
+	on_startup = {
+	    effect = {
+		    1165 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    1163 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    1164 = {
+		       set_variable = {religion = 2}}}}	
+	on_startup = {
+	    effect = {
+		    876 = {
+		       set_variable = {religion = 2}}}}
+	on_startup = {
+	    effect = {
+		    1150 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    1151 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    1152 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    922 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    461 = {
+		       set_variable = {religion = 6}}}}
+	on_startup = {
+	    effect = {
+		    1154 = {
+		       set_variable = {religion = 6}}}}			   
+}

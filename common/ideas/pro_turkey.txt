@@ -1,0 +1,427 @@
+ideas = {
+
+    country = {
+	    importing_from_france = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = importing_from_france
+			
+			modifier = {
+			   consumer_goods_factor = 0.05
+			}
+		}
+		consolidate_india = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = consolidate_india
+			
+			modifier = {
+			   consumer_goods_factor = 0.05
+			}
+		}
+		fiscal_reform = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fiscal_reform
+			
+			modifier = {
+			   consumer_goods_factor = -0.05
+			   production_speed_buildings_factor = 0.1
+			}
+		}
+		school_reform = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = school_reform
+			
+			modifier = {
+			   research_speed_factor = 0.1
+			}
+		}
+		meso_dev = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = meso_dev
+			
+			modifier = {
+			   consumer_goods_factor = -0.05
+			}
+		}		
+		ottoman_explorers = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = ottoman_explorers
+			
+			modifier = {
+			   consumer_goods_factor = -0.05
+			}
+		}
+		portuguese_explorers = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = portuguese_explorers
+			
+			modifier = {
+			   consumer_goods_factor = -0.1
+			}
+		}
+		taxes_raised = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = taxes_raised
+			
+			modifier = {
+			   consumer_goods_factor = -0.04
+			}
+		}
+		naval_effort = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = naval_effort
+			
+			modifier = {
+			  industrial_capacity_dockyard = 0.2
+			}
+		}
+		specialized_esnaf = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = specialized_esnaf
+			
+			modifier = {
+			  production_speed_buildings_factor = 0.2
+			}
+		}
+		TUR_factory_output = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = TUR_factory_output
+			
+			modifier = {
+			  industrial_capacity_factory  = 0.1
+			}
+		}
+		fund_eco = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fund_eco
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		great_eco = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = great_eco
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		pro_trade_encouraged = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = pro_trade_encouraged
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		trade_supported_india = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = trade_supported_india
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		siege_ability = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = siege_ability
+			
+			targeted_modifier = { tag = POR attack_bonus_against = 0.1 }
+		}
+		battle_of_muscat = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = battle_of_muscat
+			
+			targeted_modifier = { tag = POR attack_bonus_against = 0.25 }
+		}
+		fervor_emperor = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = fervor_emperor
+			
+			targeted_modifier = { tag = PER attack_bonus_against = 0.1 breakthrough_bonus_against = 0.5 }
+		}
+		spot_and_destroy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = spot_and_destroy
+			
+			modifier = { 
+				spotting_chance = 0.4
+				naval_damage_factor = 0.2
+			}
+		}
+		raided_lands = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = raided_lands
+			
+			modifier = {
+			   consumer_goods_factor = 0.05
+			}
+		}
+		raid_mediterranean = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = raid_mediterranean
+			
+			modifier = {
+			   consumer_goods_factor = -0.05
+			}
+		}
+		portuguese_logistics = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = portuguese_logistics
+			
+			modifier = {
+			   consumer_goods_factor = 0.1
+			}
+		}
+		recruitment_indian_pop = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = recruitment_indian_pop
+			
+			modifier = {
+			   conscription_factor = 0.01
+			}
+		}
+		siege_malta = { #Prolox - need icon
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = siege_malta
+			
+			modifier = {
+			   consumer_goods_factor = 0.5
+			}
+		}
+	}
+
+}

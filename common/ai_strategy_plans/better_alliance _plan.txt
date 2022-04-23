@@ -1,0 +1,304 @@
+# comments come after #
+# comments don't affect the game or script
+FRA_ally_TUR_plan = {
+	name = "The Ottomans will protect us"
+	desc = "Be friends with Suleiman"
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		country_exists = TUR
+		OR = {
+			has_completed_focus = FRA_alliance_with_the_ottomans
+			is_in_faction_with = TUR
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = TUR
+			NOT = { country_exists = TUR }
+			NOT = { is_in_faction_with = TUR }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = TUR
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = TUR
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = TUR
+		value = 100
+	}
+}
+
+TUR_ally_FRA_plan = {
+	name = "The French will protect us"
+	desc = "Be friends with Henry"
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		country_exists = FRA
+		OR = {
+			FRA = { has_completed_focus = FRA_alliance_with_the_ottomans }
+			is_in_faction_with = FRA
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = FRA
+			NOT = { country_exists = FRA }
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = FRA
+		value = 100
+	}
+}
+
+FRA_ally_SNA_ = {
+	name = "The Sienese will protect us"
+	desc = "Be friends with Siena"
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		country_exists = FRA
+		OR = {
+			has_completed_focus = FRA_alliance_with_the_republic_of_siena
+			is_in_faction_with = SNA
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = SNA
+			NOT = { country_exists = SNA }
+			NOT = { is_in_faction_with = SNA }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = SNA
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = SNA
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = SNA
+		value = 100
+	}
+}
+
+SNA_ally_FRA_plan = {
+	name = "The French will save us"
+	desc = "Be allies with Henry"
+	allowed = {
+		original_tag = SNA
+	}
+	enable = {
+		country_exists = FRA
+		OR = {
+			FRA = { has_completed_focus = FRA_alliance_with_the_republic_of_siena }
+			FRA = {
+				focus_progress = {
+					focus = FRA_alliance_with_the_republic_of_siena
+					progress > 0
+				}
+			}
+			is_in_faction_with = FRA
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = FRA
+			NOT = { country_exists = FRA }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = FRA
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = FRA
+		value = 100
+	}
+}
+
+#This applies to everyone in FRA faction, and cancels only if they are TUR or no longer in the faction
+FRA_faction_stay_out_of_TUR_war_plan = {
+	name = "Fight SPR only"
+	desc = "TUR can fight their own wars"
+	enable = {
+		is_historical_focus_on = yes
+		OR = {
+			original_tag = FRA
+			is_in_faction_with = FRA
+		}
+	}
+	abort = {
+		OR = {
+			original_tag = TUR
+			is_subject_of = TUR
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+    ai_strategy = {
+        type = diplo_action_desire
+        target = join_allies
+        id = TUR
+        value = -5000
+    }
+	ai_strategy = {
+        type = diplo_action_acceptance
+        target = call_allies
+        id = TUR
+        value = -5000
+    }
+}
+
+#Only the listed tags should join SPR's alliance, if other tags are joining, change the value to -5000
+SPA_faction_neutrality = {
+	name = "SPR historical allies only"
+	desc = "we aren't one"
+	enable = {
+		is_historical_focus_on = yes
+		NOT = {
+			original_tag = SPR
+			original_tag = ENG
+			original_tag = PAP
+			original_tag = AUS
+			original_tag = GEN
+			original_tag = TUS
+			original_tag = MNA
+			original_tag = LOR
+		}
+	}
+	abort = {
+		is_in_faction_with = SPR
+	}
+	ai_strategy = {
+		type = alliance
+		id = SPR
+		value = -500
+	}
+}
+
+#everyone who is in a faction with SPR should stay there, if anyone leaves change the value to 5000
+SPA_stay_in_faction = {
+	name = "SPR non-ideology allies"
+	desc = "Differences don't matter"
+	enable = {
+		is_historical_focus_on = yes
+		is_in_faction_with = SPR
+	}
+	abort = {
+		OR = {
+			has_war_with = SPR
+			NOT = { country_exists = SPR }
+			NOT = { is_in_faction_with = SPR }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = SPR
+		value = 500
+	}
+}
+
+#Only the listed tags should join FRA's alliance, if other tags are joining, change the value to -5000
+FRA_faction_neutrality = {
+	name = "FRA historical allies only"
+	desc = "we aren't one"
+	enable = {
+		is_historical_focus_on = yes
+		NOT = {
+			original_tag = FRA
+			original_tag = TUR
+			original_tag = FER
+			original_tag = MOD
+			original_tag = SNA
+			original_tag = PAP
+			original_tag = PRM
+		}
+	}
+	abort = {
+		is_in_faction_with = FRA
+	}
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = -500
+	}
+}
+
+#everyone who is in a faction with FRA should stay there, if anyone leaves change the value to 5000
+FRA_stay_in_faction = {
+	name = "FRA non-ideology allies"
+	desc = "Differences don't matter"
+	enable = {
+		is_historical_focus_on = yes
+		is_in_faction_with = FRA
+	}
+	abort = {
+		OR = {
+			has_war_with = FRA
+			NOT = { country_exists = FRA }
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = FRA
+		value = 500
+	}
+}
+
+TUR_prepare_for_war = {
+	name = "TUR prepare for war"
+	desc = "Differences don't matter"
+	enable = {
+		is_historical_focus_on = yes
+		is_in_faction_with = FRA
+	}
+	abort = {
+		OR = {
+			has_war_with = FRA
+			NOT = { country_exists = FRA }
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+    ai_strategy = {
+        type = prepare_for_war
+        id = AUS #target country
+        value = 100 #weight
+    }
+}

@@ -1,0 +1,22 @@
+state={
+	id=1139
+	name="Jaisalmer"
+	manpower = 1000
+
+	state_category=rural
+
+	history={
+		owner = JAI
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = JAI
+
+	}
+
+	provinces={
+		10866 12718 
+	}
+}

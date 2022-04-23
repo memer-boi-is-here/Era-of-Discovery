@@ -1,0 +1,458 @@
+characters = {
+	PER_tahmasp_i = {
+		name = "Tahmasp I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/tahmasp_I.dds"
+			}
+		}
+		field_marshal = {
+			traits = { trait_reckless harsh_leader aggressive_assaulter inspirational_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1.1.1.1"
+			id = -1
+		}
+	}
+	PER_ismail_mirza_ii = {
+		name = "Ismail Mirza II"
+		advisor = {
+			slot = high_command
+			idea_token = ismail_mirza_b
+			ledger = army 
+				allowed = {
+					original_tag = PER
+				}
+				traits = {
+					army_logistics_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ismail_mirza_a
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					army_chief_defensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ismail_mirza
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					finance_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				on_add = {
+					add_to_variable = {
+						money_factor = 0.500
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						money_factor = -0.500
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+				modifier = {
+					custom_modifier_tooltip = weekly_income_tt
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_ismail_mirza"
+			}
+			army = {
+				large = "gfx/leaders/PER/portrait_ismail_mirza.dds"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery politically_connected trickster adaptable }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	PER_qarachaqay_khan = {
+		name = "Qarachaqay Khan"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/PER/portrait_qarachaqay_khan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist ambusher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	PER_mohammad_khodabanda = {
+		name = "Mohammad Khodabanda"
+		advisor = {
+			slot = high_command
+			idea_token = mohammad_khodabanda_a
+			ledger = army 
+				allowed = {
+					original_tag = PER
+				}
+				traits = {
+					army_infantry_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mohammad_khodabanda
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					foreign_diplomat 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_mohammad_khodabanda"
+			}
+			army = {
+				large = "gfx/leaders/PER/portrait_mohammad_khodabanda.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious ranger fortress_buster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	PER_sultan_ahmad_mirza = {
+		name = "Sultan Ahmad Mirza"
+		portraits = {
+			army = {
+				small = ""
+			}
+			army = {
+				large = "gfx/leaders/PER/portrait_ahmad_mirza.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold superior_tactician cruiser_captain }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	PER_simon_i = {
+		name = "Simon I"
+		advisor = {
+			slot = political_advisor
+			idea_token = simon_i
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					construction_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = simon_i_a
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_simon_i"
+			}
+			army = {
+				large = "gfx/leaders/PER/portrait_simon_i.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer fleet_protector destroyer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	PER_arvin_parsi = {
+		name = "Arvin Parsi"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1562.1.1.12"
+			id = -1
+		}
+	}
+	PER_arash_faghihinejad = {
+		name = "Arash Faghihinejad"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1556.1.1.12"
+			id = -1
+		}
+	}
+	PER_sadegh_ayrum = {
+		name = "Sadegh Ayrum"
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1566.1.1.12"
+			id = -1
+		}
+	}
+	PER_qarachaqay_khan_a = {
+		advisor = {
+			slot = army_chief
+			idea_token = qarachaqay_khan_a
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					army_chief_offensive_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "qarachaqay_khan_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_qarachaqay_khan"
+			}
+		}
+	}
+	PER_ahmad_mirza_b = {
+		advisor = {
+			slot = high_command
+			idea_token = ahmad_mirza_b
+			ledger = navy 
+				allowed = {
+					original_tag = PER
+				}
+				traits = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ahmad_mirza_b"
+		portraits = {
+			army = {
+				small = "GFX_idea_ahmad_mirza"
+			}
+		}
+	}
+	PER_ahmad_mirza_a = {
+		advisor = {
+			slot = navy_chief
+			idea_token = ahmad_mirza_a
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ahmad_mirza_a"
+		portraits = {
+			army = {
+				small = "GFX_idea_ahmad_mirza"
+			}
+		}
+	}
+	PER_qarachaqay_khan_b = {
+		advisor = {
+			slot = high_command
+			idea_token = qarachaqay_khan_b
+			ledger = army 
+				allowed = {
+					original_tag = PER
+				}
+				traits = {
+					army_regrouping_2 
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "qarachaqay_khan_b"
+		portraits = {
+			army = {
+				small = "GFX_idea_qarachaqay_khan"
+			}
+		}
+	}
+	PER_qarachaqay_khan = {
+		advisor = {
+			slot = political_advisor
+			idea_token = qarachaqay_khan
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					chief_minister 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "qarachaqay_khan"
+		portraits = {
+			army = {
+				small = "GFX_idea_qarachaqay_khan"
+			}
+		}
+	}
+	PER_ahmad_ibn_muhammad_ardabili = {
+		advisor = {
+			slot = political_advisor
+			idea_token = ahmad_ibn_muhammad_ardabili
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					grand_ayatollah_of_persia 
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ahmad_ibn_muhammad_ardabili"
+		portraits = {
+			army = {
+				small = "GFX_idea_ahmad_ibn_muhammad_ardabili"
+			}
+		}
+	}
+	PER_ahmad_mirza = {
+		advisor = {
+			slot = political_advisor
+			idea_token = ahmad_mirza
+			allowed = {
+					original_tag = PER
+				}
+				traits = {
+					explorer 
+				}
+				on_add = {
+					add_to_variable = {
+						max_colonies = 1.000
+					}
+				}
+				on_remove = {
+					add_to_variable = {
+						max_colonies = -1.000
+					}
+				}
+				do_effect = {
+					if = {
+						has_government = fascism 
+					}
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = "ahmad_mirza"
+		portraits = {
+			army = {
+				small = "GFX_idea_ahmad_mirza"
+			}
+		}
+	}
+}

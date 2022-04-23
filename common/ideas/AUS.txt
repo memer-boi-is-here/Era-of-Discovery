@@ -1,0 +1,506 @@
+ideas = {
+
+    country = {
+	    religious_division_within_the_empire = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = religious_division_within_the_empire
+			
+			modifier = {
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+	    anti_ottoman_policy = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = anti_ottoman_policy
+			
+			targeted_modifier = { tag = TUR attack_bonus_against = 0.1 }
+            targeted_modifier = { tag = TUR defense_bonus_against = 0.1 }
+			
+			modifier = {
+			    war_support_factor = 0.15
+				custom_modifier_tooltip = anti_ottoman_policy_tt
+			}
+		}
+		
+		civil_unrest_in_bohemia = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = civil_unrest_in_bohemia
+			
+			modifier = {
+			    stability_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				war_support_factor = 0.1
+			}
+		}
+		
+		king_of_the_romans = {
+		
+		    allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			    always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = king_of_the_romans
+			
+			modifier = {
+			    stability_factor = 0.15
+				opinion_gain_monthly = 0.1
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+	}
+
+	political_advisor = {
+
+        cristoforo_madruzzo = {
+
+			picture = cristoforo_madruzzo
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { chief_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+        antonin_brus_mohenlnice = {
+
+			picture = antonin_brus_mohenlnice
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { archbishop_of_prague }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}	
+		}
+		
+		johan_jakob_fugger = {
+
+			picture = johan_jakob_fugger
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { finance_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			on_add = {
+                add_to_variable = {
+                  money_factor = 0.5
+                }
+              }
+            on_remove = {
+                add_to_variable = {
+                  money_factor = -0.5
+                }
+            }
+
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = weekly_income_tt
+			}
+			
+		}
+		
+		simon_renard = {
+
+			picture = simon_renard
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { foreign_diplomat }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		bartholomeus_welser = {
+
+			picture = bartholomeus_welser
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { explorer }
+			on_add = {
+                add_to_variable = {
+                    max_colonies = 1
+                }
+            }
+            on_remove = {
+                add_to_variable = {
+                    max_colonies = -1
+                }
+            }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jan_cornelisz_vermeyen = {
+
+			picture = jan_cornelisz_vermeyen
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { court_painter }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+        richard_strein = {
+
+			picture = richard_strein
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { fortification_engineer }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    hugo_blotius = {
+
+			picture = hugo_blotius
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { construction_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		giovanni_battista_castaldo_p = {
+
+			picture = giovanni_battista_castaldo
+
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { war_minister }
+			
+			do_effect = {
+				IF = {
+					has_government = neutrality
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+ 
+	}
+
+	army_chief = {
+		
+        ferdinand_ii = {
+		
+			picture = ferdinand_ii
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			cost = 150
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		giovanni_battista_castaldo = {
+		
+			picture = giovanni_battista_castaldo
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			cost = 150
+
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		guglielmo_gonzaga = {
+		
+			picture = guglielmo_gonzaga
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+            cost = 150
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+
+	navy_chief = {
+		
+        alvaro_de_bazan = {
+		
+	        picture = gabriel_de_la_cueva
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+		    }
+		}
+		
+		miguel_lopez = {
+		
+		    picture = miguel_lopez
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		juan_martinez_de_recalde = {
+		
+		    picture = juan_martinez_de_recalde
+			
+			allowed = {
+				original_tag = AUS
+			}
+
+			cost = 150
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	high_command = {
+
+        maximilian_ii = {
+		
+			ledger = army
+			
+			picture = maximilian_ii
+			
+			allowed = {
+				original_tag = AUS
+			}
+		
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ruprecht_von_eggenberg = {
+		
+			ledger = army
+
+			picture = ruprecht_von_eggenberg
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		istvan_dobo = {
+		
+			ledger = army
+
+			picture = istvan_dobo
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+        }
+
+		peter_ernst_von_mansfeld = {
+		
+			ledger = army
+
+			picture = peter_ernst_von_mansfeld
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		george_khevenhuller = {
+		
+			ledger = army
+
+			picture = george_khevenhuller
+			
+			allowed = {
+				original_tag = AUS
+			}
+			
+			traits = { army_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

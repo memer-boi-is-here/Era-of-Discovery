@@ -1,0 +1,98 @@
+technologies = {
+	
+	cold_bonus = {
+
+		category_all_infantry = {
+			acclimatization_cold_climate_gain_factor = 0.25
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = -20 y = 0.5 }
+		}
+		
+		categories = {
+			#infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	mountain_bonus = {
+
+		infantry = {
+			mountain = {
+				attack = 0.1
+				movement = 0.15
+			}
+		}
+		cavalry = {
+			mountain = {
+				attack = 0.1
+				movement = 0.15
+			}
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = -20 y = 1 }
+		}
+		
+		categories = {
+			#infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cavalry_loyalty = {
+
+		cavalry = {
+			max_organisation = 0.12
+		}
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = -20 y = 1 }
+		}
+		
+		categories = {
+			#infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	horse_speed = {
+
+		cavalry = {
+			maximum_speed = 0.15
+		}
+
+		research_cost = 1.5
+		start_year = 1500
+		folder = {
+			name = infantry_folder
+			position = { x = -20 y = 1 }
+		}
+		
+		categories = {
+			#infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

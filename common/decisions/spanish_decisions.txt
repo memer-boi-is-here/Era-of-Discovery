@@ -1,0 +1,67 @@
+SPR_colonial_management = {
+	SPR_treasure_fleet_from_the_americas = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				NSP = { is_subject_of  = SPR }
+				SPP = { is_subject_of  = SPR }
+			}
+		}
+
+		days_mission_timeout = 180
+
+		activate_mission = SPR_treasure_fleet_from_the_americas
+
+		visible = {
+			
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = yes
+		timeout_effect = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = SPR_protect_the_treasure_fleets }
+				}
+				random_list = {
+					40 = {
+						country_event = anewera.131
+					}
+					30 = {
+						country_event = anewera.130
+					}
+					20 = {
+						country_event = anewera.129
+					}
+					10 = {
+						country_event = anewera.132
+					}
+				}
+			}
+			else_if = {	
+				limit = {
+					has_completed_focus = SPR_protect_the_treasure_fleets
+				}
+				random_list = {
+					40 = {
+						country_event = anewera.131
+					}
+					33 = {
+						country_event = anewera.130
+					}
+					22 = {
+						country_event = anewera.129
+					}
+					5 = {
+						country_event = anewera.132
+					}
+				}
+			}
+		}
+	}
+}

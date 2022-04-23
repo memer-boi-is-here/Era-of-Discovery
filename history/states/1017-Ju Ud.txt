@@ -1,0 +1,20 @@
+
+state={
+	id=1017
+	name="Ju Ud"
+	
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MON
+	}
+	
+	provinces={
+		1508 3978 10429 12469 12478
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

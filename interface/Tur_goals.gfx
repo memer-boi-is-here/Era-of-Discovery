@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	#### Ottoman Empire focus icons | I am based poggers Molto Ritardando#7334
+
+	SpriteType = {
+	name = "GFX_country_policies"
+	texturefile = "gfx/interface/goals/focus_country_policies.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_ottoman_political_situation"
+	texturefile = "gfx/interface/goals/focus_ottoman_political_situation.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_ottoman_economy"
+	texturefile = "gfx/interface/goals/focus_ottoman_economy.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_mesopotamia_dev"
+		texturefile = "gfx/interface/goals/Ottoman development.dds"			
+		}	
+	SpriteType = {
+		name = "GFX_dev_baghdad"
+		texturefile = "gfx/interface/goals/Ottoman development.dds"			
+		}	
+}

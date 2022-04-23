@@ -1,0 +1,188 @@
+﻿capital = 291
+
+recruit_character = PER_tahmasp_i
+recruit_character = PER_ismail_mirza_ii
+recruit_character = PER_qarachaqay_khan
+recruit_character = PER_mohammad_khodabanda
+recruit_character = PER_sultan_ahmad_mirza
+recruit_character = PER_simon_i
+recruit_character = PER_arvin_parsi
+recruit_character = PER_arash_faghihinejad
+recruit_character = PER_sadegh_ayrum
+recruit_character = PER_qarachaqay_khan_a
+recruit_character = PER_ahmad_mirza_b
+recruit_character = PER_ahmad_mirza_a
+recruit_character = PER_qarachaqay_khan_b
+recruit_character = PER_qarachaqay_khan
+recruit_character = PER_ahmad_ibn_muhammad_ardabili
+recruit_character = PER_ahmad_mirza
+
+add_ideas = Shia
+
+add_ideas = government_rank_3
+
+oob = "PER_1550"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+
+}
+
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+
+add_ideas = {
+     anti_ottoman_sentiment
+     defender_of_shia_islam
+	 scorched_earth_policy
+}
+
+set_convoys = 25
+
+create_equipment_variant = {
+	name = "Carrack Class"			
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galleon Class"			
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+create_equipment_variant = {
+	name = "Galley Class"			
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+	}
+}
+
+set_research_slots = 3
+
+set_stability = 0.6
+set_war_support = 0.1
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 80
+	neutrality = 20
+}
+
+create_country_leader = {
+	name = "Tahmasp I"
+	picture = "tahmasp_I.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+	create_field_marshal = {
+	    name = "Tahmasp I"
+    	picture = "tahmasp_I.dds"
+	    traits = { inspirational_leader aggressive_assaulter trait_reckless harsh_leader }
+	    skill = 4
+	    attack_skill = 4
+	    defense_skill = 4
+	    planning_skill = 3
+	    logistics_skill = 3
+    }
+	
+    create_corps_commander = {
+	    name = "Ismail Mirza II"
+    	picture = "portrait_ismail_mirza.dds"
+	    traits = { adaptable trickster politically_connected bearer_of_artillery }
+	    skill = 4
+	    attack_skill = 3
+	    defense_skill = 4
+	    planning_skill = 1
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Qarachaqay Khan"
+    	picture = "portrait_qarachaqay_khan.dds"
+	    traits = { ambusher urban_assault_specialist infantry_officer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	
+    create_corps_commander = {
+	    name = "Mohammad Khodabanda"
+    	picture = "portrait_mohammad_khodabanda.dds"
+	    traits = { fortress_buster ranger trait_cautious }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 1
+	    logistics_skill = 1
+    }
+	
+	create_navy_leader = {
+	    name = "Sultan Ahmad Mirza"
+    	picture = "portrait_ahmad_mirza.dds"
+	    traits = { cruiser_captain superior_tactician bold }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 3
+	    maneuvering_skill = 3
+        coordination_skill = 2
+    }
+	
+	create_navy_leader = {
+	    name = "Simon I"
+    	picture = "portrait_simon_i.dds"
+	    traits = { destroyer_leader fleet_protector chief_engineer }
+	    skill = 3
+	    attack_skill = 3
+	    defense_skill = 2
+	    maneuvering_skill = 2
+        coordination_skill = 3
+    }
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 70
+		neutrality = 30
+	}
+
+	create_country_leader = {
+		name = "Faisal II"
+		desc = "POLITICS_FAISAL_II_DESC"
+		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+}
+
+set_rule = { can_join_factions = no }
+
+add_ideas = safavid_traditions

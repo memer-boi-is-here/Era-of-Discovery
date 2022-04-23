@@ -1,0 +1,6 @@
+SPR_colonial_management = {
+    icon = generic_economy
+    allowed = {
+        tag = SPR
+    }
+}

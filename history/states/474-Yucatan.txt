@@ -1,0 +1,36 @@
+
+state={
+	id=474
+	name="STATE_474"
+	manpower = 10000
+	
+	state_category = rural
+
+	history={
+		owner = NSP
+		buildings = {
+			infrastructure = 3
+		
+			4904 = {
+				naval_base = 1
+			}
+			4965 = {
+				naval_base = 1
+			}
+		}
+		#victory_points = {
+		#	12715 3
+		#}
+		victory_points = {
+			4904 1
+		}
+		#victory_points = {
+		#	4965 5
+		#}
+	}
+
+	provinces={
+		4904 4965 12715 
+	}
+	
+}

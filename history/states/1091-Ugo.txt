@@ -1,0 +1,22 @@
+state={
+	id=1091
+	name="Ugo"
+	provinces={
+		1063 9865 
+	}
+		history={
+			owner = AND
+		add_core_of = AND
+	buildings = {
+	infrastructure = 3
+
+			
+	arms_factory = 1
+	industrial_complex = 1
+
+	}
+	}
+	manpower=800123
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

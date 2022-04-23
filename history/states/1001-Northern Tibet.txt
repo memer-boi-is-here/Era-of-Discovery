@@ -1,0 +1,18 @@
+state={
+	id=1001
+	name="Northern Tibet"
+	
+	history={
+		owner = XXX
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces={
+		4914 8037
+	}
+	manpower=108615
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

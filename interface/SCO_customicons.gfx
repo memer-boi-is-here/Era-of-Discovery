@@ -1,0 +1,111 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_goal_scotland_john_knox_c"
+		texturefile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_goal_scotland_john_knox_c_shine"
+		texturefile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_john_knox_c.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+    SpriteType = {
+		name = "GFX_goal_scotland_french_tactics"
+		texturefile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_goal_scotland_french_tactics_shine"
+		texturefile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_french_tactics.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	 SpriteType = {
+		name = "GFX_goal_scotland_new_begining"
+		texturefile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+	}
+    
+	SpriteType = { 
+		name = "GFX_goal_scotland_new_begining_shine"
+		texturefile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+			animationtexturefile = "gfx/interface/goals/goal_scotland_new_begining.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+}
